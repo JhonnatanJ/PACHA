@@ -61,8 +61,8 @@ namespace CapaPresentacion
             {
                 if (validarLogin == true)
                 {
-                    frmPrincipal vistaPrincipal = new frmPrincipal();
-                    vistaPrincipal.Show();
+                    frmLogComunidad vistaComunidad = new frmLogComunidad();
+                    vistaComunidad.Show();
                     this.Hide();
                 }
                 else
@@ -143,6 +143,11 @@ namespace CapaPresentacion
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
         {
 
         }
