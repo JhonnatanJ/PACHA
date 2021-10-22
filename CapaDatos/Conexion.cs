@@ -17,7 +17,7 @@ namespace CapaDatos
             //string password = "root";
             //string port = "3307";
 
-            string cadenaConexion = "Server=localhost;Port=3360;Database=pacha;Uid=root2;Pwd=root;";
+            string cadenaConexion = "Server=localhost;Port=3306;Database=pacha;Uid=root;Pwd=root;";
 
             try
             {
