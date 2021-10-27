@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace CapaPresentacion
 {
     partial class Login
@@ -221,7 +223,7 @@ namespace CapaPresentacion
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPrincipal";
-            this.Load += new System.EventHandler(this.Login_Load);
+            //this.Load += new System.EventHandler(this.Login_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Login_MouseDown);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -250,6 +252,8 @@ namespace CapaPresentacion
         private System.Windows.Forms.PictureBox pbMinimizar;
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+
+        public EventHandler Login_Load { get; private set; }
     }
 }
 

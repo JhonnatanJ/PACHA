@@ -14,9 +14,5 @@ namespace CapaDominio
         {
             return datosUsuario.Login(user, pass);
         }
-
-
-
-
     }
 }

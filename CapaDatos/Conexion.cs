@@ -11,18 +11,22 @@ namespace CapaDatos
     {
         public static MySqlConnection conexion()
         {
-            //string servidor = "localhost";
-            //string bd = "pacha";
-            //string usuario = "root2";
-            //string password = "root";
-            //string port = "3307";
-
-            string cadenaConexion = "Server=localhost;Port=3306;Database=pacha;Uid=root;Pwd=root;";
+            
+            string cadenaConexionJhonn = "Server=localhost;Port=3360;Database=pacha;Uid=root2;Pwd=root;";
+            string cadenaConexionPancho = "Server=localhost;Port=3306;Database=pacha;Uid=root;Pwd=root;";
 
             try
             {
-                MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
-                return conexionBD;
+                try
+                {
+                    MySqlConnection conexionBD = new MySqlConnection(cadenaConexionJhonn);
+                    return conexionBD;
+                }
+                catch
+                {
+                    MySqlConnection conexionBD = new MySqlConnection(cadenaConexionPancho);
+                    return conexionBD;
+                }
             }
             catch(MySqlException ex)
             {

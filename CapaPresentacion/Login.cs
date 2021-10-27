@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using CapaNegocio;
 using CapaDominio;
 
 namespace CapaPresentacion
@@ -61,8 +62,8 @@ namespace CapaPresentacion
             {
                 if (validarLogin == true)
                 {
-                    frmLogComunidad vistaComunidad = new frmLogComunidad();
-                    vistaComunidad.Show();
+                    frmLogComunidad vistaPrincipal = new frmLogComunidad();
+                    vistaPrincipal.Show();
                     this.Hide();
                 }
                 else
@@ -143,11 +144,6 @@ namespace CapaPresentacion
         }
 
         private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Login_Load(object sender, EventArgs e)
         {
 
         }

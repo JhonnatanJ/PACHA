@@ -12,14 +12,12 @@ namespace CapaDatos
     {
         public bool Login(string user, string pass)
         {
-
             MySqlConnection conexionBD = Conexion.conexion();
             conexionBD.Open();
-            
-            MySqlCommand comando = new MySqlCommand();            
-           
+
             try
-            {
+            {    
+                MySqlCommand comando = new MySqlCommand();
                 comando.Connection = conexionBD;
                 comando.CommandText = "select * from usuario where CI=@user and CONTRASENA=@pass";
                 comando.Parameters.AddWithValue("@user", user);
