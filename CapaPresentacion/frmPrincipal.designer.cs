@@ -32,7 +32,7 @@ namespace CapaPresentacion
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblNombreComunidad = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panelFases = new System.Windows.Forms.Panel();
             this.pnlBtnCambioClim = new System.Windows.Forms.Panel();
@@ -42,6 +42,7 @@ namespace CapaPresentacion
             this.btnActoresLocales = new System.Windows.Forms.Button();
             this.pnlBtnActores = new System.Windows.Forms.Panel();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.btnCambiarComunidad = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.panelFases.SuspendLayout();
@@ -51,7 +52,7 @@ namespace CapaPresentacion
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
             this.panel1.Controls.Add(this.btnCerrar);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.lblNombreComunidad);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -70,18 +71,18 @@ namespace CapaPresentacion
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // label2
+            // lblNombreComunidad
             // 
-            this.label2.AutoSize = true;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(562, 15);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(194, 34);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "COMUNIDAD";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lblNombreComunidad.AutoSize = true;
+            this.lblNombreComunidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblNombreComunidad.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreComunidad.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblNombreComunidad.Location = new System.Drawing.Point(562, 15);
+            this.lblNombreComunidad.Name = "lblNombreComunidad";
+            this.lblNombreComunidad.Size = new System.Drawing.Size(194, 34);
+            this.lblNombreComunidad.TabIndex = 3;
+            this.lblNombreComunidad.Text = "COMUNIDAD";
+            this.lblNombreComunidad.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -99,6 +100,7 @@ namespace CapaPresentacion
             // panelFases
             // 
             this.panelFases.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(85)))), ((int)(((byte)(91)))));
+            this.panelFases.Controls.Add(this.btnCambiarComunidad);
             this.panelFases.Controls.Add(this.pnlBtnCambioClim);
             this.panelFases.Controls.Add(this.pnlBtnContexto);
             this.panelFases.Controls.Add(this.button3);
@@ -188,6 +190,21 @@ namespace CapaPresentacion
             this.panelContenedor.TabIndex = 2;
             this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
+            // btnCambiarComunidad
+            // 
+            this.btnCambiarComunidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
+            this.btnCambiarComunidad.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(204)))), ((int)(((byte)(177)))));
+            this.btnCambiarComunidad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(204)))), ((int)(((byte)(177)))));
+            this.btnCambiarComunidad.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCambiarComunidad.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCambiarComunidad.Location = new System.Drawing.Point(6, 544);
+            this.btnCambiarComunidad.Name = "btnCambiarComunidad";
+            this.btnCambiarComunidad.Size = new System.Drawing.Size(182, 47);
+            this.btnCambiarComunidad.TabIndex = 4;
+            this.btnCambiarComunidad.Text = "Cambiar Comunidad";
+            this.btnCambiarComunidad.UseVisualStyleBackColor = false;
+            this.btnCambiarComunidad.Click += new System.EventHandler(this.btnCambiarComunidad_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -213,7 +230,7 @@ namespace CapaPresentacion
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblNombreComunidad;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelFases;
         private System.Windows.Forms.Button button3;
@@ -224,6 +241,7 @@ namespace CapaPresentacion
         private System.Windows.Forms.Panel pnlBtnCambioClim;
         private System.Windows.Forms.Panel pnlBtnContexto;
         private System.Windows.Forms.PictureBox btnCerrar;
+        private System.Windows.Forms.Button btnCambiarComunidad;
     }
 }
 

@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaNegocio;
+using CapaComun;
+using CapaComun.Cache;
 
 namespace CapaPresentacion
 {
@@ -32,7 +34,12 @@ namespace CapaPresentacion
 
         private void btnIngCom_Click(object sender, EventArgs e)
         {
-
+            ModeloComunidadLog comunidadLog = new ModeloComunidadLog();
+            comunidadLog.CargarDatosComunidadLog(cboComunidad.Text);
+            
+            frmPrincipal principal = new frmPrincipal();
+            principal.Show();
+            this.Hide();
         }
 
         private void labelNombre_Click(object sender, EventArgs e)
@@ -40,18 +47,36 @@ namespace CapaPresentacion
 
         }
 
-        ModeloComunidadLog mod = new ModeloComunidadLog();
+        
 
         private void frmLogComunidad_Load(object sender, EventArgs e)
         {
-            cboComunidad.DataSource = mod.CargarCombo();
+            ModeloComunidadLog comunidadLog = new ModeloComunidadLog();
+            CargarDatosUsuario();
+            cboComunidad.DataSource = comunidadLog.CargarCombo();
             cboComunidad.DisplayMember = "NOMBRE";
-            cboComunidad.ValueMember = "CI";
+            
+
+        }
+        private void CargarDatosUsuario()
+        {
+            labelNombre.Text = CacheLoginUsuario.nombres;
+            labelApellido.Text = CacheLoginUsuario.apellidos;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void pbMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pbCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
