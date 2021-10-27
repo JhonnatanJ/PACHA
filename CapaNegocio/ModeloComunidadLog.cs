@@ -15,5 +15,10 @@ namespace CapaNegocio
         {
             return datosComunidad.CargarCombo();
         }
+
+        public void CargarDatosComunidadLog(string nombreComunidad)
+        {
+            datosComunidad.CargarDatosComunidadLog(nombreComunidad);
+        }
     }
 }

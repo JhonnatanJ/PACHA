@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaComun.Cache;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,6 +35,7 @@ namespace CapaPresentacion
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            lblNombreComunidad.Text = (CacheLoginComunidad.nombre).ToUpper();
             AbrirFormPanelContenedor(new frmPanelContenedor());
         }
 
@@ -144,6 +146,13 @@ namespace CapaPresentacion
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCambiarComunidad_Click(object sender, EventArgs e)
+        {
+            frmLogComunidad logComunidad = new frmLogComunidad();
+            logComunidad.Show();
+            this.Hide();
         }
     }
 }

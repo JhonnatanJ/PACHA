@@ -176,6 +176,7 @@
     <Content Include="Resources\iconError.png" />
     <None Include="Resources\user1.png" />
     <None Include="Resources\userlog.png" />
+    <None Include="Resources\iconUser.png" />
     <Content Include="Resources\x-mark-64.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
