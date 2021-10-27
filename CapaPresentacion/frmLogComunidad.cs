@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 using CapaNegocio;
 using CapaComun;
 using CapaComun.Cache;
@@ -18,7 +19,13 @@ namespace CapaPresentacion
         public frmLogComunidad()
         {
             InitializeComponent();
+            
         }
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -27,9 +34,15 @@ namespace CapaPresentacion
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            Login vistaLogin = new Login();
-            vistaLogin.Show();
-            this.Hide();
+            DialogResult result = MessageBox.Show("¿Está seguro de Cerrar Sesión?","Advertencia",MessageBoxButtons.YesNo);
+
+            if (result == DialogResult.Yes)
+            {
+                Login vistaLogin = new Login();
+                vistaLogin.Show();
+                this.Hide();
+            }
+            
         }
 
         private void btnIngCom_Click(object sender, EventArgs e)
@@ -77,6 +90,27 @@ namespace CapaPresentacion
         private void pbCerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void frmLogComunidad_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void cboComunidad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)(Keys.Enter))
+            {
+                e.Handled = true;
+                btnIngCom_Click(sender, e);
+            }
         }
     }
 }

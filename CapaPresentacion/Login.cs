@@ -146,5 +146,23 @@ namespace CapaPresentacion
         {
 
         }
+
+        private void tbContrasena_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)(Keys.Enter))
+            {
+                e.Handled = true;
+                btnAcceder_Click(sender, e);
+            }
+        }
+
+        private void tbUsuario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)(Keys.Enter))
+            {
+                e.Handled = true;
+                btnAcceder_Click(sender, e);
+            }
+        }
     }
 }

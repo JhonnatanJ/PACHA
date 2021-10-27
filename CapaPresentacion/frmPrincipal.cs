@@ -150,9 +150,19 @@ namespace CapaPresentacion
 
         private void btnCambiarComunidad_Click(object sender, EventArgs e)
         {
-            frmLogComunidad logComunidad = new frmLogComunidad();
-            logComunidad.Show();
-            this.Hide();
+            DialogResult result = MessageBox.Show("¿Está seguro de Cambiar de Comunidad?", "Advertencia", MessageBoxButtons.YesNo);
+
+            if (result == DialogResult.Yes)
+            {
+                frmLogComunidad logComunidad = new frmLogComunidad();
+                logComunidad.Show();
+                this.Hide();
+            }            
+        }
+
+        private void pbMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

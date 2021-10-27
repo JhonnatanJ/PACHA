@@ -30,6 +30,7 @@ namespace CapaPresentacion
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelApellido = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.labelNombre = new System.Windows.Forms.Label();
@@ -45,14 +46,13 @@ namespace CapaPresentacion
             this.panel3 = new System.Windows.Forms.Panel();
             this.pbMinimizar = new System.Windows.Forms.PictureBox();
             this.pbCerrar = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -69,8 +69,20 @@ namespace CapaPresentacion
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(283, 477);
-            this.panel1.TabIndex = 1;
+            this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.iconUser;
+            this.pictureBox1.Location = new System.Drawing.Point(58, 158);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(162, 132);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
             // 
             // labelApellido
             // 
@@ -112,7 +124,6 @@ namespace CapaPresentacion
             // btnLogOut
             // 
             this.btnLogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(85)))), ((int)(((byte)(91)))));
-            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLogOut.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogOut.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnLogOut.Location = new System.Drawing.Point(58, 412);
@@ -161,15 +172,17 @@ namespace CapaPresentacion
             // cboComunidad
             // 
             this.cboComunidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.cboComunidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboComunidad.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cboComunidad.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.cboComunidad.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.cboComunidad.FormattingEnabled = true;
-            this.cboComunidad.Location = new System.Drawing.Point(36, 80);
+            this.cboComunidad.Location = new System.Drawing.Point(12, 79);
             this.cboComunidad.Name = "cboComunidad";
-            this.cboComunidad.Size = new System.Drawing.Size(253, 31);
-            this.cboComunidad.TabIndex = 6;
+            this.cboComunidad.Size = new System.Drawing.Size(350, 31);
+            this.cboComunidad.TabIndex = 1;
             this.cboComunidad.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cboComunidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cboComunidad_KeyPress);
             // 
             // btnIngCom
             // 
@@ -177,9 +190,9 @@ namespace CapaPresentacion
             this.btnIngCom.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnIngCom.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngCom.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnIngCom.Location = new System.Drawing.Point(310, 74);
+            this.btnIngCom.Location = new System.Drawing.Point(371, 74);
             this.btnIngCom.Name = "btnIngCom";
-            this.btnIngCom.Size = new System.Drawing.Size(267, 42);
+            this.btnIngCom.Size = new System.Drawing.Size(225, 42);
             this.btnIngCom.TabIndex = 7;
             this.btnIngCom.Text = "Ingresar";
             this.btnIngCom.UseVisualStyleBackColor = false;
@@ -207,7 +220,7 @@ namespace CapaPresentacion
             this.panel2.Location = new System.Drawing.Point(325, 120);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(605, 150);
-            this.panel2.TabIndex = 11;
+            this.panel2.TabIndex = 0;
             // 
             // lblGuia
             // 
@@ -252,17 +265,6 @@ namespace CapaPresentacion
             this.pbCerrar.TabStop = false;
             this.pbCerrar.Click += new System.EventHandler(this.pbCerrar_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.iconUser;
-            this.pictureBox1.Location = new System.Drawing.Point(58, 158);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(162, 132);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
             // frmLogComunidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -280,15 +282,16 @@ namespace CapaPresentacion
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogComunidad";
             this.Load += new System.EventHandler(this.frmLogComunidad_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmLogComunidad_MouseDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
