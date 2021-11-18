@@ -103,6 +103,7 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="PanelControl\ControlPaneles.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmLogComunidad.resx">
@@ -177,6 +178,9 @@
     <None Include="Resources\user1.png" />
     <None Include="Resources\userlog.png" />
     <None Include="Resources\iconUser.png" />
+    <None Include="Resources\iconMostrar.png" />
+    <None Include="Resources\iconMostrar2.png" />
+    <None Include="Resources\iconForm.png" />
     <Content Include="Resources\x-mark-64.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

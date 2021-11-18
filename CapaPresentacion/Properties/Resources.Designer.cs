@@ -83,9 +83,39 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconForm {
+            get {
+                object obj = ResourceManager.GetObject("iconForm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconMinimiz {
             get {
                 object obj = ResourceManager.GetObject("iconMinimiz", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconMostrar {
+            get {
+                object obj = ResourceManager.GetObject("iconMostrar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconMostrar2 {
+            get {
+                object obj = ResourceManager.GetObject("iconMostrar2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
