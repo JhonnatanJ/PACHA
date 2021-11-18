@@ -20,5 +20,10 @@ namespace CapaNegocio
         {
             datosComunidad.CargarDatosComunidadLog(nombreComunidad);
         }
+
+        public void InsertarDatosComunidadLog(string id, string nombre)
+        {
+            datosComunidad.InsertarDatosComunidadLog(id, nombre);
+        }
     }
 }

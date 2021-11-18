@@ -11,6 +11,5 @@ namespace CapaComun.Cache
         public static string idcomunidad { get; set; }
         public static string ci { get; set; }
         public static string nombre { get; set; }
-
     }
 }

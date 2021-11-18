@@ -112,5 +112,12 @@ namespace CapaPresentacion
                 btnIngCom_Click(sender, e);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmCrearComunidad crearCom = new frmCrearComunidad();
+            crearCom.Show();
+            this.Hide();
+        }
     }
 }

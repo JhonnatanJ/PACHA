@@ -57,6 +57,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatosProyecto.cs" />
+    <Compile Include="DatosActores.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="DatosComunidadLog.cs" />
     <Compile Include="DatosUsuario.cs" />
