@@ -50,6 +50,21 @@ namespace CapaDatos
                     CacheLoginComunidad.nombre = reader.GetString(2);
                 }
             }
+            conexionBD.Close();
+        }
+        public void InsertarDatosComunidadLog(string id, string nombre)
+        {
+            MySqlConnection conexionBD = Conexion.conexion();
+            conexionBD.Open();
+            MySqlCommand comando = new MySqlCommand();
+            comando.Connection = conexionBD;
+            comando.CommandText = "insert into comunidadlog(IDCOMUNIDAD, CI, NOMBRE) VALUES (@id, @ci, @nombre)";
+            comando.Parameters.AddWithValue("@id", id);
+            comando.Parameters.AddWithValue("@ci", CacheLoginUsuario.ci);
+            comando.Parameters.AddWithValue("@nombre", nombre);
+            comando.CommandType = System.Data.CommandType.Text;
+            comando.ExecuteNonQuery();
+            conexionBD.Close();
         }
     }
 }

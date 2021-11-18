@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ModeloActores.cs" />
     <Compile Include="ModeloComunidadLog.cs" />
+    <Compile Include="ModeloProyecto.cs" />
     <Compile Include="ModeloUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

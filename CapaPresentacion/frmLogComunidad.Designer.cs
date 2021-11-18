@@ -40,7 +40,7 @@ namespace CapaPresentacion
             this.lbLogin = new System.Windows.Forms.Label();
             this.cboComunidad = new System.Windows.Forms.ComboBox();
             this.btnIngCom = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCrearComunidad = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblGuia = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -198,18 +198,19 @@ namespace CapaPresentacion
             this.btnIngCom.UseVisualStyleBackColor = false;
             this.btnIngCom.Click += new System.EventHandler(this.btnIngCom_Click);
             // 
-            // button1
+            // btnCrearComunidad
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(174, 43);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(267, 42);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Crear Comunidad";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCrearComunidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
+            this.btnCrearComunidad.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCrearComunidad.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrearComunidad.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCrearComunidad.Location = new System.Drawing.Point(174, 43);
+            this.btnCrearComunidad.Name = "btnCrearComunidad";
+            this.btnCrearComunidad.Size = new System.Drawing.Size(267, 42);
+            this.btnCrearComunidad.TabIndex = 10;
+            this.btnCrearComunidad.Text = "Crear Comunidad";
+            this.btnCrearComunidad.UseVisualStyleBackColor = false;
+            this.btnCrearComunidad.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
@@ -237,7 +238,7 @@ namespace CapaPresentacion
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(85)))), ((int)(((byte)(91)))));
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.btnCrearComunidad);
             this.panel3.Location = new System.Drawing.Point(325, 292);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(605, 129);
@@ -309,7 +310,7 @@ namespace CapaPresentacion
         private System.Windows.Forms.Label labelApellido;
         private System.Windows.Forms.ComboBox cboComunidad;
         private System.Windows.Forms.Button btnIngCom;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCrearComunidad;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label lblGuia;

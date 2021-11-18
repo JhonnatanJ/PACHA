@@ -19,12 +19,12 @@ namespace CapaDatos
             {
                 try
                 {
-                    MySqlConnection conexionBD = new MySqlConnection(cadenaConexionJhonn);
+                    MySqlConnection conexionBD = new MySqlConnection(cadenaConexionPancho);
                     return conexionBD;
                 }
                 catch
                 {
-                    MySqlConnection conexionBD = new MySqlConnection(cadenaConexionPancho);
+                    MySqlConnection conexionBD = new MySqlConnection(cadenaConexionJhonn);
                     return conexionBD;
                 }
             }
