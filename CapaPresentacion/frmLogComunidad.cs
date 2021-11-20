@@ -65,7 +65,7 @@ namespace CapaPresentacion
         private void frmLogComunidad_Load(object sender, EventArgs e)
         {
             ModeloComunidadLog comunidadLog = new ModeloComunidadLog();
-            CargarDatosUsuario();
+            CargarDatosUsuario();   //para cargar el nombre y apellido del usuario
             cboComunidad.DataSource = comunidadLog.CargarCombo();
             cboComunidad.DisplayMember = "NOMBRE";
             

@@ -37,6 +37,9 @@ namespace CapaPresentacion
             this.lblNombreComunidad = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panelFases = new System.Windows.Forms.Panel();
+            this.pnlUsuarios = new System.Windows.Forms.Panel();
+            this.btnGestionUsuarios = new System.Windows.Forms.Button();
+            this.btnUsuarios = new System.Windows.Forms.Button();
             this.pnlFase3Submenu = new System.Windows.Forms.Panel();
             this.btnMediosEstrategiasVida = new System.Windows.Forms.Button();
             this.btnFase3 = new System.Windows.Forms.Button();
@@ -60,14 +63,12 @@ namespace CapaPresentacion
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnIngresarCambioClimatico = new System.Windows.Forms.Button();
-            this.btnUsuarios = new System.Windows.Forms.Button();
-            this.pnlUsuarios = new System.Windows.Forms.Panel();
-            this.btnGestionUsuarios = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.panelFases.SuspendLayout();
+            this.pnlUsuarios.SuspendLayout();
             this.pnlFase3Submenu.SuspendLayout();
             this.pnlFase2Submenu.SuspendLayout();
             this.pnlFase1Submenu.SuspendLayout();
@@ -76,7 +77,6 @@ namespace CapaPresentacion
             this.pnlOpcCambioClimatico.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.pnlUsuarios.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -173,6 +173,49 @@ namespace CapaPresentacion
             this.panelFases.Name = "panelFases";
             this.panelFases.Size = new System.Drawing.Size(194, 748);
             this.panelFases.TabIndex = 1;
+            // 
+            // pnlUsuarios
+            // 
+            this.pnlUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(96)))), ((int)(((byte)(93)))));
+            this.pnlUsuarios.Controls.Add(this.btnGestionUsuarios);
+            this.pnlUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlUsuarios.Location = new System.Drawing.Point(0, 518);
+            this.pnlUsuarios.Name = "pnlUsuarios";
+            this.pnlUsuarios.Size = new System.Drawing.Size(194, 58);
+            this.pnlUsuarios.TabIndex = 13;
+            // 
+            // btnGestionUsuarios
+            // 
+            this.btnGestionUsuarios.BackColor = System.Drawing.Color.Transparent;
+            this.btnGestionUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGestionUsuarios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnGestionUsuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnGestionUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGestionUsuarios.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnGestionUsuarios.Location = new System.Drawing.Point(0, 0);
+            this.btnGestionUsuarios.Name = "btnGestionUsuarios";
+            this.btnGestionUsuarios.Size = new System.Drawing.Size(194, 55);
+            this.btnGestionUsuarios.TabIndex = 8;
+            this.btnGestionUsuarios.Text = "Gestionar Usuarios";
+            this.btnGestionUsuarios.UseVisualStyleBackColor = false;
+            this.btnGestionUsuarios.Click += new System.EventHandler(this.btnGestionUsuarios_Click);
+            // 
+            // btnUsuarios
+            // 
+            this.btnUsuarios.BackColor = System.Drawing.Color.Transparent;
+            this.btnUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUsuarios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnUsuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarios.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuarios.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnUsuarios.Location = new System.Drawing.Point(0, 459);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Size = new System.Drawing.Size(194, 59);
+            this.btnUsuarios.TabIndex = 12;
+            this.btnUsuarios.Text = "USUARIOS";
+            this.btnUsuarios.UseVisualStyleBackColor = false;
+            this.btnUsuarios.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // pnlFase3Submenu
             // 
@@ -480,55 +523,13 @@ namespace CapaPresentacion
             this.btnIngresarCambioClimatico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
             this.btnIngresarCambioClimatico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIngresarCambioClimatico.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnIngresarCambioClimatico.Location = new System.Drawing.Point(0, 0);
+            this.btnIngresarCambioClimatico.Location = new System.Drawing.Point(0, 2);
             this.btnIngresarCambioClimatico.Name = "btnIngresarCambioClimatico";
             this.btnIngresarCambioClimatico.Size = new System.Drawing.Size(190, 34);
             this.btnIngresarCambioClimatico.TabIndex = 1;
             this.btnIngresarCambioClimatico.Text = "Ingresar Datos";
             this.btnIngresarCambioClimatico.UseVisualStyleBackColor = false;
-            // 
-            // btnUsuarios
-            // 
-            this.btnUsuarios.BackColor = System.Drawing.Color.Transparent;
-            this.btnUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnUsuarios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnUsuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsuarios.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsuarios.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnUsuarios.Location = new System.Drawing.Point(0, 459);
-            this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(194, 59);
-            this.btnUsuarios.TabIndex = 12;
-            this.btnUsuarios.Text = "USUARIOS";
-            this.btnUsuarios.UseVisualStyleBackColor = false;
-            this.btnUsuarios.Click += new System.EventHandler(this.button1_Click_2);
-            // 
-            // pnlUsuarios
-            // 
-            this.pnlUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(96)))), ((int)(((byte)(93)))));
-            this.pnlUsuarios.Controls.Add(this.btnGestionUsuarios);
-            this.pnlUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlUsuarios.Location = new System.Drawing.Point(0, 518);
-            this.pnlUsuarios.Name = "pnlUsuarios";
-            this.pnlUsuarios.Size = new System.Drawing.Size(194, 58);
-            this.pnlUsuarios.TabIndex = 13;
-            // 
-            // btnGestionUsuarios
-            // 
-            this.btnGestionUsuarios.BackColor = System.Drawing.Color.Transparent;
-            this.btnGestionUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnGestionUsuarios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnGestionUsuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnGestionUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGestionUsuarios.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGestionUsuarios.Location = new System.Drawing.Point(0, 0);
-            this.btnGestionUsuarios.Name = "btnGestionUsuarios";
-            this.btnGestionUsuarios.Size = new System.Drawing.Size(194, 55);
-            this.btnGestionUsuarios.TabIndex = 8;
-            this.btnGestionUsuarios.Text = "Gestionar Usuarios";
-            this.btnGestionUsuarios.UseVisualStyleBackColor = false;
-            this.btnGestionUsuarios.Click += new System.EventHandler(this.btnGestionUsuarios_Click);
+            this.btnIngresarCambioClimatico.Click += new System.EventHandler(this.btnIngresarCambioClimatico_Click);
             // 
             // frmPrincipal
             // 
@@ -552,6 +553,7 @@ namespace CapaPresentacion
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.panelFases.ResumeLayout(false);
+            this.pnlUsuarios.ResumeLayout(false);
             this.pnlFase3Submenu.ResumeLayout(false);
             this.pnlFase2Submenu.ResumeLayout(false);
             this.pnlFase1Submenu.ResumeLayout(false);
@@ -560,7 +562,6 @@ namespace CapaPresentacion
             this.pnlOpcCambioClimatico.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.pnlUsuarios.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

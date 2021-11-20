@@ -80,7 +80,7 @@ namespace CapaPresentacion
             this.panel5.Controls.Add(this.label10);
             this.panel5.Controls.Add(this.label15);
             this.panel5.Controls.Add(this.label14);
-            this.panel5.Location = new System.Drawing.Point(12, 273);
+            this.panel5.Location = new System.Drawing.Point(12, 266);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(984, 242);
             this.panel5.TabIndex = 10;

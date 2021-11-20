@@ -73,11 +73,11 @@
     <Compile Include="frmLogComunidad.Designer.cs">
       <DependentUpon>frmLogComunidad.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCambioClimatico.cs">
+    <Compile Include="frmVisualizarActores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCambioClimatico.designer.cs">
-      <DependentUpon>frmCambioClimatico.cs</DependentUpon>
+    <Compile Include="frmVisualizarActores.designer.cs">
+      <DependentUpon>frmVisualizarActores.cs</DependentUpon>
     </Compile>
     <Compile Include="frmContexto.cs">
       <SubType>Form</SubType>
@@ -118,8 +118,8 @@
     <EmbeddedResource Include="frmLogComunidad.resx">
       <DependentUpon>frmLogComunidad.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCambioClimatico.resx">
-      <DependentUpon>frmCambioClimatico.cs</DependentUpon>
+    <EmbeddedResource Include="frmVisualizarActores.resx">
+      <DependentUpon>frmVisualizarActores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmContexto.resx">
       <DependentUpon>frmContexto.cs</DependentUpon>

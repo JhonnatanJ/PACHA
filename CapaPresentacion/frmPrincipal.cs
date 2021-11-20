@@ -150,7 +150,7 @@ namespace CapaPresentacion
         private void button3_Click(object sender, EventArgs e)
         {
             OcultarTodosPaneles();
-            AbrirFormCambioClimatico(new frmCambioClimatico());
+            AbrirFormCambioClimatico(new frmVisualizarActores());
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -231,6 +231,11 @@ namespace CapaPresentacion
         }
 
         private void btnGestionUsuarios_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnIngresarCambioClimatico_Click(object sender, EventArgs e)
         {
 
         }
