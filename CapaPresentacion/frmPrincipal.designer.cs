@@ -171,7 +171,7 @@ namespace CapaPresentacion
             this.panelFases.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelFases.Location = new System.Drawing.Point(0, 68);
             this.panelFases.Name = "panelFases";
-            this.panelFases.Size = new System.Drawing.Size(194, 748);
+            this.panelFases.Size = new System.Drawing.Size(194, 703);
             this.panelFases.TabIndex = 1;
             // 
             // pnlUsuarios
@@ -400,7 +400,7 @@ namespace CapaPresentacion
             this.btnCambiarComunidad.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(204)))), ((int)(((byte)(177)))));
             this.btnCambiarComunidad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(204)))), ((int)(((byte)(177)))));
             this.btnCambiarComunidad.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCambiarComunidad.Location = new System.Drawing.Point(6, 677);
+            this.btnCambiarComunidad.Location = new System.Drawing.Point(6, 632);
             this.btnCambiarComunidad.Name = "btnCambiarComunidad";
             this.btnCambiarComunidad.Size = new System.Drawing.Size(182, 47);
             this.btnCambiarComunidad.TabIndex = 4;
@@ -442,7 +442,7 @@ namespace CapaPresentacion
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(194, 68);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1033, 748);
+            this.panelContenedor.Size = new System.Drawing.Size(1033, 703);
             this.panelContenedor.TabIndex = 2;
             this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
@@ -530,12 +530,13 @@ namespace CapaPresentacion
             this.btnIngresarCambioClimatico.Text = "Ingresar Datos";
             this.btnIngresarCambioClimatico.UseVisualStyleBackColor = false;
             this.btnIngresarCambioClimatico.Click += new System.EventHandler(this.btnIngresarCambioClimatico_Click);
+
             // 
             // frmPrincipal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(1227, 816);
+            this.ClientSize = new System.Drawing.Size(1227, 771);
             this.Controls.Add(this.pnlOpcCambioClimatico);
             this.Controls.Add(this.pnlOpcActoresLocales);
             this.Controls.Add(this.panelContenedor);
