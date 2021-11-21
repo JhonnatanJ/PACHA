@@ -523,12 +523,14 @@ namespace CapaPresentacion
             this.btnIngresarCambioClimatico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
             this.btnIngresarCambioClimatico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIngresarCambioClimatico.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnIngresarCambioClimatico.Location = new System.Drawing.Point(0, 0);
+            this.btnIngresarCambioClimatico.Location = new System.Drawing.Point(0, 2);
             this.btnIngresarCambioClimatico.Name = "btnIngresarCambioClimatico";
             this.btnIngresarCambioClimatico.Size = new System.Drawing.Size(190, 34);
             this.btnIngresarCambioClimatico.TabIndex = 1;
             this.btnIngresarCambioClimatico.Text = "Ingresar Datos";
             this.btnIngresarCambioClimatico.UseVisualStyleBackColor = false;
+            this.btnIngresarCambioClimatico.Click += new System.EventHandler(this.btnIngresarCambioClimatico_Click);
+
             // 
             // frmPrincipal
             // 
