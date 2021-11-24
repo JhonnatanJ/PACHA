@@ -174,7 +174,7 @@ namespace CapaPresentacion
             this.panel4.Controls.Add(this.label5);
             this.panel4.Location = new System.Drawing.Point(12, 12);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(861, 429);
+            this.panel4.Size = new System.Drawing.Size(867, 470);
             this.panel4.TabIndex = 10;
             // 
             // txtPoliticas
@@ -313,7 +313,7 @@ namespace CapaPresentacion
             this.btnGuardarCambio.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGuardarCambio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarCambio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGuardarCambio.Location = new System.Drawing.Point(309, 463);
+            this.btnGuardarCambio.Location = new System.Drawing.Point(307, 488);
             this.btnGuardarCambio.Name = "btnGuardarCambio";
             this.btnGuardarCambio.Size = new System.Drawing.Size(295, 47);
             this.btnGuardarCambio.TabIndex = 12;
