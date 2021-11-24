@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ModeloActores.cs" />
+    <Compile Include="ModeloCambioClima.cs" />
     <Compile Include="ModeloComunidadLog.cs" />
     <Compile Include="ModeloProyecto.cs" />
     <Compile Include="ModeloUsuario.cs" />

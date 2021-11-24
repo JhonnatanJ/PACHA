@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatosCambioClima.cs" />
     <Compile Include="DatosProyecto.cs" />
     <Compile Include="DatosActores.cs" />
     <Compile Include="Conexion.cs" />

@@ -137,7 +137,7 @@ namespace CapaPresentacion
             this.lblNombreComunidad.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblNombreComunidad.Location = new System.Drawing.Point(574, 15);
             this.lblNombreComunidad.Name = "lblNombreComunidad";
-            this.lblNombreComunidad.Size = new System.Drawing.Size(194, 34);
+            this.lblNombreComunidad.Size = new System.Drawing.Size(149, 26);
             this.lblNombreComunidad.TabIndex = 3;
             this.lblNombreComunidad.Text = "COMUNIDAD";
             this.lblNombreComunidad.Click += new System.EventHandler(this.label2_Click);
@@ -150,7 +150,7 @@ namespace CapaPresentacion
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(71, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 34);
+            this.label1.Size = new System.Drawing.Size(88, 26);
             this.label1.TabIndex = 2;
             this.label1.Text = "PACHA";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -171,7 +171,11 @@ namespace CapaPresentacion
             this.panelFases.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelFases.Location = new System.Drawing.Point(0, 68);
             this.panelFases.Name = "panelFases";
+<<<<<<< HEAD
             this.panelFases.Size = new System.Drawing.Size(194, 703);
+=======
+            this.panelFases.Size = new System.Drawing.Size(194, 681);
+>>>>>>> CambioClimatico
             this.panelFases.TabIndex = 1;
             // 
             // pnlUsuarios
@@ -400,7 +404,11 @@ namespace CapaPresentacion
             this.btnCambiarComunidad.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(204)))), ((int)(((byte)(177)))));
             this.btnCambiarComunidad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(204)))), ((int)(((byte)(177)))));
             this.btnCambiarComunidad.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+<<<<<<< HEAD
             this.btnCambiarComunidad.Location = new System.Drawing.Point(6, 632);
+=======
+            this.btnCambiarComunidad.Location = new System.Drawing.Point(6, 610);
+>>>>>>> CambioClimatico
             this.btnCambiarComunidad.Name = "btnCambiarComunidad";
             this.btnCambiarComunidad.Size = new System.Drawing.Size(182, 47);
             this.btnCambiarComunidad.TabIndex = 4;
@@ -442,7 +450,11 @@ namespace CapaPresentacion
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(194, 68);
             this.panelContenedor.Name = "panelContenedor";
+<<<<<<< HEAD
             this.panelContenedor.Size = new System.Drawing.Size(1033, 703);
+=======
+            this.panelContenedor.Size = new System.Drawing.Size(1033, 681);
+>>>>>>> CambioClimatico
             this.panelContenedor.TabIndex = 2;
             this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
@@ -530,13 +542,20 @@ namespace CapaPresentacion
             this.btnIngresarCambioClimatico.Text = "Ingresar Datos";
             this.btnIngresarCambioClimatico.UseVisualStyleBackColor = false;
             this.btnIngresarCambioClimatico.Click += new System.EventHandler(this.btnIngresarCambioClimatico_Click);
+<<<<<<< HEAD
 
+=======
+>>>>>>> CambioClimatico
             // 
             // frmPrincipal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1227, 771);
+=======
+            this.ClientSize = new System.Drawing.Size(1227, 749);
+>>>>>>> CambioClimatico
             this.Controls.Add(this.pnlOpcCambioClimatico);
             this.Controls.Add(this.pnlOpcActoresLocales);
             this.Controls.Add(this.panelContenedor);

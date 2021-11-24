@@ -237,7 +237,12 @@ namespace CapaPresentacion
 
         private void btnIngresarCambioClimatico_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
 
+=======
+            OcultarTodosPaneles();
+            AbrirFormCambioClimatico(new frmCambioClimatico());
+>>>>>>> CambioClimatico
         }
     }
 }
