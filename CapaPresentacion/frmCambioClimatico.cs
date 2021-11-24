@@ -54,6 +54,8 @@ namespace CapaPresentacion
             if (result == DialogResult.Yes)
             {
                 actores.InsertarDatosClimatico(lugar, cambiosPotenciales, amenaza, impactoPrevisto, riesgoClimatico, estratSugerida, politAplicada);
+                MessageBox.Show("Los datos se agregaron correctamente", "Advertencia", MessageBoxButtons.OK);
+                this.Limpiar();
             }
         }
 
