@@ -361,29 +361,7 @@ namespace CapaPresentacion
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(77, 22);
             this.label16.TabIndex = 2;
-            this.label16.Text = "ACTOR";
-            // 
-            // txttipo
-            // 
-            this.txttipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.txttipo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txttipo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttipo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txttipo.Location = new System.Drawing.Point(730, 52);
-            this.txttipo.Name = "txttipo";
-            this.txttipo.Size = new System.Drawing.Size(224, 20);
-            this.txttipo.TabIndex = 4;
-            // 
-            // txtrelacionAnalisis
-            // 
-            this.txtrelacionAnalisis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.txtrelacionAnalisis.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtrelacionAnalisis.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtrelacionAnalisis.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtrelacionAnalisis.Location = new System.Drawing.Point(730, 98);
-            this.txtrelacionAnalisis.Name = "txtrelacionAnalisis";
-            this.txtrelacionAnalisis.Size = new System.Drawing.Size(224, 20);
-            this.txtrelacionAnalisis.TabIndex = 4;
+            this.label16.Text = "ACTOR";            
             // 
             // label3
             // 
