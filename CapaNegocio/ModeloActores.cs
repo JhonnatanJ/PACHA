@@ -13,14 +13,14 @@ namespace CapaNegocio
         
 
         DatosActores datosActores = new DatosActores();
-        public void InsertarDatosActores(string nombreActor, string siglas, string tipo, string unidadAnalisis, string competenciasRel)
+        public void InsertarDatosActores(string nombreActor, string siglas, string tipo, string unidadAnalisis, string incidencias, string competenciasRel)
         {
-            datosActores.InsertarDatosActores(nombreActor, siglas, tipo, unidadAnalisis, competenciasRel);
+            datosActores.InsertarDatosActores(nombreActor, siglas, tipo, unidadAnalisis, incidencias, competenciasRel);
         }
 
-        public void ModificarActor(string nombre, string nombreActor, string siglas, string tipo, string unidadAnalisis, string competenciasRel)
+        public void ModificarActor(string nombre, string nombreActor, string siglas, string tipo, string unidadAnalisis, string incidencias, string competenciasRel)
         {
-            datosActores.ModificarActor(nombre, nombreActor, siglas, tipo, unidadAnalisis, competenciasRel);
+            datosActores.ModificarActor(nombre, nombreActor, siglas, tipo, unidadAnalisis, incidencias, competenciasRel);
         }
 
         public void EliminarActor(string nombre)

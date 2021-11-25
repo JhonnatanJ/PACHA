@@ -22,28 +22,13 @@ namespace CapaPresentacion
             InitializeComponent();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             pnlFaseVisible = pnlFase1Submenu;
             pnlSubFaseVisible = pnlOpcActoresLocales;
             lblNombreComunidad.Text = (CacheLoginComunidad.nombre).ToUpper();
             OcultarTodosPaneles();
-            AbrirFormPanelContenedor(new frmPanelContenedor());
+            controlPaneles.AbrirUnicoForm(new frmPanelContenedor(), panelContenedor);
         }
 
         private void OcultarTodosPaneles()
@@ -62,101 +47,36 @@ namespace CapaPresentacion
             btnGestionUsuarios.BackColor = Color.Transparent;
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            
-        }
 
-        private void button5_Click(object sender, EventArgs e)
+        //                  ABRIR FORMS
+        private void label1_Click(object sender, EventArgs e)// Abrir Form Panel Contenedor
         {
-            
+            controlPaneles.AbrirUnicoForm(new frmPanelContenedor(), panelContenedor);
         }
-
-        private void AbrirFormActoresLocales(object formActoresLocales)
-        {
-            if (this.panelContenedor.Controls.Count > 0)
-                this.panelContenedor.Controls.RemoveAt(0);
-            Form fAL = formActoresLocales as Form;
-            fAL.TopLevel = false;
-            fAL.Dock = DockStyle.Fill;
-            this.panelContenedor.Controls.Add(fAL);
-            this.panelContenedor.Tag = fAL;
-            fAL.Show();
-        }
-
-        private void AbrirFormContexto(object formContexto)
-        {
-            if (this.panelContenedor.Controls.Count > 0)
-                this.panelContenedor.Controls.RemoveAt(0);
-            Form fCt = formContexto as Form;
-            fCt.TopLevel = false;
-            fCt.Dock = DockStyle.Fill;
-            this.panelContenedor.Controls.Add(fCt);
-            this.panelContenedor.Tag = fCt;
-            fCt.Show();
-        }
-
-        private void AbrirFormPanelContenedor(object formPanelContenedor)
-        {
-            if (this.panelContenedor.Controls.Count > 0)
-                this.panelContenedor.Controls.RemoveAt(0);
-            Form fPC = formPanelContenedor as Form;
-            fPC.TopLevel = false;
-            fPC.Dock = DockStyle.Fill;
-            this.panelContenedor.Controls.Add(fPC);
-            this.panelContenedor.Tag = fPC;
-            fPC.Show();
-        }
-
-        private void AbrirFormCambioClimatico(object formCambioClimatico)
-        {
-            if (this.panelContenedor.Controls.Count > 0)
-                this.panelContenedor.Controls.RemoveAt(0);
-            Form fCC = formCambioClimatico as Form;
-            fCC.TopLevel = false;
-            fCC.Dock = DockStyle.Fill;
-            this.panelContenedor.Controls.Add(fCC);
-            this.panelContenedor.Tag = fCC;
-            fCC.Show();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)// Abrir Form Actores Locales
         {
             OcultarTodosPaneles();
-            AbrirFormActoresLocales(new frmActoresLocales());
+            controlPaneles.AbrirUnicoForm(new frmActoresLocales(), panelContenedor);
         }
-
-        private void panelContenedor_Paint(object sender, PaintEventArgs e)
+        private void button3_Click(object sender, EventArgs e) // Abrir Form Visualizar Actores
         {
-
+            OcultarTodosPaneles();
+            controlPaneles.AbrirUnicoForm(new frmVisualizarActores(), panelContenedor);
         }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void button2_Click(object sender, EventArgs e)// Abrir Form Contexto
         {
-
+            OcultarTodosPaneles();
+            controlPaneles.AbrirUnicoForm(new frmContexto(), panelContenedor);
         }
-
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+        
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            OcultarTodosPaneles();
-            AbrirFormContexto(new frmContexto());
-        }
+       
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            OcultarTodosPaneles();
-            AbrirFormCambioClimatico(new frmVisualizarActores());
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            AbrirFormPanelContenedor(new frmPanelContenedor());
-        }
+        
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -237,12 +157,27 @@ namespace CapaPresentacion
 
         private void btnIngresarCambioClimatico_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-
-=======
             OcultarTodosPaneles();
-            AbrirFormCambioClimatico(new frmCambioClimatico());
->>>>>>> CambioClimatico
+            controlPaneles.AbrirUnicoForm(new frmCambioClimatico(), panelContenedor);
+        }
+
+        int lx, ly, sw, sh;//variables tamaño de ventana
+        private void pictureBox5_Click(object sender, EventArgs e)//pictureBox Maximizar/Minimizar
+        {
+            if (this.Size != Screen.PrimaryScreen.WorkingArea.Size)
+            {
+                lx = this.Location.X;
+                ly = this.Location.Y;
+                sw = this.Size.Width;
+                sh = this.Size.Height;
+                this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+                this.Location = Screen.PrimaryScreen.WorkingArea.Location;
+            }
+            else
+            {
+                this.Size = new Size(sw, sh);
+                this.Location = new Point(lx, ly);
+            }
         }
     }
 }

@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCambioClimatico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCambioClimatico.designer.cs">
+      <DependentUpon>frmCambioClimatico.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCrearComunidad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,7 @@
     <None Include="Resources\iconError1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\iconCerrar2.png" />
     <Content Include="Resources\iconError.png" />
     <None Include="Resources\user1.png" />
     <None Include="Resources\userlog.png" />
@@ -190,6 +197,10 @@
     <None Include="Resources\iconMostrar.png" />
     <None Include="Resources\iconMostrar2.png" />
     <None Include="Resources\iconForm.png" />
+    <None Include="Resources\iconMaximizar.png" />
+    <None Include="Resources\iconMaximizar2.png" />
+    <None Include="Resources\iconMinimizar2.png" />
+    <None Include="Resources\iconMaxMin.png" />
     <Content Include="Resources\x-mark-64.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

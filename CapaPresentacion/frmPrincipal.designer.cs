@@ -29,11 +29,7 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pbMinimizar = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.lblNombreComunidad = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panelFases = new System.Windows.Forms.Panel();
@@ -57,31 +53,37 @@ namespace CapaPresentacion
             this.btnVerCambioClimatico = new System.Windows.Forms.Button();
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.pnlOpcActoresLocales = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnVerActoresLocales = new System.Windows.Forms.Button();
             this.pnlOpcCambioClimatico = new System.Windows.Forms.Panel();
+            this.btnIngresarCambioClimatico = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnIngresarCambioClimatico = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnVerActoresLocales = new System.Windows.Forms.Button();
+            this.pbMaximizar = new System.Windows.Forms.PictureBox();
+            this.pbMinimizar = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.panelFases.SuspendLayout();
             this.pnlUsuarios.SuspendLayout();
             this.pnlFase3Submenu.SuspendLayout();
             this.pnlFase2Submenu.SuspendLayout();
             this.pnlFase1Submenu.SuspendLayout();
             this.pnlOpcActoresLocales.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlOpcCambioClimatico.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMaximizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
+            this.panel1.Controls.Add(this.pbMaximizar);
             this.panel1.Controls.Add(this.pbMinimizar);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.btnCerrar);
@@ -90,54 +92,19 @@ namespace CapaPresentacion
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1227, 68);
+            this.panel1.Size = new System.Drawing.Size(1227, 45);
             this.panel1.TabIndex = 0;
-            // 
-            // pbMinimizar
-            // 
-            this.pbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbMinimizar.Image = global::CapaPresentacion.Properties.Resources.iconMinimiz;
-            this.pbMinimizar.Location = new System.Drawing.Point(1151, 19);
-            this.pbMinimizar.Name = "pbMinimizar";
-            this.pbMinimizar.Size = new System.Drawing.Size(23, 9);
-            this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbMinimizar.TabIndex = 15;
-            this.pbMinimizar.TabStop = false;
-            this.pbMinimizar.Click += new System.EventHandler(this.pbMinimizar_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::CapaPresentacion.Properties.Resources.logoPNG;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 5);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(62, 59);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(1190, 11);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(25, 25);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrar.TabIndex = 4;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // lblNombreComunidad
             // 
-            this.lblNombreComunidad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lblNombreComunidad.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblNombreComunidad.AutoSize = true;
             this.lblNombreComunidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblNombreComunidad.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreComunidad.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreComunidad.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblNombreComunidad.Location = new System.Drawing.Point(574, 15);
+            this.lblNombreComunidad.Location = new System.Drawing.Point(591, 3);
             this.lblNombreComunidad.Name = "lblNombreComunidad";
-            this.lblNombreComunidad.Size = new System.Drawing.Size(149, 26);
+            this.lblNombreComunidad.Size = new System.Drawing.Size(225, 39);
             this.lblNombreComunidad.TabIndex = 3;
             this.lblNombreComunidad.Text = "COMUNIDAD";
             this.lblNombreComunidad.Click += new System.EventHandler(this.label2_Click);
@@ -148,7 +115,7 @@ namespace CapaPresentacion
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(71, 15);
+            this.label1.Location = new System.Drawing.Point(59, 5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 26);
             this.label1.TabIndex = 2;
@@ -169,13 +136,9 @@ namespace CapaPresentacion
             this.panelFases.Controls.Add(this.btnFase1);
             this.panelFases.Controls.Add(this.btnCambiarComunidad);
             this.panelFases.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelFases.Location = new System.Drawing.Point(0, 68);
+            this.panelFases.Location = new System.Drawing.Point(0, 45);
             this.panelFases.Name = "panelFases";
-<<<<<<< HEAD
-            this.panelFases.Size = new System.Drawing.Size(194, 703);
-=======
-            this.panelFases.Size = new System.Drawing.Size(194, 681);
->>>>>>> CambioClimatico
+            this.panelFases.Size = new System.Drawing.Size(194, 704);
             this.panelFases.TabIndex = 1;
             // 
             // pnlUsuarios
@@ -404,11 +367,7 @@ namespace CapaPresentacion
             this.btnCambiarComunidad.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(204)))), ((int)(((byte)(177)))));
             this.btnCambiarComunidad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(204)))), ((int)(((byte)(177)))));
             this.btnCambiarComunidad.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-<<<<<<< HEAD
-            this.btnCambiarComunidad.Location = new System.Drawing.Point(6, 632);
-=======
-            this.btnCambiarComunidad.Location = new System.Drawing.Point(6, 610);
->>>>>>> CambioClimatico
+            this.btnCambiarComunidad.Location = new System.Drawing.Point(6, 633);
             this.btnCambiarComunidad.Name = "btnCambiarComunidad";
             this.btnCambiarComunidad.Size = new System.Drawing.Size(182, 47);
             this.btnCambiarComunidad.TabIndex = 4;
@@ -448,15 +407,10 @@ namespace CapaPresentacion
             // panelContenedor
             // 
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(194, 68);
+            this.panelContenedor.Location = new System.Drawing.Point(194, 45);
             this.panelContenedor.Name = "panelContenedor";
-<<<<<<< HEAD
-            this.panelContenedor.Size = new System.Drawing.Size(1033, 703);
-=======
-            this.panelContenedor.Size = new System.Drawing.Size(1033, 681);
->>>>>>> CambioClimatico
+            this.panelContenedor.Size = new System.Drawing.Size(1033, 704);
             this.panelContenedor.TabIndex = 2;
-            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
             // pnlOpcActoresLocales
             // 
@@ -468,6 +422,53 @@ namespace CapaPresentacion
             this.pnlOpcActoresLocales.Name = "pnlOpcActoresLocales";
             this.pnlOpcActoresLocales.Size = new System.Drawing.Size(190, 71);
             this.pnlOpcActoresLocales.TabIndex = 9;
+            // 
+            // pnlOpcCambioClimatico
+            // 
+            this.pnlOpcCambioClimatico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(96)))), ((int)(((byte)(93)))));
+            this.pnlOpcCambioClimatico.Controls.Add(this.pictureBox4);
+            this.pnlOpcCambioClimatico.Controls.Add(this.pictureBox3);
+            this.pnlOpcCambioClimatico.Controls.Add(this.btnVerCambioClimatico);
+            this.pnlOpcCambioClimatico.Controls.Add(this.btnIngresarCambioClimatico);
+            this.pnlOpcCambioClimatico.Location = new System.Drawing.Point(195, 171);
+            this.pnlOpcCambioClimatico.Name = "pnlOpcCambioClimatico";
+            this.pnlOpcCambioClimatico.Size = new System.Drawing.Size(190, 71);
+            this.pnlOpcCambioClimatico.TabIndex = 9;
+            // 
+            // btnIngresarCambioClimatico
+            // 
+            this.btnIngresarCambioClimatico.BackColor = System.Drawing.Color.Transparent;
+            this.btnIngresarCambioClimatico.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnIngresarCambioClimatico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnIngresarCambioClimatico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIngresarCambioClimatico.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnIngresarCambioClimatico.Location = new System.Drawing.Point(0, 2);
+            this.btnIngresarCambioClimatico.Name = "btnIngresarCambioClimatico";
+            this.btnIngresarCambioClimatico.Size = new System.Drawing.Size(190, 34);
+            this.btnIngresarCambioClimatico.TabIndex = 1;
+            this.btnIngresarCambioClimatico.Text = "Ingresar Datos";
+            this.btnIngresarCambioClimatico.UseVisualStyleBackColor = false;
+            this.btnIngresarCambioClimatico.Click += new System.EventHandler(this.btnIngresarCambioClimatico_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::CapaPresentacion.Properties.Resources.iconMostrar;
+            this.pictureBox4.Location = new System.Drawing.Point(4, 40);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 4;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::CapaPresentacion.Properties.Resources.iconForm;
+            this.pictureBox3.Location = new System.Drawing.Point(4, 5);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -496,40 +497,55 @@ namespace CapaPresentacion
             this.btnVerActoresLocales.UseVisualStyleBackColor = false;
             this.btnVerActoresLocales.Click += new System.EventHandler(this.button3_Click);
             // 
-            // pnlOpcCambioClimatico
+            // pbMaximizar
             // 
-            this.pnlOpcCambioClimatico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(96)))), ((int)(((byte)(93)))));
-            this.pnlOpcCambioClimatico.Controls.Add(this.pictureBox4);
-            this.pnlOpcCambioClimatico.Controls.Add(this.pictureBox3);
-            this.pnlOpcCambioClimatico.Controls.Add(this.btnVerCambioClimatico);
-            this.pnlOpcCambioClimatico.Controls.Add(this.btnIngresarCambioClimatico);
-            this.pnlOpcCambioClimatico.Location = new System.Drawing.Point(195, 171);
-            this.pnlOpcCambioClimatico.Name = "pnlOpcCambioClimatico";
-            this.pnlOpcCambioClimatico.Size = new System.Drawing.Size(190, 71);
-            this.pnlOpcCambioClimatico.TabIndex = 9;
+            this.pbMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbMaximizar.Image = global::CapaPresentacion.Properties.Resources.iconMaxMin;
+            this.pbMaximizar.Location = new System.Drawing.Point(1167, 10);
+            this.pbMaximizar.Name = "pbMaximizar";
+            this.pbMaximizar.Size = new System.Drawing.Size(20, 20);
+            this.pbMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbMaximizar.TabIndex = 16;
+            this.pbMaximizar.TabStop = false;
+            this.pbMaximizar.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
-            // pictureBox4
+            // pbMinimizar
             // 
-            this.pictureBox4.Image = global::CapaPresentacion.Properties.Resources.iconMostrar;
-            this.pictureBox4.Location = new System.Drawing.Point(4, 40);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
+            this.pbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbMinimizar.Image = global::CapaPresentacion.Properties.Resources.iconMinimizar2;
+            this.pbMinimizar.Location = new System.Drawing.Point(1133, 12);
+            this.pbMinimizar.Name = "pbMinimizar";
+            this.pbMinimizar.Size = new System.Drawing.Size(23, 23);
+            this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbMinimizar.TabIndex = 15;
+            this.pbMinimizar.TabStop = false;
+            this.pbMinimizar.Click += new System.EventHandler(this.pbMinimizar_Click);
             // 
-            // pictureBox3
+            // pictureBox2
             // 
-            this.pictureBox3.Image = global::CapaPresentacion.Properties.Resources.iconForm;
-            this.pictureBox3.Location = new System.Drawing.Point(4, 5);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::CapaPresentacion.Properties.Resources.logoPNG;
+            this.pictureBox2.Location = new System.Drawing.Point(6, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(47, 45);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
-            // btnIngresarCambioClimatico
+            // btnCerrar
             // 
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrar.Image = global::CapaPresentacion.Properties.Resources.iconCerrar2;
+            this.btnCerrar.Location = new System.Drawing.Point(1199, 10);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(20, 20);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 4;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            //
+            //btnIngresarCambioClimatico
+            //
             this.btnIngresarCambioClimatico.BackColor = System.Drawing.Color.Transparent;
             this.btnIngresarCambioClimatico.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
             this.btnIngresarCambioClimatico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
@@ -542,20 +558,12 @@ namespace CapaPresentacion
             this.btnIngresarCambioClimatico.Text = "Ingresar Datos";
             this.btnIngresarCambioClimatico.UseVisualStyleBackColor = false;
             this.btnIngresarCambioClimatico.Click += new System.EventHandler(this.btnIngresarCambioClimatico_Click);
-<<<<<<< HEAD
-
-=======
->>>>>>> CambioClimatico
             // 
             // frmPrincipal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(1227, 771);
-=======
             this.ClientSize = new System.Drawing.Size(1227, 749);
->>>>>>> CambioClimatico
             this.Controls.Add(this.pnlOpcCambioClimatico);
             this.Controls.Add(this.pnlOpcActoresLocales);
             this.Controls.Add(this.panelContenedor);
@@ -569,19 +577,20 @@ namespace CapaPresentacion
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.panelFases.ResumeLayout(false);
             this.pnlUsuarios.ResumeLayout(false);
             this.pnlFase3Submenu.ResumeLayout(false);
             this.pnlFase2Submenu.ResumeLayout(false);
             this.pnlFase1Submenu.ResumeLayout(false);
             this.pnlOpcActoresLocales.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlOpcCambioClimatico.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMaximizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -621,6 +630,7 @@ namespace CapaPresentacion
         private System.Windows.Forms.Panel pnlUsuarios;
         private System.Windows.Forms.Button btnGestionUsuarios;
         private System.Windows.Forms.Button btnUsuarios;
+        private System.Windows.Forms.PictureBox pbMaximizar;
     }
 }
 
