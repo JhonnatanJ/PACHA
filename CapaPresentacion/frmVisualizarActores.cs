@@ -113,8 +113,7 @@ namespace CapaPresentacion
             ModeloActores actores = new ModeloActores();
             if (result == DialogResult.Yes)
             {
-                actores.ModificarActor(cboActores.Text, txtnombreActor.Text, txtsiglas.Text, txttipo.Text,
-                txtrelacionAnalisis.Text, txtcompetenciaRel.Text);
+                actores.ModificarActor(cboActores.Text, txtnombreActor.Text, txtsiglas.Text, txttipo.Text, txtrelacionAnalisis.Text, txtIncidencia.Text, txtcompetenciaRel.Text);
                 panelActor.Visible = false;
                 panelActor.Enabled = false;
                 cboActores.Enabled = true;

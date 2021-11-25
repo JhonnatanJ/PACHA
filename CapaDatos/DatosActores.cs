@@ -12,7 +12,7 @@ namespace CapaDatos
     public class DatosActores
     {
         
-        public void InsertarDatosActores(string nombreActor, string siglas, string tipo, string unidadAnalisis, string competenciasRel)
+        public void InsertarDatosActores(string nombreActor, string siglas, string tipo, string unidadAnalisis, string incidencias, string competenciasRel)
         {
             MySqlConnection conexionBD = Conexion.conexion();
             conexionBD.Open();
@@ -20,27 +20,28 @@ namespace CapaDatos
            
 
             comando.Connection = conexionBD;
-            comando.CommandText = "insert into actor(NOMBRE, IDCOMUNIDAD, SIGLAS, TIPO, RELACIONES, COMPETENCIASRELACIONADAS) " +
-                "VALUES (@nombreActor, @idcomunidad, @siglas, @tipo, @unidadAnalisis, @competenciasRel)";
+            comando.CommandText = "insert into actor(NOMBRE, IDCOMUNIDAD, SIGLAS, TIPO, RELACIONES, INCIDENCIAS, COMPETENCIASRELACIONADAS) " +
+                "VALUES (@nombreActor, @idcomunidad, @siglas, @tipo, @unidadAnalisis, @incidencias, @competenciasRel)";
             comando.Parameters.AddWithValue("@nombreActor", nombreActor);
             comando.Parameters.AddWithValue("@idcomunidad", CacheLoginComunidad.idcomunidad);
             comando.Parameters.AddWithValue("@siglas", siglas);
             comando.Parameters.AddWithValue("@tipo", tipo);
             comando.Parameters.AddWithValue("@unidadAnalisis", unidadAnalisis);
+            comando.Parameters.AddWithValue("@incidencias", incidencias);
             comando.Parameters.AddWithValue("@competenciasRel", competenciasRel);
             comando.CommandType = System.Data.CommandType.Text;
             comando.ExecuteNonQuery();
             conexionBD.Close();
         }
 
-        public void ModificarActor(string nombre, string nombreActor, string siglas, string tipo, string unidadAnalisis, string competenciasRel)
+        public void ModificarActor(string nombre, string nombreActor, string siglas, string tipo, string unidadAnalisis, string incidencias, string competenciasRel)
         {
             MySqlConnection conexionBD = Conexion.conexion();
             conexionBD.Open();
             MySqlCommand comando = new MySqlCommand();
 
             comando.Connection = conexionBD;
-            comando.CommandText = "update actor set NOMBRE=@nombreActor, SIGLAS=@siglas, TIPO=@tipo, RELACIONES=@relaciones," +
+            comando.CommandText = "update actor set NOMBRE=@nombreActor, SIGLAS=@siglas, TIPO=@tipo, INCIDENCIAS=@incidencias RELACIONES=@relaciones," +
                 "COMPETENCIASRELACIONADAS=@competenciasRel WHERE NOMBRE=@nombre AND IDCOMUNIDAD=@idcomunidad";
             comando.Parameters.AddWithValue("@nombre", nombre);
             comando.Parameters.AddWithValue("@nombreActor", nombreActor);
@@ -48,6 +49,7 @@ namespace CapaDatos
             comando.Parameters.AddWithValue("@siglas", siglas);
             comando.Parameters.AddWithValue("@tipo", tipo);
             comando.Parameters.AddWithValue("@relaciones", unidadAnalisis);
+            comando.Parameters.AddWithValue("@incidencias", incidencias);
             comando.Parameters.AddWithValue("@competenciasRel", competenciasRel);
             comando.CommandType = System.Data.CommandType.Text;
             comando.ExecuteNonQuery();
@@ -129,7 +131,8 @@ namespace CapaDatos
                     CacheActores.siglas = reader.GetString(3);
                     CacheActores.tipo = reader.GetString(4);
                     CacheActores.relaciones = reader.GetString(5);
-                    CacheActores.competenciasrelacionadas = reader.GetString(6);
+                    CacheActores.incidencias = reader.GetString(6);
+                    CacheActores.competenciasrelacionadas = reader.GetString(7);
                 }
             }
             conexionBD.Close();

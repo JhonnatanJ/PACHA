@@ -14,6 +14,7 @@ namespace CapaComun.Cache
         public static string siglas { get; set; }
         public static string tipo { get; set; }
         public static string relaciones { get; set; }
+        public static string incidencias { get; set; }
         public static string competenciasrelacionadas { get; set; }
     }
 }

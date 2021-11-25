@@ -28,8 +28,9 @@ namespace CapaPresentacion
         {
             txtnombreActor.Text = "";
             txtsiglas.Text = "";
-            txttipo.Text = "";
-            txtrelacionAnalisis.Text = "";
+            cboRelacionAnalisis.Text = "";
+            cboTipoActor.Text = "";
+            cboIncidencias.Text = "";
             txtcompetenciaRel.Text = "";
             txtnombreProyecto.Text = "";
             txtobjetivo.Text = "";
@@ -74,8 +75,9 @@ namespace CapaPresentacion
             Limpiar();
             txtnombreActor.Enabled = true;
             txtsiglas.Enabled = true;
-            txttipo.Enabled = true;
-            txtrelacionAnalisis.Enabled = true;
+            cboTipoActor.Enabled = true;
+            cboRelacionAnalisis.Enabled = true;
+            cboIncidencias.Enabled = true;
             txtcompetenciaRel.Enabled = true;
             btnGuardarActor.Enabled = true;
         }
@@ -96,17 +98,19 @@ namespace CapaPresentacion
             ModeloActores actores = new ModeloActores();
             String nombreActor = txtnombreActor.Text;
             String siglas = txtsiglas.Text;
-            String tipo = txttipo.Text;
-            String unidadAnalisis = txtrelacionAnalisis.Text;
+            String tipo = cboTipoActor.Text;
+            String unidadAnalisis = cboRelacionAnalisis.Text;
+            String incidencias = cboIncidencias.Text;
             String competenciasRel = txtcompetenciaRel.Text;
             if (result == DialogResult.Yes)
             {
-                actores.InsertarDatosActores(nombreActor, siglas, tipo, unidadAnalisis, competenciasRel);
+                actores.InsertarDatosActores(nombreActor, siglas, tipo, unidadAnalisis, incidencias, competenciasRel);
                 actores.CargarDatosActores(nombreActor);
                 txtnombreActor.Enabled = false;
                 txtsiglas.Enabled = false;
-                txttipo.Enabled = false;
-                txtrelacionAnalisis.Enabled = false;
+                cboTipoActor.Enabled = false;
+                cboRelacionAnalisis.Enabled = false;
+                cboIncidencias.Enabled = false;
                 txtcompetenciaRel.Enabled = false;
                 btnGuardarActor.Enabled = false;
             }
