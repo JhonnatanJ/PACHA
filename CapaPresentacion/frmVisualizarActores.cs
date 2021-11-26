@@ -34,9 +34,6 @@ namespace CapaPresentacion
             cboActores.DataSource = actores.CargarCombo();
             cboActores.DisplayMember = "NOMBRE";
             actores.CargarDatosActores(cboActores.Text);
-
-
-
             //dataGridView1.DataSource = obj.vistatabla();
 
         }

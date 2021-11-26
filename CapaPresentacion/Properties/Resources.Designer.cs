@@ -73,16 +73,6 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap iconCerrar2 {
-            get {
-                object obj = ResourceManager.GetObject("iconCerrar2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap iconError {
             get {
                 object obj = ResourceManager.GetObject("iconError", resourceCulture);
@@ -93,9 +83,9 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap iconForm {
+        internal static System.Drawing.Bitmap iconFormIngreso {
             get {
-                object obj = ResourceManager.GetObject("iconForm", resourceCulture);
+                object obj = ResourceManager.GetObject("iconFormIngreso", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,39 +103,9 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap iconMaximizar2 {
+        internal static System.Drawing.Bitmap iconMinimizar {
             get {
-                object obj = ResourceManager.GetObject("iconMaximizar2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap iconMaxMin {
-            get {
-                object obj = ResourceManager.GetObject("iconMaxMin", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap iconMinimiz {
-            get {
-                object obj = ResourceManager.GetObject("iconMinimiz", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap iconMinimizar2 {
-            get {
-                object obj = ResourceManager.GetObject("iconMinimizar2", resourceCulture);
+                object obj = ResourceManager.GetObject("iconMinimizar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +123,9 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap iconMostrar2 {
+        internal static System.Drawing.Bitmap iconUser {
             get {
-                object obj = ResourceManager.GetObject("iconMostrar2", resourceCulture);
+                object obj = ResourceManager.GetObject("iconUser", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +133,9 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap iconUser {
+        internal static System.Drawing.Bitmap logoGidac_PNG {
             get {
-                object obj = ResourceManager.GetObject("iconUser", resourceCulture);
+                object obj = ResourceManager.GetObject("logoGidac_PNG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

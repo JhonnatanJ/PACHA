@@ -9,14 +9,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace CapaPresentacion
 {
     public partial class frmPrincipal : Form
     {
-        ControlPaneles controlPaneles = new ControlPaneles();
-        Panel pnlFaseVisible;
-        Panel pnlSubFaseVisible;
         public frmPrincipal()
         {
             InitializeComponent();
@@ -28,137 +26,19 @@ namespace CapaPresentacion
             pnlSubFaseVisible = pnlOpcActoresLocales;
             lblNombreComunidad.Text = (CacheLoginComunidad.nombre).ToUpper();
             OcultarTodosPaneles();
-            controlPaneles.AbrirUnicoForm(new frmPanelContenedor(), panelContenedor);
         }
+        ControlPaneles controlPaneles = new ControlPaneles();//Instancia de la clase ControlPaneles
+        Panel pnlFaseVisible;//Variable PanelFase
+        Panel pnlSubFaseVisible;//Variable PanelSubFase
 
-        private void OcultarTodosPaneles()
-        {
-            pnlFase1Submenu.Visible = false;
-            btnFase1.BackColor = Color.Transparent;
-            pnlFase2Submenu.Visible = false;
-            btnFase2.BackColor = Color.Transparent;
-            pnlFase3Submenu.Visible = false;
-            btnFase3.BackColor = Color.Transparent;
-            pnlOpcActoresLocales.Visible = false;
-            btnActoresLocales.BackColor = Color.Transparent;
-            pnlOpcCambioClimatico.Visible = false;
-            btnCambioClimatico.BackColor = Color.Transparent;
-            pnlUsuarios.Visible = false;
-            btnGestionUsuarios.BackColor = Color.Transparent;
-        }
-
-
-        //                  ABRIR FORMS
-        private void label1_Click(object sender, EventArgs e)// Abrir Form Panel Contenedor
-        {
-            controlPaneles.AbrirUnicoForm(new frmPanelContenedor(), panelContenedor);
-        }
-        private void button1_Click(object sender, EventArgs e)// Abrir Form Actores Locales
-        {
-            OcultarTodosPaneles();
-            controlPaneles.AbrirUnicoForm(new frmActoresLocales(), panelContenedor);
-        }
-        private void button3_Click(object sender, EventArgs e) // Abrir Form Visualizar Actores
-        {
-            OcultarTodosPaneles();
-            controlPaneles.AbrirUnicoForm(new frmVisualizarActores(), panelContenedor);
-        }
-        private void button2_Click(object sender, EventArgs e)// Abrir Form Contexto
-        {
-            OcultarTodosPaneles();
-            controlPaneles.AbrirUnicoForm(new frmContexto(), panelContenedor);
-        }
-        private void btnCerrar_Click(object sender, EventArgs e)
+        #region Barra de Titulo
+        private void btnCerrar_Click(object sender, EventArgs e) //pictureBox Cerrar aplicación 
         {
             Application.Exit();
         }
-        
-
-       
-
-        
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-            OcultarTodosPaneles();
-        }
-
-        private void btnCambiarComunidad_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show("¿Está seguro de Cambiar de Comunidad?", "Advertencia", MessageBoxButtons.YesNo);
-
-            if (result == DialogResult.Yes)
-            {
-                frmLogComunidad logComunidad = new frmLogComunidad();
-                logComunidad.Show();
-                this.Hide();
-            }            
-        }
-
-        private void pbMinimizar_Click(object sender, EventArgs e)
+        private void pbMinimizar_Click(object sender, EventArgs e) //pictureBox Minimizar Aplicación
         {
             this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            if (pnlOpcActoresLocales.Visible == true)
-            {
-                pnlOpcActoresLocales.Visible = false;
-                btnActoresLocales.BackColor = Color.Transparent;
-
-            }
-            controlPaneles.MostrarOcultarPanel(pnlOpcCambioClimatico, btnCambioClimatico);
-        }
-
-        private void btnFase1_Click(object sender, EventArgs e)
-        {
-            OcultarTodosPaneles();
-            controlPaneles.MostrarOcultarPanel(pnlFase1Submenu, btnFase1);
-        }
-
-        private void btnActoresLocales_Click(object sender, EventArgs e)
-        {
-            if(pnlOpcCambioClimatico.Visible == true)
-            {
-                pnlOpcCambioClimatico.Visible = false;
-                btnCambioClimatico.BackColor = Color.Transparent;
-            }
-            controlPaneles.MostrarOcultarPanel(pnlOpcActoresLocales, btnActoresLocales);
-        }
-
-        private void btnFase2_Click(object sender, EventArgs e)
-        {            
-            OcultarTodosPaneles();
-            controlPaneles.MostrarOcultarPanel(pnlFase2Submenu,btnFase2);
-        }
-
-        private void btnUnidadTerritorial_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnFase3_Click(object sender, EventArgs e)
-        {
-            OcultarTodosPaneles();
-            controlPaneles.MostrarOcultarPanel(pnlFase3Submenu,btnFase3);
-        }
-
-        private void button1_Click_2(object sender, EventArgs e)
-        {
-            OcultarTodosPaneles();
-            controlPaneles.MostrarOcultarPanel(pnlUsuarios, btnUsuarios);
-        }
-
-        private void btnGestionUsuarios_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnIngresarCambioClimatico_Click(object sender, EventArgs e)
-        {
-            OcultarTodosPaneles();
-            controlPaneles.AbrirUnicoForm(new frmCambioClimatico(), panelContenedor);
         }
 
         int lx, ly, sw, sh;//variables tamaño de ventana
@@ -179,5 +59,136 @@ namespace CapaPresentacion
                 this.Location = new Point(lx, ly);
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)// label cerrar forms
+        {
+            OcultarTodosPaneles();
+        }
+
+        private void lblNombreComunidad_MouseDown(object sender, MouseEventArgs e)//Evento para Arrastrar Formulario
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]//Archivo para Arrastrar Formulario
+        private extern static void ReleaseCapture();//Funcion para Arrastrar Formulario
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]//Archivo para Arrastrar Formulario
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);//Funcion para Arrastrar Formulario
+        private void panel1_MouseDown(object sender, MouseEventArgs e)//Evento para arrastrar Formulario
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+        #endregion
+
+        #region Apertura de Forms        
+        private void btnCambiarComunidad_Click(object sender, EventArgs e) //Boton para Cambiar de Comunidad
+        {
+            DialogResult result = MessageBox.Show("¿Está seguro de Cambiar de Comunidad?", "Advertencia", MessageBoxButtons.YesNo);
+
+            if (result == DialogResult.Yes)
+            {
+                frmLogComunidad logComunidad = new frmLogComunidad();
+                logComunidad.Show();
+                this.Hide();
+            }
+        }
+
+        #region Fase 1
+        private void button1_Click(object sender, EventArgs e)// Abrir Form Actores Locales
+        {
+            OcultarTodosPaneles();
+            controlPaneles.AbrirUnicoForm(new frmActoresLocales(), panelContenedor);
+        }
+
+        private void button3_Click(object sender, EventArgs e) // Abrir Form Visualizar Actores
+        {
+            OcultarTodosPaneles();
+            controlPaneles.AbrirUnicoForm(new frmVisualizarActores(), panelContenedor);
+        }        
+
+        private void btnIngresarCambioClimatico_Click(object sender, EventArgs e)//Abrir Form Ingresar Cambio Climatico
+        {
+            OcultarTodosPaneles();
+            controlPaneles.AbrirUnicoForm(new frmCambioClimatico(), panelContenedor);
+        }
+
+        private void button2_Click(object sender, EventArgs e)// Abrir Form Mostrar Cambio Climatico
+        {
+            OcultarTodosPaneles();
+            controlPaneles.AbrirUnicoForm(new frmContexto(), panelContenedor);
+        }
+        #endregion
+
+
+        #endregion
+
+        #region Control Paneles
+        private void btnFase1_Click(object sender, EventArgs e)//Panel Fase 1
+        {
+            OcultarTodosPaneles();
+            controlPaneles.MostrarOcultarPanel(pnlFase1Submenu, btnFase1);
+        }
+        private void btnActoresLocales_Click(object sender, EventArgs e) //Panel Actores Locales
+        {
+            if (pnlOpcCambioClimatico.Visible == true)
+            {
+                pnlOpcCambioClimatico.Visible = false;
+                btnCambioClimatico.BackColor = Color.Transparent;
+            }
+            controlPaneles.MostrarOcultarPanel(pnlOpcActoresLocales, btnActoresLocales);
+        }
+        private void button1_Click_1(object sender, EventArgs e)//Panel Cambio Climatico
+        {
+            if (pnlOpcActoresLocales.Visible == true)
+            {
+                pnlOpcActoresLocales.Visible = false;
+                btnActoresLocales.BackColor = Color.Transparent;
+
+            }
+            controlPaneles.MostrarOcultarPanel(pnlOpcCambioClimatico, btnCambioClimatico);
+        }
+
+        private void btnFase2_Click(object sender, EventArgs e) // Panel Fase 2
+        {
+            OcultarTodosPaneles();
+            controlPaneles.MostrarOcultarPanel(pnlFase2Submenu, btnFase2);
+        }        
+
+        private void btnFase3_Click(object sender, EventArgs e) //Panel Fase 3
+        {
+            OcultarTodosPaneles();
+            controlPaneles.MostrarOcultarPanel(pnlFase3Submenu, btnFase3);
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)//Panel Reportes
+        {
+            OcultarTodosPaneles();
+            controlPaneles.MostrarOcultarPanel(pnlUsuarios, btnReportes);
+        }
+
+
+        #endregion
+
+        #region Funciones
+
+        private void OcultarTodosPaneles()//Funcion para Ocultar Paneles
+        {
+            pnlFase1Submenu.Visible = false;
+            btnFase1.BackColor = Color.Transparent;
+            pnlFase2Submenu.Visible = false;
+            btnFase2.BackColor = Color.Transparent;
+            pnlFase3Submenu.Visible = false;
+            btnFase3.BackColor = Color.Transparent;
+            pnlOpcActoresLocales.Visible = false;
+            btnActoresLocales.BackColor = Color.Transparent;
+            pnlOpcCambioClimatico.Visible = false;
+            btnCambioClimatico.BackColor = Color.Transparent;
+            pnlUsuarios.Visible = false;
+            btnReporte.BackColor = Color.Transparent;
+        }
+        
+        #endregion
     }
 }
