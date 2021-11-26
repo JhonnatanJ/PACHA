@@ -29,13 +29,18 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pbMaximizar = new System.Windows.Forms.PictureBox();
+            this.pbMinimizar = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.lblNombreComunidad = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panelFases = new System.Windows.Forms.Panel();
             this.pnlUsuarios = new System.Windows.Forms.Panel();
-            this.btnGestionUsuarios = new System.Windows.Forms.Button();
-            this.btnUsuarios = new System.Windows.Forms.Button();
+            this.btnReporte = new System.Windows.Forms.Button();
+            this.btnReportes = new System.Windows.Forms.Button();
             this.pnlFase3Submenu = new System.Windows.Forms.Panel();
             this.btnMediosEstrategiasVida = new System.Windows.Forms.Button();
             this.btnFase3 = new System.Windows.Forms.Button();
@@ -52,32 +57,33 @@ namespace CapaPresentacion
             this.btnIngresarActoresLocales = new System.Windows.Forms.Button();
             this.btnVerCambioClimatico = new System.Windows.Forms.Button();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pnlOpcActoresLocales = new System.Windows.Forms.Panel();
-            this.pnlOpcCambioClimatico = new System.Windows.Forms.Panel();
-            this.btnIngresarCambioClimatico = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnVerActoresLocales = new System.Windows.Forms.Button();
-            this.pbMaximizar = new System.Windows.Forms.PictureBox();
-            this.pbMinimizar = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.pnlOpcCambioClimatico = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnIngresarCambioClimatico = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMaximizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.panelFases.SuspendLayout();
             this.pnlUsuarios.SuspendLayout();
             this.pnlFase3Submenu.SuspendLayout();
             this.pnlFase2Submenu.SuspendLayout();
             this.pnlFase1Submenu.SuspendLayout();
+            this.panelContenedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.pnlOpcActoresLocales.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlOpcCambioClimatico.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMaximizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -94,6 +100,54 @@ namespace CapaPresentacion
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1227, 45);
             this.panel1.TabIndex = 0;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // pbMaximizar
+            // 
+            this.pbMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbMaximizar.Image = global::CapaPresentacion.Properties.Resources.iconMaximizar;
+            this.pbMaximizar.Location = new System.Drawing.Point(1167, 10);
+            this.pbMaximizar.Name = "pbMaximizar";
+            this.pbMaximizar.Size = new System.Drawing.Size(20, 20);
+            this.pbMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbMaximizar.TabIndex = 16;
+            this.pbMaximizar.TabStop = false;
+            this.pbMaximizar.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
+            // pbMinimizar
+            // 
+            this.pbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbMinimizar.Image = global::CapaPresentacion.Properties.Resources.iconMinimizar;
+            this.pbMinimizar.Location = new System.Drawing.Point(1133, 12);
+            this.pbMinimizar.Name = "pbMinimizar";
+            this.pbMinimizar.Size = new System.Drawing.Size(23, 23);
+            this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbMinimizar.TabIndex = 15;
+            this.pbMinimizar.TabStop = false;
+            this.pbMinimizar.Click += new System.EventHandler(this.pbMinimizar_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::CapaPresentacion.Properties.Resources.logoPNG;
+            this.pictureBox2.Location = new System.Drawing.Point(6, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(47, 45);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Location = new System.Drawing.Point(1199, 10);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(20, 20);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 4;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // lblNombreComunidad
             // 
@@ -107,7 +161,7 @@ namespace CapaPresentacion
             this.lblNombreComunidad.Size = new System.Drawing.Size(225, 39);
             this.lblNombreComunidad.TabIndex = 3;
             this.lblNombreComunidad.Text = "COMUNIDAD";
-            this.lblNombreComunidad.Click += new System.EventHandler(this.label2_Click);
+            this.lblNombreComunidad.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblNombreComunidad_MouseDown);
             // 
             // label1
             // 
@@ -117,7 +171,7 @@ namespace CapaPresentacion
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(59, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 26);
+            this.label1.Size = new System.Drawing.Size(114, 34);
             this.label1.TabIndex = 2;
             this.label1.Text = "PACHA";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -127,7 +181,7 @@ namespace CapaPresentacion
             this.panelFases.AutoScroll = true;
             this.panelFases.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(85)))), ((int)(((byte)(91)))));
             this.panelFases.Controls.Add(this.pnlUsuarios);
-            this.panelFases.Controls.Add(this.btnUsuarios);
+            this.panelFases.Controls.Add(this.btnReportes);
             this.panelFases.Controls.Add(this.pnlFase3Submenu);
             this.panelFases.Controls.Add(this.btnFase3);
             this.panelFases.Controls.Add(this.pnlFase2Submenu);
@@ -144,45 +198,44 @@ namespace CapaPresentacion
             // pnlUsuarios
             // 
             this.pnlUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(96)))), ((int)(((byte)(93)))));
-            this.pnlUsuarios.Controls.Add(this.btnGestionUsuarios);
+            this.pnlUsuarios.Controls.Add(this.btnReporte);
             this.pnlUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlUsuarios.Location = new System.Drawing.Point(0, 518);
             this.pnlUsuarios.Name = "pnlUsuarios";
             this.pnlUsuarios.Size = new System.Drawing.Size(194, 58);
             this.pnlUsuarios.TabIndex = 13;
             // 
-            // btnGestionUsuarios
+            // btnReporte
             // 
-            this.btnGestionUsuarios.BackColor = System.Drawing.Color.Transparent;
-            this.btnGestionUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnGestionUsuarios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnGestionUsuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnGestionUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGestionUsuarios.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGestionUsuarios.Location = new System.Drawing.Point(0, 0);
-            this.btnGestionUsuarios.Name = "btnGestionUsuarios";
-            this.btnGestionUsuarios.Size = new System.Drawing.Size(194, 55);
-            this.btnGestionUsuarios.TabIndex = 8;
-            this.btnGestionUsuarios.Text = "Gestionar Usuarios";
-            this.btnGestionUsuarios.UseVisualStyleBackColor = false;
-            this.btnGestionUsuarios.Click += new System.EventHandler(this.btnGestionUsuarios_Click);
+            this.btnReporte.BackColor = System.Drawing.Color.Transparent;
+            this.btnReporte.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnReporte.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnReporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReporte.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnReporte.Location = new System.Drawing.Point(0, 0);
+            this.btnReporte.Name = "btnReporte";
+            this.btnReporte.Size = new System.Drawing.Size(194, 55);
+            this.btnReporte.TabIndex = 8;
+            this.btnReporte.Text = "Reporte";
+            this.btnReporte.UseVisualStyleBackColor = false;
             // 
-            // btnUsuarios
+            // btnReportes
             // 
-            this.btnUsuarios.BackColor = System.Drawing.Color.Transparent;
-            this.btnUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnUsuarios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnUsuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsuarios.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsuarios.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnUsuarios.Location = new System.Drawing.Point(0, 459);
-            this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(194, 59);
-            this.btnUsuarios.TabIndex = 12;
-            this.btnUsuarios.Text = "USUARIOS";
-            this.btnUsuarios.UseVisualStyleBackColor = false;
-            this.btnUsuarios.Click += new System.EventHandler(this.button1_Click_2);
+            this.btnReportes.BackColor = System.Drawing.Color.Transparent;
+            this.btnReportes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnReportes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnReportes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReportes.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnReportes.Location = new System.Drawing.Point(0, 459);
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.Size = new System.Drawing.Size(194, 59);
+            this.btnReportes.TabIndex = 12;
+            this.btnReportes.Text = "REPORTES";
+            this.btnReportes.UseVisualStyleBackColor = false;
+            this.btnReportes.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // pnlFase3Submenu
             // 
@@ -282,7 +335,6 @@ namespace CapaPresentacion
             this.btnUnidadTerritorial.TabIndex = 4;
             this.btnUnidadTerritorial.Text = "2.1 Unidad Territorial";
             this.btnUnidadTerritorial.UseVisualStyleBackColor = false;
-            this.btnUnidadTerritorial.Click += new System.EventHandler(this.btnUnidadTerritorial_Click);
             // 
             // btnFase2
             // 
@@ -406,73 +458,49 @@ namespace CapaPresentacion
             // 
             // panelContenedor
             // 
+            this.panelContenedor.Controls.Add(this.pictureBox5);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(194, 45);
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(1033, 704);
             this.panelContenedor.TabIndex = 2;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox5.Image = global::CapaPresentacion.Properties.Resources.logoGidac_PNG;
+            this.pictureBox5.Location = new System.Drawing.Point(393, 203);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(213, 222);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
+            // 
             // pnlOpcActoresLocales
             // 
             this.pnlOpcActoresLocales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(96)))), ((int)(((byte)(93)))));
+            this.pnlOpcActoresLocales.Controls.Add(this.pictureBox6);
             this.pnlOpcActoresLocales.Controls.Add(this.pictureBox1);
             this.pnlOpcActoresLocales.Controls.Add(this.btnIngresarActoresLocales);
             this.pnlOpcActoresLocales.Controls.Add(this.btnVerActoresLocales);
-            this.pnlOpcActoresLocales.Location = new System.Drawing.Point(195, 127);
+            this.pnlOpcActoresLocales.Location = new System.Drawing.Point(195, 105);
             this.pnlOpcActoresLocales.Name = "pnlOpcActoresLocales";
             this.pnlOpcActoresLocales.Size = new System.Drawing.Size(190, 71);
             this.pnlOpcActoresLocales.TabIndex = 9;
             // 
-            // pnlOpcCambioClimatico
+            // pictureBox6
             // 
-            this.pnlOpcCambioClimatico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(96)))), ((int)(((byte)(93)))));
-            this.pnlOpcCambioClimatico.Controls.Add(this.pictureBox4);
-            this.pnlOpcCambioClimatico.Controls.Add(this.pictureBox3);
-            this.pnlOpcCambioClimatico.Controls.Add(this.btnVerCambioClimatico);
-            this.pnlOpcCambioClimatico.Controls.Add(this.btnIngresarCambioClimatico);
-            this.pnlOpcCambioClimatico.Location = new System.Drawing.Point(195, 171);
-            this.pnlOpcCambioClimatico.Name = "pnlOpcCambioClimatico";
-            this.pnlOpcCambioClimatico.Size = new System.Drawing.Size(190, 71);
-            this.pnlOpcCambioClimatico.TabIndex = 9;
-            // 
-            // btnIngresarCambioClimatico
-            // 
-            this.btnIngresarCambioClimatico.BackColor = System.Drawing.Color.Transparent;
-            this.btnIngresarCambioClimatico.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnIngresarCambioClimatico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnIngresarCambioClimatico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIngresarCambioClimatico.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnIngresarCambioClimatico.Location = new System.Drawing.Point(0, 2);
-            this.btnIngresarCambioClimatico.Name = "btnIngresarCambioClimatico";
-            this.btnIngresarCambioClimatico.Size = new System.Drawing.Size(190, 34);
-            this.btnIngresarCambioClimatico.TabIndex = 1;
-            this.btnIngresarCambioClimatico.Text = "Ingresar Datos";
-            this.btnIngresarCambioClimatico.UseVisualStyleBackColor = false;
-            this.btnIngresarCambioClimatico.Click += new System.EventHandler(this.btnIngresarCambioClimatico_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::CapaPresentacion.Properties.Resources.iconMostrar;
-            this.pictureBox4.Location = new System.Drawing.Point(4, 40);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::CapaPresentacion.Properties.Resources.iconForm;
-            this.pictureBox3.Location = new System.Drawing.Point(4, 5);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
+            this.pictureBox6.Image = global::CapaPresentacion.Properties.Resources.iconMostrar;
+            this.pictureBox6.Location = new System.Drawing.Point(3, 40);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 4;
+            this.pictureBox6.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.iconForm;
+            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.iconFormIngreso;
             this.pictureBox1.Location = new System.Drawing.Point(4, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 25);
@@ -487,7 +515,6 @@ namespace CapaPresentacion
             this.btnVerActoresLocales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
             this.btnVerActoresLocales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerActoresLocales.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnVerActoresLocales.Image = global::CapaPresentacion.Properties.Resources.iconMostrar2;
             this.btnVerActoresLocales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVerActoresLocales.Location = new System.Drawing.Point(0, 35);
             this.btnVerActoresLocales.Name = "btnVerActoresLocales";
@@ -497,55 +524,40 @@ namespace CapaPresentacion
             this.btnVerActoresLocales.UseVisualStyleBackColor = false;
             this.btnVerActoresLocales.Click += new System.EventHandler(this.button3_Click);
             // 
-            // pbMaximizar
+            // pnlOpcCambioClimatico
             // 
-            this.pbMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbMaximizar.Image = global::CapaPresentacion.Properties.Resources.iconMaxMin;
-            this.pbMaximizar.Location = new System.Drawing.Point(1167, 10);
-            this.pbMaximizar.Name = "pbMaximizar";
-            this.pbMaximizar.Size = new System.Drawing.Size(20, 20);
-            this.pbMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbMaximizar.TabIndex = 16;
-            this.pbMaximizar.TabStop = false;
-            this.pbMaximizar.Click += new System.EventHandler(this.pictureBox5_Click);
+            this.pnlOpcCambioClimatico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(96)))), ((int)(((byte)(93)))));
+            this.pnlOpcCambioClimatico.Controls.Add(this.pictureBox4);
+            this.pnlOpcCambioClimatico.Controls.Add(this.pictureBox3);
+            this.pnlOpcCambioClimatico.Controls.Add(this.btnVerCambioClimatico);
+            this.pnlOpcCambioClimatico.Controls.Add(this.btnIngresarCambioClimatico);
+            this.pnlOpcCambioClimatico.Location = new System.Drawing.Point(196, 145);
+            this.pnlOpcCambioClimatico.Name = "pnlOpcCambioClimatico";
+            this.pnlOpcCambioClimatico.Size = new System.Drawing.Size(190, 71);
+            this.pnlOpcCambioClimatico.TabIndex = 9;
             // 
-            // pbMinimizar
+            // pictureBox4
             // 
-            this.pbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbMinimizar.Image = global::CapaPresentacion.Properties.Resources.iconMinimizar2;
-            this.pbMinimizar.Location = new System.Drawing.Point(1133, 12);
-            this.pbMinimizar.Name = "pbMinimizar";
-            this.pbMinimizar.Size = new System.Drawing.Size(23, 23);
-            this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbMinimizar.TabIndex = 15;
-            this.pbMinimizar.TabStop = false;
-            this.pbMinimizar.Click += new System.EventHandler(this.pbMinimizar_Click);
+            this.pictureBox4.Image = global::CapaPresentacion.Properties.Resources.iconMostrar;
+            this.pictureBox4.Location = new System.Drawing.Point(4, 40);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 4;
+            this.pictureBox4.TabStop = false;
             // 
-            // pictureBox2
+            // pictureBox3
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::CapaPresentacion.Properties.Resources.logoPNG;
-            this.pictureBox2.Location = new System.Drawing.Point(6, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(47, 45);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.pictureBox3.Image = global::CapaPresentacion.Properties.Resources.iconFormIngreso;
+            this.pictureBox3.Location = new System.Drawing.Point(4, 5);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
             // 
-            // btnCerrar
+            // btnIngresarCambioClimatico
             // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCerrar.Image = global::CapaPresentacion.Properties.Resources.iconCerrar2;
-            this.btnCerrar.Location = new System.Drawing.Point(1199, 10);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(20, 20);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrar.TabIndex = 4;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            //
-            //btnIngresarCambioClimatico
-            //
             this.btnIngresarCambioClimatico.BackColor = System.Drawing.Color.Transparent;
             this.btnIngresarCambioClimatico.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
             this.btnIngresarCambioClimatico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
@@ -577,20 +589,23 @@ namespace CapaPresentacion
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMaximizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.panelFases.ResumeLayout(false);
             this.pnlUsuarios.ResumeLayout(false);
             this.pnlFase3Submenu.ResumeLayout(false);
             this.pnlFase2Submenu.ResumeLayout(false);
             this.pnlFase1Submenu.ResumeLayout(false);
+            this.panelContenedor.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.pnlOpcActoresLocales.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlOpcCambioClimatico.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMaximizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -628,9 +643,11 @@ namespace CapaPresentacion
         private System.Windows.Forms.Panel pnlFase3Submenu;
         private System.Windows.Forms.Button btnMediosEstrategiasVida;
         private System.Windows.Forms.Panel pnlUsuarios;
-        private System.Windows.Forms.Button btnGestionUsuarios;
-        private System.Windows.Forms.Button btnUsuarios;
+        private System.Windows.Forms.Button btnReporte;
+        private System.Windows.Forms.Button btnReportes;
         private System.Windows.Forms.PictureBox pbMaximizar;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }
 

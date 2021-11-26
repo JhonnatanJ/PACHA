@@ -118,6 +118,9 @@
     <Compile Include="PanelControl\ControlPaneles.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCambioClimatico.resx">
+      <DependentUpon>frmCambioClimatico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCrearComunidad.resx">
       <DependentUpon>frmCrearComunidad.cs</DependentUpon>
     </EmbeddedResource>
@@ -190,7 +193,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\iconCerrar2.png" />
-    <Content Include="Resources\iconError.png" />
+    <None Include="Resources\iconCerrar1.png" />
+    <None Include="Resources\iconError.png" />
     <None Include="Resources\user1.png" />
     <None Include="Resources\userlog.png" />
     <None Include="Resources\iconUser.png" />
@@ -201,7 +205,19 @@
     <None Include="Resources\iconMaximizar2.png" />
     <None Include="Resources\iconMinimizar2.png" />
     <None Include="Resources\iconMaxMin.png" />
+    <None Include="Resources\logoGidac_PNG.png" />
+    <None Include="Resources\iconMostrar3.png" />
+    <None Include="Resources\iconMinimizar.png" />
+    <None Include="Resources\iconForm1.png" />
+    <None Include="Resources\iconMostrar1.png" />
+    <None Include="Resources\iconForm2.png" />
+    <None Include="Resources\iconFormIngreso.png" />
+    <None Include="Resources\iconMostrar4.png" />
     <Content Include="Resources\x-mark-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms Fase 2\" />
+    <Folder Include="Forms Fase 3\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
