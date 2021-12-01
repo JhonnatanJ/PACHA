@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CapaDatos;
+using System.Data;
 
 namespace CapaNegocio
 {
@@ -14,5 +15,18 @@ namespace CapaNegocio
         {
             datosClima.InsertarDatosClimatico(lugar, cambioPotencial, amenaza, impactoPrevisto, riesgoClimatico, estratSugerida, politAplicada);
         }
+
+        public DataTable CargarDGVclima()
+        {
+            return datosClima.CargarDGVclima();
+        }
+
+        public void EliminarClima(string item)
+        {
+            datosClima.EliminarClima(item);
+        }
     }
+
+   
+
 }
