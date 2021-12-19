@@ -95,6 +95,8 @@ namespace CapaPresentacion
             }
         }
 
+        #endregion
+
         #region Fase 1
         private void button1_Click(object sender, EventArgs e)// Abrir Form Actores Locales
         {
@@ -121,6 +123,42 @@ namespace CapaPresentacion
         }
         #endregion
 
+        #region Fase 2
+        private void btnIngresarUnidadTerritorial_Click(object sender, EventArgs e) //Panel Unidad Territorial 
+        {
+            OcultarTodosPaneles();
+            controlPaneles.AbrirUnicoForm(new Forms_Fase_2.frmIngresarUnidadTerritorial(), panelContenedor);
+        }
+
+        private void btnVisualizarUnidadTerritorial_Click(object sender, EventArgs e)
+        {
+            OcultarTodosPaneles();
+            controlPaneles.AbrirUnicoForm(new Forms_Fase_2.frmVerUnidadTerritorial(), panelContenedor);
+        }
+
+        private void btnIngresarAnalisisSocioambiental_Click(object sender, EventArgs e)
+        {
+            OcultarTodosPaneles();
+            controlPaneles.AbrirUnicoForm(new Forms_Fase_2.frmIngresarAnalisisSocioambiental(), panelContenedor);
+        }
+
+        private void btnVerAnalisisSocioambiental_Click(object sender, EventArgs e)
+        {
+            OcultarTodosPaneles();
+            controlPaneles.AbrirUnicoForm(new Forms_Fase_2.frmVerAnalisisSocioambiental(), panelContenedor);
+        }
+
+        private void btnIngresarRiesgoClimatico_Click(object sender, EventArgs e)
+        {
+            OcultarTodosPaneles();
+            controlPaneles.AbrirUnicoForm(new Forms_Fase_2.frmIngresarRiesgoClimatico(), panelContenedor);
+        }
+
+        private void btnVerRiesgoClimatico_Click(object sender, EventArgs e)
+        {
+            OcultarTodosPaneles();
+            controlPaneles.AbrirUnicoForm(new Forms_Fase_2.frmVerRiesgoClimatico(), panelContenedor);
+        }
 
         #endregion
 
@@ -156,6 +194,57 @@ namespace CapaPresentacion
             controlPaneles.MostrarOcultarPanel(pnlFase2Submenu, btnFase2);
         }        
 
+        private void btnUnidadTerritorial_Click(object sender, EventArgs e)
+        {
+            if (pnlAnalisisSocioambiental.Visible == true)
+            {
+                pnlAnalisisSocioambiental.Visible = false;
+                btnAnalisisSocioambiental.BackColor = Color.Transparent;
+            }
+
+            if (pnlRiesgoClimatico.Visible == true)
+            {
+                pnlRiesgoClimatico.Visible = false;
+                btnRiesgoClimatico.BackColor = Color.Transparent;
+            }
+
+            controlPaneles.MostrarOcultarPanel(pnlUnidadTerritorial, btnUnidadTerritorial);
+        }
+
+        private void btnAnalisisSocioambiental_Click(object sender, EventArgs e)
+        {
+            if (pnlUnidadTerritorial.Visible == true)
+            {
+                pnlUnidadTerritorial.Visible = false;
+                btnUnidadTerritorial.BackColor = Color.Transparent;
+            }
+
+            if (pnlRiesgoClimatico.Visible == true)
+            {
+                pnlRiesgoClimatico.Visible = false;
+                btnRiesgoClimatico.BackColor = Color.Transparent;
+            }
+
+            controlPaneles.MostrarOcultarPanel(pnlAnalisisSocioambiental, btnAnalisisSocioambiental);
+        }
+
+        private void btnRiesgoClimatico_Click(object sender, EventArgs e)
+        {
+            if (pnlAnalisisSocioambiental.Visible == true)
+            {
+                pnlAnalisisSocioambiental.Visible = false;
+                btnAnalisisSocioambiental.BackColor = Color.Transparent;
+            }
+
+            if (pnlUnidadTerritorial.Visible == true)
+            {
+                pnlUnidadTerritorial.Visible = false;
+                btnUnidadTerritorial.BackColor = Color.Transparent;
+            }
+
+            controlPaneles.MostrarOcultarPanel(pnlRiesgoClimatico, btnRiesgoClimatico);
+        }        
+
         private void btnFase3_Click(object sender, EventArgs e) //Panel Fase 3
         {
             OcultarTodosPaneles();
@@ -168,6 +257,7 @@ namespace CapaPresentacion
             controlPaneles.MostrarOcultarPanel(pnlUsuarios, btnReportes);
         }
 
+        
 
         #endregion
 
@@ -187,6 +277,12 @@ namespace CapaPresentacion
             btnCambioClimatico.BackColor = Color.Transparent;
             pnlUsuarios.Visible = false;
             btnReporte.BackColor = Color.Transparent;
+            pnlUnidadTerritorial.Visible = false;
+            btnUnidadTerritorial.BackColor = Color.Transparent;
+            pnlAnalisisSocioambiental.Visible = false;
+            btnAnalisisSocioambiental.BackColor = Color.Transparent;
+            pnlRiesgoClimatico.Visible = false;
+            btnRiesgoClimatico.BackColor = Color.Transparent;
         }
         
         #endregion

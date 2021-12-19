@@ -61,6 +61,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms Fase 2\frmIngresarAnalisisSocioambiental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Fase 2\frmIngresarAnalisisSocioambiental.Designer.cs">
+      <DependentUpon>frmIngresarAnalisisSocioambiental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Fase 2\frmIngresarRiesgoClimatico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Fase 2\frmIngresarRiesgoClimatico.Designer.cs">
+      <DependentUpon>frmIngresarRiesgoClimatico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Fase 2\frmIngresarUnidadTerritorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Fase 2\frmIngresarUnidadTerritorial.Designer.cs">
+      <DependentUpon>frmIngresarUnidadTerritorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Fase 2\frmVerAnalisisSocioambiental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Fase 2\frmVerAnalisisSocioambiental.Designer.cs">
+      <DependentUpon>frmVerAnalisisSocioambiental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Fase 2\frmVerRiesgoClimatico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Fase 2\frmVerRiesgoClimatico.Designer.cs">
+      <DependentUpon>frmVerRiesgoClimatico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Fase 2\frmVerUnidadTerritorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Fase 2\frmVerUnidadTerritorial.Designer.cs">
+      <DependentUpon>frmVerUnidadTerritorial.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCambioClimatico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +154,24 @@
     <Compile Include="PanelControl\ControlPaneles.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms Fase 2\frmIngresarAnalisisSocioambiental.resx">
+      <DependentUpon>frmIngresarAnalisisSocioambiental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Fase 2\frmIngresarRiesgoClimatico.resx">
+      <DependentUpon>frmIngresarRiesgoClimatico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Fase 2\frmIngresarUnidadTerritorial.resx">
+      <DependentUpon>frmIngresarUnidadTerritorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Fase 2\frmVerAnalisisSocioambiental.resx">
+      <DependentUpon>frmVerAnalisisSocioambiental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Fase 2\frmVerRiesgoClimatico.resx">
+      <DependentUpon>frmVerRiesgoClimatico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Fase 2\frmVerUnidadTerritorial.resx">
+      <DependentUpon>frmVerUnidadTerritorial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCambioClimatico.resx">
       <DependentUpon>frmCambioClimatico.cs</DependentUpon>
     </EmbeddedResource>
@@ -216,7 +270,6 @@
     <Content Include="Resources\x-mark-64.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Forms Fase 2\" />
     <Folder Include="Forms Fase 3\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
