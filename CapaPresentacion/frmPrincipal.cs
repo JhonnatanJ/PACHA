@@ -21,7 +21,7 @@ namespace CapaPresentacion
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
+        { 
             pnlFaseVisible = pnlFase1Submenu;
             pnlSubFaseVisible = pnlOpcActoresLocales;
             lblNombreComunidad.Text = (CacheLoginComunidad.nombre).ToUpper();

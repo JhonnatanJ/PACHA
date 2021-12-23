@@ -11,7 +11,8 @@ namespace CapaDatos
 {
     public class DatosCambioClima
     {
-        public void InsertarDatosClimatico(string lugar, string cambioPotencial, string amenaza, string impactoPrevisto, string riesgoClimatico, string estratSugerida, string politAplicada)
+        public void InsertarDatosClimatico(string lugar, string cambioPotencial, string amenaza, string impactoPrevisto, 
+            string riesgoClimatico, string estratSugerida, string politAplicada)
         {
             MySqlConnection conexionBD = Conexion.conexion();
             conexionBD.Open();
@@ -19,8 +20,11 @@ namespace CapaDatos
 
 
             comando.Connection = conexionBD;
-            comando.CommandText = "insert into cambioclimatico(LUGAR, CAMBIOPOTENCIAL, AMENAZA, IMPACTOPREVISTO, RIESGOCLIMATICO, ESTRATEGIASUGERIDA, POLITICAAPLICADA, IDCOMUNIDAD)" +
-                "VALUES (@lugar, @cambioPotencial, @amenaza, @impactoPrevisto, @riesgoClimatico, @estratSugerida, @politAplicada, @idcomunidad)";
+            comando.CommandText = "insert into cambioclimatico(LUGAR, CAMBIOPOTENCIAL, AMENAZA, IMPACTOPREVISTO, " +
+                "RIESGOCLIMATICO, ESTRATEGIASUGERIDA, POLITICAAPLICADA, IDCOMUNIDAD)" +
+                "VALUES (@lugar, @cambioPotencial, @amenaza, @impactoPrevisto, @riesgoClimatico, " +
+                "@estratSugerida, @politAplicada, @idcomunidad)";
+
             comando.Parameters.AddWithValue("@lugar", lugar);
             comando.Parameters.AddWithValue("@cambioPotencial", cambioPotencial);
             comando.Parameters.AddWithValue("@amenaza", amenaza);
@@ -41,7 +45,11 @@ namespace CapaDatos
             DataTable dt = new DataTable();
 
             comando.Connection = conexionBD;
-            comando.CommandText = "select IDCAMBIOCLIMATICO as Item,LUGAR as Lugar,CAMBIOPOTENCIAL as 'Cambios Potenciales',AMENAZA as Amenazas,IMPACTOPREVISTO as 'Impactos Previstos',RIESGOCLIMATICO as 'Riesgo Climatico',ESTRATEGIASUGERIDA as 'Estrategias Sugeridas',POLITICAAPLICADA as 'Politicas en marcha' from cambioclimatico where IDCOMUNIDAD=@idcomunidad";
+            comando.CommandText = "select IDCAMBIOCLIMATICO as Item,LUGAR as Lugar,CAMBIOPOTENCIAL as 'Cambios Potenciales'," +
+                "AMENAZA as Amenazas,IMPACTOPREVISTO as 'Impactos Previstos',RIESGOCLIMATICO as 'Riesgo Climatico'," +
+                "ESTRATEGIASUGERIDA as 'Estrategias Sugeridas',POLITICAAPLICADA as 'Politicas en marcha' from cambioclimatico " +
+                "where IDCOMUNIDAD=@idcomunidad";
+
             comando.Parameters.AddWithValue("@idcomunidad", CacheLoginComunidad.idcomunidad);
             comando.CommandType = System.Data.CommandType.Text;
             MySqlDataAdapter da = new MySqlDataAdapter(comando);
