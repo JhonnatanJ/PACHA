@@ -29,6 +29,16 @@ namespace CapaPresentacion.Forms_Fase_2
             dgvUbAd.DataSource = unidadA.CargarDGV();
             ModeloLimites limites = new ModeloLimites();
             dgvLimites.DataSource = limites.CargarDGV();
+            ModeloAsentamiento asen = new ModeloAsentamiento();
+            dgvAsen.DataSource = asen.CargarDGV();
+            ModeloHitos hito = new ModeloHitos();
+            dgvHitos.DataSource = hito.CargarDGV();
+            ModeloUbicHidro ubich = new ModeloUbicHidro();
+            dgvUbGeo.DataSource = ubich.CargarDGV();
+            ModeloEco eco = new ModeloEco();
+            dgvEco.DataSource = eco.CargarDGV();
+            ModeloTiempo tiempo = new ModeloTiempo();
+            dgvTiempos.DataSource = tiempo.CargarDGV();
         }
     }
 }

@@ -174,6 +174,7 @@
             this.btnInsHito.TabIndex = 14;
             this.btnInsHito.Text = "Insertar";
             this.btnInsHito.UseVisualStyleBackColor = false;
+            this.btnInsHito.Click += new System.EventHandler(this.btnInsHito_Click);
             // 
             // txtNombre
             // 

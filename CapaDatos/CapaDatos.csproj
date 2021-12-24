@@ -64,7 +64,12 @@
     <Compile Include="Conexion.cs" />
     <Compile Include="DatosComunidadLog.cs" />
     <Compile Include="DatosUsuario.cs" />
+    <Compile Include="Fase2\DatosAsentamiento.cs" />
+    <Compile Include="Fase2\DatosEco.cs" />
+    <Compile Include="Fase2\DatosHitos.cs" />
     <Compile Include="Fase2\DatosLimites.cs" />
+    <Compile Include="Fase2\DatosTiempos.cs" />
+    <Compile Include="Fase2\DatosUbicHidro.cs" />
     <Compile Include="Fase2\DatosUnidadTerritorial.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

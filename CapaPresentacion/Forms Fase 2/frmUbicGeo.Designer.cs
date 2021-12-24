@@ -177,6 +177,7 @@
             this.btnInsert.TabIndex = 15;
             this.btnInsert.Text = "Insertar";
             this.btnInsert.UseVisualStyleBackColor = false;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // label3
             // 
@@ -225,9 +226,9 @@
             this.lblGuia.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblGuia.Location = new System.Drawing.Point(130, 3);
             this.lblGuia.Name = "lblGuia";
-            this.lblGuia.Size = new System.Drawing.Size(321, 30);
+            this.lblGuia.Size = new System.Drawing.Size(342, 30);
             this.lblGuia.TabIndex = 12;
-            this.lblGuia.Text = "UBICACIÓN GEOGRAFICA";
+            this.lblGuia.Text = "UBICACIÓN HIDROGRAFICA";
             // 
             // frmUbicGeo
             // 
