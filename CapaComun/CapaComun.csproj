@@ -45,6 +45,7 @@
     <Compile Include="Cache\CacheActores.cs" />
     <Compile Include="Cache\CacheLoginComunidad.cs" />
     <Compile Include="Cache\CacheLoginUsuario.cs" />
+    <Compile Include="Cache\CacheSector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

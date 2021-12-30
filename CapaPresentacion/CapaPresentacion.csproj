@@ -62,6 +62,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms Fase 2\frmBiodiversidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Fase 2\frmBiodiversidad.Designer.cs">
+      <DependentUpon>frmBiodiversidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Fase 2\frmEventosClimaticos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Fase 2\frmEventosClimaticos.Designer.cs">
+      <DependentUpon>frmEventosClimaticos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Fase 2\frmSector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Fase 2\frmSector.Designer.cs">
+      <DependentUpon>frmSector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Fase 2\frmRecursosHidricos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Fase 2\frmRecursosHidricos.Designer.cs">
+      <DependentUpon>frmRecursosHidricos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms Fase 2\frmAsentamientos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +209,18 @@
     <Compile Include="PanelControl\ControlPaneles.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms Fase 2\frmBiodiversidad.resx">
+      <DependentUpon>frmBiodiversidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Fase 2\frmEventosClimaticos.resx">
+      <DependentUpon>frmEventosClimaticos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Fase 2\frmSector.resx">
+      <DependentUpon>frmSector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Fase 2\frmRecursosHidricos.resx">
+      <DependentUpon>frmRecursosHidricos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms Fase 2\frmAsentamientos.resx">
       <DependentUpon>frmAsentamientos.cs</DependentUpon>
     </EmbeddedResource>
