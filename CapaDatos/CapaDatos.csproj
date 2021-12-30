@@ -65,9 +65,15 @@
     <Compile Include="DatosComunidadLog.cs" />
     <Compile Include="DatosUsuario.cs" />
     <Compile Include="Fase2\DatosAsentamiento.cs" />
+    <Compile Include="Fase2\DatosBiodiversidad.cs" />
+    <Compile Include="Fase2\DatosCurvaDemo.cs" />
     <Compile Include="Fase2\DatosEco.cs" />
+    <Compile Include="Fase2\DatosEventoClimatico.cs" />
     <Compile Include="Fase2\DatosHitos.cs" />
     <Compile Include="Fase2\DatosLimites.cs" />
+    <Compile Include="Fase2\DatosOcuTerritorio.cs" />
+    <Compile Include="Fase2\DatosRecursoHidrico.cs" />
+    <Compile Include="Fase2\DatosSector.cs" />
     <Compile Include="Fase2\DatosTiempos.cs" />
     <Compile Include="Fase2\DatosUbicHidro.cs" />
     <Compile Include="Fase2\DatosUnidadTerritorial.cs" />

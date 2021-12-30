@@ -43,9 +43,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Fase2\ModeloAsentamiento.cs" />
+    <Compile Include="Fase2\ModeloBiodiversidad.cs" />
+    <Compile Include="Fase2\ModeloCurvaDemo.cs" />
     <Compile Include="Fase2\ModeloEco.cs" />
+    <Compile Include="Fase2\ModeloEventoClimatico.cs" />
     <Compile Include="Fase2\ModeloHitos.cs" />
     <Compile Include="Fase2\ModeloLimites.cs" />
+    <Compile Include="Fase2\ModeloOcuTerritorio.cs" />
+    <Compile Include="Fase2\ModeloRecursoHidrico.cs" />
+    <Compile Include="Fase2\ModeloSector.cs" />
     <Compile Include="Fase2\ModeloTiempo.cs" />
     <Compile Include="Fase2\ModeloUbicHidro.cs" />
     <Compile Include="Fase2\ModeloUnidadTerritorial.cs" />
