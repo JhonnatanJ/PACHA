@@ -152,6 +152,18 @@
     <Compile Include="Forms Fase 2\frmVerUnidadTerritorial.Designer.cs">
       <DependentUpon>frmVerUnidadTerritorial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms Fase 3\frmVisualizarRecursoImportante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Fase 3\frmVisualizarRecursoImportante.Designer.cs">
+      <DependentUpon>frmVisualizarRecursoImportante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Fase 3\frmIngresarRecursoImportante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Fase 3\frmIngresarRecursoImportante.Designer.cs">
+      <DependentUpon>frmIngresarRecursoImportante.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCambioClimatico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -254,6 +266,12 @@
     <EmbeddedResource Include="Forms Fase 2\frmVerUnidadTerritorial.resx">
       <DependentUpon>frmVerUnidadTerritorial.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms Fase 3\frmVisualizarRecursoImportante.resx">
+      <DependentUpon>frmVisualizarRecursoImportante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Fase 3\frmIngresarRecursoImportante.resx">
+      <DependentUpon>frmIngresarRecursoImportante.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCambioClimatico.resx">
       <DependentUpon>frmCambioClimatico.cs</DependentUpon>
     </EmbeddedResource>
@@ -351,8 +369,6 @@
     <None Include="Resources\iconMostrar4.png" />
     <Content Include="Resources\x-mark-64.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Forms Fase 3\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
