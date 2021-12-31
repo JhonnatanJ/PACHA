@@ -77,6 +77,7 @@
     <Compile Include="Fase2\DatosTiempos.cs" />
     <Compile Include="Fase2\DatosUbicHidro.cs" />
     <Compile Include="Fase2\DatosUnidadTerritorial.cs" />
+    <Compile Include="Fase3\DatosRecursoImportante.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

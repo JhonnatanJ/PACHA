@@ -243,7 +243,24 @@ namespace CapaPresentacion
             }
 
             controlPaneles.MostrarOcultarPanel(pnlRiesgoClimatico, btnRiesgoClimatico);
-        }        
+        }
+
+        private void btnMediosEstrategiasVida_Click(object sender, EventArgs e)
+        {
+            controlPaneles.MostrarOcultarPanel(pnlMediosEst, btnMediosEstrategiasVida);
+        }
+
+        private void btnIngresarMediosEst_Click(object sender, EventArgs e)
+        {
+            OcultarTodosPaneles();
+            controlPaneles.AbrirUnicoForm(new Forms_Fase_3.frmRecursoImportante(), panelContenedor);
+        }
+
+        private void btnVisualizarMediosEst_Click(object sender, EventArgs e)
+        {
+            OcultarTodosPaneles();
+            controlPaneles.AbrirUnicoForm(new Forms_Fase_3.frmVisualizarRecursoImportante(), panelContenedor);
+        }
 
         private void btnFase3_Click(object sender, EventArgs e) //Panel Fase 3
         {
@@ -283,6 +300,8 @@ namespace CapaPresentacion
             btnAnalisisSocioambiental.BackColor = Color.Transparent;
             pnlRiesgoClimatico.Visible = false;
             btnRiesgoClimatico.BackColor = Color.Transparent;
+            pnlMediosEst.Visible = false;
+            btnMediosEstrategiasVida.BackColor = Color.Transparent;
         }
         
         #endregion
