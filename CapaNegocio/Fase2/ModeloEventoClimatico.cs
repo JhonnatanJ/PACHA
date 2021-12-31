@@ -21,5 +21,20 @@ namespace CapaNegocio.Fase2
         {
             return datosEvento.CargarDGVevento();
         }
+
+        public DataTable CargarComboAmenaza(String sector)
+        {
+            return datosEvento.CargarComboAmenaza(sector);
+        }
+
+        public DataTable CargarComboImpacto(String sector, String amenaza)
+        {
+            return datosEvento.CargarComboImpacto(sector, amenaza);
+        }
+
+        public DataTable CargarComboRespuesta(String sector, String amenaza)
+        {
+            return datosEvento.CargarComboRespuesta(sector, amenaza);
+        }
     }
 }

@@ -31,6 +31,37 @@ namespace CapaPresentacion.Forms_Fase_2
             cbxSectorEvento.Text = "";
         }
 
+        private void limpiar()
+        {
+            cbxSectorEvento.Text = "";
+            cbxAmenazaDec1.Text = "";
+            cbxAmenazaDec2.Text = "";
+            cbxAmenazaDec3.Text = "";
+            cbxAmenazaDec4.Text = "";
+            cbxAmenazaDec5.Text = "";
+            cbxAmenazaDec6.Text = "";
+            cbxAmenazaDec7.Text = "";
+            cbxAmenazaDec8.Text = "";
+
+            txtImpactoD1.Text = "";
+            txtImpactoD2.Text = "";
+            txtImpactoD3.Text = "";
+            txtImpactoD4.Text = "";
+            txtImpactoD5.Text = "";
+            txtImpactoD6.Text = "";
+            txtImpactoD7.Text = "";
+            txtImpactoD8.Text = "";
+
+            txtRespuestaD1.Text = "";
+            txtRespuestaD2.Text = "";
+            txtRespuestaD3.Text = "";
+            txtRespuestaD4.Text = "";
+            txtRespuestaD5.Text = "";
+            txtRespuestaD6.Text = "";
+            txtRespuestaD7.Text = "";
+            txtRespuestaD8.Text = "";
+        }
+
         private void btnInsert_Click(object sender, EventArgs e)
         {
             if (cbxSectorEvento.Text != "")
@@ -77,7 +108,7 @@ namespace CapaPresentacion.Forms_Fase_2
                     evento.InsertarDatos(sectorEvento, informacion3, inf3dec1, inf3dec2, inf3dec3, inf3dec4, inf3dec5, inf3dec6, inf3dec7, inf3dec8);
                
                     MessageBox.Show("Los datos se agregaron correctamente", "Advertencia", MessageBoxButtons.OK);
-                   //this.bloquear();
+                    this.limpiar();
                 }
             }
             else
