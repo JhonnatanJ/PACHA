@@ -31,7 +31,7 @@ namespace CapaPresentacion.Forms_Fase_2
         {
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnGuardarCambio = new System.Windows.Forms.Button();
-            this.cbxAcceso = new System.Windows.Forms.ComboBox();
+            this.cbxImportanciaRiesgo = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cbxRespuestaRiesgo = new System.Windows.Forms.ComboBox();
@@ -39,8 +39,8 @@ namespace CapaPresentacion.Forms_Fase_2
             this.cbxRiesgoAmenaza = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cbxImpactoRiesgo = new System.Windows.Forms.ComboBox();
-            this.txtNotas = new System.Windows.Forms.TextBox();
-            this.txtControl = new System.Windows.Forms.TextBox();
+            this.txtRiesgo = new System.Windows.Forms.TextBox();
+            this.txtObservaciones = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.cbxSectorRiesgo = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
@@ -58,7 +58,7 @@ namespace CapaPresentacion.Forms_Fase_2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(85)))), ((int)(((byte)(91)))));
             this.panel4.Controls.Add(this.btnGuardarCambio);
-            this.panel4.Controls.Add(this.cbxAcceso);
+            this.panel4.Controls.Add(this.cbxImportanciaRiesgo);
             this.panel4.Controls.Add(this.label8);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.cbxRespuestaRiesgo);
@@ -66,8 +66,8 @@ namespace CapaPresentacion.Forms_Fase_2
             this.panel4.Controls.Add(this.cbxRiesgoAmenaza);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.cbxImpactoRiesgo);
-            this.panel4.Controls.Add(this.txtNotas);
-            this.panel4.Controls.Add(this.txtControl);
+            this.panel4.Controls.Add(this.txtRiesgo);
+            this.panel4.Controls.Add(this.txtObservaciones);
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.cbxSectorRiesgo);
             this.panel4.Controls.Add(this.label17);
@@ -93,25 +93,23 @@ namespace CapaPresentacion.Forms_Fase_2
             this.btnGuardarCambio.TabIndex = 14;
             this.btnGuardarCambio.Text = "Guardar Datos";
             this.btnGuardarCambio.UseVisualStyleBackColor = false;
+            this.btnGuardarCambio.Click += new System.EventHandler(this.btnGuardarCambio_Click);
             // 
-            // cbxAcceso
+            // cbxImportanciaRiesgo
             // 
-            this.cbxAcceso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.cbxAcceso.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxAcceso.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxAcceso.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cbxAcceso.FormattingEnabled = true;
-            this.cbxAcceso.Items.AddRange(new object[] {
-            "Pobladores",
-            "Familia",
-            "Niños (5 a 14 años)",
-            "Jóvenes (15 a 24 años) ",
-            "Adultos (25 a 64 años)",
-            "Adultos mayores (más de 65 años)"});
-            this.cbxAcceso.Location = new System.Drawing.Point(174, 304);
-            this.cbxAcceso.Name = "cbxAcceso";
-            this.cbxAcceso.Size = new System.Drawing.Size(495, 29);
-            this.cbxAcceso.TabIndex = 21;
+            this.cbxImportanciaRiesgo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.cbxImportanciaRiesgo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxImportanciaRiesgo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxImportanciaRiesgo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cbxImportanciaRiesgo.FormattingEnabled = true;
+            this.cbxImportanciaRiesgo.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3"});
+            this.cbxImportanciaRiesgo.Location = new System.Drawing.Point(174, 304);
+            this.cbxImportanciaRiesgo.Name = "cbxImportanciaRiesgo";
+            this.cbxImportanciaRiesgo.Size = new System.Drawing.Size(495, 29);
+            this.cbxImportanciaRiesgo.TabIndex = 21;
             // 
             // label8
             // 
@@ -218,33 +216,33 @@ namespace CapaPresentacion.Forms_Fase_2
             this.cbxImpactoRiesgo.TabIndex = 13;
             this.cbxImpactoRiesgo.SelectedIndexChanged += new System.EventHandler(this.cbxImpactoRiesgo_SelectedIndexChanged);
             // 
-            // txtNotas
+            // txtRiesgo
             // 
-            this.txtNotas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtRiesgo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNotas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.txtNotas.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNotas.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNotas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtNotas.Location = new System.Drawing.Point(174, 256);
-            this.txtNotas.Name = "txtNotas";
-            this.txtNotas.Size = new System.Drawing.Size(495, 20);
-            this.txtNotas.TabIndex = 12;
+            this.txtRiesgo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtRiesgo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtRiesgo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRiesgo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtRiesgo.Location = new System.Drawing.Point(174, 256);
+            this.txtRiesgo.Name = "txtRiesgo";
+            this.txtRiesgo.Size = new System.Drawing.Size(495, 20);
+            this.txtRiesgo.TabIndex = 12;
             // 
-            // txtControl
+            // txtObservaciones
             // 
-            this.txtControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtObservaciones.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.txtControl.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtControl.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtControl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtControl.Location = new System.Drawing.Point(174, 357);
-            this.txtControl.Name = "txtControl";
-            this.txtControl.Size = new System.Drawing.Size(495, 20);
-            this.txtControl.TabIndex = 12;
+            this.txtObservaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtObservaciones.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtObservaciones.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtObservaciones.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtObservaciones.Location = new System.Drawing.Point(174, 357);
+            this.txtObservaciones.Name = "txtObservaciones";
+            this.txtObservaciones.Size = new System.Drawing.Size(495, 20);
+            this.txtObservaciones.TabIndex = 12;
             // 
             // label6
             // 
@@ -343,7 +341,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.ClientSize = new System.Drawing.Size(718, 465);
             this.Controls.Add(this.panel4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmIngresarRiesgoClimatico";
             this.Text = "frmIngresarRiesgoClimatico";
             this.Load += new System.EventHandler(this.frmIngresarRiesgoClimatico_Load);
@@ -357,7 +355,7 @@ namespace CapaPresentacion.Forms_Fase_2
 
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnGuardarCambio;
-        private System.Windows.Forms.ComboBox cbxAcceso;
+        private System.Windows.Forms.ComboBox cbxImportanciaRiesgo;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbxRespuestaRiesgo;
@@ -365,8 +363,8 @@ namespace CapaPresentacion.Forms_Fase_2
         private System.Windows.Forms.ComboBox cbxRiesgoAmenaza;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cbxImpactoRiesgo;
-        private System.Windows.Forms.TextBox txtNotas;
-        private System.Windows.Forms.TextBox txtControl;
+        private System.Windows.Forms.TextBox txtRiesgo;
+        private System.Windows.Forms.TextBox txtObservaciones;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cbxSectorRiesgo;
         private System.Windows.Forms.Label label17;

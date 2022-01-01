@@ -51,6 +51,7 @@
     <Compile Include="Fase2\ModeloLimites.cs" />
     <Compile Include="Fase2\ModeloOcuTerritorio.cs" />
     <Compile Include="Fase2\ModeloRecursoHidrico.cs" />
+    <Compile Include="Fase2\ModeloRiesgoClimatico.cs" />
     <Compile Include="Fase2\ModeloSector.cs" />
     <Compile Include="Fase2\ModeloTiempo.cs" />
     <Compile Include="Fase2\ModeloUbicHidro.cs" />
