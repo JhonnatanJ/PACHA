@@ -52,5 +52,43 @@ namespace CapaPresentacion.Forms_Fase_2
             cbxRespuestaRiesgo.DataSource = amenaza.CargarComboRespuesta(sectorEvento, amenazaCombo);
             cbxRespuestaRiesgo.DisplayMember = "DECADA8";
         }
+
+        private void limpiar()
+        {
+            cbxSectorRiesgo.Text = "";
+            cbxRiesgoAmenaza.Text = "";
+            cbxImpactoRiesgo.Text = "";
+            cbxRespuestaRiesgo.Text = "";
+            txtRiesgo.Text = "";
+            cbxImportanciaRiesgo.Text = "";
+            txtObservaciones.Text = "";
+        }
+
+        private void btnGuardarCambio_Click(object sender, EventArgs e)
+        {
+            if (cbxSectorRiesgo.Text != "")
+            {
+                DialogResult result = MessageBox.Show("¿El ingreso esta correcto?", "Advertencia", MessageBoxButtons.YesNo);
+                ModeloRiesgoClimatico riesgoClimatico = new ModeloRiesgoClimatico();
+
+
+                String sector = cbxSectorRiesgo.Text;
+                String amenaza = cbxRiesgoAmenaza.Text;
+                String impacto = cbxImpactoRiesgo.Text;
+                String respuesta = cbxRespuestaRiesgo.Text;
+                String riesgo = txtRiesgo.Text;
+                int importancia = Convert.ToInt32(cbxImportanciaRiesgo.Text);
+                String observacion = txtObservaciones.Text;
+
+                if (result == DialogResult.Yes)
+                {
+                    riesgoClimatico.InsertarDatos(sector, amenaza, impacto, respuesta, riesgo, importancia, observacion);
+                    MessageBox.Show("Los datos se agregaron correctamente", "Advertencia", MessageBoxButtons.OK);
+                    this.limpiar();
+                }
+            }
+            else
+                MessageBox.Show("Debe elegir un sector y un tipo de recurso", "Advertencia", MessageBoxButtons.OK);
+        }
     }
 }

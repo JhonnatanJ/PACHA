@@ -73,6 +73,7 @@
     <Compile Include="Fase2\DatosLimites.cs" />
     <Compile Include="Fase2\DatosOcuTerritorio.cs" />
     <Compile Include="Fase2\DatosRecursoHidrico.cs" />
+    <Compile Include="Fase2\DatosRiesgoClimatico.cs" />
     <Compile Include="Fase2\DatosSector.cs" />
     <Compile Include="Fase2\DatosTiempos.cs" />
     <Compile Include="Fase2\DatosUbicHidro.cs" />
