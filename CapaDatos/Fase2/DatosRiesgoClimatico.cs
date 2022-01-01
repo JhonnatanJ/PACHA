@@ -34,5 +34,39 @@ namespace CapaDatos.Fase2
             comando.CommandType = System.Data.CommandType.Text;
             comando.ExecuteNonQuery();
         }
+
+        public DataTable CargarDGVriesgoClimatico()
+        {
+            MySqlConnection conexionBD = Conexion.conexion();
+            conexionBD.Open();
+            MySqlCommand comando = new MySqlCommand();
+            DataTable dt = new DataTable();
+
+            comando.Connection = conexionBD;
+            comando.CommandText = "select IDRIESGOCLIMATICO as ID, SECTOR as Sector, AMENAZA as Amenaza,IMPACTO as Impacto, RESPUESTA as Respuesta," +
+                "RIESGO as Riesgo, IMPORTANCIA as Importancia, OBSERVACIONES as OBSERVACIONES " +
+                "from riesgoclimatico where IDCOMUNIDAD=@idcomunidad";
+
+            comando.Parameters.AddWithValue("@idcomunidad", CacheLoginComunidad.idcomunidad);
+            comando.CommandType = System.Data.CommandType.Text;
+            MySqlDataAdapter da = new MySqlDataAdapter(comando);
+            da.Fill(dt);
+            conexionBD.Close();
+            return dt;
+        }
+
+        public void EliminarRiesgoClimatico(string item)
+        {
+            MySqlConnection conexionBD = Conexion.conexion();
+            conexionBD.Open();
+            MySqlCommand comando = new MySqlCommand();
+
+            comando.Connection = conexionBD;
+            comando.CommandText = "delete from riesgoclimatico where IDRIESGOCLIMATICO=@idriesgo";
+            comando.Parameters.AddWithValue("@idriesgo", item);
+            comando.CommandType = System.Data.CommandType.Text;
+            comando.ExecuteNonQuery();
+            conexionBD.Close();
+        }
     }
 }
