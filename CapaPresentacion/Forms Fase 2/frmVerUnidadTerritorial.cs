@@ -18,27 +18,50 @@ namespace CapaPresentacion.Forms_Fase_2
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void frmVerUnidadTerritorial_Load(object sender, EventArgs e)
         {
-            ModeloUnidadTerritorial unidadA = new ModeloUnidadTerritorial();
-            dgvUbAd.DataSource = unidadA.CargarDGV();
-            ModeloLimites limites = new ModeloLimites();
-            dgvLimites.DataSource = limites.CargarDGV();
-            ModeloAsentamiento asen = new ModeloAsentamiento();
-            dgvAsen.DataSource = asen.CargarDGV();
-            ModeloHitos hito = new ModeloHitos();
-            dgvHitos.DataSource = hito.CargarDGV();
-            ModeloUbicHidro ubich = new ModeloUbicHidro();
-            dgvUbGeo.DataSource = ubich.CargarDGV();
-            ModeloEco eco = new ModeloEco();
-            dgvEco.DataSource = eco.CargarDGV();
-            ModeloTiempo tiempo = new ModeloTiempo();
-            dgvTiempos.DataSource = tiempo.CargarDGV();
+        }
+
+        private void btnVerUbiAdmin_Click(object sender, EventArgs e)
+        {
+            Forms_VerUnidadTerritorial.frmVerUbicacionAdmin obj = new Forms_VerUnidadTerritorial.frmVerUbicacionAdmin();
+            obj.Show();
+        }
+
+        private void btnVerLimites_Click(object sender, EventArgs e)
+        {
+            Forms_VerUnidadTerritorial.frmVerLimites obj = new Forms_VerUnidadTerritorial.frmVerLimites();
+            obj.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Forms_VerUnidadTerritorial.frmVerAsentamientos obj = new Forms_VerUnidadTerritorial.frmVerAsentamientos();
+            obj.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Forms_VerUnidadTerritorial.frmVerHitos obj = new Forms_VerUnidadTerritorial.frmVerHitos();
+            obj.Show();
+        }
+
+        private void btnVerUbiHidro_Click(object sender, EventArgs e)
+        {
+            Forms_VerUnidadTerritorial.frmVerUbiHidro obj = new Forms_VerUnidadTerritorial.frmVerUbiHidro();
+            obj.Show();
+        }
+
+        private void btnVerTiempo_Click(object sender, EventArgs e)
+        {
+            Forms_VerUnidadTerritorial.frmVerTiempos obj = new Forms_VerUnidadTerritorial.frmVerTiempos();
+            obj.Show();
+        }
+
+        private void btnVerEcosistema_Click(object sender, EventArgs e)
+        {
+            Forms_VerUnidadTerritorial.frmVerEcosistemas obj = new Forms_VerUnidadTerritorial.frmVerEcosistemas();
+            obj.Show();
         }
     }
 }

@@ -98,7 +98,6 @@ namespace CapaPresentacion.Forms_Fase_2
             this.cbxInformacion = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnRecHidrico = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnBiodiversidad = new System.Windows.Forms.Button();
             this.btnEventos = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
@@ -1208,47 +1207,29 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // btnRecHidrico
             // 
-            this.btnRecHidrico.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnRecHidrico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
             this.btnRecHidrico.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRecHidrico.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecHidrico.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRecHidrico.Location = new System.Drawing.Point(745, 34);
+            this.btnRecHidrico.Location = new System.Drawing.Point(744, 85);
             this.btnRecHidrico.Margin = new System.Windows.Forms.Padding(2);
             this.btnRecHidrico.Name = "btnRecHidrico";
-            this.btnRecHidrico.Size = new System.Drawing.Size(115, 53);
+            this.btnRecHidrico.Size = new System.Drawing.Size(125, 53);
             this.btnRecHidrico.TabIndex = 31;
             this.btnRecHidrico.Text = "Recursos Hídricos";
             this.btnRecHidrico.UseVisualStyleBackColor = false;
             this.btnRecHidrico.Click += new System.EventHandler(this.btnRecHidrico_Click);
             // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(745, 141);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 53);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "Crear Sector";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // btnBiodiversidad
             // 
-            this.btnBiodiversidad.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnBiodiversidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
             this.btnBiodiversidad.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBiodiversidad.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBiodiversidad.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBiodiversidad.Location = new System.Drawing.Point(749, 240);
+            this.btnBiodiversidad.Location = new System.Drawing.Point(744, 176);
             this.btnBiodiversidad.Margin = new System.Windows.Forms.Padding(2);
             this.btnBiodiversidad.Name = "btnBiodiversidad";
-            this.btnBiodiversidad.Size = new System.Drawing.Size(115, 53);
+            this.btnBiodiversidad.Size = new System.Drawing.Size(125, 53);
             this.btnBiodiversidad.TabIndex = 33;
             this.btnBiodiversidad.Text = "Biodiversidad";
             this.btnBiodiversidad.UseVisualStyleBackColor = false;
@@ -1256,15 +1237,14 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // btnEventos
             // 
-            this.btnEventos.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnEventos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
             this.btnEventos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEventos.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEventos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEventos.Location = new System.Drawing.Point(745, 340);
+            this.btnEventos.Location = new System.Drawing.Point(744, 268);
             this.btnEventos.Margin = new System.Windows.Forms.Padding(2);
             this.btnEventos.Name = "btnEventos";
-            this.btnEventos.Size = new System.Drawing.Size(115, 81);
+            this.btnEventos.Size = new System.Drawing.Size(125, 81);
             this.btnEventos.TabIndex = 34;
             this.btnEventos.Text = "Eventos Climáticos Extremos";
             this.btnEventos.UseVisualStyleBackColor = false;
@@ -1275,10 +1255,9 @@ namespace CapaPresentacion.Forms_Fase_2
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(875, 553);
+            this.ClientSize = new System.Drawing.Size(949, 553);
             this.Controls.Add(this.btnEventos);
             this.Controls.Add(this.btnBiodiversidad);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnRecHidrico);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
@@ -1366,7 +1345,6 @@ namespace CapaPresentacion.Forms_Fase_2
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnGuardarOcupacion;
         private System.Windows.Forms.Button btnRecHidrico;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnBiodiversidad;
         private System.Windows.Forms.Button btnEventos;
     }
