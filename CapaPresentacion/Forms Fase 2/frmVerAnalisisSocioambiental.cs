@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaNegocio.Fase2;
+using CapaPresentacion.Forms_Fase_2.Forms_VerAnalisisSocioambiental;
 
 namespace CapaPresentacion.Forms_Fase_2
 {
@@ -18,22 +19,34 @@ namespace CapaPresentacion.Forms_Fase_2
             InitializeComponent();
         }
 
-        private void frmVerAnalisisSocioambiental_Load(object sender, EventArgs e)
+        private void btnVerUbiAdmin_Click(object sender, EventArgs e)
         {
-            ModeloCurvaDemo curvaDemo = new ModeloCurvaDemo();
-            dgvCurvaDemo.DataSource = curvaDemo.CargarDGVcurva();
+            frmVerCurvaDemo obj = new frmVerCurvaDemo();
+            obj.Show();
+        }
 
-            ModeloOcuTerritorio ocuTerritorio = new ModeloOcuTerritorio();
-            dgvOcuTerritorio.DataSource = ocuTerritorio.CargarDGVocupacion();
+        private void btnVerOcupacion_Click(object sender, EventArgs e)
+        {
+            frmVerOcupacion obj = new frmVerOcupacion();
+            obj.Show();
+        }
 
-            ModeloRecursoHidrico recursoHidrico = new ModeloRecursoHidrico();
-            dgvRecursoHidrico.DataSource = recursoHidrico.CargarDGVrecurso();
+        private void btnVerRecursos_Click(object sender, EventArgs e)
+        {
+            frmVerRecursoHidrico obj = new frmVerRecursoHidrico();
+            obj.Show();
+        }
 
-            ModeloBiodiversidad bio = new ModeloBiodiversidad();
-            dgvBiodiversidad.DataSource = bio.CargarDGVbiodiversidad();
+        private void btnVerBio_Click(object sender, EventArgs e)
+        {
+            frmVerBiodiversidad obj = new frmVerBiodiversidad();
+            obj.Show();
+        }
 
-            ModeloEventoClimatico eventoClimatico = new ModeloEventoClimatico();
-            dgvEventoClimatico.DataSource = eventoClimatico.CargarDGVevento();
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmVerEventoClimatico obj = new frmVerEventoClimatico();
+            obj.Show();
         }
     }
 }
