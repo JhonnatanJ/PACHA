@@ -82,12 +82,12 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // btnGuardarCambio
             // 
-            this.btnGuardarCambio.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnGuardarCambio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnGuardarCambio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
             this.btnGuardarCambio.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGuardarCambio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarCambio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGuardarCambio.Location = new System.Drawing.Point(249, 239);
+            this.btnGuardarCambio.Location = new System.Drawing.Point(253, 386);
             this.btnGuardarCambio.Name = "btnGuardarCambio";
             this.btnGuardarCambio.Size = new System.Drawing.Size(177, 46);
             this.btnGuardarCambio.TabIndex = 14;

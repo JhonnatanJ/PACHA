@@ -113,5 +113,16 @@ namespace CapaPresentacion.Forms_Fase_2
         {
 
         }
+
+        private void txtProvincia_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSector_Click(object sender, EventArgs e)
+        {
+            frmSector sector = new frmSector();
+            sector.Show();
+        }
     }
 }

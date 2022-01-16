@@ -26,7 +26,7 @@ namespace CapaPresentacion.Forms_Fase_2
         public void limpiar()
         {
             txtNomAsen.Text = "";
-            txtSector.Text = "";
+            cbxSectorAse.Text = "";
             txtLatAsen.Text = "";
             txtLonAsen.Text = "";
             txtPobla.Text = "";
@@ -37,7 +37,7 @@ namespace CapaPresentacion.Forms_Fase_2
             DialogResult result = MessageBox.Show("¿El ingreso esta correcto?", "Advertencia", MessageBoxButtons.YesNo);
             ModeloAsentamiento asen = new ModeloAsentamiento();
             String nombre = txtNomAsen.Text;
-            String sector = txtSector.Text;
+            String sector = cbxSectorAse.Text;
             String lat = txtLatAsen.Text;
             String lon = txtLonAsen.Text;
             int pobl = Int32.Parse(txtPobla.Text);
@@ -48,6 +48,14 @@ namespace CapaPresentacion.Forms_Fase_2
                 MessageBox.Show("Los datos se agregaron correctamente", "Advertencia", MessageBoxButtons.OK);
                 this.limpiar();
             }
+        }
+
+        private void frmAsentamientos_Load(object sender, EventArgs e)
+        {
+            ModeloSector sector = new ModeloSector();
+            cbxSectorAse.DataSource = sector.CargarCombo();
+            cbxSectorAse.DisplayMember = "SECTOR";
+            cbxSectorAse.Text = "";
         }
     }
 }
