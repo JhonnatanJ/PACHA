@@ -119,7 +119,7 @@ namespace CapaPresentacion
             this.label1.Location = new System.Drawing.Point(297, 31);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(413, 27);
+            this.label1.Size = new System.Drawing.Size(431, 30);
             this.label1.TabIndex = 2;
             this.label1.Text = "CONTEXTO DE CAMBIO CLIMÁTICO";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -133,7 +133,7 @@ namespace CapaPresentacion
             this.label16.Location = new System.Drawing.Point(679, -41);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(93, 27);
+            this.label16.Size = new System.Drawing.Size(97, 30);
             this.label16.TabIndex = 2;
             this.label16.Text = "ACTOR";
             // 
@@ -146,13 +146,15 @@ namespace CapaPresentacion
             this.label17.Location = new System.Drawing.Point(679, -84);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(93, 27);
+            this.label17.Size = new System.Drawing.Size(97, 30);
             this.label17.TabIndex = 2;
             this.label17.Text = "ACTOR";
             // 
             // cbxLugar
             // 
             this.cbxLugar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.cbxLugar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxLugar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cbxLugar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxLugar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.cbxLugar.FormattingEnabled = true;
@@ -327,6 +329,8 @@ namespace CapaPresentacion
             // 
             this.cbxAmenaza.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxAmenaza.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.cbxAmenaza.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxAmenaza.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cbxAmenaza.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxAmenaza.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.cbxAmenaza.FormattingEnabled = true;
@@ -368,7 +372,7 @@ namespace CapaPresentacion
             this.btnGuardarCambio.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGuardarCambio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarCambio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGuardarCambio.Location = new System.Drawing.Point(318, 606);
+            this.btnGuardarCambio.Location = new System.Drawing.Point(300, 590);
             this.btnGuardarCambio.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardarCambio.Name = "btnGuardarCambio";
             this.btnGuardarCambio.Size = new System.Drawing.Size(393, 58);

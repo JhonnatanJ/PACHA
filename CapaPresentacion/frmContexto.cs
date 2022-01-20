@@ -50,12 +50,22 @@ namespace CapaPresentacion
 
         private void btnEliminarClima_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("¿Desea eliminar ese actor, se eliminaran sus proyectos?", "Advertencia", MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show("¿Está seguro de eliminar la selección?", "Control", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             ModeloCambioClima clima = new ModeloCambioClima();
             if (result == DialogResult.Yes)
             {
-                clima.EliminarClima(dgvClima.CurrentCell.Value.ToString());
-                dgvClima.DataSource = clima.CargarDGVclima();
+                try
+                {
+                    DataTable datos = clima.CargarDGVclima();
+                    String item = datos.Rows[dgvClima.CurrentRow.Index]["Item"].ToString();
+                    clima.EliminarClima(item);
+                    dgvClima.DataSource = clima.CargarDGVclima();
+                    DialogResult advice = MessageBox.Show("La información fue eliminada", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch
+                {
+                    DialogResult advice = MessageBox.Show("La información no pudo ser eliminada", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 

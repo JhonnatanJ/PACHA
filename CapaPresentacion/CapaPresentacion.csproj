@@ -183,6 +183,7 @@
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="PanelControl\ControlPaneles.cs" />
+    <Compile Include="PanelControl\ValidarCampos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms Fase 2\frmAsentamientos.resx">

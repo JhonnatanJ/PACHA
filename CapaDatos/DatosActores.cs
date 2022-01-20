@@ -41,7 +41,7 @@ namespace CapaDatos
             MySqlCommand comando = new MySqlCommand();
 
             comando.Connection = conexionBD;
-            comando.CommandText = "update actor set NOMBRE=@nombreActor, SIGLAS=@siglas, TIPO=@tipo, INCIDENCIAS=@incidencias RELACIONES=@relaciones," +
+            comando.CommandText = "update actor set NOMBRE=@nombreActor, SIGLAS=@siglas, TIPO=@tipo, INCIDENCIAS=@incidencias, RELACIONES=@relaciones," +
                 "COMPETENCIASRELACIONADAS=@competenciasRel WHERE NOMBRE=@nombre AND IDCOMUNIDAD=@idcomunidad";
             comando.Parameters.AddWithValue("@nombre", nombre);
             comando.Parameters.AddWithValue("@nombreActor", nombreActor);
@@ -80,7 +80,7 @@ namespace CapaDatos
             DataTable dt = new DataTable();
 
             comando.Connection = conexionBD;
-            comando.CommandText = "select * from actor where IDCOMUNIDAD=@idcomunidad AND NOMBRE=@nombre";
+            comando.CommandText = "select NOMBRE,SIGLAS,TIPO,RELACIONES,INCIDENCIAS,COMPETENCIASRELACIONADAS AS \"COMPETENCIAS RELACIONADAS\" from actor where IDCOMUNIDAD=@idcomunidad AND NOMBRE=@nombre";
             comando.Parameters.AddWithValue("@idcomunidad", CacheLoginComunidad.idcomunidad);
             comando.Parameters.AddWithValue("@nombre", nombre);
             comando.CommandType = System.Data.CommandType.Text;
