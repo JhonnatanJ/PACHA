@@ -18,11 +18,6 @@ namespace CapaPresentacion.Forms_Fase_2
             InitializeComponent();
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btnAsent_Click(object sender, EventArgs e)
         {
             
@@ -107,16 +102,6 @@ namespace CapaPresentacion.Forms_Fase_2
                 MessageBox.Show("Los datos se agregaron correctamente", "Advertencia", MessageBoxButtons.OK);
                 this.bloquear();
             }
-        }
-
-        private void frmIngresarUnidadTerritorial_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtProvincia_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btnSector_Click(object sender, EventArgs e)

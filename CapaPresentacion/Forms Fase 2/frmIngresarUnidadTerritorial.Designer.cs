@@ -107,7 +107,6 @@ namespace CapaPresentacion.Forms_Fase_2
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(716, 92);
             this.panel2.TabIndex = 4;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // txtParroquia
             // 
@@ -161,7 +160,6 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtProvincia.Name = "txtProvincia";
             this.txtProvincia.Size = new System.Drawing.Size(122, 20);
             this.txtProvincia.TabIndex = 17;
-            this.txtProvincia.TextChanged += new System.EventHandler(this.txtProvincia_TextChanged);
             // 
             // label5
             // 
@@ -820,7 +818,6 @@ namespace CapaPresentacion.Forms_Fase_2
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmIngresarUnidadTerritorial";
             this.Text = "frmIngresarUnidadTerritorial";
-            this.Load += new System.EventHandler(this.frmIngresarUnidadTerritorial_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
