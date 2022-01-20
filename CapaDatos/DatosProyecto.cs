@@ -97,7 +97,7 @@ namespace CapaDatos
             DataTable dt = new DataTable();
 
             comando.Connection = conexionBD;
-            comando.CommandText = "select * from proyecto where NUMACTOR=@numactor AND NOMBRE=@nombre";
+            comando.CommandText = "select NOMBRE, OBJETIVO, RESPONSABLE, CARGO, TELEFONO, EMAIL from proyecto where NUMACTOR=@numactor AND NOMBRE=@nombre";
             comando.Parameters.AddWithValue("@numactor", CacheActores.numactor);
             comando.Parameters.AddWithValue("@nombre", nombre);
             comando.CommandType = System.Data.CommandType.Text;

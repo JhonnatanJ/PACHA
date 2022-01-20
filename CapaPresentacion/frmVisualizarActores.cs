@@ -8,15 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaNegocio;
+using CapaPresentacion.PanelControl;
 
 namespace CapaPresentacion
 {
     public partial class frmVisualizarActores : Form
     {
 
-        //tablaDatosActores obj = new tablaDatosActores(); 
-
-        
+        //tablaDatosActores obj = new tablaDatosActores();         
         public frmVisualizarActores()
         {
             InitializeComponent();
@@ -30,10 +29,17 @@ namespace CapaPresentacion
             panelProyecto.Enabled = false;
             panelInsProy.Visible = false;
             panelInsProy.Enabled = false;
-            ModeloActores actores = new ModeloActores();
-            cboActores.DataSource = actores.CargarCombo();
-            cboActores.DisplayMember = "NOMBRE";
-            actores.CargarDatosActores(cboActores.Text);
+            try
+            {
+                ModeloActores actores = new ModeloActores();
+                cboActores.DataSource = actores.CargarCombo();
+                cboActores.DisplayMember = "NOMBRE";
+                actores.CargarDatosActores(cboActores.Text);
+            }
+            catch
+            {
+                MessageBox.Show("No se pueden cargar los campos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             //dataGridView1.DataSource = obj.vistatabla();
 
         }
@@ -50,33 +56,49 @@ namespace CapaPresentacion
 
         private void cboActores_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
-            ModeloActores actores = new ModeloActores();
-            
-            dgvActores.DataSource = actores.CargarDGV(cboActores.Text);
-            actores.CargarDatosActores(cboActores.Text);
-
-            
-
-            ModeloProyecto proyectos = new ModeloProyecto();
-            cboProyectos.DataSource = proyectos.CargarCombo();
-            cboProyectos.DisplayMember = "NOMBRE";
-            if (cboProyectos.Text == "")
+            try
             {
-                dgvProyectos.Columns.Clear();
+                ModeloActores actores = new ModeloActores();
+
+                dgvActores.DataSource = actores.CargarDGV(cboActores.Text);
+                actores.CargarDatosActores(cboActores.Text);
+            }
+            catch
+            {
+                MessageBox.Show("No se pueden cargar los campos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
 
+            try
+            {
+                ModeloProyecto proyectos = new ModeloProyecto();
+                cboProyectos.DataSource = proyectos.CargarCombo();
+                cboProyectos.DisplayMember = "NOMBRE";
+                if (cboProyectos.Text == "")
+                {
+                    dgvProyectos.Columns.Clear();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("No se pueden cargar los campos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+            }
         }
 
         private void cboProyectos_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
-            ModeloProyecto proyectos = new ModeloProyecto();
-            dgvProyectos.DataSource = proyectos.CargarDGV(cboProyectos.Text);
-            
-            
-            
+            try
+            {
+                ModeloProyecto proyectos = new ModeloProyecto();
+                dgvProyectos.DataSource = proyectos.CargarDGV(cboProyectos.Text);
+            }
+            catch
+            {
+                MessageBox.Show("No se pueden cargar los campos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
         }
 
         private void txtnombreActor_TextChanged(object sender, EventArgs e)
@@ -86,39 +108,61 @@ namespace CapaPresentacion
 
         private void btnModificarActor_Click(object sender, EventArgs e)
         {
-            ModeloActores actores = new ModeloActores();
-            DataTable datos = actores.CargarDGV(cboActores.Text);
-            txtnombreActor.Text = datos.Rows[0]["NOMBRE"].ToString();
-            txtsiglas.Text = datos.Rows[0]["SIGLAS"].ToString();
-            txttipo.Text = datos.Rows[0]["TIPO"].ToString();
-            txtrelacionAnalisis.Text = datos.Rows[0]["RELACIONES"].ToString();
-            txtcompetenciaRel.Text = datos.Rows[0]["COMPETENCIASRELACIONADAS"].ToString();
+            try
+            {
+                ModeloActores actores = new ModeloActores();
+                DataTable datos = actores.CargarDGV(cboActores.Text);
+                txtnombreActor.Text = datos.Rows[0]["NOMBRE"].ToString();
+                txtsiglas.Text = datos.Rows[0]["SIGLAS"].ToString();
+                cboModTipoActor.Text = datos.Rows[0]["TIPO"].ToString();
+                cboModUnidadAnalisis.Text = datos.Rows[0]["RELACIONES"].ToString();
+                cboModIncidencia.Text = datos.Rows[0]["INCIDENCIAS"].ToString();
+                txtcompetenciaRel.Text = datos.Rows[0]["COMPETENCIAS RELACIONADAS"].ToString();
 
+                cboActores.Enabled = false;
+                cboProyectos.Enabled = false;
+                panelActor.Visible = true;
+                panelActor.Enabled = true;
+                btnEliminarActor.Enabled = false;
+                btnEliminarProyecto.Enabled = false;
+            }
+            catch
+            {
+                MessageBox.Show("No se seleccionó un actor", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-            cboActores.Enabled = false;
-            cboProyectos.Enabled = false;
-            panelActor.Visible = true;
-            panelActor.Enabled = true;
-            btnEliminarActor.Enabled = false;
-            btnEliminarProyecto.Enabled = false;
-            
+            }
+
         }
 
         private void btnGuardarActor_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("¿El ingreso esta correcto?", "Advertencia", MessageBoxButtons.YesNo);
-            ModeloActores actores = new ModeloActores();
-            if (result == DialogResult.Yes)
+            if (ValidarCamposActor(txtnombreActor, txtsiglas, cboModTipoActor, cboModUnidadAnalisis, cboModIncidencia, txtcompetenciaRel))
             {
-                actores.ModificarActor(cboActores.Text, txtnombreActor.Text, txtsiglas.Text, txttipo.Text, txtrelacionAnalisis.Text, txtIncidencia.Text, txtcompetenciaRel.Text);
-                panelActor.Visible = false;
-                panelActor.Enabled = false;
-                cboActores.Enabled = true;
-                cboActores.DataSource = actores.CargarCombo();
-                cboActores.DisplayMember = "NOMBRE";
-                dgvActores.DataSource = actores.CargarDGV(cboActores.Text);
-                actores.CargarDatosActores(cboActores.Text);
-       
+                DialogResult result = MessageBox.Show("¿La información ingresada es correcta?", "Control", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                ModeloActores actores = new ModeloActores();
+                if (result == DialogResult.Yes)
+                {
+                    try
+                    {
+                        actores.ModificarActor(cboActores.Text, txtnombreActor.Text, txtsiglas.Text, cboModTipoActor.Text, cboModUnidadAnalisis.Text, cboModIncidencia.Text, txtcompetenciaRel.Text);
+                        panelActor.Visible = false;
+                        panelActor.Enabled = false;
+                        cboActores.Enabled = true;
+                        cboProyectos.Enabled = true;
+                        btnEliminarActor.Enabled = true;
+                        btnEliminarProyecto.Enabled = true;
+                        cboActores.DataSource = actores.CargarCombo();
+                        cboActores.DisplayMember = "NOMBRE";
+                        dgvActores.DataSource = actores.CargarDGV(cboActores.Text);
+                        actores.CargarDatosActores(cboActores.Text);
+                        MessageBox.Show("Los datos fueron guardados correctamente", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                    catch
+                {
+                    MessageBox.Show("No fue posible guardar la información", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+            }
             }
 
         }
@@ -135,17 +179,32 @@ namespace CapaPresentacion
 
         private void btnEliminarActor_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("¿Desea eliminar ese actor, se eliminaran sus proyectos?", "Advertencia", MessageBoxButtons.YesNo);
-            ModeloActores actores = new ModeloActores();
-            ModeloProyecto proyecto = new ModeloProyecto();
-            if (result == DialogResult.Yes)
+            if (cboActores.Text != "")
             {
-                proyecto.EliminarProyectosActor();
-                actores.EliminarActor(cboActores.Text);
-                cboActores.DataSource = actores.CargarCombo();
-                cboActores.DisplayMember = "NOMBRE";
-                dgvActores.DataSource = actores.CargarDGV(cboActores.Text);
-                actores.CargarDatosActores(cboActores.Text);
+                DialogResult result = MessageBox.Show("¿Desea eliminar el actor?. OJO: Se eliminaran también los proyectos relacionados con el actor.", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                ModeloActores actores = new ModeloActores();
+                ModeloProyecto proyecto = new ModeloProyecto();
+                if (result == DialogResult.Yes)
+                {
+                    try
+                    {
+                        proyecto.EliminarProyectosActor();
+                        actores.EliminarActor(cboActores.Text);
+                        cboActores.DataSource = actores.CargarCombo();
+                        cboActores.DisplayMember = "NOMBRE";
+                        dgvActores.DataSource = actores.CargarDGV(cboActores.Text);
+                        actores.CargarDatosActores(cboActores.Text);
+                    }
+                    catch
+                    {
+                        DialogResult advice = MessageBox.Show("La información fue eliminada", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    }
+                }
+            }
+            else
+            {                
+                MessageBox.Show("No se seleccionó un actor", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -153,38 +212,59 @@ namespace CapaPresentacion
         {
             ModeloProyecto proyecto = new ModeloProyecto();
 
-            DataTable datos = proyecto.CargarDGV(cboProyectos.Text);
-            txtnombreProyecto.Text = datos.Rows[0]["NOMBRE"].ToString();
-            txtobjetivo.Text = datos.Rows[0]["OBJETIVO"].ToString();
-            txtresponsable.Text = datos.Rows[0]["RESPONSABLE"].ToString();
-            txtcargo.Text = datos.Rows[0]["CARGO"].ToString();
-            txttelefono.Text = datos.Rows[0]["TELEFONO"].ToString();
-            txtemail.Text = datos.Rows[0]["EMAIL"].ToString();
-            
+            try
+            {
+                DataTable datos = proyecto.CargarDGV(cboProyectos.Text);
+                txtnombreProyecto.Text = datos.Rows[0]["NOMBRE"].ToString();
+                txtobjetivo.Text = datos.Rows[0]["OBJETIVO"].ToString();
+                txtresponsable.Text = datos.Rows[0]["RESPONSABLE"].ToString();
+                txtcargo.Text = datos.Rows[0]["CARGO"].ToString();
+                txttelefono.Text = datos.Rows[0]["TELEFONO"].ToString();
+                txtemail.Text = datos.Rows[0]["EMAIL"].ToString();
 
-            panelProyecto.Visible = true;
-            panelProyecto.Enabled = true;
-            cboActores.Enabled = false;
-            cboProyectos.Enabled = false;
-            btnEliminarActor.Enabled = false;
-            btnEliminarProyecto.Enabled = false;
+
+                panelProyecto.Visible = true;
+                panelProyecto.Enabled = true;
+                cboActores.Enabled = false;
+                cboProyectos.Enabled = false;
+                btnEliminarActor.Enabled = false;
+                btnEliminarProyecto.Enabled = false;
+            }
+            catch
+            {
+                MessageBox.Show("No se seleccionó un Proyecto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
         }
 
         private void btnGuardarProyecto_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("¿El ingreso esta correcto?", "Advertencia", MessageBoxButtons.YesNo);
-            ModeloProyecto proyecto = new ModeloProyecto();
-            if (result == DialogResult.Yes)
+            if (ValidarCamposProyecto(txtnombreProyecto, txtcargo, txtobjetivo, txttelefono, txtresponsable, txtemail))
             {
-                proyecto.ModificarProyecto(cboProyectos.Text, txtnombreProyecto.Text, txtobjetivo.Text, txtresponsable.Text,
-                txtcargo.Text, txttelefono.Text, txtemail.Text);
-                panelProyecto.Visible = false;
-                panelProyecto.Enabled = false;
-                cboActores.Enabled = true;
-                cboProyectos.Enabled = true;
-                cboProyectos.DataSource = proyecto.CargarCombo();
-                cboProyectos.DisplayMember = "NOMBRE";
-                dgvProyectos.DataSource = proyecto.CargarDGV(cboProyectos.Text);
+                DialogResult result = MessageBox.Show("¿La información ingresada es correcta?", "Control", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                ModeloProyecto proyecto = new ModeloProyecto();
+                if (result == DialogResult.Yes)
+                {
+                    try
+                    {
+                        proyecto.ModificarProyecto(cboProyectos.Text, txtnombreProyecto.Text, txtobjetivo.Text, txtresponsable.Text,
+                        txtcargo.Text, txttelefono.Text, txtemail.Text);
+                        panelProyecto.Visible = false;
+                        panelProyecto.Enabled = false;
+                        cboActores.Enabled = true;
+                        cboProyectos.Enabled = true;
+                        cboProyectos.DataSource = proyecto.CargarCombo();
+                        cboProyectos.DisplayMember = "NOMBRE";
+                        dgvProyectos.DataSource = proyecto.CargarDGV(cboProyectos.Text);
+                        MessageBox.Show("Los datos fueron guardados correctamente", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    }
+                    catch
+                    {
+                        MessageBox.Show("No fue posible guardar la información", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    }
+                }
             }
         }
 
@@ -200,36 +280,65 @@ namespace CapaPresentacion
 
         private void btnEliminarProyecto_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("¿Desea eliminar ese actor, se eliminaran sus proyectos?", "Advertencia", MessageBoxButtons.YesNo);    
+            DialogResult result = MessageBox.Show("¿Está seguro de eliminar el proyecto?","Control", MessageBoxButtons.YesNo, MessageBoxIcon.Question);    
             ModeloProyecto proyecto = new ModeloProyecto();
             if (result == DialogResult.Yes)
             {
-                proyecto.EliminarProyecto(cboProyectos.Text);
-                cboProyectos.DataSource = proyecto.CargarCombo();
-                cboProyectos.DisplayMember = "NOMBRE";
-                dgvProyectos.DataSource = proyecto.CargarDGV(cboProyectos.Text);
+                try
+                {
+                    proyecto.EliminarProyecto(cboProyectos.Text);
+                    cboProyectos.DataSource = proyecto.CargarCombo();
+                    cboProyectos.DisplayMember = "NOMBRE";
+                    dgvProyectos.DataSource = proyecto.CargarDGV(cboProyectos.Text);
+                    DialogResult advice = MessageBox.Show("La información fue eliminada", "",MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                catch
+                {
+                    DialogResult advice = MessageBox.Show("La información no pudo ser eliminada", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("¿Desea eliminar ese actor, se eliminaran sus proyectos?", "Advertencia", MessageBoxButtons.YesNo);
-            ModeloProyecto proyecto = new ModeloProyecto();
-            if (result == DialogResult.Yes)
+            if (ValidarCamposProyecto(txtInsNom, txtInsCarg, txtInsObj, txtInsTel, txtInsResp, txtInsEm))
             {
-                proyecto.InsertarDatosProyecto(txtInsNom.Text, txtInsObj.Text, txtInsResp.Text, txtInsCarg.Text, txtInsTel.Text, txtInsEm.Text);
-                panelInsProy.Visible = false;
-                panelInsProy.Enabled = false;
-                cboActores.Enabled = true;
-                cboProyectos.Enabled = true;
-                btnEliminarActor.Enabled = true;
-                btnEliminarProyecto.Enabled = true;
-                btnModificarActor.Enabled = true;
-                btnModificarProyecto.Enabled = true;
+                DialogResult result = MessageBox.Show("¿La información ingresada es correcta?", "Control", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                ModeloProyecto proyecto = new ModeloProyecto();
+                if (result == DialogResult.Yes)
+                {
+                    try
+                    {
+                        proyecto.InsertarDatosProyecto(txtInsNom.Text, txtInsObj.Text, txtInsResp.Text, txtInsCarg.Text, txtInsTel.Text, txtInsEm.Text);
+                        panelInsProy.Visible = false;
+                        panelInsProy.Enabled = false;
+                        cboActores.Enabled = true;
+                        cboProyectos.Enabled = true;
+                        btnEliminarActor.Enabled = true;
+                        btnEliminarProyecto.Enabled = true;
+                        btnModificarActor.Enabled = true;
+                        btnModificarProyecto.Enabled = true;
+                        MessageBox.Show("Los datos fueron guardados correctamente", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("No fue posible guardar la información", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                cboProyectos.DataSource = proyecto.CargarCombo();
-                cboProyectos.DisplayMember = "NOMBRE";
-                dgvProyectos.DataSource = proyecto.CargarDGV(cboProyectos.Text);
+                    }
+                    try
+                    {
+                        cboProyectos.DataSource = proyecto.CargarCombo();
+                        cboProyectos.DisplayMember = "NOMBRE";
+                        dgvProyectos.DataSource = proyecto.CargarDGV(cboProyectos.Text);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("No se pueden cargar los campos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    }
+                }
             }
         }
 
@@ -256,5 +365,51 @@ namespace CapaPresentacion
             btnModificarActor.Enabled = true;
             btnModificarProyecto.Enabled = true;
         }
+
+        private bool ValidarCamposProyecto(TextBox nombre, TextBox cargo, TextBox objetivo, TextBox telefono, TextBox responsable, TextBox email)
+        {
+            ValidarCampos validar = new ValidarCampos();
+
+            if (validar.CampoVacio(nombre.Text) || validar.CampoVacio(cargo.Text) || validar.CampoVacio(objetivo.Text) || validar.CampoVacio(telefono.Text) || validar.CampoVacio(responsable.Text) || validar.CampoVacio(email.Text))
+            {
+                DialogResult result = MessageBox.Show("Existen campos vacíos, ingrese todos los datos requeridos", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            else
+            {
+                if (validar.NumeroTelefono(telefono.Text) == false)
+                {
+                    DialogResult result = MessageBox.Show("El número de teléfono está incorrecto", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
+                }
+                if(validar.Email(email.Text) == false)
+                {
+                    DialogResult result = MessageBox.Show("El formato de email está incorrecto", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        private bool ValidarCamposActor(TextBox nombre, TextBox siglas, ComboBox tipo, ComboBox unidadAnálisis, ComboBox incidencia, TextBox competencias)
+        {
+            ValidarCampos validar = new ValidarCampos();
+
+            if (validar.CampoVacio(nombre.Text) || validar.CampoVacio(siglas.Text) || validar.CampoVacio(tipo.Text) || validar.CampoVacio(unidadAnálisis.Text) || validar.CampoVacio(incidencia.Text) || validar.CampoVacio(competencias.Text))
+            {
+                DialogResult result = MessageBox.Show("Existen campos vacíos, ingrese todos los datos requeridos", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            else
+            {
+                if (validar.Siglas(siglas.Text) == false)
+                {
+                    DialogResult result = MessageBox.Show("El campo siglas debe contener entre 2 y 20 caracteres", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return false;
+                }
+            }
+            return true;
+        }
+
     }
 }
