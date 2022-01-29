@@ -1,4 +1,5 @@
 ﻿using CapaComun.Cache;
+using CapaPresentacion.Forms_Reportes;
 using CapaPresentacion.PanelControl;
 using System;
 using System.Collections.Generic;
@@ -260,6 +261,12 @@ namespace CapaPresentacion
         {
             OcultarTodosPaneles();
             controlPaneles.AbrirUnicoForm(new Forms_Fase_3.frmVisualizarRecursoImportante(), panelContenedor);
+        }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            OcultarTodosPaneles();
+            controlPaneles.AbrirUnicoForm(new Forms_Reportes.frmReportes(), panelContenedor);
         }
 
         private void btnFase3_Click(object sender, EventArgs e) //Panel Fase 3

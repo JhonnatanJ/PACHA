@@ -236,6 +236,48 @@
     <Compile Include="Forms Fase 3\frmIngresarRecursoImportante.Designer.cs">
       <DependentUpon>frmIngresarRecursoImportante.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms Reportes\frmReporteFase2_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Reportes\frmReporteFase2_2.Designer.cs">
+      <DependentUpon>frmReporteFase2_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Reportes\frmReporteFase3_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Reportes\frmReporteFase3_1.Designer.cs">
+      <DependentUpon>frmReporteFase3_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Reportes\frmReporteFase2_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Reportes\frmReporteFase2_3.Designer.cs">
+      <DependentUpon>frmReporteFase2_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Reportes\frmReporteFase2_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Reportes\frmReporteFase2_1.Designer.cs">
+      <DependentUpon>frmReporteFase2_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Reportes\frmReporteFase1_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Reportes\frmReporteFase1_2.Designer.cs">
+      <DependentUpon>frmReporteFase1_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Reportes\frmReporteFase1_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Reportes\frmReporteFase1_1.Designer.cs">
+      <DependentUpon>frmReporteFase1_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Reportes\frmReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Reportes\frmReportes.Designer.cs">
+      <DependentUpon>frmReportes.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCambioClimatico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -380,6 +422,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms Fase 3\frmIngresarRecursoImportante.resx">
       <DependentUpon>frmIngresarRecursoImportante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Reportes\frmReporteFase2_2.resx">
+      <DependentUpon>frmReporteFase2_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Reportes\frmReporteFase3_1.resx">
+      <DependentUpon>frmReporteFase3_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Reportes\frmReporteFase2_3.resx">
+      <DependentUpon>frmReporteFase2_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Reportes\frmReporteFase2_1.resx">
+      <DependentUpon>frmReporteFase2_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Reportes\frmReporteFase1_2.resx">
+      <DependentUpon>frmReporteFase1_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Reportes\frmReporteFase1_1.resx">
+      <DependentUpon>frmReporteFase1_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Reportes\frmReportes.resx">
+      <DependentUpon>frmReportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCambioClimatico.resx">
       <DependentUpon>frmCambioClimatico.cs</DependentUpon>

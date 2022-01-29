@@ -57,12 +57,12 @@ namespace CapaPresentacion
             this.btnIngresarActoresLocales = new System.Windows.Forms.Button();
             this.btnVerCambioClimatico = new System.Windows.Forms.Button();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pnlMediosEst = new System.Windows.Forms.Panel();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.btnVisualizarMediosEst = new System.Windows.Forms.Button();
             this.btnIngresarMediosEst = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pnlOpcActoresLocales = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -97,10 +97,10 @@ namespace CapaPresentacion
             this.pnlFase2Submenu.SuspendLayout();
             this.pnlFase1Submenu.SuspendLayout();
             this.panelContenedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.pnlMediosEst.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.pnlOpcActoresLocales.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -190,7 +190,7 @@ namespace CapaPresentacion
             this.lblNombreComunidad.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblNombreComunidad.Location = new System.Drawing.Point(591, 3);
             this.lblNombreComunidad.Name = "lblNombreComunidad";
-            this.lblNombreComunidad.Size = new System.Drawing.Size(187, 32);
+            this.lblNombreComunidad.Size = new System.Drawing.Size(225, 39);
             this.lblNombreComunidad.TabIndex = 3;
             this.lblNombreComunidad.Text = "COMUNIDAD";
             this.lblNombreComunidad.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblNombreComunidad_MouseDown);
@@ -203,7 +203,7 @@ namespace CapaPresentacion
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(59, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 26);
+            this.label1.Size = new System.Drawing.Size(114, 34);
             this.label1.TabIndex = 2;
             this.label1.Text = "PACHA";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -251,6 +251,7 @@ namespace CapaPresentacion
             this.btnReporte.TabIndex = 8;
             this.btnReporte.Text = "Reporte";
             this.btnReporte.UseVisualStyleBackColor = false;
+            this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click);
             // 
             // btnReportes
             // 
@@ -501,6 +502,17 @@ namespace CapaPresentacion
             this.panelContenedor.Size = new System.Drawing.Size(1033, 704);
             this.panelContenedor.TabIndex = 2;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox5.Image = global::CapaPresentacion.Properties.Resources.logoGidac_PNG;
+            this.pictureBox5.Location = new System.Drawing.Point(393, 203);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(213, 222);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
+            // 
             // pnlMediosEst
             // 
             this.pnlMediosEst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(96)))), ((int)(((byte)(93)))));
@@ -561,17 +573,6 @@ namespace CapaPresentacion
             this.btnIngresarMediosEst.Text = "Ingresar Datos";
             this.btnIngresarMediosEst.UseVisualStyleBackColor = false;
             this.btnIngresarMediosEst.Click += new System.EventHandler(this.btnIngresarMediosEst_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox5.Image = global::CapaPresentacion.Properties.Resources.logoGidac_PNG;
-            this.pictureBox5.Location = new System.Drawing.Point(393, 203);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(213, 222);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
             // 
             // pnlOpcActoresLocales
             // 
@@ -883,10 +884,10 @@ namespace CapaPresentacion
             this.pnlFase2Submenu.ResumeLayout(false);
             this.pnlFase1Submenu.ResumeLayout(false);
             this.panelContenedor.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.pnlMediosEst.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.pnlOpcActoresLocales.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
