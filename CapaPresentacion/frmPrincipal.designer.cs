@@ -86,6 +86,7 @@ namespace CapaPresentacion
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.btnVerRiesgoClimatico = new System.Windows.Forms.Button();
             this.btnIngresarRiesgoClimatico = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
@@ -212,6 +213,7 @@ namespace CapaPresentacion
             // 
             this.panelFases.AutoScroll = true;
             this.panelFases.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(85)))), ((int)(((byte)(91)))));
+            this.panelFases.Controls.Add(this.button1);
             this.panelFases.Controls.Add(this.pnlUsuarios);
             this.panelFases.Controls.Add(this.btnReportes);
             this.panelFases.Controls.Add(this.pnlFase3Submenu);
@@ -852,6 +854,16 @@ namespace CapaPresentacion
             this.btnIngresarRiesgoClimatico.UseVisualStyleBackColor = false;
             this.btnIngresarRiesgoClimatico.Click += new System.EventHandler(this.btnIngresarRiesgoClimatico_Click);
             // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button1.Location = new System.Drawing.Point(0, 661);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(194, 43);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Cerrar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // frmPrincipal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -965,6 +977,7 @@ namespace CapaPresentacion
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Button btnVisualizarMediosEst;
         private System.Windows.Forms.Button btnIngresarMediosEst;
+        private System.Windows.Forms.Button button1;
     }
 }
 
