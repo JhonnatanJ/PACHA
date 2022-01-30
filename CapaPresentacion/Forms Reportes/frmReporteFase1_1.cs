@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaNegocio;
 
 namespace CapaPresentacion.Forms_Reportes
 {
@@ -19,7 +20,7 @@ namespace CapaPresentacion.Forms_Reportes
 
         private void frmReporteFase1_1_Load(object sender, EventArgs e)
         {
-
+   
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
