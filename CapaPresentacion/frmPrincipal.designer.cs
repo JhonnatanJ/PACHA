@@ -38,6 +38,7 @@ namespace CapaPresentacion
             this.lblNombreComunidad = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panelFases = new System.Windows.Forms.Panel();
+            this.btnCambioComunidad = new System.Windows.Forms.Button();
             this.pnlUsuarios = new System.Windows.Forms.Panel();
             this.btnReporte = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
@@ -86,7 +87,6 @@ namespace CapaPresentacion
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.btnVerRiesgoClimatico = new System.Windows.Forms.Button();
             this.btnIngresarRiesgoClimatico = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
@@ -213,7 +213,7 @@ namespace CapaPresentacion
             // 
             this.panelFases.AutoScroll = true;
             this.panelFases.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(85)))), ((int)(((byte)(91)))));
-            this.panelFases.Controls.Add(this.button1);
+            this.panelFases.Controls.Add(this.btnCambioComunidad);
             this.panelFases.Controls.Add(this.pnlUsuarios);
             this.panelFases.Controls.Add(this.btnReportes);
             this.panelFases.Controls.Add(this.pnlFase3Submenu);
@@ -228,6 +228,21 @@ namespace CapaPresentacion
             this.panelFases.Name = "panelFases";
             this.panelFases.Size = new System.Drawing.Size(194, 704);
             this.panelFases.TabIndex = 1;
+            // 
+            // btnCambioComunidad
+            // 
+            this.btnCambioComunidad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCambioComunidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
+            this.btnCambioComunidad.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCambioComunidad.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCambioComunidad.Location = new System.Drawing.Point(6, 650);
+            this.btnCambioComunidad.Name = "btnCambioComunidad";
+            this.btnCambioComunidad.Size = new System.Drawing.Size(182, 47);
+            this.btnCambioComunidad.TabIndex = 14;
+            this.btnCambioComunidad.Text = "Cambiar Comunidad";
+            this.btnCambioComunidad.UseVisualStyleBackColor = false;
+            this.btnCambioComunidad.Click += new System.EventHandler(this.btnCambioComunidad_Click);
             // 
             // pnlUsuarios
             // 
@@ -854,16 +869,6 @@ namespace CapaPresentacion
             this.btnIngresarRiesgoClimatico.UseVisualStyleBackColor = false;
             this.btnIngresarRiesgoClimatico.Click += new System.EventHandler(this.btnIngresarRiesgoClimatico_Click);
             // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button1.Location = new System.Drawing.Point(0, 661);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(194, 43);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Cerrar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // frmPrincipal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -977,7 +982,7 @@ namespace CapaPresentacion
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Button btnVisualizarMediosEst;
         private System.Windows.Forms.Button btnIngresarMediosEst;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCambioComunidad;
     }
 }
 

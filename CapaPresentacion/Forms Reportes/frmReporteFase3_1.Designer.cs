@@ -39,7 +39,7 @@ namespace CapaPresentacion.Forms_Reportes
             // 
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(916, 12);
+            this.btnCerrar.Location = new System.Drawing.Point(1324, 12);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(20, 20);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -50,21 +50,27 @@ namespace CapaPresentacion.Forms_Reportes
             // crystalReportViewer1
             // 
             this.crystalReportViewer1.ActiveViewIndex = 0;
+            this.crystalReportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Location = new System.Drawing.Point(12, 38);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = "C:\\Users\\SYSTEMarket\\Documents\\Aldo\\8vo Semestre\\Proyecto PACHA\\CapaPresentacion\\" +
-    "Forms Reportes\\crReporteFase3_1.rpt";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1009, 654);
+            this.crystalReportViewer1.ReportSource = "C:\\Users\\JHONNATAN\\source\\repos\\PACHA\\CapaPresentacion\\Forms Reportes\\crReporteFa" +
+    "se3_1.rpt";
+            this.crystalReportViewer1.ShowCloseButton = false;
+            this.crystalReportViewer1.ShowCopyButton = false;
+            this.crystalReportViewer1.ShowLogo = false;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1332, 654);
             this.crystalReportViewer1.TabIndex = 9;
             // 
             // frmReporteFase3_1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(948, 704);
+            this.ClientSize = new System.Drawing.Size(1356, 704);
             this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.btnCerrar);
             this.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
