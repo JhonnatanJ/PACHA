@@ -269,6 +269,8 @@ namespace CapaPresentacion
             controlPaneles.AbrirUnicoForm(new Forms_Reportes.frmReportes(), panelContenedor);
         }
 
+        
+
         private void btnFase3_Click(object sender, EventArgs e) //Panel Fase 3
         {
             OcultarTodosPaneles();
@@ -310,7 +312,20 @@ namespace CapaPresentacion
             pnlMediosEst.Visible = false;
             btnMediosEstrategiasVida.BackColor = Color.Transparent;
         }
-        
+
+        private void btnCambioComunidad_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Está seguro de Cambiar de Comunidad?", "Advertencia", MessageBoxButtons.YesNo);
+
+            if (result == DialogResult.Yes)
+            {
+                frmLogComunidad logComunidad = new frmLogComunidad();
+                logComunidad.Show();
+                this.Hide();
+            }
+        }
+
+
         #endregion
     }
 }
