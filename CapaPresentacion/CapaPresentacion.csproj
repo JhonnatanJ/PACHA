@@ -249,6 +249,18 @@
       <DependentUpon>crReporteFase1_1.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Forms Reportes\crReporteFase2_3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crReporteFase2_3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms Reportes\crReporteFase3_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crReporteFase3_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Forms Reportes\frmReporteFase2_2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -439,6 +451,14 @@
     <EmbeddedResource Include="Forms Reportes\crReporteFase1_1.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crReporteFase1_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Reportes\crReporteFase2_3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crReporteFase2_3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Reportes\crReporteFase3_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crReporteFase3_1.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms Reportes\frmReporteFase2_2.resx">
       <DependentUpon>frmReporteFase2_2.cs</DependentUpon>
