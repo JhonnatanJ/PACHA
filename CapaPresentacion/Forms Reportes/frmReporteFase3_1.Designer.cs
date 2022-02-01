@@ -57,8 +57,8 @@ namespace CapaPresentacion.Forms_Reportes
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Location = new System.Drawing.Point(12, 38);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = "C:\\Users\\JHONNATAN\\source\\repos\\PACHA\\CapaPresentacion\\Forms Reportes\\crReporteFa" +
-    "se3_1.rpt";
+            this.crystalReportViewer1.ReportSource = "C:\\Users\\SYSTEMarket\\Documents\\Aldo\\8vo Semestre\\Proyecto PACHA\\CapaPresentacion\\" +
+    "Forms Reportes\\crReporteFase3_1.rpt";
             this.crystalReportViewer1.ShowCloseButton = false;
             this.crystalReportViewer1.ShowCopyButton = false;
             this.crystalReportViewer1.ShowLogo = false;
@@ -67,7 +67,7 @@ namespace CapaPresentacion.Forms_Reportes
             // 
             // frmReporteFase3_1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(1356, 704);

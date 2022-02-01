@@ -16,14 +16,14 @@ namespace CapaPresentacion.Forms_Reportes {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class crReporteFase2_2 : ReportClass {
+    public class crSubReporteOcupacion : ReportClass {
         
-        public crReporteFase2_2() {
+        public crSubReporteOcupacion() {
         }
         
         public override string ResourceName {
             get {
-                return "crReporteFase2_2.rpt";
+                return "crSubReporteOcupacion.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace CapaPresentacion.Forms_Reportes {
         
         public override string FullResourceName {
             get {
-                return "CapaPresentacion.Forms Reportes.crReporteFase2_2.rpt";
+                return "CapaPresentacion.Forms Reportes.crSubReporteOcupacion.rpt";
             }
             set {
                 // Do nothing
@@ -74,7 +74,7 @@ namespace CapaPresentacion.Forms_Reportes {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section DetailSection3 {
+        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
             get {
                 return this.ReportDefinition.Sections[3];
             }
@@ -82,49 +82,17 @@ namespace CapaPresentacion.Forms_Reportes {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section DetailSection2 {
-            get {
-                return this.ReportDefinition.Sections[4];
-            }
-        }
-        
-        [Browsable(false)]
-        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section DetailSection4 {
-            get {
-                return this.ReportDefinition.Sections[5];
-            }
-        }
-        
-        [Browsable(false)]
-        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section DetailSection5 {
-            get {
-                return this.ReportDefinition.Sections[6];
-            }
-        }
-        
-        [Browsable(false)]
-        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
-            get {
-                return this.ReportDefinition.Sections[7];
-            }
-        }
-        
-        [Browsable(false)]
-        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
         public CrystalDecisions.CrystalReports.Engine.Section Section5 {
             get {
-                return this.ReportDefinition.Sections[8];
+                return this.ReportDefinition.Sections[4];
             }
         }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedcrReporteFase2_2 : Component, ICachedReport {
+    public class CachedcrSubReporteOcupacion : Component, ICachedReport {
         
-        public CachedcrReporteFase2_2() {
+        public CachedcrSubReporteOcupacion() {
         }
         
         [Browsable(false)]
@@ -161,7 +129,7 @@ namespace CapaPresentacion.Forms_Reportes {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            crReporteFase2_2 rpt = new crReporteFase2_2();
+            crSubReporteOcupacion rpt = new crSubReporteOcupacion();
             rpt.Site = this.Site;
             return rpt;
         }

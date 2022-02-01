@@ -285,10 +285,28 @@
       <DependentUpon>crSubReporteAsentamiento.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Forms Reportes\crSubReporteBiodiversidad.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crSubReporteBiodiversidad.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms Reportes\crSubReporteCurvaDemo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crSubReporteCurvaDemo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Forms Reportes\crSubReporteEcosistemas.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>crSubReporteEcosistemas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms Reportes\crSubReporteEventos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crSubReporteEventos.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Forms Reportes\crSubReporteHitosGeograficos.cs">
@@ -301,6 +319,18 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>crSubReporteLimites.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms Reportes\crSubReporteOcupacion.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crSubReporteOcupacion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms Reportes\crSubReporteRecursoHidrico.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crSubReporteRecursoHidrico.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Forms Reportes\crSubReporteTiempo.cs">
@@ -530,9 +560,21 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crSubReporteAsentamiento.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms Reportes\crSubReporteBiodiversidad.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crSubReporteBiodiversidad.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Reportes\crSubReporteCurvaDemo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crSubReporteCurvaDemo.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms Reportes\crSubReporteEcosistemas.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crSubReporteEcosistemas.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Reportes\crSubReporteEventos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crSubReporteEventos.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms Reportes\crSubReporteHitosGeograficos.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -541,6 +583,14 @@
     <EmbeddedResource Include="Forms Reportes\crSubReporteLimites.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crSubReporteLimites.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Reportes\crSubReporteOcupacion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crSubReporteOcupacion.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Reportes\crSubReporteRecursoHidrico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crSubReporteRecursoHidrico.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms Reportes\crSubReporteTiempo.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
