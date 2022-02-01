@@ -255,6 +255,18 @@
       <DependentUpon>crReporteFase1_2.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Forms Reportes\crReporteFase2_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crReporteFase2_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms Reportes\crReporteFase2_2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crReporteFase2_2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Forms Reportes\crReporteFase2_3.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -265,6 +277,42 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>crReporteFase3_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms Reportes\crSubReporteAsentamiento.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crSubReporteAsentamiento.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms Reportes\crSubReporteEcosistemas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crSubReporteEcosistemas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms Reportes\crSubReporteHitosGeograficos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crSubReporteHitosGeograficos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms Reportes\crSubReporteLimites.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crSubReporteLimites.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms Reportes\crSubReporteTiempo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crSubReporteTiempo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms Reportes\crSubReporteUbicHidrografica.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crSubReporteUbicHidrografica.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Forms Reportes\frmReporteFase2_2.cs">
@@ -462,6 +510,14 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crReporteFase1_2.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms Reportes\crReporteFase2_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crReporteFase2_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Reportes\crReporteFase2_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crReporteFase2_2.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms Reportes\crReporteFase2_3.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crReporteFase2_3.cs</LastGenOutput>
@@ -469,6 +525,30 @@
     <EmbeddedResource Include="Forms Reportes\crReporteFase3_1.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crReporteFase3_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Reportes\crSubReporteAsentamiento.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crSubReporteAsentamiento.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Reportes\crSubReporteEcosistemas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crSubReporteEcosistemas.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Reportes\crSubReporteHitosGeograficos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crSubReporteHitosGeograficos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Reportes\crSubReporteLimites.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crSubReporteLimites.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Reportes\crSubReporteTiempo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crSubReporteTiempo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Reportes\crSubReporteUbicHidrografica.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crSubReporteUbicHidrografica.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms Reportes\frmReporteFase2_2.resx">
       <DependentUpon>frmReporteFase2_2.cs</DependentUpon>
