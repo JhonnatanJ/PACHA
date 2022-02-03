@@ -151,7 +151,7 @@ namespace CapaPresentacion
             // 
             this.pbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbMinimizar.Image = global::CapaPresentacion.Properties.Resources.iconMinimizar;
-            this.pbMinimizar.Location = new System.Drawing.Point(1133, 12);
+            this.pbMinimizar.Location = new System.Drawing.Point(1133, 11);
             this.pbMinimizar.Name = "pbMinimizar";
             this.pbMinimizar.Size = new System.Drawing.Size(23, 23);
             this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
