@@ -69,6 +69,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="crPruebaComunidad.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crPruebaComunidad.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Forms Fase 2\Forms VerAnalisisSocioambiental\frmVerBiodiversidad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -405,6 +411,12 @@
     <Compile Include="frmLogComunidad.Designer.cs">
       <DependentUpon>frmLogComunidad.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPruebaReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPruebaReporte.Designer.cs">
+      <DependentUpon>frmPruebaReporte.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmVisualizarActores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -445,6 +457,10 @@
     <Compile Include="PanelControl\ValidarCampos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="crPruebaComunidad.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crPruebaComunidad.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms Fase 2\Forms VerAnalisisSocioambiental\frmVerBiodiversidad.resx">
       <DependentUpon>frmVerBiodiversidad.cs</DependentUpon>
     </EmbeddedResource>
@@ -629,6 +645,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogComunidad.resx">
       <DependentUpon>frmLogComunidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPruebaReporte.resx">
+      <DependentUpon>frmPruebaReporte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVisualizarActores.resx">
       <DependentUpon>frmVisualizarActores.cs</DependentUpon>

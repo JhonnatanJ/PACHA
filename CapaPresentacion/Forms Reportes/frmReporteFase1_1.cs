@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaNegocio;
+using CapaComun.Cache;
 
 namespace CapaPresentacion.Forms_Reportes
 {
@@ -20,7 +21,9 @@ namespace CapaPresentacion.Forms_Reportes
 
         private void frmReporteFase1_1_Load(object sender, EventArgs e)
         {
-   
+            crPruebaComunidad prueba = new crPruebaComunidad();
+            prueba.SetParameterValue("idCom",CacheLoginComunidad.idcomunidad);
+            crystalReportViewer1.ReportSource = prueba;
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)

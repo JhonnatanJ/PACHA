@@ -33,6 +33,7 @@ namespace CapaPresentacion.Forms_Reportes
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.label1 = new System.Windows.Forms.Label();
+            this.crPruebaComunidad1 = new CapaPresentacion.crPruebaComunidad();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,8 +59,7 @@ namespace CapaPresentacion.Forms_Reportes
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Location = new System.Drawing.Point(12, 38);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = "C:\\Users\\JHONNATAN\\source\\repos\\PACHA\\CapaPresentacion\\Forms Reportes\\crReporteFa" +
-    "se1_1.rpt";
+            this.crystalReportViewer1.ReportSource = "C:\\Users\\JHONNATAN\\source\\repos\\PACHA\\CapaPresentacion\\crPruebaComunidad.rpt";
             this.crystalReportViewer1.ShowCloseButton = false;
             this.crystalReportViewer1.ShowCopyButton = false;
             this.crystalReportViewer1.ShowLogo = false;
@@ -104,5 +104,6 @@ namespace CapaPresentacion.Forms_Reportes
         private System.Windows.Forms.PictureBox btnCerrar;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
         private System.Windows.Forms.Label label1;
+        private crPruebaComunidad crPruebaComunidad1;
     }
 }
