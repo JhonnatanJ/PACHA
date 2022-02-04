@@ -399,6 +399,12 @@
     <Compile Include="frmCrearComunidad.Designer.cs">
       <DependentUpon>frmCrearComunidad.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDatosUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatosUsuario.Designer.cs">
+      <DependentUpon>frmDatosUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogComunidad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -627,6 +633,9 @@
     <EmbeddedResource Include="frmCrearComunidad.resx">
       <DependentUpon>frmCrearComunidad.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosUsuario.resx">
+      <DependentUpon>frmDatosUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogComunidad.resx">
       <DependentUpon>frmLogComunidad.cs</DependentUpon>
     </EmbeddedResource>
@@ -716,6 +725,7 @@
     <None Include="Resources\iconForm2.png" />
     <None Include="Resources\iconFormIngreso.png" />
     <None Include="Resources\iconMostrar4.png" />
+    <None Include="Resources\iconAtras.png" />
     <Content Include="Resources\x-mark-64.png" />
   </ItemGroup>
   <ItemGroup>
