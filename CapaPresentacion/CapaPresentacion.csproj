@@ -75,6 +75,42 @@
       <DependentUpon>crPruebaComunidad.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="crReporteFase1_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crReporteFase1_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crReporteFase1_2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crReporteFase1_2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crReporteFase2_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crReporteFase2_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crReporteFase2_3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crReporteFase2_3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crReporteFase3_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crReporteFase3_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crSubReporteAsentamiento.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crSubReporteAsentamiento.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Forms Fase 2\Forms VerAnalisisSocioambiental\frmVerBiodiversidad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -249,46 +285,10 @@
     <Compile Include="Forms Fase 3\frmIngresarRecursoImportante.Designer.cs">
       <DependentUpon>frmIngresarRecursoImportante.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms Reportes\crReporteFase1_1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>crReporteFase1_1.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Forms Reportes\crReporteFase1_2.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>crReporteFase1_2.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Forms Reportes\crReporteFase2_1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>crReporteFase2_1.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Forms Reportes\crReporteFase2_2.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>crReporteFase2_2.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Forms Reportes\crReporteFase2_3.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>crReporteFase2_3.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Forms Reportes\crReporteFase3_1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>crReporteFase3_1.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Forms Reportes\crSubReporteAsentamiento.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>crSubReporteAsentamiento.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Forms Reportes\crSubReporteBiodiversidad.cs">
@@ -461,6 +461,30 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crPruebaComunidad.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="crReporteFase1_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crReporteFase1_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crReporteFase1_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crReporteFase1_2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crReporteFase2_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crReporteFase2_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crReporteFase2_3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crReporteFase2_3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crReporteFase3_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crReporteFase3_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crSubReporteAsentamiento.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crSubReporteAsentamiento.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms Fase 2\Forms VerAnalisisSocioambiental\frmVerBiodiversidad.resx">
       <DependentUpon>frmVerBiodiversidad.cs</DependentUpon>
     </EmbeddedResource>
@@ -548,33 +572,9 @@
     <EmbeddedResource Include="Forms Fase 3\frmIngresarRecursoImportante.resx">
       <DependentUpon>frmIngresarRecursoImportante.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms Reportes\crReporteFase1_1.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>crReporteFase1_1.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms Reportes\crReporteFase1_2.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>crReporteFase1_2.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms Reportes\crReporteFase2_1.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>crReporteFase2_1.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms Reportes\crReporteFase2_2.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crReporteFase2_2.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms Reportes\crReporteFase2_3.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>crReporteFase2_3.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms Reportes\crReporteFase3_1.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>crReporteFase3_1.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms Reportes\crSubReporteAsentamiento.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>crSubReporteAsentamiento.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms Reportes\crSubReporteBiodiversidad.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -735,6 +735,7 @@
     <None Include="Resources\iconForm2.png" />
     <None Include="Resources\iconFormIngreso.png" />
     <None Include="Resources\iconMostrar4.png" />
+    <None Include="Resources\iconActualizar.png" />
     <Content Include="Resources\x-mark-64.png" />
   </ItemGroup>
   <ItemGroup>

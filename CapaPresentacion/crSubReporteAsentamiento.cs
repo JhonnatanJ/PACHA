@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CapaPresentacion.Forms_Reportes {
+namespace CapaPresentacion {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -16,14 +16,14 @@ namespace CapaPresentacion.Forms_Reportes {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class crReporteFase3_1 : ReportClass {
+    public class crSubReporteAsentamiento : ReportClass {
         
-        public crReporteFase3_1() {
+        public crSubReporteAsentamiento() {
         }
         
         public override string ResourceName {
             get {
-                return "crReporteFase3_1.rpt";
+                return "crSubReporteAsentamiento.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace CapaPresentacion.Forms_Reportes {
         
         public override string FullResourceName {
             get {
-                return "CapaPresentacion.Forms Reportes.crReporteFase3_1.rpt";
+                return "CapaPresentacion.crSubReporteAsentamiento.rpt";
             }
             set {
                 // Do nothing
@@ -87,12 +87,20 @@ namespace CapaPresentacion.Forms_Reportes {
                 return this.ReportDefinition.Sections[4];
             }
         }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_idCom {
+            get {
+                return this.DataDefinition.ParameterFields[0];
+            }
+        }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedcrReporteFase3_1 : Component, ICachedReport {
+    public class CachedcrSubReporteAsentamiento : Component, ICachedReport {
         
-        public CachedcrReporteFase3_1() {
+        public CachedcrSubReporteAsentamiento() {
         }
         
         [Browsable(false)]
@@ -129,7 +137,7 @@ namespace CapaPresentacion.Forms_Reportes {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            crReporteFase3_1 rpt = new crReporteFase3_1();
+            crSubReporteAsentamiento rpt = new crSubReporteAsentamiento();
             rpt.Site = this.Site;
             return rpt;
         }
