@@ -30,21 +30,12 @@ namespace CapaPresentacion.Forms_Reportes
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReporteFase2_1));
-            this.label1 = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnActualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(646, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Fase 2.1";
             // 
             // btnCerrar
             // 
@@ -60,31 +51,56 @@ namespace CapaPresentacion.Forms_Reportes
             // 
             // crystalReportViewer1
             // 
-            this.crystalReportViewer1.ActiveViewIndex = 0;
+            this.crystalReportViewer1.ActiveViewIndex = -1;
             this.crystalReportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(12, 38);
+            this.crystalReportViewer1.Location = new System.Drawing.Point(12, 47);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = "C:\\Users\\JHONNATAN\\source\\repos\\PACHA\\CapaPresentacion\\Forms Reportes\\crReporteFa" +
-    "se2_1.rpt";
             this.crystalReportViewer1.ShowCloseButton = false;
             this.crystalReportViewer1.ShowCopyButton = false;
             this.crystalReportViewer1.ShowLogo = false;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1332, 654);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1332, 645);
             this.crystalReportViewer1.TabIndex = 7;
+            this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(609, 14);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(147, 21);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "REPORTE FASE 2.1";
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.BackColor = System.Drawing.Color.Transparent;
+            this.btnActualizar.BackgroundImage = global::CapaPresentacion.Properties.Resources.iconActualizar;
+            this.btnActualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnActualizar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnActualizar.Location = new System.Drawing.Point(12, 12);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(24, 20);
+            this.btnActualizar.TabIndex = 10;
+            this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // frmReporteFase2_1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(1356, 704);
+            this.Controls.Add(this.btnActualizar);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.btnCerrar);
-            this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -99,9 +115,9 @@ namespace CapaPresentacion.Forms_Reportes
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox btnCerrar;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnActualizar;
     }
 }
