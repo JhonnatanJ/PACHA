@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CapaPresentacion.Forms_Reportes {
+namespace CapaPresentacion {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -16,14 +16,14 @@ namespace CapaPresentacion.Forms_Reportes {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class crSubReporteHitosGeograficos : ReportClass {
+    public class crReporteFase2_2 : ReportClass {
         
-        public crSubReporteHitosGeograficos() {
+        public crReporteFase2_2() {
         }
         
         public override string ResourceName {
             get {
-                return "crSubReporteHitosGeograficos.rpt";
+                return "crReporteFase2_2.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace CapaPresentacion.Forms_Reportes {
         
         public override string FullResourceName {
             get {
-                return "CapaPresentacion.Forms Reportes.crSubReporteHitosGeograficos.rpt";
+                return "CapaPresentacion.crReporteFase2_2.rpt";
             }
             set {
                 // Do nothing
@@ -74,7 +74,7 @@ namespace CapaPresentacion.Forms_Reportes {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
+        public CrystalDecisions.CrystalReports.Engine.Section DetailSection3 {
             get {
                 return this.ReportDefinition.Sections[3];
             }
@@ -82,17 +82,57 @@ namespace CapaPresentacion.Forms_Reportes {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
+        public CrystalDecisions.CrystalReports.Engine.Section DetailSection2 {
             get {
                 return this.ReportDefinition.Sections[4];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.CrystalReports.Engine.Section DetailSection4 {
+            get {
+                return this.ReportDefinition.Sections[5];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.CrystalReports.Engine.Section DetailSection5 {
+            get {
+                return this.ReportDefinition.Sections[6];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
+            get {
+                return this.ReportDefinition.Sections[7];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
+            get {
+                return this.ReportDefinition.Sections[8];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_idCom {
+            get {
+                return this.DataDefinition.ParameterFields[0];
             }
         }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedcrSubReporteHitosGeograficos : Component, ICachedReport {
+    public class CachedcrReporteFase2_2 : Component, ICachedReport {
         
-        public CachedcrSubReporteHitosGeograficos() {
+        public CachedcrReporteFase2_2() {
         }
         
         [Browsable(false)]
@@ -129,7 +169,7 @@ namespace CapaPresentacion.Forms_Reportes {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            crSubReporteHitosGeograficos rpt = new crSubReporteHitosGeograficos();
+            crReporteFase2_2 rpt = new crReporteFase2_2();
             rpt.Site = this.Site;
             return rpt;
         }

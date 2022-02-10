@@ -22,14 +22,20 @@ namespace CapaPresentacion.Forms_Reportes
         {
             crReporteFase2_1 rep = new crReporteFase2_1();
             rep.SetParameterValue("idCom", CacheLoginComunidad.idcomunidad);
-            crSubReporteAsentamiento subrep1 = new crSubReporteAsentamiento();
-            subrep1.SetParameterValue("idCom", CacheLoginComunidad.idcomunidad);
             crystalReportViewer1.ReportSource = rep;
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            crReporteFase2_1 obj = new crReporteFase2_1();
+            obj.Refresh();
+            obj.SetParameterValue("idCom", CacheLoginComunidad.idcomunidad);
+            crystalReportViewer1.ReportSource = obj;
         }
     }
 }

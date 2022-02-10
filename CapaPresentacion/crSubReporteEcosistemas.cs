@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CapaPresentacion.Forms_Reportes {
+namespace CapaPresentacion {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -16,14 +16,14 @@ namespace CapaPresentacion.Forms_Reportes {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class crSubReporteRecursoHidrico : ReportClass {
+    public class crSubReporteEcosistemas : ReportClass {
         
-        public crSubReporteRecursoHidrico() {
+        public crSubReporteEcosistemas() {
         }
         
         public override string ResourceName {
             get {
-                return "crSubReporteRecursoHidrico.rpt";
+                return "crSubReporteEcosistemas.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace CapaPresentacion.Forms_Reportes {
         
         public override string FullResourceName {
             get {
-                return "CapaPresentacion.Forms Reportes.crSubReporteRecursoHidrico.rpt";
+                return "CapaPresentacion.crSubReporteEcosistemas.rpt";
             }
             set {
                 // Do nothing
@@ -87,12 +87,20 @@ namespace CapaPresentacion.Forms_Reportes {
                 return this.ReportDefinition.Sections[4];
             }
         }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_idCom {
+            get {
+                return this.DataDefinition.ParameterFields[0];
+            }
+        }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedcrSubReporteRecursoHidrico : Component, ICachedReport {
+    public class CachedcrSubReporteEcosistemas : Component, ICachedReport {
         
-        public CachedcrSubReporteRecursoHidrico() {
+        public CachedcrSubReporteEcosistemas() {
         }
         
         [Browsable(false)]
@@ -129,7 +137,7 @@ namespace CapaPresentacion.Forms_Reportes {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            crSubReporteRecursoHidrico rpt = new crSubReporteRecursoHidrico();
+            crSubReporteEcosistemas rpt = new crSubReporteEcosistemas();
             rpt.Site = this.Site;
             return rpt;
         }

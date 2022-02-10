@@ -32,6 +32,8 @@ namespace CapaPresentacion.Forms_Reportes
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReporteFase2_3));
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,14 +57,39 @@ namespace CapaPresentacion.Forms_Reportes
             | System.Windows.Forms.AnchorStyles.Right)));
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(12, 38);
+            this.crystalReportViewer1.Location = new System.Drawing.Point(12, 46);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
             this.crystalReportViewer1.ShowCloseButton = false;
             this.crystalReportViewer1.ShowCopyButton = false;
             this.crystalReportViewer1.ShowLogo = false;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1332, 654);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1332, 646);
             this.crystalReportViewer1.TabIndex = 8;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.BackColor = System.Drawing.Color.Transparent;
+            this.btnActualizar.BackgroundImage = global::CapaPresentacion.Properties.Resources.iconActualizar;
+            this.btnActualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnActualizar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnActualizar.Location = new System.Drawing.Point(12, 12);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(24, 20);
+            this.btnActualizar.TabIndex = 14;
+            this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(609, 14);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(147, 21);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "REPORTE FASE 2.3";
             // 
             // frmReporteFase2_3
             // 
@@ -70,6 +97,8 @@ namespace CapaPresentacion.Forms_Reportes
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(1356, 704);
+            this.Controls.Add(this.btnActualizar);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.btnCerrar);
             this.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -81,11 +110,14 @@ namespace CapaPresentacion.Forms_Reportes
             this.Load += new System.EventHandler(this.frmReporteFase1_1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.PictureBox btnCerrar;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
+        private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Label label2;
     }
 }

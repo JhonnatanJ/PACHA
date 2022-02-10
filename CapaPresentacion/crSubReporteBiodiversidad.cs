@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CapaPresentacion.Forms_Reportes {
+namespace CapaPresentacion {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -16,14 +16,14 @@ namespace CapaPresentacion.Forms_Reportes {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class crSubReporteTiempo : ReportClass {
+    public class crSubReporteBiodiversidad : ReportClass {
         
-        public crSubReporteTiempo() {
+        public crSubReporteBiodiversidad() {
         }
         
         public override string ResourceName {
             get {
-                return "crSubReporteTiempo.rpt";
+                return "crSubReporteBiodiversidad.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace CapaPresentacion.Forms_Reportes {
         
         public override string FullResourceName {
             get {
-                return "CapaPresentacion.Forms Reportes.crSubReporteTiempo.rpt";
+                return "CapaPresentacion.crSubReporteBiodiversidad.rpt";
             }
             set {
                 // Do nothing
@@ -87,12 +87,20 @@ namespace CapaPresentacion.Forms_Reportes {
                 return this.ReportDefinition.Sections[4];
             }
         }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_idCom {
+            get {
+                return this.DataDefinition.ParameterFields[0];
+            }
+        }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedcrSubReporteTiempo : Component, ICachedReport {
+    public class CachedcrSubReporteBiodiversidad : Component, ICachedReport {
         
-        public CachedcrSubReporteTiempo() {
+        public CachedcrSubReporteBiodiversidad() {
         }
         
         [Browsable(false)]
@@ -129,7 +137,7 @@ namespace CapaPresentacion.Forms_Reportes {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            crSubReporteTiempo rpt = new crSubReporteTiempo();
+            crSubReporteBiodiversidad rpt = new crSubReporteBiodiversidad();
             rpt.Site = this.Site;
             return rpt;
         }

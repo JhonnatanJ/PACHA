@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CapaPresentacion.Forms_Reportes {
+namespace CapaPresentacion {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -16,14 +16,14 @@ namespace CapaPresentacion.Forms_Reportes {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class crSubReporteEventos : ReportClass {
+    public class crSubReporteOcupacion : ReportClass {
         
-        public crSubReporteEventos() {
+        public crSubReporteOcupacion() {
         }
         
         public override string ResourceName {
             get {
-                return "crSubReporteEventos.rpt";
+                return "crSubReporteOcupacion.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace CapaPresentacion.Forms_Reportes {
         
         public override string FullResourceName {
             get {
-                return "CapaPresentacion.Forms Reportes.crSubReporteEventos.rpt";
+                return "CapaPresentacion.crSubReporteOcupacion.rpt";
             }
             set {
                 // Do nothing
@@ -87,12 +87,20 @@ namespace CapaPresentacion.Forms_Reportes {
                 return this.ReportDefinition.Sections[4];
             }
         }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_idCom {
+            get {
+                return this.DataDefinition.ParameterFields[0];
+            }
+        }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedcrSubReporteEventos : Component, ICachedReport {
+    public class CachedcrSubReporteOcupacion : Component, ICachedReport {
         
-        public CachedcrSubReporteEventos() {
+        public CachedcrSubReporteOcupacion() {
         }
         
         [Browsable(false)]
@@ -129,7 +137,7 @@ namespace CapaPresentacion.Forms_Reportes {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            crSubReporteEventos rpt = new crSubReporteEventos();
+            crSubReporteOcupacion rpt = new crSubReporteOcupacion();
             rpt.Site = this.Site;
             return rpt;
         }

@@ -29,5 +29,13 @@ namespace CapaPresentacion.Forms_Reportes
         {
             this.Close();
         }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            crReporteFase2_3 obj = new crReporteFase2_3();
+            obj.Refresh();
+            obj.SetParameterValue("idCom", CacheLoginComunidad.idcomunidad);
+            crystalReportViewer1.ReportSource = obj;
+        }
     }
 }
