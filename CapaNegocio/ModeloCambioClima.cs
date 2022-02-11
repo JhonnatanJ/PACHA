@@ -28,7 +28,4 @@ namespace CapaNegocio
             datosClima.EliminarClima(item);
         }
     }
-
-   
-
 }

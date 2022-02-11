@@ -24,29 +24,11 @@ namespace CapaPresentacion
             dgvClima.DataSource = clima.CargarDGVclima();
         }
 
-        private void btnModificarActor_Click(object sender, EventArgs e)
-        {
-        }
-
         private void dgvClima_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnGuardarClima_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnCancelarClima_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnEliminarClima_Click(object sender, EventArgs e)
         {
@@ -69,9 +51,5 @@ namespace CapaPresentacion
             }
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -405,11 +405,35 @@
     <Compile Include="frmDatosUsuario.Designer.cs">
       <DependentUpon>frmDatosUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLogComunidadUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogComunidadUser.Designer.cs">
+      <DependentUpon>frmLogComunidadUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogComunidad.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLogComunidad.Designer.cs">
       <DependentUpon>frmLogComunidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarUsuario.Designer.cs">
+      <DependentUpon>frmEditarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarUsuario.Designer.cs">
+      <DependentUpon>frmAgregarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPerfilUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPerfilUsuario.Designer.cs">
+      <DependentUpon>frmPerfilUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="frmVisualizarActores.cs">
       <SubType>Form</SubType>
@@ -448,6 +472,7 @@
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="PanelControl\ControlPaneles.cs" />
+    <Compile Include="PanelControl\EncriptarContrasena.cs" />
     <Compile Include="PanelControl\ValidarCampos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -636,8 +661,20 @@
     <EmbeddedResource Include="frmDatosUsuario.resx">
       <DependentUpon>frmDatosUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLogComunidadUser.resx">
+      <DependentUpon>frmLogComunidadUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogComunidad.resx">
       <DependentUpon>frmLogComunidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarUsuario.resx">
+      <DependentUpon>frmEditarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarUsuario.resx">
+      <DependentUpon>frmAgregarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPerfilUsuario.resx">
+      <DependentUpon>frmPerfilUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVisualizarActores.resx">
       <DependentUpon>frmVisualizarActores.cs</DependentUpon>
@@ -726,6 +763,8 @@
     <None Include="Resources\iconFormIngreso.png" />
     <None Include="Resources\iconMostrar4.png" />
     <None Include="Resources\iconAtras.png" />
+    <None Include="Resources\logoPacha_png.png" />
+    <None Include="Resources\logo_florPacha_png.png" />
     <Content Include="Resources\x-mark-64.png" />
   </ItemGroup>
   <ItemGroup>
