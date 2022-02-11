@@ -144,7 +144,7 @@ namespace CapaPresentacion
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(117, 18);
+            this.label1.Location = new System.Drawing.Point(121, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(121, 37);
             this.label1.TabIndex = 5;
@@ -153,8 +153,8 @@ namespace CapaPresentacion
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::CapaPresentacion.Properties.Resources.logoPNG;
-            this.pictureBox2.Location = new System.Drawing.Point(20, 0);
+            this.pictureBox2.Image = global::CapaPresentacion.Properties.Resources.logo_florPacha_png;
+            this.pictureBox2.Location = new System.Drawing.Point(20, 8);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(84, 75);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

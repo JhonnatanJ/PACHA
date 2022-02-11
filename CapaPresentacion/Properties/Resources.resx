@@ -156,7 +156,8 @@
   </data>
   <data name="logo_florPacha_png" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_florPacha_png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  <data name="iconActualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  </data>
+    <data name="iconActualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconActualizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
