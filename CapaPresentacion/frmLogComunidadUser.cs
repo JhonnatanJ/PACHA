@@ -14,9 +14,9 @@ using CapaComun.Cache;
 
 namespace CapaPresentacion
 {
-    public partial class frmLogComunidad : Form
+    public partial class frmLogComunidadUser : Form
     {
-        public frmLogComunidad()
+        public frmLogComunidadUser()
         {
             InitializeComponent();
             
@@ -66,7 +66,7 @@ namespace CapaPresentacion
         {
             ModeloComunidadLog comunidadLog = new ModeloComunidadLog();
             CargarDatosUsuario();   //para cargar el nombre y apellido del usuario
-            cboComunidad.DataSource = comunidadLog.CargarComboAdmin();
+            cboComunidad.DataSource = comunidadLog.CargarCombo();
             cboComunidad.DisplayMember = "NOMBRE";
             
 
@@ -129,8 +129,8 @@ namespace CapaPresentacion
 
         private void button2_Click(object sender, EventArgs e)
         {
-            frmPerfilUsuario usuarioAdmin = new frmPerfilUsuario();
-            usuarioAdmin.Show();
+            frmPerfilUsuario usuarioUser = new frmPerfilUsuario();
+            usuarioUser.Show();
             this.Hide();
         }
     }

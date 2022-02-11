@@ -319,9 +319,21 @@ namespace CapaPresentacion
 
             if (result == DialogResult.Yes)
             {
-                frmLogComunidad logComunidad = new frmLogComunidad();
-                logComunidad.Show();
-                this.Hide();
+                if(CacheLoginUsuario.rol == "admin")
+                {
+                    frmLogComunidad logComunidad = new frmLogComunidad();
+                    logComunidad.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    if(CacheLoginUsuario.rol == "user")
+                    {
+                        frmLogComunidadUser logUser = new frmLogComunidadUser();
+                        logUser.Show();
+                        this.Hide();
+                    }
+                }                
             }
         }
 

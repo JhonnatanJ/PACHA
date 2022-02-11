@@ -29,6 +29,23 @@ namespace CapaDatos
             return dt;
         }
 
+        public DataTable CargarComboAdmin()
+        {
+            MySqlConnection conexionBD = Conexion.conexion();
+            conexionBD.Open();
+            MySqlCommand comando = new MySqlCommand();
+            DataTable dt = new DataTable();
+
+            comando.Connection = conexionBD;
+            comando.CommandText = "select NOMBRE from comunidadlog";
+            comando.CommandType = System.Data.CommandType.Text;
+            MySqlDataAdapter da = new MySqlDataAdapter(comando);
+            da.Fill(dt);
+            conexionBD.Close();
+            return dt;
+        }
+
+
         public void CargarDatosComunidadLog(string nombreComunidad)
         {
             MySqlConnection conexionBD = Conexion.conexion();

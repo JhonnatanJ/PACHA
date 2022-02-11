@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using CapaDominio;
+using CapaComun.Cache;
+using CapaPresentacion.PanelControl;
 
 namespace CapaPresentacion
 {
@@ -55,15 +57,28 @@ namespace CapaPresentacion
         private void btnAcceder_Click(object sender, EventArgs e)
         {
             ModeloUsuario usuario = new ModeloUsuario();
-            var validarLogin = usuario.LoginUser(tbUsuario.Text, tbContrasena.Text);
+            EncriptarContrasena seguridad = new EncriptarContrasena();
+            var validarLogin = usuario.LoginUser(tbUsuario.Text, seguridad.Encriptar(tbContrasena.Text));
 
             if (this.ValidateChildren(ValidationConstraints.Enabled))
             {
                 if (validarLogin == true)
                 {
-                    frmLogComunidad logComunidad = new frmLogComunidad();
-                    logComunidad.Show();
-                    this.Hide();
+                    if (CacheLoginUsuario.rol == "admin")
+                    {
+                        frmLogComunidad logAdmin = new frmLogComunidad();
+                        logAdmin.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        if(CacheLoginUsuario.rol == "user")
+                        {
+                            frmLogComunidadUser logUser = new frmLogComunidadUser();
+                            logUser.Show();
+                            this.Hide();
+                        }
+                    }
                 }
                 else
                 {
@@ -164,5 +179,6 @@ namespace CapaPresentacion
                 btnAcceder_Click(sender, e);
             }
         }
+
     }
 }

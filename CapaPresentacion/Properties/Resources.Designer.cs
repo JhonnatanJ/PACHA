@@ -63,9 +63,15 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+
+        internal static System.Drawing.Bitmap iconAtras {
+            get {
+                object obj = ResourceManager.GetObject("iconAtras", resourceCulture);
+
         internal static System.Drawing.Bitmap iconActualizar {
             get {
                 object obj = ResourceManager.GetObject("iconActualizar", resourceCulture);
+
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +149,29 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo_florPacha_png {
+            get {
+                object obj = ResourceManager.GetObject("logo_florPacha_png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logoGidac_PNG {
             get {
                 object obj = ResourceManager.GetObject("logoGidac_PNG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logoPacha_png {
+            get {
+                object obj = ResourceManager.GetObject("logoPacha_png", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

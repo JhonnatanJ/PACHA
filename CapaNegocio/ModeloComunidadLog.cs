@@ -16,6 +16,11 @@ namespace CapaNegocio
             return datosComunidad.CargarCombo();
         }
 
+        public DataTable CargarComboAdmin()
+        {
+            return datosComunidad.CargarComboAdmin();
+        }
+
         public void CargarDatosComunidadLog(string nombreComunidad)
         {
             datosComunidad.CargarDatosComunidadLog(nombreComunidad);
