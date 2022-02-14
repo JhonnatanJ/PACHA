@@ -30,14 +30,22 @@ namespace CapaPresentacion.Forms_Fase_2
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lblRespuesta = new System.Windows.Forms.Label();
-            this.lblImpacto = new System.Windows.Forms.Label();
-            this.lblAmenaza = new System.Windows.Forms.Label();
-            this.cbxSectorEvento = new System.Windows.Forms.ComboBox();
-            this.lblSectorElect = new System.Windows.Forms.Label();
-            this.btnCerrar = new System.Windows.Forms.Button();
-            this.btnInsert = new System.Windows.Forms.Button();
-            this.lblBiodiversidad = new System.Windows.Forms.Label();
+            this.txtRespuestaD8 = new System.Windows.Forms.TextBox();
+            this.txtRespuestaD7 = new System.Windows.Forms.TextBox();
+            this.txtRespuestaD6 = new System.Windows.Forms.TextBox();
+            this.txtRespuestaD5 = new System.Windows.Forms.TextBox();
+            this.txtRespuestaD4 = new System.Windows.Forms.TextBox();
+            this.txtRespuestaD3 = new System.Windows.Forms.TextBox();
+            this.txtRespuestaD2 = new System.Windows.Forms.TextBox();
+            this.txtRespuestaD1 = new System.Windows.Forms.TextBox();
+            this.txtImpactoD8 = new System.Windows.Forms.TextBox();
+            this.txtImpactoD7 = new System.Windows.Forms.TextBox();
+            this.txtImpactoD6 = new System.Windows.Forms.TextBox();
+            this.txtImpactoD5 = new System.Windows.Forms.TextBox();
+            this.txtImpactoD4 = new System.Windows.Forms.TextBox();
+            this.txtImpactoD3 = new System.Windows.Forms.TextBox();
+            this.txtImpactoD2 = new System.Windows.Forms.TextBox();
+            this.txtImpactoD1 = new System.Windows.Forms.TextBox();
             this.cbxAmenazaDec8 = new System.Windows.Forms.ComboBox();
             this.cbxAmenazaDec7 = new System.Windows.Forms.ComboBox();
             this.cbxAmenazaDec6 = new System.Windows.Forms.ComboBox();
@@ -54,22 +62,14 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.txtImpactoD8 = new System.Windows.Forms.TextBox();
-            this.txtImpactoD7 = new System.Windows.Forms.TextBox();
-            this.txtImpactoD6 = new System.Windows.Forms.TextBox();
-            this.txtImpactoD5 = new System.Windows.Forms.TextBox();
-            this.txtImpactoD4 = new System.Windows.Forms.TextBox();
-            this.txtImpactoD3 = new System.Windows.Forms.TextBox();
-            this.txtImpactoD2 = new System.Windows.Forms.TextBox();
-            this.txtImpactoD1 = new System.Windows.Forms.TextBox();
-            this.txtRespuestaD8 = new System.Windows.Forms.TextBox();
-            this.txtRespuestaD7 = new System.Windows.Forms.TextBox();
-            this.txtRespuestaD6 = new System.Windows.Forms.TextBox();
-            this.txtRespuestaD5 = new System.Windows.Forms.TextBox();
-            this.txtRespuestaD4 = new System.Windows.Forms.TextBox();
-            this.txtRespuestaD3 = new System.Windows.Forms.TextBox();
-            this.txtRespuestaD2 = new System.Windows.Forms.TextBox();
-            this.txtRespuestaD1 = new System.Windows.Forms.TextBox();
+            this.lblRespuesta = new System.Windows.Forms.Label();
+            this.lblImpacto = new System.Windows.Forms.Label();
+            this.lblAmenaza = new System.Windows.Forms.Label();
+            this.cbxSectorEvento = new System.Windows.Forms.ComboBox();
+            this.lblSectorElect = new System.Windows.Forms.Label();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnInsert = new System.Windows.Forms.Button();
+            this.lblBiodiversidad = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,7 +78,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.AutoSize = true;
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(85)))), ((int)(((byte)(91)))));
+            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
             this.panel2.Controls.Add(this.txtRespuestaD8);
             this.panel2.Controls.Add(this.txtRespuestaD7);
             this.panel2.Controls.Add(this.txtRespuestaD6);
@@ -125,131 +125,219 @@ namespace CapaPresentacion.Forms_Fase_2
             this.panel2.Size = new System.Drawing.Size(803, 343);
             this.panel2.TabIndex = 8;
             // 
-            // lblRespuesta
+            // txtRespuestaD8
             // 
-            this.lblRespuesta.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lblRespuesta.AutoSize = true;
-            this.lblRespuesta.BackColor = System.Drawing.Color.Transparent;
-            this.lblRespuesta.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRespuesta.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblRespuesta.Location = new System.Drawing.Point(21, 260);
-            this.lblRespuesta.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblRespuesta.Name = "lblRespuesta";
-            this.lblRespuesta.Size = new System.Drawing.Size(91, 21);
-            this.lblRespuesta.TabIndex = 62;
-            this.lblRespuesta.Text = "Respuesta";
+            this.txtRespuestaD8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRespuestaD8.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtRespuestaD8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtRespuestaD8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRespuestaD8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtRespuestaD8.Location = new System.Drawing.Point(717, 260);
+            this.txtRespuestaD8.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRespuestaD8.Name = "txtRespuestaD8";
+            this.txtRespuestaD8.Size = new System.Drawing.Size(77, 20);
+            this.txtRespuestaD8.TabIndex = 89;
             // 
-            // lblImpacto
+            // txtRespuestaD7
             // 
-            this.lblImpacto.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lblImpacto.AutoSize = true;
-            this.lblImpacto.BackColor = System.Drawing.Color.Transparent;
-            this.lblImpacto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblImpacto.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblImpacto.Location = new System.Drawing.Point(21, 208);
-            this.lblImpacto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblImpacto.Name = "lblImpacto";
-            this.lblImpacto.Size = new System.Drawing.Size(79, 21);
-            this.lblImpacto.TabIndex = 61;
-            this.lblImpacto.Text = "Impacto";
+            this.txtRespuestaD7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRespuestaD7.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtRespuestaD7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtRespuestaD7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRespuestaD7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtRespuestaD7.Location = new System.Drawing.Point(634, 260);
+            this.txtRespuestaD7.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRespuestaD7.Name = "txtRespuestaD7";
+            this.txtRespuestaD7.Size = new System.Drawing.Size(77, 20);
+            this.txtRespuestaD7.TabIndex = 90;
             // 
-            // lblAmenaza
+            // txtRespuestaD6
             // 
-            this.lblAmenaza.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lblAmenaza.AutoSize = true;
-            this.lblAmenaza.BackColor = System.Drawing.Color.Transparent;
-            this.lblAmenaza.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAmenaza.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblAmenaza.Location = new System.Drawing.Point(21, 158);
-            this.lblAmenaza.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAmenaza.Name = "lblAmenaza";
-            this.lblAmenaza.Size = new System.Drawing.Size(87, 21);
-            this.lblAmenaza.TabIndex = 60;
-            this.lblAmenaza.Text = "Amenaza";
+            this.txtRespuestaD6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRespuestaD6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtRespuestaD6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtRespuestaD6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRespuestaD6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtRespuestaD6.Location = new System.Drawing.Point(551, 260);
+            this.txtRespuestaD6.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRespuestaD6.Name = "txtRespuestaD6";
+            this.txtRespuestaD6.Size = new System.Drawing.Size(77, 20);
+            this.txtRespuestaD6.TabIndex = 91;
             // 
-            // cbxSectorEvento
+            // txtRespuestaD5
             // 
-            this.cbxSectorEvento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.cbxSectorEvento.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxSectorEvento.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cbxSectorEvento.FormattingEnabled = true;
-            this.cbxSectorEvento.Items.AddRange(new object[] {
-            "Consumo doméstico",
-            "Riego",
-            "Abrevadero",
-            "Hidroeléctrico",
-            "Recreación",
-            "Ritualidad"});
-            this.cbxSectorEvento.Location = new System.Drawing.Point(221, 55);
-            this.cbxSectorEvento.Name = "cbxSectorEvento";
-            this.cbxSectorEvento.Size = new System.Drawing.Size(363, 29);
-            this.cbxSectorEvento.TabIndex = 59;
+            this.txtRespuestaD5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRespuestaD5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtRespuestaD5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtRespuestaD5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRespuestaD5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtRespuestaD5.Location = new System.Drawing.Point(468, 260);
+            this.txtRespuestaD5.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRespuestaD5.Name = "txtRespuestaD5";
+            this.txtRespuestaD5.Size = new System.Drawing.Size(77, 20);
+            this.txtRespuestaD5.TabIndex = 92;
             // 
-            // lblSectorElect
+            // txtRespuestaD4
             // 
-            this.lblSectorElect.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lblSectorElect.AutoSize = true;
-            this.lblSectorElect.BackColor = System.Drawing.Color.Transparent;
-            this.lblSectorElect.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSectorElect.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSectorElect.Location = new System.Drawing.Point(21, 58);
-            this.lblSectorElect.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSectorElect.Name = "lblSectorElect";
-            this.lblSectorElect.Size = new System.Drawing.Size(169, 21);
-            this.lblSectorElect.TabIndex = 58;
-            this.lblSectorElect.Text = "Seleccione el Sector:";
+            this.txtRespuestaD4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRespuestaD4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtRespuestaD4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtRespuestaD4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRespuestaD4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtRespuestaD4.Location = new System.Drawing.Point(385, 260);
+            this.txtRespuestaD4.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRespuestaD4.Name = "txtRespuestaD4";
+            this.txtRespuestaD4.Size = new System.Drawing.Size(77, 20);
+            this.txtRespuestaD4.TabIndex = 93;
             // 
-            // btnCerrar
+            // txtRespuestaD3
             // 
-            this.btnCerrar.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCerrar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCerrar.Location = new System.Drawing.Point(275, 297);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(86, 34);
-            this.btnCerrar.TabIndex = 25;
-            this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            this.txtRespuestaD3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRespuestaD3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtRespuestaD3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtRespuestaD3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRespuestaD3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtRespuestaD3.Location = new System.Drawing.Point(303, 260);
+            this.txtRespuestaD3.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRespuestaD3.Name = "txtRespuestaD3";
+            this.txtRespuestaD3.Size = new System.Drawing.Size(76, 20);
+            this.txtRespuestaD3.TabIndex = 94;
             // 
-            // btnInsert
+            // txtRespuestaD2
             // 
-            this.btnInsert.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnInsert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnInsert.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsert.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnInsert.Location = new System.Drawing.Point(451, 296);
-            this.btnInsert.Margin = new System.Windows.Forms.Padding(2);
-            this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(86, 34);
-            this.btnInsert.TabIndex = 15;
-            this.btnInsert.Text = "Insertar";
-            this.btnInsert.UseVisualStyleBackColor = false;
-            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
+            this.txtRespuestaD2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRespuestaD2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtRespuestaD2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtRespuestaD2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRespuestaD2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtRespuestaD2.Location = new System.Drawing.Point(221, 260);
+            this.txtRespuestaD2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRespuestaD2.Name = "txtRespuestaD2";
+            this.txtRespuestaD2.Size = new System.Drawing.Size(76, 20);
+            this.txtRespuestaD2.TabIndex = 88;
             // 
-            // lblBiodiversidad
+            // txtRespuestaD1
             // 
-            this.lblBiodiversidad.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lblBiodiversidad.AutoSize = true;
-            this.lblBiodiversidad.BackColor = System.Drawing.Color.Transparent;
-            this.lblBiodiversidad.Font = new System.Drawing.Font("Century Gothic", 14F);
-            this.lblBiodiversidad.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblBiodiversidad.Location = new System.Drawing.Point(244, 11);
-            this.lblBiodiversidad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblBiodiversidad.Name = "lblBiodiversidad";
-            this.lblBiodiversidad.Size = new System.Drawing.Size(313, 22);
-            this.lblBiodiversidad.TabIndex = 12;
-            this.lblBiodiversidad.Text = "EVENTOS CLIMÁTICOS EXTREMOS";
+            this.txtRespuestaD1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRespuestaD1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtRespuestaD1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtRespuestaD1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRespuestaD1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtRespuestaD1.Location = new System.Drawing.Point(139, 260);
+            this.txtRespuestaD1.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRespuestaD1.Name = "txtRespuestaD1";
+            this.txtRespuestaD1.Size = new System.Drawing.Size(78, 20);
+            this.txtRespuestaD1.TabIndex = 87;
+            // 
+            // txtImpactoD8
+            // 
+            this.txtImpactoD8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtImpactoD8.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtImpactoD8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtImpactoD8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtImpactoD8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtImpactoD8.Location = new System.Drawing.Point(717, 208);
+            this.txtImpactoD8.Margin = new System.Windows.Forms.Padding(2);
+            this.txtImpactoD8.Name = "txtImpactoD8";
+            this.txtImpactoD8.Size = new System.Drawing.Size(77, 20);
+            this.txtImpactoD8.TabIndex = 81;
+            // 
+            // txtImpactoD7
+            // 
+            this.txtImpactoD7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtImpactoD7.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtImpactoD7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtImpactoD7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtImpactoD7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtImpactoD7.Location = new System.Drawing.Point(634, 208);
+            this.txtImpactoD7.Margin = new System.Windows.Forms.Padding(2);
+            this.txtImpactoD7.Name = "txtImpactoD7";
+            this.txtImpactoD7.Size = new System.Drawing.Size(77, 20);
+            this.txtImpactoD7.TabIndex = 82;
+            // 
+            // txtImpactoD6
+            // 
+            this.txtImpactoD6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtImpactoD6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtImpactoD6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtImpactoD6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtImpactoD6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtImpactoD6.Location = new System.Drawing.Point(551, 208);
+            this.txtImpactoD6.Margin = new System.Windows.Forms.Padding(2);
+            this.txtImpactoD6.Name = "txtImpactoD6";
+            this.txtImpactoD6.Size = new System.Drawing.Size(77, 20);
+            this.txtImpactoD6.TabIndex = 83;
+            // 
+            // txtImpactoD5
+            // 
+            this.txtImpactoD5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtImpactoD5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtImpactoD5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtImpactoD5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtImpactoD5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtImpactoD5.Location = new System.Drawing.Point(468, 208);
+            this.txtImpactoD5.Margin = new System.Windows.Forms.Padding(2);
+            this.txtImpactoD5.Name = "txtImpactoD5";
+            this.txtImpactoD5.Size = new System.Drawing.Size(77, 20);
+            this.txtImpactoD5.TabIndex = 84;
+            // 
+            // txtImpactoD4
+            // 
+            this.txtImpactoD4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtImpactoD4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtImpactoD4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtImpactoD4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtImpactoD4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtImpactoD4.Location = new System.Drawing.Point(385, 208);
+            this.txtImpactoD4.Margin = new System.Windows.Forms.Padding(2);
+            this.txtImpactoD4.Name = "txtImpactoD4";
+            this.txtImpactoD4.Size = new System.Drawing.Size(77, 20);
+            this.txtImpactoD4.TabIndex = 85;
+            // 
+            // txtImpactoD3
+            // 
+            this.txtImpactoD3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtImpactoD3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtImpactoD3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtImpactoD3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtImpactoD3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtImpactoD3.Location = new System.Drawing.Point(303, 208);
+            this.txtImpactoD3.Margin = new System.Windows.Forms.Padding(2);
+            this.txtImpactoD3.Name = "txtImpactoD3";
+            this.txtImpactoD3.Size = new System.Drawing.Size(76, 20);
+            this.txtImpactoD3.TabIndex = 86;
+            // 
+            // txtImpactoD2
+            // 
+            this.txtImpactoD2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtImpactoD2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtImpactoD2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtImpactoD2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtImpactoD2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtImpactoD2.Location = new System.Drawing.Point(221, 208);
+            this.txtImpactoD2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtImpactoD2.Name = "txtImpactoD2";
+            this.txtImpactoD2.Size = new System.Drawing.Size(76, 20);
+            this.txtImpactoD2.TabIndex = 80;
+            // 
+            // txtImpactoD1
+            // 
+            this.txtImpactoD1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtImpactoD1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtImpactoD1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtImpactoD1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtImpactoD1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtImpactoD1.Location = new System.Drawing.Point(139, 208);
+            this.txtImpactoD1.Margin = new System.Windows.Forms.Padding(2);
+            this.txtImpactoD1.Name = "txtImpactoD1";
+            this.txtImpactoD1.Size = new System.Drawing.Size(78, 20);
+            this.txtImpactoD1.TabIndex = 79;
             // 
             // cbxAmenazaDec8
             // 
-            this.cbxAmenazaDec8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.cbxAmenazaDec8.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cbxAmenazaDec8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxAmenazaDec8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cbxAmenazaDec8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxAmenazaDec8.FormattingEnabled = true;
             this.cbxAmenazaDec8.Items.AddRange(new object[] {
             "Cenizas volcánicas",
@@ -286,9 +374,9 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // cbxAmenazaDec7
             // 
-            this.cbxAmenazaDec7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.cbxAmenazaDec7.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cbxAmenazaDec7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxAmenazaDec7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cbxAmenazaDec7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxAmenazaDec7.FormattingEnabled = true;
             this.cbxAmenazaDec7.Items.AddRange(new object[] {
             "Cenizas volcánicas",
@@ -325,9 +413,9 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // cbxAmenazaDec6
             // 
-            this.cbxAmenazaDec6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.cbxAmenazaDec6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cbxAmenazaDec6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxAmenazaDec6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cbxAmenazaDec6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxAmenazaDec6.FormattingEnabled = true;
             this.cbxAmenazaDec6.Items.AddRange(new object[] {
             "Cenizas volcánicas",
@@ -364,9 +452,9 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // cbxAmenazaDec5
             // 
-            this.cbxAmenazaDec5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.cbxAmenazaDec5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cbxAmenazaDec5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxAmenazaDec5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cbxAmenazaDec5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxAmenazaDec5.FormattingEnabled = true;
             this.cbxAmenazaDec5.Items.AddRange(new object[] {
             "Cenizas volcánicas",
@@ -403,9 +491,9 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // cbxAmenazaDec4
             // 
-            this.cbxAmenazaDec4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.cbxAmenazaDec4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cbxAmenazaDec4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxAmenazaDec4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cbxAmenazaDec4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxAmenazaDec4.FormattingEnabled = true;
             this.cbxAmenazaDec4.Items.AddRange(new object[] {
             "Cenizas volcánicas",
@@ -442,9 +530,9 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // cbxAmenazaDec3
             // 
-            this.cbxAmenazaDec3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.cbxAmenazaDec3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cbxAmenazaDec3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxAmenazaDec3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cbxAmenazaDec3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxAmenazaDec3.FormattingEnabled = true;
             this.cbxAmenazaDec3.Items.AddRange(new object[] {
             "Cenizas volcánicas",
@@ -481,9 +569,9 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // cbxAmenazaDec2
             // 
-            this.cbxAmenazaDec2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.cbxAmenazaDec2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cbxAmenazaDec2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxAmenazaDec2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cbxAmenazaDec2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxAmenazaDec2.FormattingEnabled = true;
             this.cbxAmenazaDec2.Items.AddRange(new object[] {
             "Cenizas volcánicas",
@@ -520,9 +608,9 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // cbxAmenazaDec1
             // 
-            this.cbxAmenazaDec1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.cbxAmenazaDec1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cbxAmenazaDec1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxAmenazaDec1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cbxAmenazaDec1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxAmenazaDec1.FormattingEnabled = true;
             this.cbxAmenazaDec1.Items.AddRange(new object[] {
             "Cenizas volcánicas",
@@ -563,7 +651,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label11.Location = new System.Drawing.Point(726, 123);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
@@ -577,7 +665,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label12.Location = new System.Drawing.Point(643, 123);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
@@ -591,7 +679,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label13.Location = new System.Drawing.Point(560, 123);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
@@ -605,7 +693,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label14.Location = new System.Drawing.Point(477, 123);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
@@ -619,7 +707,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label15.Location = new System.Drawing.Point(394, 123);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
@@ -633,7 +721,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label16.Location = new System.Drawing.Point(312, 123);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
@@ -647,7 +735,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label17.Location = new System.Drawing.Point(230, 123);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
@@ -661,7 +749,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label18.Location = new System.Drawing.Point(150, 123);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
@@ -669,219 +757,139 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label18.TabIndex = 63;
             this.label18.Text = "1950";
             // 
-            // txtImpactoD8
+            // lblRespuesta
             // 
-            this.txtImpactoD8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtImpactoD8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.txtImpactoD8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtImpactoD8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtImpactoD8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtImpactoD8.Location = new System.Drawing.Point(717, 208);
-            this.txtImpactoD8.Margin = new System.Windows.Forms.Padding(2);
-            this.txtImpactoD8.Name = "txtImpactoD8";
-            this.txtImpactoD8.Size = new System.Drawing.Size(77, 20);
-            this.txtImpactoD8.TabIndex = 81;
+            this.lblRespuesta.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblRespuesta.AutoSize = true;
+            this.lblRespuesta.BackColor = System.Drawing.Color.Transparent;
+            this.lblRespuesta.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRespuesta.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblRespuesta.Location = new System.Drawing.Point(21, 260);
+            this.lblRespuesta.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRespuesta.Name = "lblRespuesta";
+            this.lblRespuesta.Size = new System.Drawing.Size(91, 21);
+            this.lblRespuesta.TabIndex = 62;
+            this.lblRespuesta.Text = "Respuesta";
             // 
-            // txtImpactoD7
+            // lblImpacto
             // 
-            this.txtImpactoD7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtImpactoD7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.txtImpactoD7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtImpactoD7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtImpactoD7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtImpactoD7.Location = new System.Drawing.Point(634, 208);
-            this.txtImpactoD7.Margin = new System.Windows.Forms.Padding(2);
-            this.txtImpactoD7.Name = "txtImpactoD7";
-            this.txtImpactoD7.Size = new System.Drawing.Size(77, 20);
-            this.txtImpactoD7.TabIndex = 82;
+            this.lblImpacto.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblImpacto.AutoSize = true;
+            this.lblImpacto.BackColor = System.Drawing.Color.Transparent;
+            this.lblImpacto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImpacto.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblImpacto.Location = new System.Drawing.Point(21, 208);
+            this.lblImpacto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblImpacto.Name = "lblImpacto";
+            this.lblImpacto.Size = new System.Drawing.Size(79, 21);
+            this.lblImpacto.TabIndex = 61;
+            this.lblImpacto.Text = "Impacto";
             // 
-            // txtImpactoD6
+            // lblAmenaza
             // 
-            this.txtImpactoD6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtImpactoD6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.txtImpactoD6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtImpactoD6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtImpactoD6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtImpactoD6.Location = new System.Drawing.Point(551, 208);
-            this.txtImpactoD6.Margin = new System.Windows.Forms.Padding(2);
-            this.txtImpactoD6.Name = "txtImpactoD6";
-            this.txtImpactoD6.Size = new System.Drawing.Size(77, 20);
-            this.txtImpactoD6.TabIndex = 83;
+            this.lblAmenaza.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblAmenaza.AutoSize = true;
+            this.lblAmenaza.BackColor = System.Drawing.Color.Transparent;
+            this.lblAmenaza.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAmenaza.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblAmenaza.Location = new System.Drawing.Point(21, 158);
+            this.lblAmenaza.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAmenaza.Name = "lblAmenaza";
+            this.lblAmenaza.Size = new System.Drawing.Size(87, 21);
+            this.lblAmenaza.TabIndex = 60;
+            this.lblAmenaza.Text = "Amenaza";
             // 
-            // txtImpactoD5
+            // cbxSectorEvento
             // 
-            this.txtImpactoD5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtImpactoD5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.txtImpactoD5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtImpactoD5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtImpactoD5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtImpactoD5.Location = new System.Drawing.Point(468, 208);
-            this.txtImpactoD5.Margin = new System.Windows.Forms.Padding(2);
-            this.txtImpactoD5.Name = "txtImpactoD5";
-            this.txtImpactoD5.Size = new System.Drawing.Size(77, 20);
-            this.txtImpactoD5.TabIndex = 84;
+            this.cbxSectorEvento.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cbxSectorEvento.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxSectorEvento.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cbxSectorEvento.FormattingEnabled = true;
+            this.cbxSectorEvento.Items.AddRange(new object[] {
+            "Consumo doméstico",
+            "Riego",
+            "Abrevadero",
+            "Hidroeléctrico",
+            "Recreación",
+            "Ritualidad"});
+            this.cbxSectorEvento.Location = new System.Drawing.Point(221, 55);
+            this.cbxSectorEvento.Name = "cbxSectorEvento";
+            this.cbxSectorEvento.Size = new System.Drawing.Size(363, 29);
+            this.cbxSectorEvento.TabIndex = 59;
             // 
-            // txtImpactoD4
+            // lblSectorElect
             // 
-            this.txtImpactoD4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtImpactoD4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.txtImpactoD4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtImpactoD4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtImpactoD4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtImpactoD4.Location = new System.Drawing.Point(385, 208);
-            this.txtImpactoD4.Margin = new System.Windows.Forms.Padding(2);
-            this.txtImpactoD4.Name = "txtImpactoD4";
-            this.txtImpactoD4.Size = new System.Drawing.Size(77, 20);
-            this.txtImpactoD4.TabIndex = 85;
+            this.lblSectorElect.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblSectorElect.AutoSize = true;
+            this.lblSectorElect.BackColor = System.Drawing.Color.Transparent;
+            this.lblSectorElect.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSectorElect.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSectorElect.Location = new System.Drawing.Point(21, 58);
+            this.lblSectorElect.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSectorElect.Name = "lblSectorElect";
+            this.lblSectorElect.Size = new System.Drawing.Size(169, 21);
+            this.lblSectorElect.TabIndex = 58;
+            this.lblSectorElect.Text = "Seleccione el Sector:";
             // 
-            // txtImpactoD3
+            // btnCerrar
             // 
-            this.txtImpactoD3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtImpactoD3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.txtImpactoD3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtImpactoD3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtImpactoD3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtImpactoD3.Location = new System.Drawing.Point(303, 208);
-            this.txtImpactoD3.Margin = new System.Windows.Forms.Padding(2);
-            this.txtImpactoD3.Name = "txtImpactoD3";
-            this.txtImpactoD3.Size = new System.Drawing.Size(76, 20);
-            this.txtImpactoD3.TabIndex = 86;
+            this.btnCerrar.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnCerrar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnCerrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnCerrar.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCerrar.Location = new System.Drawing.Point(275, 297);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(86, 34);
+            this.btnCerrar.TabIndex = 25;
+            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // txtImpactoD2
+            // btnInsert
             // 
-            this.txtImpactoD2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtImpactoD2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.txtImpactoD2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtImpactoD2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtImpactoD2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtImpactoD2.Location = new System.Drawing.Point(221, 208);
-            this.txtImpactoD2.Margin = new System.Windows.Forms.Padding(2);
-            this.txtImpactoD2.Name = "txtImpactoD2";
-            this.txtImpactoD2.Size = new System.Drawing.Size(76, 20);
-            this.txtImpactoD2.TabIndex = 80;
+            this.btnInsert.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnInsert.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInsert.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnInsert.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnInsert.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnInsert.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInsert.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInsert.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnInsert.Location = new System.Drawing.Point(451, 296);
+            this.btnInsert.Margin = new System.Windows.Forms.Padding(2);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(86, 34);
+            this.btnInsert.TabIndex = 15;
+            this.btnInsert.Text = "Insertar";
+            this.btnInsert.UseVisualStyleBackColor = false;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
-            // txtImpactoD1
+            // lblBiodiversidad
             // 
-            this.txtImpactoD1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtImpactoD1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.txtImpactoD1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtImpactoD1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtImpactoD1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtImpactoD1.Location = new System.Drawing.Point(139, 208);
-            this.txtImpactoD1.Margin = new System.Windows.Forms.Padding(2);
-            this.txtImpactoD1.Name = "txtImpactoD1";
-            this.txtImpactoD1.Size = new System.Drawing.Size(78, 20);
-            this.txtImpactoD1.TabIndex = 79;
-            // 
-            // txtRespuestaD8
-            // 
-            this.txtRespuestaD8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRespuestaD8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.txtRespuestaD8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRespuestaD8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRespuestaD8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtRespuestaD8.Location = new System.Drawing.Point(717, 260);
-            this.txtRespuestaD8.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRespuestaD8.Name = "txtRespuestaD8";
-            this.txtRespuestaD8.Size = new System.Drawing.Size(77, 20);
-            this.txtRespuestaD8.TabIndex = 89;
-            // 
-            // txtRespuestaD7
-            // 
-            this.txtRespuestaD7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRespuestaD7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.txtRespuestaD7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRespuestaD7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRespuestaD7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtRespuestaD7.Location = new System.Drawing.Point(634, 260);
-            this.txtRespuestaD7.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRespuestaD7.Name = "txtRespuestaD7";
-            this.txtRespuestaD7.Size = new System.Drawing.Size(77, 20);
-            this.txtRespuestaD7.TabIndex = 90;
-            // 
-            // txtRespuestaD6
-            // 
-            this.txtRespuestaD6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRespuestaD6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.txtRespuestaD6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRespuestaD6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRespuestaD6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtRespuestaD6.Location = new System.Drawing.Point(551, 260);
-            this.txtRespuestaD6.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRespuestaD6.Name = "txtRespuestaD6";
-            this.txtRespuestaD6.Size = new System.Drawing.Size(77, 20);
-            this.txtRespuestaD6.TabIndex = 91;
-            // 
-            // txtRespuestaD5
-            // 
-            this.txtRespuestaD5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRespuestaD5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.txtRespuestaD5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRespuestaD5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRespuestaD5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtRespuestaD5.Location = new System.Drawing.Point(468, 260);
-            this.txtRespuestaD5.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRespuestaD5.Name = "txtRespuestaD5";
-            this.txtRespuestaD5.Size = new System.Drawing.Size(77, 20);
-            this.txtRespuestaD5.TabIndex = 92;
-            // 
-            // txtRespuestaD4
-            // 
-            this.txtRespuestaD4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRespuestaD4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.txtRespuestaD4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRespuestaD4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRespuestaD4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtRespuestaD4.Location = new System.Drawing.Point(385, 260);
-            this.txtRespuestaD4.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRespuestaD4.Name = "txtRespuestaD4";
-            this.txtRespuestaD4.Size = new System.Drawing.Size(77, 20);
-            this.txtRespuestaD4.TabIndex = 93;
-            // 
-            // txtRespuestaD3
-            // 
-            this.txtRespuestaD3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRespuestaD3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.txtRespuestaD3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRespuestaD3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRespuestaD3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtRespuestaD3.Location = new System.Drawing.Point(303, 260);
-            this.txtRespuestaD3.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRespuestaD3.Name = "txtRespuestaD3";
-            this.txtRespuestaD3.Size = new System.Drawing.Size(76, 20);
-            this.txtRespuestaD3.TabIndex = 94;
-            // 
-            // txtRespuestaD2
-            // 
-            this.txtRespuestaD2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRespuestaD2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.txtRespuestaD2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRespuestaD2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRespuestaD2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtRespuestaD2.Location = new System.Drawing.Point(221, 260);
-            this.txtRespuestaD2.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRespuestaD2.Name = "txtRespuestaD2";
-            this.txtRespuestaD2.Size = new System.Drawing.Size(76, 20);
-            this.txtRespuestaD2.TabIndex = 88;
-            // 
-            // txtRespuestaD1
-            // 
-            this.txtRespuestaD1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRespuestaD1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.txtRespuestaD1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRespuestaD1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRespuestaD1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtRespuestaD1.Location = new System.Drawing.Point(139, 260);
-            this.txtRespuestaD1.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRespuestaD1.Name = "txtRespuestaD1";
-            this.txtRespuestaD1.Size = new System.Drawing.Size(78, 20);
-            this.txtRespuestaD1.TabIndex = 87;
+            this.lblBiodiversidad.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblBiodiversidad.AutoSize = true;
+            this.lblBiodiversidad.BackColor = System.Drawing.Color.Transparent;
+            this.lblBiodiversidad.Font = new System.Drawing.Font("Century Gothic", 14F);
+            this.lblBiodiversidad.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblBiodiversidad.Location = new System.Drawing.Point(244, 11);
+            this.lblBiodiversidad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBiodiversidad.Name = "lblBiodiversidad";
+            this.lblBiodiversidad.Size = new System.Drawing.Size(313, 22);
+            this.lblBiodiversidad.TabIndex = 12;
+            this.lblBiodiversidad.Text = "EVENTOS CLIMÁTICOS EXTREMOS";
             // 
             // frmEventosClimaticos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(825, 370);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

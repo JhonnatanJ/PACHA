@@ -48,7 +48,7 @@
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(85)))), ((int)(((byte)(91)))));
+            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.txtCodigo);
             this.panel2.Controls.Add(this.label2);
@@ -61,9 +61,10 @@
             this.panel2.Controls.Add(this.txtNombre);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.lblGuia);
-            this.panel2.Location = new System.Drawing.Point(76, 28);
+            this.panel2.Location = new System.Drawing.Point(11, 11);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(567, 337);
+            this.panel2.Size = new System.Drawing.Size(521, 310);
             this.panel2.TabIndex = 6;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -73,23 +74,25 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(129, 222);
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Location = new System.Drawing.Point(145, 180);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 23);
+            this.label4.Size = new System.Drawing.Size(72, 21);
             this.label4.TabIndex = 32;
             this.label4.Text = "Codigo:";
             // 
             // txtCodigo
             // 
             this.txtCodigo.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtCodigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtCodigo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtCodigo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCodigo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtCodigo.Location = new System.Drawing.Point(307, 222);
+            this.txtCodigo.Location = new System.Drawing.Point(230, 198);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(163, 25);
+            this.txtCodigo.Size = new System.Drawing.Size(122, 20);
             this.txtCodigo.TabIndex = 31;
             // 
             // label2
@@ -98,23 +101,25 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(152, 117);
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(162, 95);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 23);
+            this.label2.Size = new System.Drawing.Size(52, 21);
             this.label2.TabIndex = 30;
             this.label2.Text = "Nivel:";
             // 
             // txtNivel
             // 
             this.txtNivel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtNivel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtNivel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtNivel.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNivel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNivel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtNivel.Location = new System.Drawing.Point(307, 117);
+            this.txtNivel.Location = new System.Drawing.Point(230, 113);
+            this.txtNivel.Margin = new System.Windows.Forms.Padding(2);
             this.txtNivel.Name = "txtNivel";
-            this.txtNivel.Size = new System.Drawing.Size(163, 25);
+            this.txtNivel.Size = new System.Drawing.Size(122, 20);
             this.txtNivel.TabIndex = 29;
             // 
             // cbxTipo
@@ -122,18 +127,17 @@
             this.cbxTipo.AutoCompleteCustomSource.AddRange(new string[] {
             "Unidad Hidrográfica",
             "Quebrada o Drenaje"});
-            this.cbxTipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.cbxTipo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cbxTipo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxTipo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cbxTipo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxTipo.FormattingEnabled = true;
             this.cbxTipo.Items.AddRange(new object[] {
             "Unidad Hidrográfica",
             "Quebrada",
             "Drenaje"});
-            this.cbxTipo.Location = new System.Drawing.Point(282, 55);
-            this.cbxTipo.Margin = new System.Windows.Forms.Padding(4);
+            this.cbxTipo.Location = new System.Drawing.Point(212, 54);
             this.cbxTipo.Name = "cbxTipo";
-            this.cbxTipo.Size = new System.Drawing.Size(188, 31);
+            this.cbxTipo.Size = new System.Drawing.Size(142, 29);
             this.cbxTipo.TabIndex = 28;
             // 
             // label11
@@ -142,23 +146,29 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(163, 58);
+            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label11.Location = new System.Drawing.Point(170, 56);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(53, 23);
+            this.label11.Size = new System.Drawing.Size(46, 21);
             this.label11.TabIndex = 27;
             this.label11.Text = "Tipo:";
             // 
             // btnCerrar
             // 
             this.btnCerrar.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCerrar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnCerrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnCerrar.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCerrar.Location = new System.Drawing.Point(81, 294);
+            this.btnCerrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCerrar.Location = new System.Drawing.Point(118, 252);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(115, 31);
+            this.btnCerrar.Size = new System.Drawing.Size(86, 32);
             this.btnCerrar.TabIndex = 25;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = false;
@@ -167,13 +177,18 @@
             // btnInsert
             // 
             this.btnInsert.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnInsert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnInsert.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInsert.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnInsert.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnInsert.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnInsert.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInsert.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsert.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnInsert.Location = new System.Drawing.Point(390, 294);
+            this.btnInsert.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnInsert.Location = new System.Drawing.Point(349, 252);
+            this.btnInsert.Margin = new System.Windows.Forms.Padding(2);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(115, 31);
+            this.btnInsert.Size = new System.Drawing.Size(86, 32);
             this.btnInsert.TabIndex = 15;
             this.btnInsert.Text = "Insertar";
             this.btnInsert.UseVisualStyleBackColor = false;
@@ -185,23 +200,25 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(121, 168);
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(139, 136);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 23);
+            this.label3.Size = new System.Drawing.Size(77, 21);
             this.label3.TabIndex = 18;
             this.label3.Text = "Nombre:";
             // 
             // txtNombre
             // 
             this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtNombre.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtNombre.Location = new System.Drawing.Point(307, 168);
+            this.txtNombre.Location = new System.Drawing.Point(230, 154);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(163, 25);
+            this.txtNombre.Size = new System.Drawing.Size(122, 20);
             this.txtNombre.TabIndex = 17;
             // 
             // label1
@@ -211,10 +228,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(-84, 56);
+            this.label1.Location = new System.Drawing.Point(-15, 46);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label1.Size = new System.Drawing.Size(0, 23);
+            this.label1.Size = new System.Drawing.Size(0, 21);
             this.label1.TabIndex = 15;
             // 
             // lblGuia
@@ -223,21 +241,23 @@
             this.lblGuia.AutoSize = true;
             this.lblGuia.BackColor = System.Drawing.Color.Transparent;
             this.lblGuia.Font = new System.Drawing.Font("Century Gothic", 14F);
-            this.lblGuia.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblGuia.Location = new System.Drawing.Point(130, 3);
+            this.lblGuia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblGuia.Location = new System.Drawing.Point(146, 8);
+            this.lblGuia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGuia.Name = "lblGuia";
-            this.lblGuia.Size = new System.Drawing.Size(342, 30);
+            this.lblGuia.Size = new System.Drawing.Size(273, 22);
             this.lblGuia.TabIndex = 12;
             this.lblGuia.Text = "UBICACIÓN HIDROGRAFICA";
             // 
             // frmUbicGeo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(724, 408);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(543, 332);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmUbicGeo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmUbicGeo";

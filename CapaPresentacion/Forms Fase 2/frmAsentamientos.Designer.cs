@@ -51,7 +51,7 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.AutoSize = true;
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(85)))), ((int)(((byte)(91)))));
+            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
             this.panel2.Controls.Add(this.btnCerrar);
             this.panel2.Controls.Add(this.btnInsert);
             this.panel2.Controls.Add(this.label6);
@@ -67,7 +67,7 @@
             this.panel2.Controls.Add(this.lblGuia);
             this.panel2.Controls.Add(this.cbxSectorAse);
             this.panel2.Location = new System.Drawing.Point(11, 11);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(470, 313);
             this.panel2.TabIndex = 5;
@@ -75,14 +75,18 @@
             // btnCerrar
             // 
             this.btnCerrar.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCerrar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnCerrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnCerrar.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCerrar.Location = new System.Drawing.Point(102, 268);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCerrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCerrar.Location = new System.Drawing.Point(102, 262);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(86, 25);
+            this.btnCerrar.Size = new System.Drawing.Size(86, 31);
             this.btnCerrar.TabIndex = 25;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = false;
@@ -91,14 +95,18 @@
             // btnInsert
             // 
             this.btnInsert.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnInsert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnInsert.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInsert.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnInsert.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnInsert.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnInsert.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInsert.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsert.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnInsert.Location = new System.Drawing.Point(264, 268);
-            this.btnInsert.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnInsert.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnInsert.Location = new System.Drawing.Point(264, 262);
+            this.btnInsert.Margin = new System.Windows.Forms.Padding(2);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(86, 25);
+            this.btnInsert.Size = new System.Drawing.Size(86, 31);
             this.btnInsert.TabIndex = 15;
             this.btnInsert.Text = "Insertar";
             this.btnInsert.UseVisualStyleBackColor = false;
@@ -110,7 +118,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label6.Location = new System.Drawing.Point(41, 207);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
@@ -121,12 +129,12 @@
             // txtPobla
             // 
             this.txtPobla.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtPobla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtPobla.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtPobla.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPobla.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPobla.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtPobla.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtPobla.Location = new System.Drawing.Point(235, 208);
-            this.txtPobla.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPobla.Margin = new System.Windows.Forms.Padding(2);
             this.txtPobla.Name = "txtPobla";
             this.txtPobla.Size = new System.Drawing.Size(186, 20);
             this.txtPobla.TabIndex = 23;
@@ -137,7 +145,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.Location = new System.Drawing.Point(126, 164);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
@@ -148,12 +156,12 @@
             // txtLonAsen
             // 
             this.txtLonAsen.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtLonAsen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtLonAsen.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtLonAsen.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLonAsen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLonAsen.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtLonAsen.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtLonAsen.Location = new System.Drawing.Point(235, 165);
-            this.txtLonAsen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLonAsen.Margin = new System.Windows.Forms.Padding(2);
             this.txtLonAsen.Name = "txtLonAsen";
             this.txtLonAsen.Size = new System.Drawing.Size(186, 20);
             this.txtLonAsen.TabIndex = 21;
@@ -164,7 +172,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.Location = new System.Drawing.Point(139, 127);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
@@ -175,12 +183,12 @@
             // txtLatAsen
             // 
             this.txtLatAsen.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtLatAsen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtLatAsen.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtLatAsen.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLatAsen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLatAsen.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtLatAsen.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtLatAsen.Location = new System.Drawing.Point(235, 128);
-            this.txtLatAsen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLatAsen.Margin = new System.Windows.Forms.Padding(2);
             this.txtLatAsen.Name = "txtLatAsen";
             this.txtLatAsen.Size = new System.Drawing.Size(186, 20);
             this.txtLatAsen.TabIndex = 19;
@@ -191,7 +199,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(128, 52);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
@@ -202,12 +210,12 @@
             // txtNomAsen
             // 
             this.txtNomAsen.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtNomAsen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtNomAsen.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtNomAsen.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNomAsen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomAsen.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtNomAsen.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtNomAsen.Location = new System.Drawing.Point(235, 53);
-            this.txtNomAsen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNomAsen.Margin = new System.Windows.Forms.Padding(2);
             this.txtNomAsen.Name = "txtNomAsen";
             this.txtNomAsen.Size = new System.Drawing.Size(186, 20);
             this.txtNomAsen.TabIndex = 17;
@@ -218,7 +226,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(142, 87);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
@@ -246,7 +254,7 @@
             this.lblGuia.AutoSize = true;
             this.lblGuia.BackColor = System.Drawing.Color.Transparent;
             this.lblGuia.Font = new System.Drawing.Font("Century Gothic", 14F);
-            this.lblGuia.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblGuia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblGuia.Location = new System.Drawing.Point(118, 11);
             this.lblGuia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGuia.Name = "lblGuia";
@@ -256,9 +264,9 @@
             // 
             // cbxSectorAse
             // 
-            this.cbxSectorAse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.cbxSectorAse.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cbxSectorAse.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxSectorAse.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cbxSectorAse.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxSectorAse.FormattingEnabled = true;
             this.cbxSectorAse.Items.AddRange(new object[] {
             "Consumo doméstico",
@@ -276,11 +284,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(492, 335);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmAsentamientos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAsentamientos";

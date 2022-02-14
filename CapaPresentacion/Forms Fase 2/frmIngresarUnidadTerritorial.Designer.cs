@@ -89,7 +89,7 @@ namespace CapaPresentacion.Forms_Fase_2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.AutoSize = true;
             this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(85)))), ((int)(((byte)(91)))));
+            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
             this.panel2.Controls.Add(this.txtParroquia);
             this.panel2.Controls.Add(this.txtCanton);
             this.panel2.Controls.Add(this.label6);
@@ -111,10 +111,10 @@ namespace CapaPresentacion.Forms_Fase_2
             // txtParroquia
             // 
             this.txtParroquia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtParroquia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtParroquia.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtParroquia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtParroquia.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtParroquia.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtParroquia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtParroquia.Location = new System.Drawing.Point(464, 70);
             this.txtParroquia.Margin = new System.Windows.Forms.Padding(2);
             this.txtParroquia.Name = "txtParroquia";
@@ -124,10 +124,10 @@ namespace CapaPresentacion.Forms_Fase_2
             // txtCanton
             // 
             this.txtCanton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCanton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtCanton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtCanton.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCanton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCanton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtCanton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtCanton.Location = new System.Drawing.Point(171, 70);
             this.txtCanton.Margin = new System.Windows.Forms.Padding(2);
             this.txtCanton.Name = "txtCanton";
@@ -140,7 +140,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label6.Location = new System.Drawing.Point(362, 69);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
@@ -151,10 +151,10 @@ namespace CapaPresentacion.Forms_Fase_2
             // txtProvincia
             // 
             this.txtProvincia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtProvincia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtProvincia.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtProvincia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtProvincia.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProvincia.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtProvincia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtProvincia.Location = new System.Drawing.Point(576, 34);
             this.txtProvincia.Margin = new System.Windows.Forms.Padding(2);
             this.txtProvincia.Name = "txtProvincia";
@@ -167,7 +167,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.Location = new System.Drawing.Point(83, 69);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
@@ -178,10 +178,10 @@ namespace CapaPresentacion.Forms_Fase_2
             // txtRegion
             // 
             this.txtRegion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRegion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtRegion.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtRegion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRegion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRegion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtRegion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtRegion.Location = new System.Drawing.Point(302, 34);
             this.txtRegion.Margin = new System.Windows.Forms.Padding(2);
             this.txtRegion.Name = "txtRegion";
@@ -194,7 +194,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.Location = new System.Drawing.Point(475, 34);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
@@ -208,7 +208,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(221, 34);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
@@ -219,10 +219,10 @@ namespace CapaPresentacion.Forms_Fase_2
             // txtPais
             // 
             this.txtPais.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPais.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtPais.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtPais.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPais.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPais.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtPais.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtPais.Location = new System.Drawing.Point(74, 34);
             this.txtPais.Margin = new System.Windows.Forms.Padding(2);
             this.txtPais.Name = "txtPais";
@@ -235,7 +235,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(20, 34);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
@@ -263,7 +263,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.lblGuia.AutoSize = true;
             this.lblGuia.BackColor = System.Drawing.Color.Transparent;
             this.lblGuia.Font = new System.Drawing.Font("Century Gothic", 14F);
-            this.lblGuia.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblGuia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblGuia.Location = new System.Drawing.Point(211, 2);
             this.lblGuia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGuia.Name = "lblGuia";
@@ -274,14 +274,17 @@ namespace CapaPresentacion.Forms_Fase_2
             // btnGuardar
             // 
             this.btnGuardar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGuardar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnGuardar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnGuardar.Location = new System.Drawing.Point(302, 272);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(86, 25);
+            this.btnGuardar.Size = new System.Drawing.Size(86, 34);
             this.btnGuardar.TabIndex = 14;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -294,7 +297,7 @@ namespace CapaPresentacion.Forms_Fase_2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.AutoSize = true;
             this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(85)))), ((int)(((byte)(91)))));
+            this.panel1.BackColor = System.Drawing.Color.Gainsboro;
             this.panel1.Controls.Add(this.btnGuardar);
             this.panel1.Controls.Add(this.txtLonOes);
             this.panel1.Controls.Add(this.txtLonEst);
@@ -333,10 +336,10 @@ namespace CapaPresentacion.Forms_Fase_2
             // txtLonOes
             // 
             this.txtLonOes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLonOes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtLonOes.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtLonOes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLonOes.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLonOes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtLonOes.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtLonOes.Location = new System.Drawing.Point(578, 230);
             this.txtLonOes.Margin = new System.Windows.Forms.Padding(2);
             this.txtLonOes.Name = "txtLonOes";
@@ -346,10 +349,10 @@ namespace CapaPresentacion.Forms_Fase_2
             // txtLonEst
             // 
             this.txtLonEst.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLonEst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtLonEst.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtLonEst.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLonEst.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLonEst.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtLonEst.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtLonEst.Location = new System.Drawing.Point(578, 175);
             this.txtLonEst.Margin = new System.Windows.Forms.Padding(2);
             this.txtLonEst.Name = "txtLonEst";
@@ -359,10 +362,10 @@ namespace CapaPresentacion.Forms_Fase_2
             // txtLatOes
             // 
             this.txtLatOes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLatOes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtLatOes.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtLatOes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLatOes.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLatOes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtLatOes.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtLatOes.Location = new System.Drawing.Point(346, 230);
             this.txtLatOes.Margin = new System.Windows.Forms.Padding(2);
             this.txtLatOes.Name = "txtLatOes";
@@ -372,10 +375,10 @@ namespace CapaPresentacion.Forms_Fase_2
             // txtLatEst
             // 
             this.txtLatEst.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLatEst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtLatEst.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtLatEst.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLatEst.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLatEst.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtLatEst.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtLatEst.Location = new System.Drawing.Point(346, 175);
             this.txtLatEst.Margin = new System.Windows.Forms.Padding(2);
             this.txtLatEst.Name = "txtLatEst";
@@ -388,7 +391,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label19.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label19.Location = new System.Drawing.Point(480, 230);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
@@ -402,7 +405,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label16.Location = new System.Drawing.Point(480, 176);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
@@ -416,7 +419,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label20.Location = new System.Drawing.Point(262, 232);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
@@ -430,7 +433,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label17.Location = new System.Drawing.Point(262, 175);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
@@ -441,10 +444,10 @@ namespace CapaPresentacion.Forms_Fase_2
             // txtOeste
             // 
             this.txtOeste.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtOeste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtOeste.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtOeste.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOeste.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOeste.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtOeste.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtOeste.Location = new System.Drawing.Point(102, 232);
             this.txtOeste.Margin = new System.Windows.Forms.Padding(2);
             this.txtOeste.Name = "txtOeste";
@@ -454,10 +457,10 @@ namespace CapaPresentacion.Forms_Fase_2
             // txtEste
             // 
             this.txtEste.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtEste.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtEste.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEste.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEste.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtEste.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtEste.Location = new System.Drawing.Point(102, 173);
             this.txtEste.Margin = new System.Windows.Forms.Padding(2);
             this.txtEste.Name = "txtEste";
@@ -470,7 +473,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label21.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label21.Location = new System.Drawing.Point(23, 232);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
@@ -498,7 +501,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label18.Location = new System.Drawing.Point(37, 173);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
@@ -509,10 +512,10 @@ namespace CapaPresentacion.Forms_Fase_2
             // txtLonSur
             // 
             this.txtLonSur.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLonSur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtLonSur.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtLonSur.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLonSur.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLonSur.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtLonSur.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtLonSur.Location = new System.Drawing.Point(578, 115);
             this.txtLonSur.Margin = new System.Windows.Forms.Padding(2);
             this.txtLonSur.Name = "txtLonSur";
@@ -522,10 +525,10 @@ namespace CapaPresentacion.Forms_Fase_2
             // txtLatSur
             // 
             this.txtLatSur.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLatSur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtLatSur.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtLatSur.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLatSur.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLatSur.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtLatSur.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtLatSur.Location = new System.Drawing.Point(346, 115);
             this.txtLatSur.Margin = new System.Windows.Forms.Padding(2);
             this.txtLatSur.Name = "txtLatSur";
@@ -538,7 +541,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label7.Location = new System.Drawing.Point(480, 115);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
@@ -552,7 +555,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label8.Location = new System.Drawing.Point(262, 115);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
@@ -563,10 +566,10 @@ namespace CapaPresentacion.Forms_Fase_2
             // txtSur
             // 
             this.txtSur.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtSur.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtSur.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSur.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSur.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtSur.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtSur.Location = new System.Drawing.Point(102, 115);
             this.txtSur.Margin = new System.Windows.Forms.Padding(2);
             this.txtSur.Name = "txtSur";
@@ -579,7 +582,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label14.Location = new System.Drawing.Point(45, 115);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
@@ -604,10 +607,10 @@ namespace CapaPresentacion.Forms_Fase_2
             // txtLonNor
             // 
             this.txtLonNor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLonNor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtLonNor.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtLonNor.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLonNor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLonNor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtLonNor.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtLonNor.Location = new System.Drawing.Point(578, 55);
             this.txtLonNor.Margin = new System.Windows.Forms.Padding(2);
             this.txtLonNor.Name = "txtLonNor";
@@ -617,10 +620,10 @@ namespace CapaPresentacion.Forms_Fase_2
             // txtLatNor
             // 
             this.txtLatNor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLatNor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtLatNor.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtLatNor.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLatNor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLatNor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtLatNor.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtLatNor.Location = new System.Drawing.Point(346, 55);
             this.txtLatNor.Margin = new System.Windows.Forms.Padding(2);
             this.txtLatNor.Name = "txtLatNor";
@@ -633,7 +636,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label9.Location = new System.Drawing.Point(480, 55);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
@@ -647,7 +650,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label10.Location = new System.Drawing.Point(262, 55);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
@@ -658,10 +661,10 @@ namespace CapaPresentacion.Forms_Fase_2
             // txtNorte
             // 
             this.txtNorte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNorte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtNorte.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtNorte.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNorte.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNorte.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtNorte.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtNorte.Location = new System.Drawing.Point(102, 55);
             this.txtNorte.Margin = new System.Windows.Forms.Padding(2);
             this.txtNorte.Name = "txtNorte";
@@ -674,7 +677,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label11.Location = new System.Drawing.Point(26, 57);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
@@ -702,7 +705,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 14F);
-            this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label13.Location = new System.Drawing.Point(309, 3);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
@@ -712,10 +715,14 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // btnAsent
             // 
-            this.btnAsent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.btnAsent.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAsent.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAsent.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnAsent.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnAsent.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnAsent.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnAsent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAsent.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAsent.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAsent.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAsent.Location = new System.Drawing.Point(740, 101);
             this.btnAsent.Margin = new System.Windows.Forms.Padding(2);
             this.btnAsent.Name = "btnAsent";
@@ -727,10 +734,14 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.BackColor = System.Drawing.Color.Gainsboro;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Location = new System.Drawing.Point(740, 176);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
@@ -742,10 +753,14 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.BackColor = System.Drawing.Color.Gainsboro;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button2.Location = new System.Drawing.Point(740, 252);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
@@ -757,10 +772,14 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.BackColor = System.Drawing.Color.Gainsboro;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button3.Location = new System.Drawing.Point(740, 330);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
@@ -772,10 +791,14 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.BackColor = System.Drawing.Color.Gainsboro;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.button4.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button4.Location = new System.Drawing.Point(740, 408);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
@@ -787,10 +810,14 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // btnSector
             // 
-            this.btnSector.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.btnSector.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSector.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnSector.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnSector.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnSector.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnSector.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnSector.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSector.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSector.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSector.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSector.Location = new System.Drawing.Point(740, 36);
             this.btnSector.Margin = new System.Windows.Forms.Padding(2);
             this.btnSector.Name = "btnSector";
@@ -804,7 +831,7 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(954, 484);
             this.Controls.Add(this.btnSector);
             this.Controls.Add(this.button4);
