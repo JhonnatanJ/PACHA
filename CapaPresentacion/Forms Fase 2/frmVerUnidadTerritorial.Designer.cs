@@ -40,10 +40,13 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // btnVerUbiAdmin
             // 
-            this.btnVerUbiAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.btnVerUbiAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnVerUbiAdmin.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnVerUbiAdmin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerUbiAdmin.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerUbiAdmin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerUbiAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerUbiAdmin.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerUbiAdmin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnVerUbiAdmin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnVerUbiAdmin.Location = new System.Drawing.Point(264, 11);
             this.btnVerUbiAdmin.Margin = new System.Windows.Forms.Padding(2);
             this.btnVerUbiAdmin.Name = "btnVerUbiAdmin";
@@ -55,10 +58,13 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // btnVerLimites
             // 
-            this.btnVerLimites.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.btnVerLimites.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnVerLimites.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnVerLimites.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerLimites.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerLimites.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerLimites.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerLimites.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerLimites.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnVerLimites.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnVerLimites.Location = new System.Drawing.Point(264, 73);
             this.btnVerLimites.Margin = new System.Windows.Forms.Padding(2);
             this.btnVerLimites.Name = "btnVerLimites";
@@ -70,10 +76,13 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // btnVerAsentamiento
             // 
-            this.btnVerAsentamiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.btnVerAsentamiento.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnVerAsentamiento.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnVerAsentamiento.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerAsentamiento.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerAsentamiento.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerAsentamiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerAsentamiento.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerAsentamiento.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnVerAsentamiento.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnVerAsentamiento.Location = new System.Drawing.Point(264, 134);
             this.btnVerAsentamiento.Margin = new System.Windows.Forms.Padding(2);
             this.btnVerAsentamiento.Name = "btnVerAsentamiento";
@@ -85,10 +94,13 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // btnVerHitos
             // 
-            this.btnVerHitos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.btnVerHitos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnVerHitos.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnVerHitos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerHitos.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerHitos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerHitos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerHitos.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerHitos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnVerHitos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnVerHitos.Location = new System.Drawing.Point(264, 196);
             this.btnVerHitos.Margin = new System.Windows.Forms.Padding(2);
             this.btnVerHitos.Name = "btnVerHitos";
@@ -100,10 +112,13 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // btnVerUbiHidro
             // 
-            this.btnVerUbiHidro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.btnVerUbiHidro.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnVerUbiHidro.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnVerUbiHidro.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerUbiHidro.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerUbiHidro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerUbiHidro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerUbiHidro.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerUbiHidro.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnVerUbiHidro.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnVerUbiHidro.Location = new System.Drawing.Point(264, 258);
             this.btnVerUbiHidro.Margin = new System.Windows.Forms.Padding(2);
             this.btnVerUbiHidro.Name = "btnVerUbiHidro";
@@ -115,10 +130,13 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // btnVerTiempo
             // 
-            this.btnVerTiempo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.btnVerTiempo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnVerTiempo.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnVerTiempo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerTiempo.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerTiempo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerTiempo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerTiempo.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerTiempo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnVerTiempo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnVerTiempo.Location = new System.Drawing.Point(264, 382);
             this.btnVerTiempo.Margin = new System.Windows.Forms.Padding(2);
             this.btnVerTiempo.Name = "btnVerTiempo";
@@ -130,10 +148,13 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // btnVerEcosistema
             // 
-            this.btnVerEcosistema.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.btnVerEcosistema.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnVerEcosistema.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnVerEcosistema.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerEcosistema.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerEcosistema.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerEcosistema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerEcosistema.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerEcosistema.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnVerEcosistema.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnVerEcosistema.Location = new System.Drawing.Point(264, 320);
             this.btnVerEcosistema.Margin = new System.Windows.Forms.Padding(2);
             this.btnVerEcosistema.Name = "btnVerEcosistema";
@@ -147,7 +168,7 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(775, 553);
             this.Controls.Add(this.btnVerTiempo);
             this.Controls.Add(this.btnVerEcosistema);

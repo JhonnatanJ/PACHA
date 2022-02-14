@@ -325,5 +325,10 @@ namespace CapaPresentacion.Forms_Fase_2
             frmEventosClimaticos evento = new frmEventosClimaticos();
             evento.Show();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

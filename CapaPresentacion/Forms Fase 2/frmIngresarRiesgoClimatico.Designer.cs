@@ -56,7 +56,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(85)))), ((int)(((byte)(91)))));
+            this.panel4.BackColor = System.Drawing.Color.Gainsboro;
             this.panel4.Controls.Add(this.btnGuardarCambio);
             this.panel4.Controls.Add(this.cbxImportanciaRiesgo);
             this.panel4.Controls.Add(this.label8);
@@ -83,10 +83,13 @@ namespace CapaPresentacion.Forms_Fase_2
             // btnGuardarCambio
             // 
             this.btnGuardarCambio.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnGuardarCambio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.btnGuardarCambio.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGuardarCambio.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnGuardarCambio.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnGuardarCambio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnGuardarCambio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnGuardarCambio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarCambio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarCambio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnGuardarCambio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnGuardarCambio.Location = new System.Drawing.Point(253, 386);
             this.btnGuardarCambio.Name = "btnGuardarCambio";
             this.btnGuardarCambio.Size = new System.Drawing.Size(177, 46);
@@ -97,10 +100,9 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // cbxImportanciaRiesgo
             // 
-            this.cbxImportanciaRiesgo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.cbxImportanciaRiesgo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxImportanciaRiesgo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cbxImportanciaRiesgo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxImportanciaRiesgo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cbxImportanciaRiesgo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxImportanciaRiesgo.FormattingEnabled = true;
             this.cbxImportanciaRiesgo.Items.AddRange(new object[] {
             "1",
@@ -118,7 +120,7 @@ namespace CapaPresentacion.Forms_Fase_2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label8.Location = new System.Drawing.Point(22, 297);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(140, 42);
@@ -132,7 +134,7 @@ namespace CapaPresentacion.Forms_Fase_2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(22, 256);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 21);
@@ -141,10 +143,9 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // cbxRespuestaRiesgo
             // 
-            this.cbxRespuestaRiesgo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.cbxRespuestaRiesgo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxRespuestaRiesgo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cbxRespuestaRiesgo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxRespuestaRiesgo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cbxRespuestaRiesgo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxRespuestaRiesgo.FormattingEnabled = true;
             this.cbxRespuestaRiesgo.Items.AddRange(new object[] {
             "Alto",
@@ -162,7 +163,7 @@ namespace CapaPresentacion.Forms_Fase_2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(22, 206);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 21);
@@ -171,10 +172,9 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // cbxRiesgoAmenaza
             // 
-            this.cbxRiesgoAmenaza.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.cbxRiesgoAmenaza.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxRiesgoAmenaza.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cbxRiesgoAmenaza.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxRiesgoAmenaza.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cbxRiesgoAmenaza.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxRiesgoAmenaza.FormattingEnabled = true;
             this.cbxRiesgoAmenaza.Items.AddRange(new object[] {
             "Recursos Naturales",
@@ -196,7 +196,7 @@ namespace CapaPresentacion.Forms_Fase_2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.Location = new System.Drawing.Point(22, 108);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(91, 21);
@@ -205,10 +205,9 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // cbxImpactoRiesgo
             // 
-            this.cbxImpactoRiesgo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.cbxImpactoRiesgo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxImpactoRiesgo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cbxImpactoRiesgo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxImpactoRiesgo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cbxImpactoRiesgo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxImpactoRiesgo.FormattingEnabled = true;
             this.cbxImpactoRiesgo.Location = new System.Drawing.Point(174, 152);
             this.cbxImpactoRiesgo.Name = "cbxImpactoRiesgo";
@@ -221,10 +220,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtRiesgo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRiesgo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtRiesgo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtRiesgo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRiesgo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRiesgo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtRiesgo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtRiesgo.Location = new System.Drawing.Point(174, 256);
             this.txtRiesgo.Name = "txtRiesgo";
             this.txtRiesgo.Size = new System.Drawing.Size(495, 20);
@@ -235,10 +234,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtObservaciones.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtObservaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtObservaciones.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtObservaciones.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtObservaciones.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObservaciones.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtObservaciones.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtObservaciones.Location = new System.Drawing.Point(174, 357);
             this.txtObservaciones.Name = "txtObservaciones";
             this.txtObservaciones.Size = new System.Drawing.Size(495, 20);
@@ -251,7 +250,7 @@ namespace CapaPresentacion.Forms_Fase_2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label6.Location = new System.Drawing.Point(22, 357);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(130, 21);
@@ -260,10 +259,9 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // cbxSectorRiesgo
             // 
-            this.cbxSectorRiesgo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.cbxSectorRiesgo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxSectorRiesgo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cbxSectorRiesgo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxSectorRiesgo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cbxSectorRiesgo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxSectorRiesgo.FormattingEnabled = true;
             this.cbxSectorRiesgo.Location = new System.Drawing.Point(174, 54);
             this.cbxSectorRiesgo.Name = "cbxSectorRiesgo";
@@ -301,7 +299,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(116, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(443, 22);
@@ -312,7 +310,7 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             this.lblRecursoSector.AutoSize = true;
             this.lblRecursoSector.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecursoSector.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblRecursoSector.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblRecursoSector.Location = new System.Drawing.Point(22, 57);
             this.lblRecursoSector.Name = "lblRecursoSector";
             this.lblRecursoSector.Size = new System.Drawing.Size(64, 21);
@@ -326,7 +324,7 @@ namespace CapaPresentacion.Forms_Fase_2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.Location = new System.Drawing.Point(22, 155);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(83, 21);
@@ -337,7 +335,7 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(718, 465);
             this.Controls.Add(this.panel4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
