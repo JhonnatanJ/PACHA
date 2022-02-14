@@ -277,6 +277,11 @@ namespace CapaPresentacion
             controlPaneles.MostrarOcultarPanel(pnlFase3Submenu, btnFase3);
         }
 
+        private void panelFases_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void button1_Click_2(object sender, EventArgs e)//Panel Reportes
         {
             OcultarTodosPaneles();
@@ -302,7 +307,7 @@ namespace CapaPresentacion
             pnlOpcCambioClimatico.Visible = false;
             btnCambioClimatico.BackColor = Color.Transparent;
             pnlUsuarios.Visible = false;
-            btnReporte.BackColor = Color.Transparent;
+            btnReportes.BackColor = Color.Transparent;
             pnlUnidadTerritorial.Visible = false;
             btnUnidadTerritorial.BackColor = Color.Transparent;
             pnlAnalisisSocioambiental.Visible = false;

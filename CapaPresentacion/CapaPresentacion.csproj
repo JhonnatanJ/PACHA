@@ -772,13 +772,17 @@
     <None Include="Resources\iconForm2.png" />
     <None Include="Resources\iconFormIngreso.png" />
     <None Include="Resources\iconMostrar4.png" />
-
     <None Include="Resources\iconAtras.png" />
     <None Include="Resources\logoPacha_png.png" />
     <None Include="Resources\logo_florPacha_png.png" />
-
     <None Include="Resources\iconActualizar.png" />
-
+    <None Include="Resources\iconCerrar_B.png" />
+    <None Include="Resources\iconMinimizar_B.png" />
+    <None Include="Resources\iconMaximizar_B.png" />
+    <None Include="Resources\iconFormulario_B.png" />
+    <None Include="Resources\iconVer_B.png" />
+    <None Include="Resources\iconAtras_B.png" />
+    <None Include="Resources\iconRecargar_B.png" />
     <Content Include="Resources\x-mark-64.png" />
   </ItemGroup>
   <ItemGroup>
