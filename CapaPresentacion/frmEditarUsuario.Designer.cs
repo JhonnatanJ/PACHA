@@ -31,6 +31,8 @@ namespace CapaPresentacion
         {
             this.lbLogin = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.tbCelular = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tbEmail = new System.Windows.Forms.TextBox();
@@ -44,9 +46,7 @@ namespace CapaPresentacion
             this.lblGuia = new System.Windows.Forms.Label();
             this.btnIngCom = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.tbRol = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.cboRol = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,7 +66,7 @@ namespace CapaPresentacion
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(85)))), ((int)(((byte)(91)))));
-            this.panel2.Controls.Add(this.tbRol);
+            this.panel2.Controls.Add(this.cboRol);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.tbCelular);
@@ -84,6 +84,32 @@ namespace CapaPresentacion
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(608, 408);
             this.panel2.TabIndex = 6;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(100, 186);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(45, 23);
+            this.label6.TabIndex = 24;
+            this.label6.Text = "Rol:";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(218, 340);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(336, 44);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Resstablecer Contraseña";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // tbCelular
             // 
@@ -218,7 +244,7 @@ namespace CapaPresentacion
             this.btnIngCom.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnIngCom.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngCom.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnIngCom.Location = new System.Drawing.Point(104, 510);
+            this.btnIngCom.Location = new System.Drawing.Point(115, 510);
             this.btnIngCom.Name = "btnIngCom";
             this.btnIngCom.Size = new System.Drawing.Size(225, 42);
             this.btnIngCom.TabIndex = 7;
@@ -232,7 +258,7 @@ namespace CapaPresentacion
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(402, 510);
+            this.button1.Location = new System.Drawing.Point(410, 510);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(225, 42);
             this.button1.TabIndex = 8;
@@ -240,41 +266,21 @@ namespace CapaPresentacion
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // cboRol
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(278, 336);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(225, 52);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Resstablecer Contraseña";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // tbRol
-            // 
-            this.tbRol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.tbRol.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbRol.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbRol.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tbRol.Location = new System.Drawing.Point(216, 186);
-            this.tbRol.Name = "tbRol";
-            this.tbRol.Size = new System.Drawing.Size(338, 25);
-            this.tbRol.TabIndex = 25;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(100, 186);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 23);
-            this.label6.TabIndex = 24;
-            this.label6.Text = "Rol:";
+            this.cboRol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.cboRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboRol.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cboRol.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.cboRol.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cboRol.FormattingEnabled = true;
+            this.cboRol.Items.AddRange(new object[] {
+            "user",
+            "admin"});
+            this.cboRol.Location = new System.Drawing.Point(216, 183);
+            this.cboRol.Name = "cboRol";
+            this.cboRol.Size = new System.Drawing.Size(338, 31);
+            this.cboRol.TabIndex = 26;
             // 
             // frmEditarUsuario
             // 
@@ -316,8 +322,8 @@ namespace CapaPresentacion
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbCI;
-        private System.Windows.Forms.TextBox tbRol;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox cboRol;
     }
 }

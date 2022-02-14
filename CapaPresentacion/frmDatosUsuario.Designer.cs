@@ -36,6 +36,7 @@ namespace CapaPresentacion
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pbMinimizar = new System.Windows.Forms.PictureBox();
             this.pbCerrar = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgUsuarios)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -62,7 +63,7 @@ namespace CapaPresentacion
             this.btnIngCom.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnIngCom.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngCom.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnIngCom.Location = new System.Drawing.Point(464, 524);
+            this.btnIngCom.Location = new System.Drawing.Point(186, 523);
             this.btnIngCom.Name = "btnIngCom";
             this.btnIngCom.Size = new System.Drawing.Size(366, 63);
             this.btnIngCom.TabIndex = 18;
@@ -127,12 +128,27 @@ namespace CapaPresentacion
             this.pbCerrar.TabStop = false;
             this.pbCerrar.Click += new System.EventHandler(this.pbCerrar_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(728, 523);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(366, 63);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Editar Usuario";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmDatosUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(1286, 610);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pbMinimizar);
@@ -165,5 +181,6 @@ namespace CapaPresentacion
         private System.Windows.Forms.Button btnIngCom;
         private System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.DataGridView dgUsuarios;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -39,20 +39,23 @@ namespace CapaPresentacion
 
         private void btnIngCom_Click(object sender, EventArgs e)
         {
+            if(ValidarCampos(tbContrasena, tbNombres, tbApellidos, tbEmail, tbCelular)) { 
             DialogResult result = MessageBox.Show("¿Desea Guardar los cambios?", "Control", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
-            {
-            try { 
-                ModeloUsuario logicaUsuario = new ModeloUsuario();
-                logicaUsuario.EditarUsuario(seguridad.Encriptar(tbContrasena.Text),tbNombres.Text,tbApellidos.Text,tbEmail.Text,tbCelular.Text);
-                MessageBox.Show("Los datos fueron guardados correctamente", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch
-            {
-                MessageBox.Show("No fue posible guardar la información", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+                if (result == DialogResult.Yes)
+                {
+                    try
+                    {
+                        ModeloUsuario logicaUsuario = new ModeloUsuario();
+                        logicaUsuario.EditarUsuario(seguridad.Encriptar(tbContrasena.Text), tbNombres.Text, tbApellidos.Text, tbEmail.Text, tbCelular.Text);
+                        MessageBox.Show("Los datos fueron guardados correctamente", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("No fue posible guardar la información", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
 
-        }
+            }
         }
 
         private void frmPerfilUsuario_MouseDown(object sender, MouseEventArgs e)
@@ -84,6 +87,34 @@ namespace CapaPresentacion
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private bool ValidarCampos(TextBox contrasena, TextBox nombres, TextBox apellidos, TextBox email, TextBox celular)
+        {
+            //bool bandera = true;
+            ValidarCampos validar = new ValidarCampos();
+
+            if (validar.CampoVacio(contrasena.Text) || validar.CampoVacio(nombres.Text) || validar.CampoVacio(apellidos.Text) || validar.CampoVacio(email.Text) || validar.CampoVacio(celular.Text))
+            {
+                DialogResult result = MessageBox.Show("Existen campos vacíos, ingrese todos los datos requeridos", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            else
+            {
+                if (validar.NumeroTelefono(celular.Text) == false)
+                {
+                    DialogResult result = MessageBox.Show("El número de teléfono está incorrecto", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    //bandera = false;
+                    return false;
+                }
+                if (validar.Email(email.Text) == false)
+                {
+                    DialogResult result = MessageBox.Show("El formato de email está incorrecto", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    //bandera = false;
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }

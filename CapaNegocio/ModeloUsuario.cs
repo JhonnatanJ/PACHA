@@ -30,5 +30,10 @@ namespace CapaDominio
         {
             datosUsuario.Agregar(ci, pass, nombres, apellidos, rol, email, celular);
         }
+
+        public void ReestablecerCont(string ci, string pass)
+        {
+            datosUsuario.ReestablecerContrasena(ci,pass);
+        }
     }
 }

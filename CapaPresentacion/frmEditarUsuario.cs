@@ -16,40 +16,47 @@ namespace CapaPresentacion
 {
     public partial class frmEditarUsuario : Form
     {
-        public frmEditarUsuario()
+        public frmEditarUsuario(string ci, string nombres, string apellidos, string rol, string email, string celular)
         {
             InitializeComponent();
+            tbCI.Text = ci;
+            tbCI.Enabled = false;
+            tbNombres.Text = nombres;
+            tbApellidos.Text = apellidos;
+            cboRol.Text = rol;
+            tbEmail.Text = email;
+            tbCelular.Text = celular;
         }
+
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
         EncriptarContrasena seguridad = new EncriptarContrasena();
-        //public frmEditarUsuario(string ci, string nombres, string apellidos, string rol, string email, string celular)
-        //{
-        //    frmEditarUsuario editarUsuario = new frmEditarUsuario();
-        //    editarUsuario.tbCI.Text = ci;
-        //    editarUsuario.tbNombres.Text = nombres;
-        //    editarUsuario.tbApellidos.Text = apellidos;
-        //    editarUsuario.tbRol.Text = rol;
-        //    editarUsuario.tbEmail.Text = email;
-        //    editarUsuario.tbCelular.Text = celular;
-        //}
+        public frmEditarUsuario()
+        {
+            frmEditarUsuario editarUsuario = new frmEditarUsuario();
+            
+        }
 
         private void btnIngCom_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("¿Desea Guardar los cambios?", "Control", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
+            if (ValidarCampos(tbCI, tbNombres, tbApellidos, cboRol, tbEmail, tbCelular))
             {
-            try { 
-                ModeloUsuario logicaUsuario = new ModeloUsuario();
-                logicaUsuario.EditarUsuario(CacheLoginUsuario.contrasena,tbNombres.Text,tbApellidos.Text,tbEmail.Text,tbCelular.Text);
-                MessageBox.Show("Los datos fueron guardados correctamente", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch
-            {
-                MessageBox.Show("No fue posible guardar la información", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+                DialogResult result = MessageBox.Show("¿Desea Guardar los cambios?", "Control", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    try
+                    {
+                        ModeloUsuario logicaUsuario = new ModeloUsuario();
+                        logicaUsuario.EditarUsuario(CacheLoginUsuario.contrasena, tbNombres.Text, tbApellidos.Text, tbEmail.Text, tbCelular.Text);
+                        MessageBox.Show("Los datos fueron guardados correctamente", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("No fue posible guardar la información", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
 
         }
         }
@@ -72,15 +79,58 @@ namespace CapaPresentacion
         }
 
         private void frmEditarUsuario_Load(object sender, EventArgs e)
+        {            
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
-            frmDatosUsuario usuario = new frmDatosUsuario();
-            frmEditarUsuario editarUsuario = new frmEditarUsuario();
-            tbCI.Text = usuario.ci;
-            tbNombres.Text = usuario.nombres;
-            tbApellidos.Text = usuario.apellidos;
-            tbRol.Text = usuario.rol;
-            editarUsuario.tbEmail.Text = usuario.email;
-            editarUsuario.tbCelular.Text = usuario.celular;
+            
+                DialogResult result = MessageBox.Show("¿Está seguro de reestablecer la contraseña?", "Control", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    try
+                    {
+                        EncriptarContrasena seguridad = new EncriptarContrasena();
+                        ModeloUsuario logicaUsuario = new ModeloUsuario();
+                        logicaUsuario.ReestablecerCont(tbCI.Text, seguridad.Encriptar(tbCI.Text));
+                        MessageBox.Show("La contraseña se reestableció correctamente", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("No fue posible reestablecer la contraseña", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            
+        }
+
+
+        private bool ValidarCampos(TextBox ci, TextBox nombres, TextBox apellidos, ComboBox rol, TextBox email, TextBox celular)
+        {
+            //bool bandera = true;
+            ValidarCampos validar = new ValidarCampos();
+
+            if (validar.CampoVacio(ci.Text) || validar.CampoVacio(nombres.Text) || validar.CampoVacio(apellidos.Text) || validar.CampoVacio(rol.Text) || validar.CampoVacio(email.Text) || validar.CampoVacio(celular.Text))
+            {
+                DialogResult result = MessageBox.Show("Existen campos vacíos, ingrese todos los datos requeridos", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            else
+            {
+                if (validar.NumeroTelefono(celular.Text) == false)
+                {
+                    DialogResult result = MessageBox.Show("El número de teléfono está incorrecto", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    //bandera = false;
+                    return false;
+                }
+                if (validar.Email(email.Text) == false)
+                {
+                    DialogResult result = MessageBox.Show("El formato de email está incorrecto", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    //bandera = false;
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }
