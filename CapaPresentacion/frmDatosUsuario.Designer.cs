@@ -33,10 +33,10 @@ namespace CapaPresentacion
             this.btnIngCom = new System.Windows.Forms.Button();
             this.dgUsuarios = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pbMinimizar = new System.Windows.Forms.PictureBox();
             this.pbCerrar = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgUsuarios)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -49,7 +49,7 @@ namespace CapaPresentacion
             this.lbLogin.AutoSize = true;
             this.lbLogin.BackColor = System.Drawing.Color.Transparent;
             this.lbLogin.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbLogin.Location = new System.Drawing.Point(456, 10);
             this.lbLogin.Name = "lbLogin";
             this.lbLogin.Size = new System.Drawing.Size(436, 45);
@@ -59,13 +59,16 @@ namespace CapaPresentacion
             // 
             // btnIngCom
             // 
-            this.btnIngCom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.btnIngCom.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnIngCom.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnIngCom.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(91)))), ((int)(((byte)(37)))));
+            this.btnIngCom.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnIngCom.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnIngCom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIngCom.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngCom.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnIngCom.Location = new System.Drawing.Point(186, 523);
+            this.btnIngCom.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnIngCom.Location = new System.Drawing.Point(186, 533);
             this.btnIngCom.Name = "btnIngCom";
-            this.btnIngCom.Size = new System.Drawing.Size(366, 63);
+            this.btnIngCom.Size = new System.Drawing.Size(366, 53);
             this.btnIngCom.TabIndex = 18;
             this.btnIngCom.Text = "Agregar Usuario";
             this.btnIngCom.UseVisualStyleBackColor = false;
@@ -88,16 +91,33 @@ namespace CapaPresentacion
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(85)))), ((int)(((byte)(91)))));
+            this.panel1.BackColor = System.Drawing.Color.Gainsboro;
             this.panel1.Controls.Add(this.dgUsuarios);
             this.panel1.Location = new System.Drawing.Point(12, 69);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1260, 438);
             this.panel1.TabIndex = 20;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Gainsboro;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(91)))), ((int)(((byte)(37)))));
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Location = new System.Drawing.Point(728, 533);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(366, 53);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Editar Usuario";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.iconAtras;
+            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.iconAtras_B;
             this.pictureBox1.Location = new System.Drawing.Point(21, 10);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(34, 30);
@@ -108,7 +128,7 @@ namespace CapaPresentacion
             // 
             // pbMinimizar
             // 
-            this.pbMinimizar.Image = global::CapaPresentacion.Properties.Resources.iconMinimizar;
+            this.pbMinimizar.Image = global::CapaPresentacion.Properties.Resources.iconMinimizar_B;
             this.pbMinimizar.Location = new System.Drawing.Point(1219, 12);
             this.pbMinimizar.Name = "pbMinimizar";
             this.pbMinimizar.Size = new System.Drawing.Size(23, 15);
@@ -119,7 +139,7 @@ namespace CapaPresentacion
             // 
             // pbCerrar
             // 
-            this.pbCerrar.Image = global::CapaPresentacion.Properties.Resources.iconCerrar;
+            this.pbCerrar.Image = global::CapaPresentacion.Properties.Resources.iconCerrar_B;
             this.pbCerrar.Location = new System.Drawing.Point(1255, 10);
             this.pbCerrar.Name = "pbCerrar";
             this.pbCerrar.Size = new System.Drawing.Size(17, 17);
@@ -128,25 +148,11 @@ namespace CapaPresentacion
             this.pbCerrar.TabStop = false;
             this.pbCerrar.Click += new System.EventHandler(this.pbCerrar_Click);
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(728, 523);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(366, 63);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "Editar Usuario";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // frmDatosUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1286, 610);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);

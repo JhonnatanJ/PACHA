@@ -29,7 +29,6 @@ namespace CapaPresentacion.Forms_Reportes
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReporteFase2_2));
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.btnActualizar = new System.Windows.Forms.Button();
@@ -40,7 +39,7 @@ namespace CapaPresentacion.Forms_Reportes
             // btnCerrar
             // 
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Image = global::CapaPresentacion.Properties.Resources.iconCerrar_B;
             this.btnCerrar.Location = new System.Drawing.Point(1324, 12);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(20, 20);
@@ -62,6 +61,7 @@ namespace CapaPresentacion.Forms_Reportes
             this.crystalReportViewer1.ShowCloseButton = false;
             this.crystalReportViewer1.ShowCopyButton = false;
             this.crystalReportViewer1.ShowLogo = false;
+            this.crystalReportViewer1.ShowRefreshButton = false;
             this.crystalReportViewer1.Size = new System.Drawing.Size(1332, 644);
             this.crystalReportViewer1.TabIndex = 8;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
@@ -69,7 +69,7 @@ namespace CapaPresentacion.Forms_Reportes
             // btnActualizar
             // 
             this.btnActualizar.BackColor = System.Drawing.Color.Transparent;
-            this.btnActualizar.BackgroundImage = global::CapaPresentacion.Properties.Resources.iconActualizar;
+            this.btnActualizar.BackgroundImage = global::CapaPresentacion.Properties.Resources.iconRecargar_B;
             this.btnActualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnActualizar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -84,18 +84,18 @@ namespace CapaPresentacion.Forms_Reportes
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(609, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(147, 21);
+            this.label2.Size = new System.Drawing.Size(178, 23);
             this.label2.TabIndex = 11;
             this.label2.Text = "REPORTE FASE 2.2";
             // 
             // frmReporteFase2_2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1356, 704);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.label2);

@@ -55,7 +55,7 @@ namespace CapaPresentacion
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
+            this.panel1.BackColor = System.Drawing.Color.Gainsboro;
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -67,9 +67,9 @@ namespace CapaPresentacion
             // lbLogin
             // 
             this.lbLogin.AutoSize = true;
-            this.lbLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.lbLogin.BackColor = System.Drawing.Color.Transparent;
             this.lbLogin.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbLogin.Location = new System.Drawing.Point(485, 9);
             this.lbLogin.Name = "lbLogin";
             this.lbLogin.Size = new System.Drawing.Size(143, 45);
@@ -78,7 +78,7 @@ namespace CapaPresentacion
             // 
             // pnLogin
             // 
-            this.pnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(85)))), ((int)(((byte)(91)))));
+            this.pnLogin.BackColor = System.Drawing.Color.Gainsboro;
             this.pnLogin.Controls.Add(this.lblError);
             this.pnLogin.Controls.Add(this.label1);
             this.pnLogin.Controls.Add(this.lbUsuario);
@@ -93,19 +93,19 @@ namespace CapaPresentacion
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(173, 106);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(203, 34);
+            this.label1.Size = new System.Drawing.Size(210, 34);
             this.label1.TabIndex = 3;
-            this.label1.Text = "CONTRASEÑA";
+            this.label1.Text = "CONTRASEÑA:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // lbUsuario
             // 
             this.lbUsuario.AutoSize = true;
             this.lbUsuario.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbUsuario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbUsuario.Location = new System.Drawing.Point(212, 19);
             this.lbUsuario.Name = "lbUsuario";
             this.lbUsuario.Size = new System.Drawing.Size(138, 34);
@@ -114,10 +114,10 @@ namespace CapaPresentacion
             // 
             // tbContrasena
             // 
-            this.tbContrasena.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.tbContrasena.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tbContrasena.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbContrasena.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbContrasena.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.tbContrasena.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tbContrasena.Location = new System.Drawing.Point(31, 155);
             this.tbContrasena.Name = "tbContrasena";
             this.tbContrasena.PasswordChar = '*';
@@ -129,10 +129,10 @@ namespace CapaPresentacion
             // 
             // tbUsuario
             // 
-            this.tbUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.tbUsuario.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tbUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tbUsuario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tbUsuario.Location = new System.Drawing.Point(31, 67);
             this.tbUsuario.Name = "tbUsuario";
             this.tbUsuario.Size = new System.Drawing.Size(493, 25);
@@ -144,10 +144,13 @@ namespace CapaPresentacion
             // 
             // btnAcceder
             // 
-            this.btnAcceder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.btnAcceder.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAcceder.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAcceder.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnAcceder.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnAcceder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnAcceder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAcceder.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAcceder.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAcceder.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAcceder.Location = new System.Drawing.Point(320, 324);
             this.btnAcceder.Name = "btnAcceder";
             this.btnAcceder.Size = new System.Drawing.Size(463, 51);
@@ -163,7 +166,7 @@ namespace CapaPresentacion
             // 
             // pbMinimizar
             // 
-            this.pbMinimizar.Image = global::CapaPresentacion.Properties.Resources.iconMinimizar;
+            this.pbMinimizar.Image = global::CapaPresentacion.Properties.Resources.iconMinimizar_B;
             this.pbMinimizar.Location = new System.Drawing.Point(797, 11);
             this.pbMinimizar.Name = "pbMinimizar";
             this.pbMinimizar.Size = new System.Drawing.Size(23, 15);
@@ -174,7 +177,7 @@ namespace CapaPresentacion
             // 
             // pbCerrar
             // 
-            this.pbCerrar.Image = global::CapaPresentacion.Properties.Resources.iconCerrar;
+            this.pbCerrar.Image = global::CapaPresentacion.Properties.Resources.iconCerrar_B;
             this.pbCerrar.Location = new System.Drawing.Point(829, 9);
             this.pbCerrar.Name = "pbCerrar";
             this.pbCerrar.Size = new System.Drawing.Size(17, 17);
@@ -186,9 +189,9 @@ namespace CapaPresentacion
             // lblError
             // 
             this.lblError.AutoSize = true;
-            this.lblError.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(85)))), ((int)(((byte)(91)))));
+            this.lblError.BackColor = System.Drawing.Color.Transparent;
             this.lblError.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblError.ForeColor = System.Drawing.Color.IndianRed;
+            this.lblError.ForeColor = System.Drawing.Color.DarkRed;
             this.lblError.Image = global::CapaPresentacion.Properties.Resources.iconError;
             this.lblError.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblError.Location = new System.Drawing.Point(27, 194);
@@ -200,7 +203,7 @@ namespace CapaPresentacion
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::CapaPresentacion.Properties.Resources.logoPNG;
+            this.pictureBox2.Image = global::CapaPresentacion.Properties.Resources.logo_florPacha_png;
             this.pictureBox2.Location = new System.Drawing.Point(12, 58);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(212, 245);
@@ -212,7 +215,7 @@ namespace CapaPresentacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(858, 387);
             this.Controls.Add(this.pbMinimizar);
             this.Controls.Add(this.pbCerrar);

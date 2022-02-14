@@ -71,7 +71,7 @@ namespace CapaPresentacion
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(85)))), ((int)(((byte)(91)))));
+            this.panel5.BackColor = System.Drawing.Color.Gainsboro;
             this.panel5.Controls.Add(this.label9);
             this.panel5.Controls.Add(this.txtemail);
             this.panel5.Controls.Add(this.txttelefono);
@@ -96,7 +96,7 @@ namespace CapaPresentacion
             this.label9.AutoSize = true;
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label9.Location = new System.Drawing.Point(448, 19);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(156, 30);
@@ -106,10 +106,10 @@ namespace CapaPresentacion
             // txtemail
             // 
             this.txtemail.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.txtemail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtemail.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtemail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtemail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtemail.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtemail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtemail.Location = new System.Drawing.Point(730, 203);
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(224, 25);
@@ -118,10 +118,10 @@ namespace CapaPresentacion
             // txttelefono
             // 
             this.txttelefono.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.txttelefono.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txttelefono.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txttelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txttelefono.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttelefono.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txttelefono.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txttelefono.Location = new System.Drawing.Point(730, 141);
             this.txttelefono.Name = "txttelefono";
             this.txttelefono.Size = new System.Drawing.Size(224, 25);
@@ -130,10 +130,10 @@ namespace CapaPresentacion
             // txtresponsable
             // 
             this.txtresponsable.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtresponsable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtresponsable.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtresponsable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtresponsable.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtresponsable.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtresponsable.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtresponsable.Location = new System.Drawing.Point(153, 203);
             this.txtresponsable.Name = "txtresponsable";
             this.txtresponsable.Size = new System.Drawing.Size(224, 25);
@@ -142,10 +142,10 @@ namespace CapaPresentacion
             // txtcargo
             // 
             this.txtcargo.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.txtcargo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtcargo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtcargo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtcargo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcargo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtcargo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtcargo.Location = new System.Drawing.Point(730, 83);
             this.txtcargo.Name = "txtcargo";
             this.txtcargo.Size = new System.Drawing.Size(224, 25);
@@ -154,10 +154,10 @@ namespace CapaPresentacion
             // txtobjetivo
             // 
             this.txtobjetivo.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtobjetivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtobjetivo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtobjetivo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtobjetivo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtobjetivo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtobjetivo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtobjetivo.Location = new System.Drawing.Point(153, 141);
             this.txtobjetivo.Name = "txtobjetivo";
             this.txtobjetivo.Size = new System.Drawing.Size(224, 25);
@@ -168,7 +168,7 @@ namespace CapaPresentacion
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label13.Location = new System.Drawing.Point(647, 85);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(77, 23);
@@ -178,10 +178,10 @@ namespace CapaPresentacion
             // txtnombreProyecto
             // 
             this.txtnombreProyecto.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtnombreProyecto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtnombreProyecto.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtnombreProyecto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtnombreProyecto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnombreProyecto.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtnombreProyecto.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtnombreProyecto.Location = new System.Drawing.Point(153, 83);
             this.txtnombreProyecto.Name = "txtnombreProyecto";
             this.txtnombreProyecto.Size = new System.Drawing.Size(224, 25);
@@ -192,7 +192,7 @@ namespace CapaPresentacion
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label12.Location = new System.Drawing.Point(648, 205);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(76, 23);
@@ -204,7 +204,7 @@ namespace CapaPresentacion
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label11.Location = new System.Drawing.Point(52, 83);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(95, 23);
@@ -216,7 +216,7 @@ namespace CapaPresentacion
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label10.Location = new System.Drawing.Point(626, 141);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(98, 23);
@@ -228,7 +228,7 @@ namespace CapaPresentacion
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label15.Location = new System.Drawing.Point(6, 205);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(141, 23);
@@ -240,7 +240,7 @@ namespace CapaPresentacion
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label14.Location = new System.Drawing.Point(49, 141);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(98, 23);
@@ -251,7 +251,7 @@ namespace CapaPresentacion
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(85)))), ((int)(((byte)(91)))));
+            this.panel4.BackColor = System.Drawing.Color.Gainsboro;
             this.panel4.Controls.Add(this.cboIncidencias);
             this.panel4.Controls.Add(this.lblIncidencia);
             this.panel4.Controls.Add(this.cboTipoActor);
@@ -276,11 +276,10 @@ namespace CapaPresentacion
             // cboIncidencias
             // 
             this.cboIncidencias.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.cboIncidencias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.cboIncidencias.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cboIncidencias.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboIncidencias.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cboIncidencias.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.cboIncidencias.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cboIncidencias.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cboIncidencias.FormattingEnabled = true;
             this.cboIncidencias.Items.AddRange(new object[] {
             "Positiva",
@@ -296,7 +295,7 @@ namespace CapaPresentacion
             this.lblIncidencia.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblIncidencia.AutoSize = true;
             this.lblIncidencia.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIncidencia.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblIncidencia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblIncidencia.Location = new System.Drawing.Point(6, 167);
             this.lblIncidencia.Name = "lblIncidencia";
             this.lblIncidencia.Size = new System.Drawing.Size(125, 23);
@@ -306,11 +305,10 @@ namespace CapaPresentacion
             // cboTipoActor
             // 
             this.cboTipoActor.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.cboTipoActor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.cboTipoActor.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cboTipoActor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboTipoActor.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cboTipoActor.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.cboTipoActor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cboTipoActor.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cboTipoActor.FormattingEnabled = true;
             this.cboTipoActor.Items.AddRange(new object[] {
             "Sociocultural",
@@ -325,11 +323,10 @@ namespace CapaPresentacion
             // cboRelacionAnalisis
             // 
             this.cboRelacionAnalisis.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.cboRelacionAnalisis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.cboRelacionAnalisis.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cboRelacionAnalisis.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboRelacionAnalisis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cboRelacionAnalisis.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.cboRelacionAnalisis.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cboRelacionAnalisis.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cboRelacionAnalisis.FormattingEnabled = true;
             this.cboRelacionAnalisis.Items.AddRange(new object[] {
             "Alto",
@@ -370,7 +367,7 @@ namespace CapaPresentacion
             this.label3.AutoSize = true;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(356, 10);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(326, 30);
@@ -380,10 +377,10 @@ namespace CapaPresentacion
             // txtcompetenciaRel
             // 
             this.txtcompetenciaRel.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.txtcompetenciaRel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtcompetenciaRel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtcompetenciaRel.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtcompetenciaRel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcompetenciaRel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtcompetenciaRel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtcompetenciaRel.Location = new System.Drawing.Point(744, 168);
             this.txtcompetenciaRel.Name = "txtcompetenciaRel";
             this.txtcompetenciaRel.Size = new System.Drawing.Size(224, 25);
@@ -392,10 +389,10 @@ namespace CapaPresentacion
             // txtsiglas
             // 
             this.txtsiglas.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.txtsiglas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtsiglas.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtsiglas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtsiglas.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsiglas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtsiglas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtsiglas.Location = new System.Drawing.Point(744, 66);
             this.txtsiglas.Name = "txtsiglas";
             this.txtsiglas.Size = new System.Drawing.Size(224, 25);
@@ -404,10 +401,10 @@ namespace CapaPresentacion
             // txtnombreActor
             // 
             this.txtnombreActor.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtnombreActor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtnombreActor.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtnombreActor.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtnombreActor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnombreActor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtnombreActor.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtnombreActor.Location = new System.Drawing.Point(137, 66);
             this.txtnombreActor.Name = "txtnombreActor";
             this.txtnombreActor.Size = new System.Drawing.Size(280, 25);
@@ -418,7 +415,7 @@ namespace CapaPresentacion
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label6.Location = new System.Drawing.Point(76, 113);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 23);
@@ -430,7 +427,7 @@ namespace CapaPresentacion
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.Location = new System.Drawing.Point(33, 65);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(95, 23);
@@ -442,7 +439,7 @@ namespace CapaPresentacion
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label8.Location = new System.Drawing.Point(436, 167);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(301, 23);
@@ -454,7 +451,7 @@ namespace CapaPresentacion
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label7.Location = new System.Drawing.Point(433, 118);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(304, 23);
@@ -467,7 +464,7 @@ namespace CapaPresentacion
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.Location = new System.Drawing.Point(671, 66);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 23);
@@ -477,10 +474,13 @@ namespace CapaPresentacion
             // btnCancelar
             // 
             this.btnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCancelar.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCancelar.Location = new System.Drawing.Point(611, 280);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(295, 47);
@@ -492,10 +492,13 @@ namespace CapaPresentacion
             // btnGuardarProyecto
             // 
             this.btnGuardarProyecto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnGuardarProyecto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.btnGuardarProyecto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGuardarProyecto.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnGuardarProyecto.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnGuardarProyecto.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnGuardarProyecto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnGuardarProyecto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarProyecto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarProyecto.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnGuardarProyecto.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnGuardarProyecto.Location = new System.Drawing.Point(115, 634);
             this.btnGuardarProyecto.Name = "btnGuardarProyecto";
             this.btnGuardarProyecto.Size = new System.Drawing.Size(295, 47);
@@ -507,10 +510,13 @@ namespace CapaPresentacion
             // btnGuardarActor
             // 
             this.btnGuardarActor.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnGuardarActor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.btnGuardarActor.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGuardarActor.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnGuardarActor.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnGuardarActor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnGuardarActor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnGuardarActor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarActor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarActor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnGuardarActor.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnGuardarActor.Location = new System.Drawing.Point(70, 269);
             this.btnGuardarActor.Name = "btnGuardarActor";
             this.btnGuardarActor.Size = new System.Drawing.Size(340, 47);
@@ -522,10 +528,13 @@ namespace CapaPresentacion
             // btnNuevoProyecto
             // 
             this.btnNuevoProyecto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNuevoProyecto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.btnNuevoProyecto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnNuevoProyecto.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnNuevoProyecto.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnNuevoProyecto.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnNuevoProyecto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnNuevoProyecto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevoProyecto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevoProyecto.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnNuevoProyecto.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnNuevoProyecto.Location = new System.Drawing.Point(611, 634);
             this.btnNuevoProyecto.Name = "btnNuevoProyecto";
             this.btnNuevoProyecto.Size = new System.Drawing.Size(295, 47);
@@ -539,7 +548,7 @@ namespace CapaPresentacion
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1033, 704);
             this.Controls.Add(this.btnNuevoProyecto);
             this.Controls.Add(this.btnGuardarActor);

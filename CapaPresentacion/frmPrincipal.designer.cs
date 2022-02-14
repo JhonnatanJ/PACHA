@@ -29,10 +29,8 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblNombreComunidad = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.panelFases = new System.Windows.Forms.Panel();
             this.btnCambioComunidad = new System.Windows.Forms.Button();
             this.pnlUsuarios = new System.Windows.Forms.Panel();
@@ -72,8 +70,6 @@ namespace CapaPresentacion
             this.btnIngresarRiesgoClimatico = new System.Windows.Forms.Button();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -83,6 +79,8 @@ namespace CapaPresentacion
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pbMaximizar = new System.Windows.Forms.PictureBox();
             this.pbMinimizar = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -102,8 +100,6 @@ namespace CapaPresentacion
             this.pnlRiesgoClimatico.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -113,6 +109,8 @@ namespace CapaPresentacion
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -121,13 +119,12 @@ namespace CapaPresentacion
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
+            this.panel1.BackColor = System.Drawing.Color.Gainsboro;
             this.panel1.Controls.Add(this.pbMaximizar);
             this.panel1.Controls.Add(this.pbMinimizar);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.btnCerrar);
             this.panel1.Controls.Add(this.lblNombreComunidad);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -141,7 +138,7 @@ namespace CapaPresentacion
             this.lblNombreComunidad.AutoSize = true;
             this.lblNombreComunidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblNombreComunidad.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreComunidad.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblNombreComunidad.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblNombreComunidad.Location = new System.Drawing.Point(591, 3);
             this.lblNombreComunidad.Name = "lblNombreComunidad";
             this.lblNombreComunidad.Size = new System.Drawing.Size(225, 39);
@@ -149,23 +146,10 @@ namespace CapaPresentacion
             this.lblNombreComunidad.Text = "COMUNIDAD";
             this.lblNombreComunidad.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblNombreComunidad_MouseDown);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(59, 5);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 34);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "PACHA";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // panelFases
             // 
             this.panelFases.AutoScroll = true;
-            this.panelFases.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(85)))), ((int)(((byte)(91)))));
+            this.panelFases.BackColor = System.Drawing.Color.Gainsboro;
             this.panelFases.Controls.Add(this.btnCambioComunidad);
             this.panelFases.Controls.Add(this.pnlUsuarios);
             this.panelFases.Controls.Add(this.btnReportes);
@@ -181,14 +165,19 @@ namespace CapaPresentacion
             this.panelFases.Name = "panelFases";
             this.panelFases.Size = new System.Drawing.Size(194, 704);
             this.panelFases.TabIndex = 1;
+            this.panelFases.Paint += new System.Windows.Forms.PaintEventHandler(this.panelFases_Paint);
             // 
             // btnCambioComunidad
             // 
             this.btnCambioComunidad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCambioComunidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
+            this.btnCambioComunidad.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnCambioComunidad.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnCambioComunidad.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnCambioComunidad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnCambioComunidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCambioComunidad.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCambioComunidad.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCambioComunidad.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCambioComunidad.Location = new System.Drawing.Point(6, 650);
             this.btnCambioComunidad.Name = "btnCambioComunidad";
             this.btnCambioComunidad.Size = new System.Drawing.Size(182, 47);
@@ -199,7 +188,7 @@ namespace CapaPresentacion
             // 
             // pnlUsuarios
             // 
-            this.pnlUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(96)))), ((int)(((byte)(93)))));
+            this.pnlUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(91)))), ((int)(((byte)(37)))));
             this.pnlUsuarios.Controls.Add(this.btnReporte);
             this.pnlUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlUsuarios.Location = new System.Drawing.Point(0, 518);
@@ -211,10 +200,11 @@ namespace CapaPresentacion
             // 
             this.btnReporte.BackColor = System.Drawing.Color.Transparent;
             this.btnReporte.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnReporte.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnReporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnReporte.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(91)))), ((int)(((byte)(37)))));
+            this.btnReporte.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnReporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReporte.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnReporte.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnReporte.Location = new System.Drawing.Point(0, 0);
             this.btnReporte.Name = "btnReporte";
             this.btnReporte.Size = new System.Drawing.Size(194, 55);
@@ -227,11 +217,12 @@ namespace CapaPresentacion
             // 
             this.btnReportes.BackColor = System.Drawing.Color.Transparent;
             this.btnReportes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnReportes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnReportes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnReportes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnReportes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnReportes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReportes.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnReportes.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnReportes.Location = new System.Drawing.Point(0, 459);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Size = new System.Drawing.Size(194, 59);
@@ -242,7 +233,7 @@ namespace CapaPresentacion
             // 
             // pnlFase3Submenu
             // 
-            this.pnlFase3Submenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(96)))), ((int)(((byte)(93)))));
+            this.pnlFase3Submenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(91)))), ((int)(((byte)(37)))));
             this.pnlFase3Submenu.Controls.Add(this.btnMediosEstrategiasVida);
             this.pnlFase3Submenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlFase3Submenu.Location = new System.Drawing.Point(0, 401);
@@ -254,10 +245,11 @@ namespace CapaPresentacion
             // 
             this.btnMediosEstrategiasVida.BackColor = System.Drawing.Color.Transparent;
             this.btnMediosEstrategiasVida.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMediosEstrategiasVida.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnMediosEstrategiasVida.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnMediosEstrategiasVida.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(91)))), ((int)(((byte)(37)))));
+            this.btnMediosEstrategiasVida.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnMediosEstrategiasVida.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnMediosEstrategiasVida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMediosEstrategiasVida.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnMediosEstrategiasVida.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnMediosEstrategiasVida.Location = new System.Drawing.Point(0, 0);
             this.btnMediosEstrategiasVida.Name = "btnMediosEstrategiasVida";
             this.btnMediosEstrategiasVida.Size = new System.Drawing.Size(194, 55);
@@ -270,11 +262,12 @@ namespace CapaPresentacion
             // 
             this.btnFase3.BackColor = System.Drawing.Color.Transparent;
             this.btnFase3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnFase3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnFase3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnFase3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnFase3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnFase3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnFase3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFase3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFase3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnFase3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnFase3.Location = new System.Drawing.Point(0, 342);
             this.btnFase3.Name = "btnFase3";
             this.btnFase3.Size = new System.Drawing.Size(194, 59);
@@ -285,7 +278,7 @@ namespace CapaPresentacion
             // 
             // pnlFase2Submenu
             // 
-            this.pnlFase2Submenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(96)))), ((int)(((byte)(93)))));
+            this.pnlFase2Submenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(91)))), ((int)(((byte)(37)))));
             this.pnlFase2Submenu.Controls.Add(this.btnRiesgoClimatico);
             this.pnlFase2Submenu.Controls.Add(this.btnAnalisisSocioambiental);
             this.pnlFase2Submenu.Controls.Add(this.btnUnidadTerritorial);
@@ -299,10 +292,11 @@ namespace CapaPresentacion
             // 
             this.btnRiesgoClimatico.BackColor = System.Drawing.Color.Transparent;
             this.btnRiesgoClimatico.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnRiesgoClimatico.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnRiesgoClimatico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnRiesgoClimatico.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(91)))), ((int)(((byte)(37)))));
+            this.btnRiesgoClimatico.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnRiesgoClimatico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnRiesgoClimatico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRiesgoClimatico.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnRiesgoClimatico.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnRiesgoClimatico.Location = new System.Drawing.Point(0, 95);
             this.btnRiesgoClimatico.Name = "btnRiesgoClimatico";
             this.btnRiesgoClimatico.Size = new System.Drawing.Size(194, 41);
@@ -315,10 +309,11 @@ namespace CapaPresentacion
             // 
             this.btnAnalisisSocioambiental.BackColor = System.Drawing.Color.Transparent;
             this.btnAnalisisSocioambiental.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAnalisisSocioambiental.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnAnalisisSocioambiental.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnAnalisisSocioambiental.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(91)))), ((int)(((byte)(37)))));
+            this.btnAnalisisSocioambiental.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnAnalisisSocioambiental.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnAnalisisSocioambiental.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnalisisSocioambiental.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAnalisisSocioambiental.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAnalisisSocioambiental.Location = new System.Drawing.Point(0, 43);
             this.btnAnalisisSocioambiental.Name = "btnAnalisisSocioambiental";
             this.btnAnalisisSocioambiental.Size = new System.Drawing.Size(194, 52);
@@ -331,10 +326,11 @@ namespace CapaPresentacion
             // 
             this.btnUnidadTerritorial.BackColor = System.Drawing.Color.Transparent;
             this.btnUnidadTerritorial.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnUnidadTerritorial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnUnidadTerritorial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnUnidadTerritorial.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(91)))), ((int)(((byte)(37)))));
+            this.btnUnidadTerritorial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnUnidadTerritorial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnUnidadTerritorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUnidadTerritorial.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnUnidadTerritorial.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnUnidadTerritorial.Location = new System.Drawing.Point(0, 0);
             this.btnUnidadTerritorial.Name = "btnUnidadTerritorial";
             this.btnUnidadTerritorial.Size = new System.Drawing.Size(194, 43);
@@ -347,11 +343,12 @@ namespace CapaPresentacion
             // 
             this.btnFase2.BackColor = System.Drawing.Color.Transparent;
             this.btnFase2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnFase2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnFase2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnFase2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnFase2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnFase2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnFase2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFase2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFase2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnFase2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnFase2.Location = new System.Drawing.Point(0, 144);
             this.btnFase2.Name = "btnFase2";
             this.btnFase2.Size = new System.Drawing.Size(194, 59);
@@ -362,7 +359,7 @@ namespace CapaPresentacion
             // 
             // pnlFase1Submenu
             // 
-            this.pnlFase1Submenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(96)))), ((int)(((byte)(93)))));
+            this.pnlFase1Submenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(91)))), ((int)(((byte)(37)))));
             this.pnlFase1Submenu.Controls.Add(this.btnCambioClimatico);
             this.pnlFase1Submenu.Controls.Add(this.btnActoresLocales);
             this.pnlFase1Submenu.Dock = System.Windows.Forms.DockStyle.Top;
@@ -375,10 +372,11 @@ namespace CapaPresentacion
             // 
             this.btnCambioClimatico.BackColor = System.Drawing.Color.Transparent;
             this.btnCambioClimatico.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCambioClimatico.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnCambioClimatico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnCambioClimatico.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(91)))), ((int)(((byte)(37)))));
+            this.btnCambioClimatico.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnCambioClimatico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnCambioClimatico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCambioClimatico.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCambioClimatico.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCambioClimatico.Location = new System.Drawing.Point(0, 43);
             this.btnCambioClimatico.Name = "btnCambioClimatico";
             this.btnCambioClimatico.Size = new System.Drawing.Size(194, 40);
@@ -391,10 +389,11 @@ namespace CapaPresentacion
             // 
             this.btnActoresLocales.BackColor = System.Drawing.Color.Transparent;
             this.btnActoresLocales.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnActoresLocales.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnActoresLocales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnActoresLocales.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(91)))), ((int)(((byte)(37)))));
+            this.btnActoresLocales.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnActoresLocales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnActoresLocales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnActoresLocales.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnActoresLocales.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnActoresLocales.Location = new System.Drawing.Point(0, 0);
             this.btnActoresLocales.Name = "btnActoresLocales";
             this.btnActoresLocales.Size = new System.Drawing.Size(194, 43);
@@ -406,11 +405,12 @@ namespace CapaPresentacion
             // btnFase1
             // 
             this.btnFase1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnFase1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnFase1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnFase1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnFase1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnFase1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnFase1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFase1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFase1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnFase1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnFase1.Location = new System.Drawing.Point(0, 0);
             this.btnFase1.Name = "btnFase1";
             this.btnFase1.Size = new System.Drawing.Size(194, 59);
@@ -422,9 +422,11 @@ namespace CapaPresentacion
             // btnCambiarComunidad
             // 
             this.btnCambiarComunidad.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnCambiarComunidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.btnCambiarComunidad.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(204)))), ((int)(((byte)(177)))));
-            this.btnCambiarComunidad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(204)))), ((int)(((byte)(177)))));
+            this.btnCambiarComunidad.BackColor = System.Drawing.Color.Transparent;
+            this.btnCambiarComunidad.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnCambiarComunidad.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnCambiarComunidad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnCambiarComunidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCambiarComunidad.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnCambiarComunidad.Location = new System.Drawing.Point(-251, 650);
             this.btnCambiarComunidad.Name = "btnCambiarComunidad";
@@ -437,10 +439,11 @@ namespace CapaPresentacion
             // btnIngresarActoresLocales
             // 
             this.btnIngresarActoresLocales.BackColor = System.Drawing.Color.Transparent;
-            this.btnIngresarActoresLocales.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnIngresarActoresLocales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnIngresarActoresLocales.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnIngresarActoresLocales.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnIngresarActoresLocales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnIngresarActoresLocales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIngresarActoresLocales.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnIngresarActoresLocales.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnIngresarActoresLocales.Location = new System.Drawing.Point(0, 0);
             this.btnIngresarActoresLocales.Name = "btnIngresarActoresLocales";
             this.btnIngresarActoresLocales.Size = new System.Drawing.Size(190, 34);
@@ -451,10 +454,11 @@ namespace CapaPresentacion
             // 
             // btnVerCambioClimatico
             // 
-            this.btnVerCambioClimatico.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnVerCambioClimatico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnVerCambioClimatico.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerCambioClimatico.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerCambioClimatico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnVerCambioClimatico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVerCambioClimatico.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnVerCambioClimatico.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnVerCambioClimatico.Location = new System.Drawing.Point(0, 36);
             this.btnVerCambioClimatico.Name = "btnVerCambioClimatico";
             this.btnVerCambioClimatico.Size = new System.Drawing.Size(190, 34);
@@ -465,7 +469,9 @@ namespace CapaPresentacion
             // 
             // panelContenedor
             // 
+            this.panelContenedor.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panelContenedor.Controls.Add(this.pictureBox5);
+            this.panelContenedor.Controls.Add(this.pnlRiesgoClimatico);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(194, 45);
             this.panelContenedor.Name = "panelContenedor";
@@ -474,22 +480,23 @@ namespace CapaPresentacion
             // 
             // pnlMediosEst
             // 
-            this.pnlMediosEst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(96)))), ((int)(((byte)(93)))));
+            this.pnlMediosEst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(91)))), ((int)(((byte)(37)))));
             this.pnlMediosEst.Controls.Add(this.pictureBox13);
             this.pnlMediosEst.Controls.Add(this.pictureBox14);
             this.pnlMediosEst.Controls.Add(this.btnVisualizarMediosEst);
             this.pnlMediosEst.Controls.Add(this.btnIngresarMediosEst);
-            this.pnlMediosEst.Location = new System.Drawing.Point(195, 212);
+            this.pnlMediosEst.Location = new System.Drawing.Point(195, 218);
             this.pnlMediosEst.Name = "pnlMediosEst";
             this.pnlMediosEst.Size = new System.Drawing.Size(190, 71);
             this.pnlMediosEst.TabIndex = 14;
             // 
             // btnVisualizarMediosEst
             // 
-            this.btnVisualizarMediosEst.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnVisualizarMediosEst.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnVisualizarMediosEst.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVisualizarMediosEst.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVisualizarMediosEst.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnVisualizarMediosEst.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVisualizarMediosEst.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnVisualizarMediosEst.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnVisualizarMediosEst.Location = new System.Drawing.Point(0, 36);
             this.btnVisualizarMediosEst.Name = "btnVisualizarMediosEst";
             this.btnVisualizarMediosEst.Size = new System.Drawing.Size(190, 34);
@@ -501,10 +508,11 @@ namespace CapaPresentacion
             // btnIngresarMediosEst
             // 
             this.btnIngresarMediosEst.BackColor = System.Drawing.Color.Transparent;
-            this.btnIngresarMediosEst.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnIngresarMediosEst.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnIngresarMediosEst.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnIngresarMediosEst.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnIngresarMediosEst.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnIngresarMediosEst.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIngresarMediosEst.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnIngresarMediosEst.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnIngresarMediosEst.Location = new System.Drawing.Point(0, 2);
             this.btnIngresarMediosEst.Name = "btnIngresarMediosEst";
             this.btnIngresarMediosEst.Size = new System.Drawing.Size(190, 34);
@@ -515,7 +523,7 @@ namespace CapaPresentacion
             // 
             // pnlOpcActoresLocales
             // 
-            this.pnlOpcActoresLocales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(96)))), ((int)(((byte)(93)))));
+            this.pnlOpcActoresLocales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(91)))), ((int)(((byte)(37)))));
             this.pnlOpcActoresLocales.Controls.Add(this.pictureBox6);
             this.pnlOpcActoresLocales.Controls.Add(this.pictureBox1);
             this.pnlOpcActoresLocales.Controls.Add(this.btnIngresarActoresLocales);
@@ -528,10 +536,11 @@ namespace CapaPresentacion
             // btnVerActoresLocales
             // 
             this.btnVerActoresLocales.BackColor = System.Drawing.Color.Transparent;
-            this.btnVerActoresLocales.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnVerActoresLocales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnVerActoresLocales.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerActoresLocales.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerActoresLocales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnVerActoresLocales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVerActoresLocales.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnVerActoresLocales.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnVerActoresLocales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVerActoresLocales.Location = new System.Drawing.Point(0, 35);
             this.btnVerActoresLocales.Name = "btnVerActoresLocales";
@@ -543,12 +552,12 @@ namespace CapaPresentacion
             // 
             // pnlOpcCambioClimatico
             // 
-            this.pnlOpcCambioClimatico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(96)))), ((int)(((byte)(93)))));
+            this.pnlOpcCambioClimatico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(91)))), ((int)(((byte)(37)))));
             this.pnlOpcCambioClimatico.Controls.Add(this.pictureBox4);
             this.pnlOpcCambioClimatico.Controls.Add(this.pictureBox3);
             this.pnlOpcCambioClimatico.Controls.Add(this.btnVerCambioClimatico);
             this.pnlOpcCambioClimatico.Controls.Add(this.btnIngresarCambioClimatico);
-            this.pnlOpcCambioClimatico.Location = new System.Drawing.Point(196, 145);
+            this.pnlOpcCambioClimatico.Location = new System.Drawing.Point(195, 145);
             this.pnlOpcCambioClimatico.Name = "pnlOpcCambioClimatico";
             this.pnlOpcCambioClimatico.Size = new System.Drawing.Size(190, 71);
             this.pnlOpcCambioClimatico.TabIndex = 9;
@@ -556,10 +565,11 @@ namespace CapaPresentacion
             // btnIngresarCambioClimatico
             // 
             this.btnIngresarCambioClimatico.BackColor = System.Drawing.Color.Transparent;
-            this.btnIngresarCambioClimatico.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnIngresarCambioClimatico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnIngresarCambioClimatico.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnIngresarCambioClimatico.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnIngresarCambioClimatico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnIngresarCambioClimatico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIngresarCambioClimatico.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnIngresarCambioClimatico.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnIngresarCambioClimatico.Location = new System.Drawing.Point(0, 2);
             this.btnIngresarCambioClimatico.Name = "btnIngresarCambioClimatico";
             this.btnIngresarCambioClimatico.Size = new System.Drawing.Size(190, 34);
@@ -570,7 +580,7 @@ namespace CapaPresentacion
             // 
             // pnlUnidadTerritorial
             // 
-            this.pnlUnidadTerritorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(96)))), ((int)(((byte)(93)))));
+            this.pnlUnidadTerritorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(91)))), ((int)(((byte)(37)))));
             this.pnlUnidadTerritorial.Controls.Add(this.pictureBox7);
             this.pnlUnidadTerritorial.Controls.Add(this.pictureBox8);
             this.pnlUnidadTerritorial.Controls.Add(this.btnVisualizarUnidadTerritorial);
@@ -582,11 +592,12 @@ namespace CapaPresentacion
             // 
             // btnVisualizarUnidadTerritorial
             // 
-            this.btnVisualizarUnidadTerritorial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnVisualizarUnidadTerritorial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnVisualizarUnidadTerritorial.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVisualizarUnidadTerritorial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVisualizarUnidadTerritorial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnVisualizarUnidadTerritorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVisualizarUnidadTerritorial.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnVisualizarUnidadTerritorial.Location = new System.Drawing.Point(0, 36);
+            this.btnVisualizarUnidadTerritorial.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnVisualizarUnidadTerritorial.Location = new System.Drawing.Point(-2, 36);
             this.btnVisualizarUnidadTerritorial.Name = "btnVisualizarUnidadTerritorial";
             this.btnVisualizarUnidadTerritorial.Size = new System.Drawing.Size(190, 34);
             this.btnVisualizarUnidadTerritorial.TabIndex = 2;
@@ -597,10 +608,11 @@ namespace CapaPresentacion
             // btnIngresarUnidadTerritorial
             // 
             this.btnIngresarUnidadTerritorial.BackColor = System.Drawing.Color.Transparent;
-            this.btnIngresarUnidadTerritorial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnIngresarUnidadTerritorial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnIngresarUnidadTerritorial.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnIngresarUnidadTerritorial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnIngresarUnidadTerritorial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnIngresarUnidadTerritorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIngresarUnidadTerritorial.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnIngresarUnidadTerritorial.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnIngresarUnidadTerritorial.Location = new System.Drawing.Point(0, 2);
             this.btnIngresarUnidadTerritorial.Name = "btnIngresarUnidadTerritorial";
             this.btnIngresarUnidadTerritorial.Size = new System.Drawing.Size(190, 34);
@@ -611,7 +623,7 @@ namespace CapaPresentacion
             // 
             // pnlAnalisisSocioambiental
             // 
-            this.pnlAnalisisSocioambiental.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(96)))), ((int)(((byte)(93)))));
+            this.pnlAnalisisSocioambiental.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(91)))), ((int)(((byte)(37)))));
             this.pnlAnalisisSocioambiental.Controls.Add(this.pictureBox9);
             this.pnlAnalisisSocioambiental.Controls.Add(this.pictureBox10);
             this.pnlAnalisisSocioambiental.Controls.Add(this.btnVerAnalisisSocioambiental);
@@ -623,10 +635,11 @@ namespace CapaPresentacion
             // 
             // btnVerAnalisisSocioambiental
             // 
-            this.btnVerAnalisisSocioambiental.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnVerAnalisisSocioambiental.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnVerAnalisisSocioambiental.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerAnalisisSocioambiental.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerAnalisisSocioambiental.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnVerAnalisisSocioambiental.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVerAnalisisSocioambiental.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnVerAnalisisSocioambiental.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnVerAnalisisSocioambiental.Location = new System.Drawing.Point(0, 36);
             this.btnVerAnalisisSocioambiental.Name = "btnVerAnalisisSocioambiental";
             this.btnVerAnalisisSocioambiental.Size = new System.Drawing.Size(190, 34);
@@ -638,10 +651,11 @@ namespace CapaPresentacion
             // btnIngresarAnalisisSocioambiental
             // 
             this.btnIngresarAnalisisSocioambiental.BackColor = System.Drawing.Color.Transparent;
-            this.btnIngresarAnalisisSocioambiental.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnIngresarAnalisisSocioambiental.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnIngresarAnalisisSocioambiental.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnIngresarAnalisisSocioambiental.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnIngresarAnalisisSocioambiental.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnIngresarAnalisisSocioambiental.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIngresarAnalisisSocioambiental.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnIngresarAnalisisSocioambiental.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnIngresarAnalisisSocioambiental.Location = new System.Drawing.Point(0, 2);
             this.btnIngresarAnalisisSocioambiental.Name = "btnIngresarAnalisisSocioambiental";
             this.btnIngresarAnalisisSocioambiental.Size = new System.Drawing.Size(190, 34);
@@ -652,22 +666,23 @@ namespace CapaPresentacion
             // 
             // pnlRiesgoClimatico
             // 
-            this.pnlRiesgoClimatico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(96)))), ((int)(((byte)(93)))));
+            this.pnlRiesgoClimatico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(91)))), ((int)(((byte)(37)))));
             this.pnlRiesgoClimatico.Controls.Add(this.pictureBox11);
             this.pnlRiesgoClimatico.Controls.Add(this.pictureBox12);
             this.pnlRiesgoClimatico.Controls.Add(this.btnVerRiesgoClimatico);
             this.pnlRiesgoClimatico.Controls.Add(this.btnIngresarRiesgoClimatico);
-            this.pnlRiesgoClimatico.Location = new System.Drawing.Point(195, 257);
+            this.pnlRiesgoClimatico.Location = new System.Drawing.Point(1, 206);
             this.pnlRiesgoClimatico.Name = "pnlRiesgoClimatico";
             this.pnlRiesgoClimatico.Size = new System.Drawing.Size(190, 71);
             this.pnlRiesgoClimatico.TabIndex = 13;
             // 
             // btnVerRiesgoClimatico
             // 
-            this.btnVerRiesgoClimatico.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnVerRiesgoClimatico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnVerRiesgoClimatico.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerRiesgoClimatico.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnVerRiesgoClimatico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnVerRiesgoClimatico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVerRiesgoClimatico.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnVerRiesgoClimatico.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnVerRiesgoClimatico.Location = new System.Drawing.Point(0, 36);
             this.btnVerRiesgoClimatico.Name = "btnVerRiesgoClimatico";
             this.btnVerRiesgoClimatico.Size = new System.Drawing.Size(190, 34);
@@ -679,10 +694,11 @@ namespace CapaPresentacion
             // btnIngresarRiesgoClimatico
             // 
             this.btnIngresarRiesgoClimatico.BackColor = System.Drawing.Color.Transparent;
-            this.btnIngresarRiesgoClimatico.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
-            this.btnIngresarRiesgoClimatico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(160)))), ((int)(((byte)(150)))));
+            this.btnIngresarRiesgoClimatico.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnIngresarRiesgoClimatico.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnIngresarRiesgoClimatico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnIngresarRiesgoClimatico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIngresarRiesgoClimatico.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnIngresarRiesgoClimatico.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnIngresarRiesgoClimatico.Location = new System.Drawing.Point(0, 2);
             this.btnIngresarRiesgoClimatico.Name = "btnIngresarRiesgoClimatico";
             this.btnIngresarRiesgoClimatico.Size = new System.Drawing.Size(190, 34);
@@ -693,7 +709,7 @@ namespace CapaPresentacion
             // 
             // pictureBox13
             // 
-            this.pictureBox13.Image = global::CapaPresentacion.Properties.Resources.iconMostrar;
+            this.pictureBox13.Image = global::CapaPresentacion.Properties.Resources.iconVer_B;
             this.pictureBox13.Location = new System.Drawing.Point(4, 40);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(25, 25);
@@ -703,7 +719,7 @@ namespace CapaPresentacion
             // 
             // pictureBox14
             // 
-            this.pictureBox14.Image = global::CapaPresentacion.Properties.Resources.iconFormIngreso;
+            this.pictureBox14.Image = global::CapaPresentacion.Properties.Resources.iconFormulario_B;
             this.pictureBox14.Location = new System.Drawing.Point(4, 5);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(25, 25);
@@ -711,29 +727,9 @@ namespace CapaPresentacion
             this.pictureBox14.TabIndex = 3;
             this.pictureBox14.TabStop = false;
             // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::CapaPresentacion.Properties.Resources.iconMostrar;
-            this.pictureBox11.Location = new System.Drawing.Point(4, 40);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 4;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::CapaPresentacion.Properties.Resources.iconFormIngreso;
-            this.pictureBox12.Location = new System.Drawing.Point(4, 5);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 3;
-            this.pictureBox12.TabStop = false;
-            // 
             // pictureBox9
             // 
-            this.pictureBox9.Image = global::CapaPresentacion.Properties.Resources.iconMostrar;
+            this.pictureBox9.Image = global::CapaPresentacion.Properties.Resources.iconVer_B;
             this.pictureBox9.Location = new System.Drawing.Point(4, 40);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(25, 25);
@@ -743,7 +739,7 @@ namespace CapaPresentacion
             // 
             // pictureBox10
             // 
-            this.pictureBox10.Image = global::CapaPresentacion.Properties.Resources.iconFormIngreso;
+            this.pictureBox10.Image = global::CapaPresentacion.Properties.Resources.iconFormulario_B;
             this.pictureBox10.Location = new System.Drawing.Point(4, 5);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(25, 25);
@@ -753,7 +749,7 @@ namespace CapaPresentacion
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = global::CapaPresentacion.Properties.Resources.iconMostrar;
+            this.pictureBox7.Image = global::CapaPresentacion.Properties.Resources.iconVer_B;
             this.pictureBox7.Location = new System.Drawing.Point(4, 40);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(25, 25);
@@ -763,7 +759,7 @@ namespace CapaPresentacion
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Image = global::CapaPresentacion.Properties.Resources.iconFormIngreso;
+            this.pictureBox8.Image = global::CapaPresentacion.Properties.Resources.iconFormulario_B;
             this.pictureBox8.Location = new System.Drawing.Point(4, 5);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(25, 25);
@@ -773,7 +769,7 @@ namespace CapaPresentacion
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::CapaPresentacion.Properties.Resources.iconMostrar;
+            this.pictureBox4.Image = global::CapaPresentacion.Properties.Resources.iconVer_B;
             this.pictureBox4.Location = new System.Drawing.Point(4, 40);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(25, 25);
@@ -783,7 +779,7 @@ namespace CapaPresentacion
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::CapaPresentacion.Properties.Resources.iconFormIngreso;
+            this.pictureBox3.Image = global::CapaPresentacion.Properties.Resources.iconFormulario_B;
             this.pictureBox3.Location = new System.Drawing.Point(4, 5);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(25, 25);
@@ -793,7 +789,7 @@ namespace CapaPresentacion
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::CapaPresentacion.Properties.Resources.iconMostrar;
+            this.pictureBox6.Image = global::CapaPresentacion.Properties.Resources.iconVer_B;
             this.pictureBox6.Location = new System.Drawing.Point(3, 40);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(25, 25);
@@ -803,7 +799,7 @@ namespace CapaPresentacion
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.iconFormIngreso;
+            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.iconFormulario_B;
             this.pictureBox1.Location = new System.Drawing.Point(4, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 25);
@@ -815,17 +811,37 @@ namespace CapaPresentacion
             // 
             this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox5.Image = global::CapaPresentacion.Properties.Resources.logoPacha_png;
-            this.pictureBox5.Location = new System.Drawing.Point(221, 237);
+            this.pictureBox5.Location = new System.Drawing.Point(244, 209);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(546, 222);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::CapaPresentacion.Properties.Resources.iconVer_B;
+            this.pictureBox11.Location = new System.Drawing.Point(4, 40);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 4;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::CapaPresentacion.Properties.Resources.iconFormulario_B;
+            this.pictureBox12.Location = new System.Drawing.Point(4, 5);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 3;
+            this.pictureBox12.TabStop = false;
+            // 
             // pbMaximizar
             // 
             this.pbMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbMaximizar.Image = global::CapaPresentacion.Properties.Resources.iconMaximizar;
+            this.pbMaximizar.Image = global::CapaPresentacion.Properties.Resources.iconMaximizar_B;
             this.pbMaximizar.Location = new System.Drawing.Point(1167, 10);
             this.pbMaximizar.Name = "pbMaximizar";
             this.pbMaximizar.Size = new System.Drawing.Size(20, 20);
@@ -837,7 +853,7 @@ namespace CapaPresentacion
             // pbMinimizar
             // 
             this.pbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbMinimizar.Image = global::CapaPresentacion.Properties.Resources.iconMinimizar;
+            this.pbMinimizar.Image = global::CapaPresentacion.Properties.Resources.iconMinimizar_B;
             this.pbMinimizar.Location = new System.Drawing.Point(1133, 11);
             this.pbMinimizar.Name = "pbMinimizar";
             this.pbMinimizar.Size = new System.Drawing.Size(23, 23);
@@ -849,18 +865,18 @@ namespace CapaPresentacion
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::CapaPresentacion.Properties.Resources.logoPNG;
-            this.pictureBox2.Location = new System.Drawing.Point(6, 0);
+            this.pictureBox2.Image = global::CapaPresentacion.Properties.Resources.logoPacha_png;
+            this.pictureBox2.Location = new System.Drawing.Point(1, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(47, 45);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.Size = new System.Drawing.Size(193, 43);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
             // btnCerrar
             // 
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Image = global::CapaPresentacion.Properties.Resources.iconCerrar_B;
             this.btnCerrar.Location = new System.Drawing.Point(1199, 10);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(20, 20);
@@ -875,7 +891,6 @@ namespace CapaPresentacion
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(1227, 749);
             this.Controls.Add(this.pnlMediosEst);
-            this.Controls.Add(this.pnlRiesgoClimatico);
             this.Controls.Add(this.pnlAnalisisSocioambiental);
             this.Controls.Add(this.pnlUnidadTerritorial);
             this.Controls.Add(this.pnlOpcCambioClimatico);
@@ -905,8 +920,6 @@ namespace CapaPresentacion
             this.pnlRiesgoClimatico.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -916,6 +929,8 @@ namespace CapaPresentacion
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -928,7 +943,6 @@ namespace CapaPresentacion
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblNombreComunidad;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelFases;
         private System.Windows.Forms.Button btnVerActoresLocales;
         private System.Windows.Forms.Button btnVerCambioClimatico;

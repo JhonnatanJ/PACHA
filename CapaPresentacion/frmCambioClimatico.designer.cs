@@ -58,10 +58,11 @@ namespace CapaPresentacion
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(22, 175);
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label5.Location = new System.Drawing.Point(29, 215);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(176, 21);
+            this.label5.Size = new System.Drawing.Size(221, 23);
             this.label5.TabIndex = 3;
             this.label5.Text = "Cambios Potenciales:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -70,11 +71,13 @@ namespace CapaPresentacion
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(363, 111);
+            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label8.Location = new System.Drawing.Point(484, 137);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(97, 21);
+            this.label8.Size = new System.Drawing.Size(119, 23);
             this.label8.TabIndex = 3;
             this.label8.Text = "Amenazas:";
             this.label8.Click += new System.EventHandler(this.label8_Click);
@@ -82,11 +85,13 @@ namespace CapaPresentacion
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(26, 111);
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Location = new System.Drawing.Point(35, 137);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 21);
+            this.label4.Size = new System.Drawing.Size(69, 23);
             this.label4.TabIndex = 3;
             this.label4.Text = "Lugar:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -96,25 +101,28 @@ namespace CapaPresentacion
             this.txtCambiosPotenciales.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCambiosPotenciales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtCambiosPotenciales.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtCambiosPotenciales.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCambiosPotenciales.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCambiosPotenciales.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtCambiosPotenciales.Location = new System.Drawing.Point(205, 175);
+            this.txtCambiosPotenciales.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtCambiosPotenciales.Location = new System.Drawing.Point(273, 215);
+            this.txtCambiosPotenciales.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCambiosPotenciales.Name = "txtCambiosPotenciales";
-            this.txtCambiosPotenciales.Size = new System.Drawing.Size(519, 20);
+            this.txtCambiosPotenciales.Size = new System.Drawing.Size(692, 25);
             this.txtCambiosPotenciales.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(223, 25);
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(297, 31);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(336, 22);
+            this.label1.Size = new System.Drawing.Size(431, 30);
             this.label1.TabIndex = 2;
             this.label1.Text = "CONTEXTO DE CAMBIO CLIMÁTICO";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -125,9 +133,10 @@ namespace CapaPresentacion
             this.label16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label16.Location = new System.Drawing.Point(509, -33);
+            this.label16.Location = new System.Drawing.Point(679, -41);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(77, 22);
+            this.label16.Size = new System.Drawing.Size(97, 30);
             this.label16.TabIndex = 2;
             this.label16.Text = "ACTOR";
             // 
@@ -137,19 +146,19 @@ namespace CapaPresentacion
             this.label17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label17.Location = new System.Drawing.Point(509, -68);
+            this.label17.Location = new System.Drawing.Point(679, -84);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(77, 22);
+            this.label17.Size = new System.Drawing.Size(97, 30);
             this.label17.TabIndex = 2;
             this.label17.Text = "ACTOR";
             // 
             // cbxLugar
             // 
-            this.cbxLugar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.cbxLugar.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cbxLugar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxLugar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cbxLugar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxLugar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cbxLugar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxLugar.FormattingEnabled = true;
             this.cbxLugar.Items.AddRange(new object[] {
             "REGION ",
@@ -157,16 +166,17 @@ namespace CapaPresentacion
             "PROVINCIA",
             "CANTON",
             "PARROQUIA/COMUNIDAD"});
-            this.cbxLugar.Location = new System.Drawing.Point(83, 109);
+            this.cbxLugar.Location = new System.Drawing.Point(111, 134);
+            this.cbxLugar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxLugar.Name = "cbxLugar";
-            this.cbxLugar.Size = new System.Drawing.Size(266, 29);
+            this.cbxLugar.Size = new System.Drawing.Size(353, 31);
             this.cbxLugar.TabIndex = 5;
             // 
             // panel4
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(85)))), ((int)(((byte)(91)))));
+            this.panel4.BackColor = System.Drawing.Color.Gainsboro;
             this.panel4.Controls.Add(this.txtPoliticas);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.txtEstrSug);
@@ -184,9 +194,10 @@ namespace CapaPresentacion
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.label8);
             this.panel4.Controls.Add(this.label5);
-            this.panel4.Location = new System.Drawing.Point(12, 12);
+            this.panel4.Location = new System.Drawing.Point(16, 15);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(745, 443);
+            this.panel4.Size = new System.Drawing.Size(993, 545);
             this.panel4.TabIndex = 10;
             // 
             // txtPoliticas
@@ -194,13 +205,14 @@ namespace CapaPresentacion
             this.txtPoliticas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPoliticas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtPoliticas.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtPoliticas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPoliticas.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPoliticas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtPoliticas.Location = new System.Drawing.Point(205, 376);
+            this.txtPoliticas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtPoliticas.Location = new System.Drawing.Point(273, 463);
+            this.txtPoliticas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPoliticas.Name = "txtPoliticas";
-            this.txtPoliticas.Size = new System.Drawing.Size(519, 20);
+            this.txtPoliticas.Size = new System.Drawing.Size(692, 25);
             this.txtPoliticas.TabIndex = 12;
             // 
             // label7
@@ -210,10 +222,11 @@ namespace CapaPresentacion
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(22, 376);
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.Location = new System.Drawing.Point(29, 463);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(166, 21);
+            this.label7.Size = new System.Drawing.Size(208, 23);
             this.label7.TabIndex = 11;
             this.label7.Text = "Politicas en marcha:";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -223,13 +236,14 @@ namespace CapaPresentacion
             this.txtEstrSug.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEstrSug.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtEstrSug.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtEstrSug.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEstrSug.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEstrSug.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtEstrSug.Location = new System.Drawing.Point(205, 325);
+            this.txtEstrSug.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtEstrSug.Location = new System.Drawing.Point(273, 400);
+            this.txtEstrSug.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEstrSug.Name = "txtEstrSug";
-            this.txtEstrSug.Size = new System.Drawing.Size(519, 20);
+            this.txtEstrSug.Size = new System.Drawing.Size(692, 25);
             this.txtEstrSug.TabIndex = 12;
             this.txtEstrSug.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
@@ -240,10 +254,11 @@ namespace CapaPresentacion
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(22, 325);
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label6.Location = new System.Drawing.Point(29, 400);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(179, 21);
+            this.label6.Size = new System.Drawing.Size(218, 23);
             this.label6.TabIndex = 11;
             this.label6.Text = "Estrategias Sugeridas:";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -253,13 +268,14 @@ namespace CapaPresentacion
             this.txtRiesgo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRiesgo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtRiesgo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtRiesgo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRiesgo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRiesgo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtRiesgo.Location = new System.Drawing.Point(205, 277);
+            this.txtRiesgo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtRiesgo.Location = new System.Drawing.Point(273, 341);
+            this.txtRiesgo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRiesgo.Name = "txtRiesgo";
-            this.txtRiesgo.Size = new System.Drawing.Size(519, 20);
+            this.txtRiesgo.Size = new System.Drawing.Size(692, 25);
             this.txtRiesgo.TabIndex = 10;
             this.txtRiesgo.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -270,10 +286,11 @@ namespace CapaPresentacion
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(22, 277);
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(29, 341);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(147, 21);
+            this.label3.Size = new System.Drawing.Size(182, 23);
             this.label3.TabIndex = 9;
             this.label3.Text = "Riesgo Climático: ";
             this.label3.Click += new System.EventHandler(this.label3_Click_1);
@@ -283,13 +300,14 @@ namespace CapaPresentacion
             this.txtImpacto.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtImpacto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.txtImpacto.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtImpacto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtImpacto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtImpacto.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtImpacto.Location = new System.Drawing.Point(205, 229);
+            this.txtImpacto.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtImpacto.Location = new System.Drawing.Point(273, 282);
+            this.txtImpacto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtImpacto.Name = "txtImpacto";
-            this.txtImpacto.Size = new System.Drawing.Size(519, 20);
+            this.txtImpacto.Size = new System.Drawing.Size(692, 25);
             this.txtImpacto.TabIndex = 8;
             // 
             // label2
@@ -299,10 +317,11 @@ namespace CapaPresentacion
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(22, 229);
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(29, 282);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(159, 21);
+            this.label2.Size = new System.Drawing.Size(197, 23);
             this.label2.TabIndex = 7;
             this.label2.Text = "Impactos Previstos:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -310,11 +329,10 @@ namespace CapaPresentacion
             // cbxAmenaza
             // 
             this.cbxAmenaza.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxAmenaza.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.cbxAmenaza.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cbxAmenaza.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxAmenaza.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cbxAmenaza.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxAmenaza.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cbxAmenaza.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxAmenaza.FormattingEnabled = true;
             this.cbxAmenaza.Items.AddRange(new object[] {
             "CENIZAS VOLCANICAS",
@@ -341,21 +359,26 @@ namespace CapaPresentacion
             "SEQUIA",
             "SUELOS EXPANSIVOS",
             "TEMBLORES"});
-            this.cbxAmenaza.Location = new System.Drawing.Point(459, 109);
+            this.cbxAmenaza.Location = new System.Drawing.Point(612, 134);
+            this.cbxAmenaza.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxAmenaza.Name = "cbxAmenaza";
-            this.cbxAmenaza.Size = new System.Drawing.Size(266, 29);
+            this.cbxAmenaza.Size = new System.Drawing.Size(353, 31);
             this.cbxAmenaza.TabIndex = 6;
             // 
             // btnGuardarCambio
             // 
             this.btnGuardarCambio.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnGuardarCambio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            this.btnGuardarCambio.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGuardarCambio.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnGuardarCambio.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnGuardarCambio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnGuardarCambio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnGuardarCambio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarCambio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarCambio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGuardarCambio.Location = new System.Drawing.Point(225, 479);
+            this.btnGuardarCambio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnGuardarCambio.Location = new System.Drawing.Point(300, 590);
+            this.btnGuardarCambio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGuardarCambio.Name = "btnGuardarCambio";
-            this.btnGuardarCambio.Size = new System.Drawing.Size(295, 47);
+            this.btnGuardarCambio.Size = new System.Drawing.Size(393, 58);
             this.btnGuardarCambio.TabIndex = 12;
             this.btnGuardarCambio.Text = "Guardar Datos";
             this.btnGuardarCambio.UseVisualStyleBackColor = false;
@@ -363,14 +386,14 @@ namespace CapaPresentacion
             // 
             // frmCambioClimatico
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(775, 572);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(1033, 704);
             this.Controls.Add(this.btnGuardarCambio);
             this.Controls.Add(this.panel4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmCambioClimatico";
             this.Text = "frmCambioClimatico";
             this.Load += new System.EventHandler(this.frmCambioClimatico_Load);

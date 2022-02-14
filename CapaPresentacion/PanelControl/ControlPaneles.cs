@@ -20,7 +20,7 @@ namespace CapaPresentacion.PanelControl
             else
             {
                 panel.Visible = true;
-                boton.BackColor = Color.FromArgb(100, 160, 150);
+                boton.BackColor = Color.FromArgb(239, 124, 29);
             }
         }
 
