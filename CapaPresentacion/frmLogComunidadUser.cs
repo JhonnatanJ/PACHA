@@ -47,12 +47,19 @@ namespace CapaPresentacion
 
         private void btnIngCom_Click(object sender, EventArgs e)
         {
-            ModeloComunidadLog comunidadLog = new ModeloComunidadLog();
-            comunidadLog.CargarDatosComunidadLog(cboComunidad.Text);
-            
-            frmPrincipal principal = new frmPrincipal();
-            principal.Show();
-            this.Hide();
+            if (cboComunidad.Text.Equals(""))
+            {
+                MessageBox.Show("No se ha seleccionado ninguna Comunidad, puede agregar comunidades utilizando el boton Crear Comunidad", "Control", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                ModeloComunidadLog comunidadLog = new ModeloComunidadLog();
+                comunidadLog.CargarDatosComunidadLog(cboComunidad.Text);
+
+                frmPrincipal principal = new frmPrincipal();
+                principal.Show();
+                this.Hide();
+            }
         }
 
         private void labelNombre_Click(object sender, EventArgs e)

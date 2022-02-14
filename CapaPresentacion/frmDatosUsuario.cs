@@ -49,6 +49,13 @@ namespace CapaPresentacion
             this.WindowState = FormWindowState.Minimized;
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SeleccionDatos();
+            frmEditarUsuario editar = new frmEditarUsuario(ci,nombres,apellidos,rol,email,celular);
+            editar.Show();
+        }
+
         private void pbCerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -70,7 +77,7 @@ namespace CapaPresentacion
         {                   
             try
             {
-                filaSeleccionada = dgUsuarios.Rows.GetRowCount(DataGridViewElementStates.Selected);
+                filaSeleccionada = dgUsuarios.CurrentRow.Index;
                 ModeloUsuario datosUsuario = new ModeloUsuario();
                 DataTable datos = datosUsuario.CargarDGVUsuario();
                 ci = datos.Rows[filaSeleccionada]["CI"].ToString();
@@ -84,13 +91,6 @@ namespace CapaPresentacion
             {
                 MessageBox.Show("No se seleccionó un Proyecto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            SeleccionDatos();
-            frmEditarUsuario editar = new frmEditarUsuario();
-            editar.Show();
         }
     }
 }

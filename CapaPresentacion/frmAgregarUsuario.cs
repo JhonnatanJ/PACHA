@@ -29,22 +29,25 @@ namespace CapaPresentacion
        
         private void btnIngCom_Click(object sender, EventArgs e)
         {
+            if (ValidarCampos(tbCI,tbNombres, tbApellidos, cboRol, tbEmail, tbCelular)) { 
             DialogResult result = MessageBox.Show("¿Los Datos son correctos?", "Control", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
-            {
-                try
+                if (result == DialogResult.Yes)
                 {
-                    ModeloUsuario logicaUsuario = new ModeloUsuario();
-                    logicaUsuario.AgregarUsuario(tbCI.Text, seguridad.Encriptar(tbCI.Text), tbNombres.Text, tbApellidos.Text, cboRol.Text, tbEmail.Text, tbCelular.Text);
-                    DialogResult guardado = MessageBox.Show("Los datos fueron guardados correctamente", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    if(guardado == DialogResult.OK) { 
-                        this.Close();
+                    try
+                    {
+                        ModeloUsuario logicaUsuario = new ModeloUsuario();
+                        logicaUsuario.AgregarUsuario(tbCI.Text, seguridad.Encriptar(tbCI.Text), tbNombres.Text, tbApellidos.Text, cboRol.Text, tbEmail.Text, tbCelular.Text);
+                        DialogResult guardado = MessageBox.Show("Los datos fueron guardados correctamente", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        if (guardado == DialogResult.OK)
+                        {
+                            this.Close();
+                        }
+                    }
+                    catch
+                    {
+                        MessageBox.Show("No fue posible guardar la información", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
-                catch
-            {
-                MessageBox.Show("No fue posible guardar la información", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
 
         }
         }
@@ -69,6 +72,34 @@ namespace CapaPresentacion
         private void tbCI_TextChanged(object sender, EventArgs e)
         {
             tbContrasena.Text = tbCI.Text;
+        }
+
+        private bool ValidarCampos(TextBox ci, TextBox nombres, TextBox apellidos, ComboBox rol, TextBox email, TextBox celular)
+        {
+            //bool bandera = true;
+            ValidarCampos validar = new ValidarCampos();
+
+            if (validar.CampoVacio(ci.Text) || validar.CampoVacio(nombres.Text) || validar.CampoVacio(apellidos.Text) || validar.CampoVacio(rol.Text) || validar.CampoVacio(email.Text) || validar.CampoVacio(celular.Text))
+            {
+                DialogResult result = MessageBox.Show("Existen campos vacíos, ingrese todos los datos requeridos", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            else
+            {
+                if (validar.NumeroTelefono(celular.Text) == false)
+                {
+                    DialogResult result = MessageBox.Show("El número de teléfono está incorrecto", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    //bandera = false;
+                    return false;
+                }
+                if (validar.Email(email.Text) == false)
+                {
+                    DialogResult result = MessageBox.Show("El formato de email está incorrecto", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    //bandera = false;
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }

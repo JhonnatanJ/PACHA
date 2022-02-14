@@ -117,5 +117,22 @@ namespace CapaDatos
             conexionBD.Close();
             return dt;
         }
+
+        public void ReestablecerContrasena( string ci, string pass)
+        {
+            MySqlConnection conexionBD = Conexion.conexion();
+            conexionBD.Open();
+            MySqlCommand comando = new MySqlCommand();
+
+
+            comando.Connection = conexionBD;
+            comando.CommandText = "update usuario set CONTRASENA=@pass WHERE CI=@ci";
+
+            comando.Parameters.AddWithValue("@ci", ci);
+            comando.Parameters.AddWithValue("@pass", pass);
+            comando.CommandType = System.Data.CommandType.Text;
+            comando.ExecuteNonQuery();
+            conexionBD.Close();
+        }
     }
 }
