@@ -20,6 +20,7 @@ namespace CapaPresentacion
         {
             InitializeComponent();
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.ttContraseña.SetToolTip(this.lblOlvideContraseña, "En caso de olvidar su contraseña comuniquese con un \n administrador de la aplicación para que pueda resetear \n su contraseña.");
                         
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -58,40 +59,49 @@ namespace CapaPresentacion
         {
             ModeloUsuario usuario = new ModeloUsuario();
             EncriptarContrasena seguridad = new EncriptarContrasena();
-            var validarLogin = usuario.LoginUser(tbUsuario.Text, seguridad.Encriptar(tbContrasena.Text));
+            var validarLogin = false;
+            try
+            {
+                validarLogin = usuario.LoginUser(tbUsuario.Text, seguridad.Encriptar(tbContrasena.Text));
+            }
+            catch
+            {
+                MessageBox.Show("No es posible validar los datos. Posible error de conexión con la base de datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
             if (this.ValidateChildren(ValidationConstraints.Enabled))
-            {
-                if (validarLogin == true)
                 {
-                    if (CacheLoginUsuario.rol == "admin")
+                    if (validarLogin == true)
                     {
-                        frmLogComunidad logAdmin = new frmLogComunidad();
-                        logAdmin.Show();
-                        this.Hide();
+                        if (CacheLoginUsuario.rol == "admin")
+                        {
+                            frmLogComunidad logAdmin = new frmLogComunidad();
+                            logAdmin.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            if (CacheLoginUsuario.rol == "user")
+                            {
+                                frmLogComunidadUser logUser = new frmLogComunidadUser();
+                                logUser.Show();
+                                this.Hide();
+                            }
+                        }
                     }
                     else
                     {
-                        if(CacheLoginUsuario.rol == "user")
-                        {
-                            frmLogComunidadUser logUser = new frmLogComunidadUser();
-                            logUser.Show();
-                            this.Hide();
-                        }
+                        MsgError("Usuario o Contraseña Incorrectos");
+                        tbUsuario.Clear();
+                        tbContrasena.Clear();
+                        tbUsuario.Focus();
                     }
                 }
                 else
                 {
-                    MsgError("Usuario o Contraseña Incorrectos");
-                    tbUsuario.Clear();
-                    tbContrasena.Clear();
-                    tbUsuario.Focus();
+                    MsgError("Datos Incorrectos");
                 }
-            }
-            else
-            {
-                MsgError("Datos Incorrectos");
-            }
+           
         }
 
         private void tbUsuario_Validating(object sender, CancelEventArgs e)
