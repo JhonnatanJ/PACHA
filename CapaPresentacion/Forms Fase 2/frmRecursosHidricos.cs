@@ -34,7 +34,7 @@ namespace CapaPresentacion.Forms_Fase_2
             txtRecDec7.Text = "0.00";
             txtRecDec8.Text = "0.00";
 
-            cbxRecurso.Text = "";
+            cbxRecurso.SelectedIndex = -1;
         }
 
         private void btnInsert_Click(object sender, EventArgs e)

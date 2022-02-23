@@ -119,10 +119,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.panel2.Controls.Add(this.btnCerrar);
             this.panel2.Controls.Add(this.btnInsert);
             this.panel2.Controls.Add(this.lblBiodiversidad);
-            this.panel2.Location = new System.Drawing.Point(11, 11);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(15, 14);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(803, 343);
+            this.panel2.Size = new System.Drawing.Size(1071, 422);
             this.panel2.TabIndex = 8;
             // 
             // txtRespuestaD8
@@ -132,10 +132,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtRespuestaD8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRespuestaD8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRespuestaD8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtRespuestaD8.Location = new System.Drawing.Point(717, 260);
-            this.txtRespuestaD8.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRespuestaD8.Location = new System.Drawing.Point(956, 320);
+            this.txtRespuestaD8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRespuestaD8.Name = "txtRespuestaD8";
-            this.txtRespuestaD8.Size = new System.Drawing.Size(77, 20);
+            this.txtRespuestaD8.Size = new System.Drawing.Size(103, 25);
             this.txtRespuestaD8.TabIndex = 89;
             // 
             // txtRespuestaD7
@@ -145,10 +145,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtRespuestaD7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRespuestaD7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRespuestaD7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtRespuestaD7.Location = new System.Drawing.Point(634, 260);
-            this.txtRespuestaD7.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRespuestaD7.Location = new System.Drawing.Point(845, 320);
+            this.txtRespuestaD7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRespuestaD7.Name = "txtRespuestaD7";
-            this.txtRespuestaD7.Size = new System.Drawing.Size(77, 20);
+            this.txtRespuestaD7.Size = new System.Drawing.Size(103, 25);
             this.txtRespuestaD7.TabIndex = 90;
             // 
             // txtRespuestaD6
@@ -158,10 +158,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtRespuestaD6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRespuestaD6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRespuestaD6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtRespuestaD6.Location = new System.Drawing.Point(551, 260);
-            this.txtRespuestaD6.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRespuestaD6.Location = new System.Drawing.Point(735, 320);
+            this.txtRespuestaD6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRespuestaD6.Name = "txtRespuestaD6";
-            this.txtRespuestaD6.Size = new System.Drawing.Size(77, 20);
+            this.txtRespuestaD6.Size = new System.Drawing.Size(103, 25);
             this.txtRespuestaD6.TabIndex = 91;
             // 
             // txtRespuestaD5
@@ -171,10 +171,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtRespuestaD5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRespuestaD5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRespuestaD5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtRespuestaD5.Location = new System.Drawing.Point(468, 260);
-            this.txtRespuestaD5.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRespuestaD5.Location = new System.Drawing.Point(624, 320);
+            this.txtRespuestaD5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRespuestaD5.Name = "txtRespuestaD5";
-            this.txtRespuestaD5.Size = new System.Drawing.Size(77, 20);
+            this.txtRespuestaD5.Size = new System.Drawing.Size(103, 25);
             this.txtRespuestaD5.TabIndex = 92;
             // 
             // txtRespuestaD4
@@ -184,10 +184,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtRespuestaD4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRespuestaD4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRespuestaD4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtRespuestaD4.Location = new System.Drawing.Point(385, 260);
-            this.txtRespuestaD4.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRespuestaD4.Location = new System.Drawing.Point(513, 320);
+            this.txtRespuestaD4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRespuestaD4.Name = "txtRespuestaD4";
-            this.txtRespuestaD4.Size = new System.Drawing.Size(77, 20);
+            this.txtRespuestaD4.Size = new System.Drawing.Size(103, 25);
             this.txtRespuestaD4.TabIndex = 93;
             // 
             // txtRespuestaD3
@@ -197,10 +197,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtRespuestaD3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRespuestaD3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRespuestaD3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtRespuestaD3.Location = new System.Drawing.Point(303, 260);
-            this.txtRespuestaD3.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRespuestaD3.Location = new System.Drawing.Point(404, 320);
+            this.txtRespuestaD3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRespuestaD3.Name = "txtRespuestaD3";
-            this.txtRespuestaD3.Size = new System.Drawing.Size(76, 20);
+            this.txtRespuestaD3.Size = new System.Drawing.Size(101, 25);
             this.txtRespuestaD3.TabIndex = 94;
             // 
             // txtRespuestaD2
@@ -210,10 +210,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtRespuestaD2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRespuestaD2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRespuestaD2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtRespuestaD2.Location = new System.Drawing.Point(221, 260);
-            this.txtRespuestaD2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRespuestaD2.Location = new System.Drawing.Point(295, 320);
+            this.txtRespuestaD2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRespuestaD2.Name = "txtRespuestaD2";
-            this.txtRespuestaD2.Size = new System.Drawing.Size(76, 20);
+            this.txtRespuestaD2.Size = new System.Drawing.Size(101, 25);
             this.txtRespuestaD2.TabIndex = 88;
             // 
             // txtRespuestaD1
@@ -223,10 +223,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtRespuestaD1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRespuestaD1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRespuestaD1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtRespuestaD1.Location = new System.Drawing.Point(139, 260);
-            this.txtRespuestaD1.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRespuestaD1.Location = new System.Drawing.Point(185, 320);
+            this.txtRespuestaD1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRespuestaD1.Name = "txtRespuestaD1";
-            this.txtRespuestaD1.Size = new System.Drawing.Size(78, 20);
+            this.txtRespuestaD1.Size = new System.Drawing.Size(104, 25);
             this.txtRespuestaD1.TabIndex = 87;
             // 
             // txtImpactoD8
@@ -236,10 +236,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtImpactoD8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtImpactoD8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtImpactoD8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtImpactoD8.Location = new System.Drawing.Point(717, 208);
-            this.txtImpactoD8.Margin = new System.Windows.Forms.Padding(2);
+            this.txtImpactoD8.Location = new System.Drawing.Point(956, 256);
+            this.txtImpactoD8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtImpactoD8.Name = "txtImpactoD8";
-            this.txtImpactoD8.Size = new System.Drawing.Size(77, 20);
+            this.txtImpactoD8.Size = new System.Drawing.Size(103, 25);
             this.txtImpactoD8.TabIndex = 81;
             // 
             // txtImpactoD7
@@ -249,10 +249,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtImpactoD7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtImpactoD7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtImpactoD7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtImpactoD7.Location = new System.Drawing.Point(634, 208);
-            this.txtImpactoD7.Margin = new System.Windows.Forms.Padding(2);
+            this.txtImpactoD7.Location = new System.Drawing.Point(845, 256);
+            this.txtImpactoD7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtImpactoD7.Name = "txtImpactoD7";
-            this.txtImpactoD7.Size = new System.Drawing.Size(77, 20);
+            this.txtImpactoD7.Size = new System.Drawing.Size(103, 25);
             this.txtImpactoD7.TabIndex = 82;
             // 
             // txtImpactoD6
@@ -262,10 +262,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtImpactoD6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtImpactoD6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtImpactoD6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtImpactoD6.Location = new System.Drawing.Point(551, 208);
-            this.txtImpactoD6.Margin = new System.Windows.Forms.Padding(2);
+            this.txtImpactoD6.Location = new System.Drawing.Point(735, 256);
+            this.txtImpactoD6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtImpactoD6.Name = "txtImpactoD6";
-            this.txtImpactoD6.Size = new System.Drawing.Size(77, 20);
+            this.txtImpactoD6.Size = new System.Drawing.Size(103, 25);
             this.txtImpactoD6.TabIndex = 83;
             // 
             // txtImpactoD5
@@ -275,10 +275,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtImpactoD5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtImpactoD5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtImpactoD5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtImpactoD5.Location = new System.Drawing.Point(468, 208);
-            this.txtImpactoD5.Margin = new System.Windows.Forms.Padding(2);
+            this.txtImpactoD5.Location = new System.Drawing.Point(624, 256);
+            this.txtImpactoD5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtImpactoD5.Name = "txtImpactoD5";
-            this.txtImpactoD5.Size = new System.Drawing.Size(77, 20);
+            this.txtImpactoD5.Size = new System.Drawing.Size(103, 25);
             this.txtImpactoD5.TabIndex = 84;
             // 
             // txtImpactoD4
@@ -288,10 +288,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtImpactoD4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtImpactoD4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtImpactoD4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtImpactoD4.Location = new System.Drawing.Point(385, 208);
-            this.txtImpactoD4.Margin = new System.Windows.Forms.Padding(2);
+            this.txtImpactoD4.Location = new System.Drawing.Point(513, 256);
+            this.txtImpactoD4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtImpactoD4.Name = "txtImpactoD4";
-            this.txtImpactoD4.Size = new System.Drawing.Size(77, 20);
+            this.txtImpactoD4.Size = new System.Drawing.Size(103, 25);
             this.txtImpactoD4.TabIndex = 85;
             // 
             // txtImpactoD3
@@ -301,10 +301,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtImpactoD3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtImpactoD3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtImpactoD3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtImpactoD3.Location = new System.Drawing.Point(303, 208);
-            this.txtImpactoD3.Margin = new System.Windows.Forms.Padding(2);
+            this.txtImpactoD3.Location = new System.Drawing.Point(404, 256);
+            this.txtImpactoD3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtImpactoD3.Name = "txtImpactoD3";
-            this.txtImpactoD3.Size = new System.Drawing.Size(76, 20);
+            this.txtImpactoD3.Size = new System.Drawing.Size(101, 25);
             this.txtImpactoD3.TabIndex = 86;
             // 
             // txtImpactoD2
@@ -314,10 +314,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtImpactoD2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtImpactoD2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtImpactoD2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtImpactoD2.Location = new System.Drawing.Point(221, 208);
-            this.txtImpactoD2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtImpactoD2.Location = new System.Drawing.Point(295, 256);
+            this.txtImpactoD2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtImpactoD2.Name = "txtImpactoD2";
-            this.txtImpactoD2.Size = new System.Drawing.Size(76, 20);
+            this.txtImpactoD2.Size = new System.Drawing.Size(101, 25);
             this.txtImpactoD2.TabIndex = 80;
             // 
             // txtImpactoD1
@@ -327,15 +327,16 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtImpactoD1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtImpactoD1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtImpactoD1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtImpactoD1.Location = new System.Drawing.Point(139, 208);
-            this.txtImpactoD1.Margin = new System.Windows.Forms.Padding(2);
+            this.txtImpactoD1.Location = new System.Drawing.Point(185, 256);
+            this.txtImpactoD1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtImpactoD1.Name = "txtImpactoD1";
-            this.txtImpactoD1.Size = new System.Drawing.Size(78, 20);
+            this.txtImpactoD1.Size = new System.Drawing.Size(104, 25);
             this.txtImpactoD1.TabIndex = 79;
             // 
             // cbxAmenazaDec8
             // 
             this.cbxAmenazaDec8.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cbxAmenazaDec8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxAmenazaDec8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxAmenazaDec8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxAmenazaDec8.FormattingEnabled = true;
@@ -367,14 +368,16 @@ namespace CapaPresentacion.Forms_Fase_2
             "Tormentas Tropicales",
             "Tornados",
             "Tsunamis"});
-            this.cbxAmenazaDec8.Location = new System.Drawing.Point(717, 159);
+            this.cbxAmenazaDec8.Location = new System.Drawing.Point(956, 196);
+            this.cbxAmenazaDec8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxAmenazaDec8.Name = "cbxAmenazaDec8";
-            this.cbxAmenazaDec8.Size = new System.Drawing.Size(77, 25);
+            this.cbxAmenazaDec8.Size = new System.Drawing.Size(101, 29);
             this.cbxAmenazaDec8.TabIndex = 78;
             // 
             // cbxAmenazaDec7
             // 
             this.cbxAmenazaDec7.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cbxAmenazaDec7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxAmenazaDec7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxAmenazaDec7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxAmenazaDec7.FormattingEnabled = true;
@@ -406,14 +409,16 @@ namespace CapaPresentacion.Forms_Fase_2
             "Tormentas Tropicales",
             "Tornados",
             "Tsunamis"});
-            this.cbxAmenazaDec7.Location = new System.Drawing.Point(634, 159);
+            this.cbxAmenazaDec7.Location = new System.Drawing.Point(845, 196);
+            this.cbxAmenazaDec7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxAmenazaDec7.Name = "cbxAmenazaDec7";
-            this.cbxAmenazaDec7.Size = new System.Drawing.Size(77, 25);
+            this.cbxAmenazaDec7.Size = new System.Drawing.Size(101, 29);
             this.cbxAmenazaDec7.TabIndex = 77;
             // 
             // cbxAmenazaDec6
             // 
             this.cbxAmenazaDec6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cbxAmenazaDec6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxAmenazaDec6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxAmenazaDec6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxAmenazaDec6.FormattingEnabled = true;
@@ -445,14 +450,16 @@ namespace CapaPresentacion.Forms_Fase_2
             "Tormentas Tropicales",
             "Tornados",
             "Tsunamis"});
-            this.cbxAmenazaDec6.Location = new System.Drawing.Point(551, 159);
+            this.cbxAmenazaDec6.Location = new System.Drawing.Point(735, 196);
+            this.cbxAmenazaDec6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxAmenazaDec6.Name = "cbxAmenazaDec6";
-            this.cbxAmenazaDec6.Size = new System.Drawing.Size(77, 25);
+            this.cbxAmenazaDec6.Size = new System.Drawing.Size(101, 29);
             this.cbxAmenazaDec6.TabIndex = 76;
             // 
             // cbxAmenazaDec5
             // 
             this.cbxAmenazaDec5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cbxAmenazaDec5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxAmenazaDec5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxAmenazaDec5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxAmenazaDec5.FormattingEnabled = true;
@@ -484,14 +491,16 @@ namespace CapaPresentacion.Forms_Fase_2
             "Tormentas Tropicales",
             "Tornados",
             "Tsunamis"});
-            this.cbxAmenazaDec5.Location = new System.Drawing.Point(468, 159);
+            this.cbxAmenazaDec5.Location = new System.Drawing.Point(624, 196);
+            this.cbxAmenazaDec5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxAmenazaDec5.Name = "cbxAmenazaDec5";
-            this.cbxAmenazaDec5.Size = new System.Drawing.Size(77, 25);
+            this.cbxAmenazaDec5.Size = new System.Drawing.Size(101, 29);
             this.cbxAmenazaDec5.TabIndex = 75;
             // 
             // cbxAmenazaDec4
             // 
             this.cbxAmenazaDec4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cbxAmenazaDec4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxAmenazaDec4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxAmenazaDec4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxAmenazaDec4.FormattingEnabled = true;
@@ -523,14 +532,16 @@ namespace CapaPresentacion.Forms_Fase_2
             "Tormentas Tropicales",
             "Tornados",
             "Tsunamis"});
-            this.cbxAmenazaDec4.Location = new System.Drawing.Point(385, 159);
+            this.cbxAmenazaDec4.Location = new System.Drawing.Point(513, 196);
+            this.cbxAmenazaDec4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxAmenazaDec4.Name = "cbxAmenazaDec4";
-            this.cbxAmenazaDec4.Size = new System.Drawing.Size(77, 25);
+            this.cbxAmenazaDec4.Size = new System.Drawing.Size(101, 29);
             this.cbxAmenazaDec4.TabIndex = 74;
             // 
             // cbxAmenazaDec3
             // 
             this.cbxAmenazaDec3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cbxAmenazaDec3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxAmenazaDec3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxAmenazaDec3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxAmenazaDec3.FormattingEnabled = true;
@@ -562,14 +573,16 @@ namespace CapaPresentacion.Forms_Fase_2
             "Tormentas Tropicales",
             "Tornados",
             "Tsunamis"});
-            this.cbxAmenazaDec3.Location = new System.Drawing.Point(303, 159);
+            this.cbxAmenazaDec3.Location = new System.Drawing.Point(404, 196);
+            this.cbxAmenazaDec3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxAmenazaDec3.Name = "cbxAmenazaDec3";
-            this.cbxAmenazaDec3.Size = new System.Drawing.Size(76, 25);
+            this.cbxAmenazaDec3.Size = new System.Drawing.Size(100, 29);
             this.cbxAmenazaDec3.TabIndex = 73;
             // 
             // cbxAmenazaDec2
             // 
             this.cbxAmenazaDec2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cbxAmenazaDec2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxAmenazaDec2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxAmenazaDec2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxAmenazaDec2.FormattingEnabled = true;
@@ -601,14 +614,16 @@ namespace CapaPresentacion.Forms_Fase_2
             "Tormentas Tropicales",
             "Tornados",
             "Tsunamis"});
-            this.cbxAmenazaDec2.Location = new System.Drawing.Point(221, 159);
+            this.cbxAmenazaDec2.Location = new System.Drawing.Point(295, 196);
+            this.cbxAmenazaDec2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxAmenazaDec2.Name = "cbxAmenazaDec2";
-            this.cbxAmenazaDec2.Size = new System.Drawing.Size(76, 25);
+            this.cbxAmenazaDec2.Size = new System.Drawing.Size(100, 29);
             this.cbxAmenazaDec2.TabIndex = 72;
             // 
             // cbxAmenazaDec1
             // 
             this.cbxAmenazaDec1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cbxAmenazaDec1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxAmenazaDec1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxAmenazaDec1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxAmenazaDec1.FormattingEnabled = true;
@@ -640,9 +655,10 @@ namespace CapaPresentacion.Forms_Fase_2
             "Tormentas Tropicales",
             "Tornados",
             "Tsunamis"});
-            this.cbxAmenazaDec1.Location = new System.Drawing.Point(139, 159);
+            this.cbxAmenazaDec1.Location = new System.Drawing.Point(185, 196);
+            this.cbxAmenazaDec1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxAmenazaDec1.Name = "cbxAmenazaDec1";
-            this.cbxAmenazaDec1.Size = new System.Drawing.Size(78, 25);
+            this.cbxAmenazaDec1.Size = new System.Drawing.Size(103, 29);
             this.cbxAmenazaDec1.TabIndex = 71;
             // 
             // label11
@@ -652,10 +668,9 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(726, 123);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(968, 151);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(46, 21);
+            this.label11.Size = new System.Drawing.Size(54, 23);
             this.label11.TabIndex = 65;
             this.label11.Text = "2020";
             // 
@@ -666,10 +681,9 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(643, 123);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(857, 151);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(46, 21);
+            this.label12.Size = new System.Drawing.Size(54, 23);
             this.label12.TabIndex = 66;
             this.label12.Text = "2010";
             // 
@@ -680,10 +694,9 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label13.Location = new System.Drawing.Point(560, 123);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Location = new System.Drawing.Point(747, 151);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(46, 21);
+            this.label13.Size = new System.Drawing.Size(54, 23);
             this.label13.TabIndex = 67;
             this.label13.Text = "2000";
             // 
@@ -694,10 +707,9 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label14.Location = new System.Drawing.Point(477, 123);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Location = new System.Drawing.Point(636, 151);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(46, 21);
+            this.label14.Size = new System.Drawing.Size(54, 23);
             this.label14.TabIndex = 70;
             this.label14.Text = "1990";
             // 
@@ -708,10 +720,9 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label15.Location = new System.Drawing.Point(394, 123);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Location = new System.Drawing.Point(525, 151);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(46, 21);
+            this.label15.Size = new System.Drawing.Size(54, 23);
             this.label15.TabIndex = 68;
             this.label15.Text = "1980";
             // 
@@ -722,10 +733,9 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label16.Location = new System.Drawing.Point(312, 123);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Location = new System.Drawing.Point(416, 151);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(46, 21);
+            this.label16.Size = new System.Drawing.Size(54, 23);
             this.label16.TabIndex = 69;
             this.label16.Text = "1970";
             // 
@@ -736,10 +746,9 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label17.Location = new System.Drawing.Point(230, 123);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Location = new System.Drawing.Point(307, 151);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(46, 21);
+            this.label17.Size = new System.Drawing.Size(54, 23);
             this.label17.TabIndex = 64;
             this.label17.Text = "1960";
             // 
@@ -750,10 +759,9 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label18.Location = new System.Drawing.Point(150, 123);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Location = new System.Drawing.Point(200, 151);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(46, 21);
+            this.label18.Size = new System.Drawing.Size(54, 23);
             this.label18.TabIndex = 63;
             this.label18.Text = "1950";
             // 
@@ -764,10 +772,9 @@ namespace CapaPresentacion.Forms_Fase_2
             this.lblRespuesta.BackColor = System.Drawing.Color.Transparent;
             this.lblRespuesta.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRespuesta.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblRespuesta.Location = new System.Drawing.Point(21, 260);
-            this.lblRespuesta.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRespuesta.Location = new System.Drawing.Point(28, 320);
             this.lblRespuesta.Name = "lblRespuesta";
-            this.lblRespuesta.Size = new System.Drawing.Size(91, 21);
+            this.lblRespuesta.Size = new System.Drawing.Size(111, 23);
             this.lblRespuesta.TabIndex = 62;
             this.lblRespuesta.Text = "Respuesta";
             // 
@@ -778,10 +785,9 @@ namespace CapaPresentacion.Forms_Fase_2
             this.lblImpacto.BackColor = System.Drawing.Color.Transparent;
             this.lblImpacto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblImpacto.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblImpacto.Location = new System.Drawing.Point(21, 208);
-            this.lblImpacto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblImpacto.Location = new System.Drawing.Point(28, 256);
             this.lblImpacto.Name = "lblImpacto";
-            this.lblImpacto.Size = new System.Drawing.Size(79, 21);
+            this.lblImpacto.Size = new System.Drawing.Size(95, 23);
             this.lblImpacto.TabIndex = 61;
             this.lblImpacto.Text = "Impacto";
             // 
@@ -792,16 +798,16 @@ namespace CapaPresentacion.Forms_Fase_2
             this.lblAmenaza.BackColor = System.Drawing.Color.Transparent;
             this.lblAmenaza.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAmenaza.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblAmenaza.Location = new System.Drawing.Point(21, 158);
-            this.lblAmenaza.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAmenaza.Location = new System.Drawing.Point(28, 194);
             this.lblAmenaza.Name = "lblAmenaza";
-            this.lblAmenaza.Size = new System.Drawing.Size(87, 21);
+            this.lblAmenaza.Size = new System.Drawing.Size(106, 23);
             this.lblAmenaza.TabIndex = 60;
             this.lblAmenaza.Text = "Amenaza";
             // 
             // cbxSectorEvento
             // 
             this.cbxSectorEvento.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cbxSectorEvento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxSectorEvento.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxSectorEvento.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxSectorEvento.FormattingEnabled = true;
@@ -812,9 +818,10 @@ namespace CapaPresentacion.Forms_Fase_2
             "Hidroeléctrico",
             "Recreación",
             "Ritualidad"});
-            this.cbxSectorEvento.Location = new System.Drawing.Point(221, 55);
+            this.cbxSectorEvento.Location = new System.Drawing.Point(295, 68);
+            this.cbxSectorEvento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxSectorEvento.Name = "cbxSectorEvento";
-            this.cbxSectorEvento.Size = new System.Drawing.Size(363, 29);
+            this.cbxSectorEvento.Size = new System.Drawing.Size(483, 31);
             this.cbxSectorEvento.TabIndex = 59;
             // 
             // lblSectorElect
@@ -824,10 +831,9 @@ namespace CapaPresentacion.Forms_Fase_2
             this.lblSectorElect.BackColor = System.Drawing.Color.Transparent;
             this.lblSectorElect.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSectorElect.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSectorElect.Location = new System.Drawing.Point(21, 58);
-            this.lblSectorElect.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSectorElect.Location = new System.Drawing.Point(28, 71);
             this.lblSectorElect.Name = "lblSectorElect";
-            this.lblSectorElect.Size = new System.Drawing.Size(169, 21);
+            this.lblSectorElect.Size = new System.Drawing.Size(215, 23);
             this.lblSectorElect.TabIndex = 58;
             this.lblSectorElect.Text = "Seleccione el Sector:";
             // 
@@ -842,10 +848,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCerrar.Location = new System.Drawing.Point(275, 297);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCerrar.Location = new System.Drawing.Point(367, 366);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(86, 34);
+            this.btnCerrar.Size = new System.Drawing.Size(115, 42);
             this.btnCerrar.TabIndex = 25;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = false;
@@ -862,10 +868,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInsert.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInsert.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnInsert.Location = new System.Drawing.Point(451, 296);
-            this.btnInsert.Margin = new System.Windows.Forms.Padding(2);
+            this.btnInsert.Location = new System.Drawing.Point(601, 364);
+            this.btnInsert.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(86, 34);
+            this.btnInsert.Size = new System.Drawing.Size(115, 42);
             this.btnInsert.TabIndex = 15;
             this.btnInsert.Text = "Insertar";
             this.btnInsert.UseVisualStyleBackColor = false;
@@ -878,22 +884,21 @@ namespace CapaPresentacion.Forms_Fase_2
             this.lblBiodiversidad.BackColor = System.Drawing.Color.Transparent;
             this.lblBiodiversidad.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.lblBiodiversidad.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblBiodiversidad.Location = new System.Drawing.Point(244, 11);
-            this.lblBiodiversidad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBiodiversidad.Location = new System.Drawing.Point(325, 14);
             this.lblBiodiversidad.Name = "lblBiodiversidad";
-            this.lblBiodiversidad.Size = new System.Drawing.Size(313, 22);
+            this.lblBiodiversidad.Size = new System.Drawing.Size(402, 30);
             this.lblBiodiversidad.TabIndex = 12;
             this.lblBiodiversidad.Text = "EVENTOS CLIMÁTICOS EXTREMOS";
             // 
             // frmEventosClimaticos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(825, 370);
+            this.ClientSize = new System.Drawing.Size(1100, 455);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmEventosClimaticos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.frmEventosClimaticos_Load);

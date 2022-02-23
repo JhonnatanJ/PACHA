@@ -75,9 +75,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.panel4.Controls.Add(this.label1);
             this.panel4.Controls.Add(this.lblRecursoSector);
             this.panel4.Controls.Add(this.label5);
-            this.panel4.Location = new System.Drawing.Point(13, 12);
+            this.panel4.Location = new System.Drawing.Point(17, 15);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(693, 441);
+            this.panel4.Size = new System.Drawing.Size(924, 543);
             this.panel4.TabIndex = 14;
             // 
             // btnGuardarCambio
@@ -90,9 +91,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.btnGuardarCambio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarCambio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarCambio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGuardarCambio.Location = new System.Drawing.Point(253, 386);
+            this.btnGuardarCambio.Location = new System.Drawing.Point(337, 475);
+            this.btnGuardarCambio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGuardarCambio.Name = "btnGuardarCambio";
-            this.btnGuardarCambio.Size = new System.Drawing.Size(177, 46);
+            this.btnGuardarCambio.Size = new System.Drawing.Size(236, 57);
             this.btnGuardarCambio.TabIndex = 14;
             this.btnGuardarCambio.Text = "Guardar Datos";
             this.btnGuardarCambio.UseVisualStyleBackColor = false;
@@ -101,6 +103,7 @@ namespace CapaPresentacion.Forms_Fase_2
             // cbxImportanciaRiesgo
             // 
             this.cbxImportanciaRiesgo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cbxImportanciaRiesgo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxImportanciaRiesgo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxImportanciaRiesgo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxImportanciaRiesgo.FormattingEnabled = true;
@@ -108,9 +111,10 @@ namespace CapaPresentacion.Forms_Fase_2
             "1",
             "2",
             "3"});
-            this.cbxImportanciaRiesgo.Location = new System.Drawing.Point(174, 304);
+            this.cbxImportanciaRiesgo.Location = new System.Drawing.Point(232, 374);
+            this.cbxImportanciaRiesgo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxImportanciaRiesgo.Name = "cbxImportanciaRiesgo";
-            this.cbxImportanciaRiesgo.Size = new System.Drawing.Size(495, 29);
+            this.cbxImportanciaRiesgo.Size = new System.Drawing.Size(659, 31);
             this.cbxImportanciaRiesgo.TabIndex = 21;
             // 
             // label8
@@ -121,9 +125,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(22, 297);
+            this.label8.Location = new System.Drawing.Point(29, 366);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(140, 42);
+            this.label8.Size = new System.Drawing.Size(174, 46);
             this.label8.TabIndex = 20;
             this.label8.Text = "Importancia del \r\nRiesgo:";
             // 
@@ -135,15 +140,17 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(22, 256);
+            this.label3.Location = new System.Drawing.Point(29, 315);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 21);
+            this.label3.Size = new System.Drawing.Size(72, 23);
             this.label3.TabIndex = 18;
             this.label3.Text = "Riesgo";
             // 
             // cbxRespuestaRiesgo
             // 
             this.cbxRespuestaRiesgo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cbxRespuestaRiesgo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxRespuestaRiesgo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxRespuestaRiesgo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxRespuestaRiesgo.FormattingEnabled = true;
@@ -151,9 +158,10 @@ namespace CapaPresentacion.Forms_Fase_2
             "Alto",
             "Medio",
             "Bajo"});
-            this.cbxRespuestaRiesgo.Location = new System.Drawing.Point(174, 203);
+            this.cbxRespuestaRiesgo.Location = new System.Drawing.Point(232, 250);
+            this.cbxRespuestaRiesgo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxRespuestaRiesgo.Name = "cbxRespuestaRiesgo";
-            this.cbxRespuestaRiesgo.Size = new System.Drawing.Size(495, 29);
+            this.cbxRespuestaRiesgo.Size = new System.Drawing.Size(659, 31);
             this.cbxRespuestaRiesgo.TabIndex = 17;
             // 
             // label2
@@ -164,15 +172,17 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(22, 206);
+            this.label2.Location = new System.Drawing.Point(29, 254);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 21);
+            this.label2.Size = new System.Drawing.Size(116, 23);
             this.label2.TabIndex = 16;
             this.label2.Text = "Respuesta:";
             // 
             // cbxRiesgoAmenaza
             // 
             this.cbxRiesgoAmenaza.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cbxRiesgoAmenaza.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxRiesgoAmenaza.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxRiesgoAmenaza.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxRiesgoAmenaza.FormattingEnabled = true;
@@ -183,9 +193,10 @@ namespace CapaPresentacion.Forms_Fase_2
             "Recursos Sociales",
             "Recursos Económicos",
             "Recursos Políticos"});
-            this.cbxRiesgoAmenaza.Location = new System.Drawing.Point(174, 105);
+            this.cbxRiesgoAmenaza.Location = new System.Drawing.Point(232, 129);
+            this.cbxRiesgoAmenaza.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxRiesgoAmenaza.Name = "cbxRiesgoAmenaza";
-            this.cbxRiesgoAmenaza.Size = new System.Drawing.Size(495, 29);
+            this.cbxRiesgoAmenaza.Size = new System.Drawing.Size(659, 31);
             this.cbxRiesgoAmenaza.TabIndex = 15;
             this.cbxRiesgoAmenaza.SelectedIndexChanged += new System.EventHandler(this.cbxRiesgoAmenaza_SelectedIndexChanged);
             // 
@@ -197,21 +208,24 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(22, 108);
+            this.label4.Location = new System.Drawing.Point(29, 133);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 21);
+            this.label4.Size = new System.Drawing.Size(111, 23);
             this.label4.TabIndex = 14;
             this.label4.Text = "Amenaza:";
             // 
             // cbxImpactoRiesgo
             // 
             this.cbxImpactoRiesgo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cbxImpactoRiesgo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxImpactoRiesgo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxImpactoRiesgo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxImpactoRiesgo.FormattingEnabled = true;
-            this.cbxImpactoRiesgo.Location = new System.Drawing.Point(174, 152);
+            this.cbxImpactoRiesgo.Location = new System.Drawing.Point(232, 187);
+            this.cbxImpactoRiesgo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxImpactoRiesgo.Name = "cbxImpactoRiesgo";
-            this.cbxImpactoRiesgo.Size = new System.Drawing.Size(495, 29);
+            this.cbxImpactoRiesgo.Size = new System.Drawing.Size(659, 31);
             this.cbxImpactoRiesgo.TabIndex = 13;
             this.cbxImpactoRiesgo.SelectedIndexChanged += new System.EventHandler(this.cbxImpactoRiesgo_SelectedIndexChanged);
             // 
@@ -224,9 +238,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtRiesgo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRiesgo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRiesgo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtRiesgo.Location = new System.Drawing.Point(174, 256);
+            this.txtRiesgo.Location = new System.Drawing.Point(232, 315);
+            this.txtRiesgo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRiesgo.Name = "txtRiesgo";
-            this.txtRiesgo.Size = new System.Drawing.Size(495, 20);
+            this.txtRiesgo.Size = new System.Drawing.Size(660, 25);
             this.txtRiesgo.TabIndex = 12;
             // 
             // txtObservaciones
@@ -238,9 +253,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtObservaciones.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtObservaciones.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtObservaciones.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtObservaciones.Location = new System.Drawing.Point(174, 357);
+            this.txtObservaciones.Location = new System.Drawing.Point(232, 439);
+            this.txtObservaciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtObservaciones.Name = "txtObservaciones";
-            this.txtObservaciones.Size = new System.Drawing.Size(495, 20);
+            this.txtObservaciones.Size = new System.Drawing.Size(660, 25);
             this.txtObservaciones.TabIndex = 12;
             // 
             // label6
@@ -251,21 +267,24 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(22, 357);
+            this.label6.Location = new System.Drawing.Point(29, 439);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(130, 21);
+            this.label6.Size = new System.Drawing.Size(162, 23);
             this.label6.TabIndex = 11;
             this.label6.Text = "Observaciones:";
             // 
             // cbxSectorRiesgo
             // 
             this.cbxSectorRiesgo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cbxSectorRiesgo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxSectorRiesgo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxSectorRiesgo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxSectorRiesgo.FormattingEnabled = true;
-            this.cbxSectorRiesgo.Location = new System.Drawing.Point(174, 54);
+            this.cbxSectorRiesgo.Location = new System.Drawing.Point(232, 66);
+            this.cbxSectorRiesgo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxSectorRiesgo.Name = "cbxSectorRiesgo";
-            this.cbxSectorRiesgo.Size = new System.Drawing.Size(227, 29);
+            this.cbxSectorRiesgo.Size = new System.Drawing.Size(301, 31);
             this.cbxSectorRiesgo.TabIndex = 5;
             this.cbxSectorRiesgo.SelectedIndexChanged += new System.EventHandler(this.cbxSectorRiesgo_SelectedIndexChanged);
             // 
@@ -275,9 +294,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label17.Location = new System.Drawing.Point(509, -68);
+            this.label17.Location = new System.Drawing.Point(679, -84);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(77, 22);
+            this.label17.Size = new System.Drawing.Size(97, 30);
             this.label17.TabIndex = 2;
             this.label17.Text = "ACTOR";
             // 
@@ -287,9 +307,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label16.Location = new System.Drawing.Point(509, -33);
+            this.label16.Location = new System.Drawing.Point(679, -41);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(77, 22);
+            this.label16.Size = new System.Drawing.Size(97, 30);
             this.label16.TabIndex = 2;
             this.label16.Text = "ACTOR";
             // 
@@ -300,9 +321,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(116, 15);
+            this.label1.Location = new System.Drawing.Point(155, 18);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(443, 22);
+            this.label1.Size = new System.Drawing.Size(560, 30);
             this.label1.TabIndex = 2;
             this.label1.Text = "RIESGO CLIMÁTICO EN LA UNIDAD DE ANÁLISIS";
             // 
@@ -311,9 +333,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.lblRecursoSector.AutoSize = true;
             this.lblRecursoSector.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRecursoSector.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblRecursoSector.Location = new System.Drawing.Point(22, 57);
+            this.lblRecursoSector.Location = new System.Drawing.Point(29, 70);
+            this.lblRecursoSector.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRecursoSector.Name = "lblRecursoSector";
-            this.lblRecursoSector.Size = new System.Drawing.Size(64, 21);
+            this.lblRecursoSector.Size = new System.Drawing.Size(77, 23);
             this.lblRecursoSector.TabIndex = 3;
             this.lblRecursoSector.Text = "Sector:";
             // 
@@ -325,21 +348,22 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(22, 155);
+            this.label5.Location = new System.Drawing.Point(29, 191);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 21);
+            this.label5.Size = new System.Drawing.Size(100, 23);
             this.label5.TabIndex = 3;
             this.label5.Text = "Impacto:";
             // 
             // frmIngresarRiesgoClimatico
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(718, 465);
+            this.ClientSize = new System.Drawing.Size(957, 572);
             this.Controls.Add(this.panel4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmIngresarRiesgoClimatico";
             this.Text = "frmIngresarRiesgoClimatico";
             this.Load += new System.EventHandler(this.frmIngresarRiesgoClimatico_Load);

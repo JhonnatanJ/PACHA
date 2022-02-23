@@ -66,10 +66,10 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.lblGuia);
             this.panel2.Controls.Add(this.cbxSectorAse);
-            this.panel2.Location = new System.Drawing.Point(11, 11);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(15, 14);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(470, 313);
+            this.panel2.Size = new System.Drawing.Size(627, 385);
             this.panel2.TabIndex = 5;
             // 
             // btnCerrar
@@ -83,10 +83,10 @@
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCerrar.Location = new System.Drawing.Point(102, 262);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCerrar.Location = new System.Drawing.Point(136, 322);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(86, 31);
+            this.btnCerrar.Size = new System.Drawing.Size(115, 38);
             this.btnCerrar.TabIndex = 25;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = false;
@@ -103,10 +103,10 @@
             this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInsert.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInsert.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnInsert.Location = new System.Drawing.Point(264, 262);
-            this.btnInsert.Margin = new System.Windows.Forms.Padding(2);
+            this.btnInsert.Location = new System.Drawing.Point(352, 322);
+            this.btnInsert.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(86, 31);
+            this.btnInsert.Size = new System.Drawing.Size(115, 38);
             this.btnInsert.TabIndex = 15;
             this.btnInsert.Text = "Insertar";
             this.btnInsert.UseVisualStyleBackColor = false;
@@ -119,10 +119,9 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(41, 207);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(55, 255);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(166, 21);
+            this.label6.Size = new System.Drawing.Size(211, 23);
             this.label6.TabIndex = 24;
             this.label6.Text = "Población / Familias:";
             // 
@@ -133,10 +132,10 @@
             this.txtPobla.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPobla.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPobla.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtPobla.Location = new System.Drawing.Point(235, 208);
-            this.txtPobla.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPobla.Location = new System.Drawing.Point(313, 256);
+            this.txtPobla.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPobla.Name = "txtPobla";
-            this.txtPobla.Size = new System.Drawing.Size(186, 20);
+            this.txtPobla.Size = new System.Drawing.Size(248, 25);
             this.txtPobla.TabIndex = 23;
             // 
             // label5
@@ -146,10 +145,9 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(126, 164);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(168, 202);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 21);
+            this.label5.Size = new System.Drawing.Size(98, 23);
             this.label5.TabIndex = 22;
             this.label5.Text = "Longitud:";
             // 
@@ -160,10 +158,10 @@
             this.txtLonAsen.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLonAsen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLonAsen.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtLonAsen.Location = new System.Drawing.Point(235, 165);
-            this.txtLonAsen.Margin = new System.Windows.Forms.Padding(2);
+            this.txtLonAsen.Location = new System.Drawing.Point(313, 203);
+            this.txtLonAsen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLonAsen.Name = "txtLonAsen";
-            this.txtLonAsen.Size = new System.Drawing.Size(186, 20);
+            this.txtLonAsen.Size = new System.Drawing.Size(248, 25);
             this.txtLonAsen.TabIndex = 21;
             // 
             // label4
@@ -173,10 +171,9 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(139, 127);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(185, 156);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 21);
+            this.label4.Size = new System.Drawing.Size(81, 23);
             this.label4.TabIndex = 20;
             this.label4.Text = "Latitud:";
             // 
@@ -187,10 +184,10 @@
             this.txtLatAsen.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLatAsen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLatAsen.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtLatAsen.Location = new System.Drawing.Point(235, 128);
-            this.txtLatAsen.Margin = new System.Windows.Forms.Padding(2);
+            this.txtLatAsen.Location = new System.Drawing.Point(313, 158);
+            this.txtLatAsen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLatAsen.Name = "txtLatAsen";
-            this.txtLatAsen.Size = new System.Drawing.Size(186, 20);
+            this.txtLatAsen.Size = new System.Drawing.Size(248, 25);
             this.txtLatAsen.TabIndex = 19;
             // 
             // label3
@@ -200,10 +197,9 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(128, 52);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(171, 64);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 21);
+            this.label3.Size = new System.Drawing.Size(95, 23);
             this.label3.TabIndex = 18;
             this.label3.Text = "Nombre:";
             // 
@@ -214,10 +210,10 @@
             this.txtNomAsen.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNomAsen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomAsen.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtNomAsen.Location = new System.Drawing.Point(235, 53);
-            this.txtNomAsen.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNomAsen.Location = new System.Drawing.Point(313, 65);
+            this.txtNomAsen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNomAsen.Name = "txtNomAsen";
-            this.txtNomAsen.Size = new System.Drawing.Size(186, 20);
+            this.txtNomAsen.Size = new System.Drawing.Size(248, 25);
             this.txtNomAsen.TabIndex = 17;
             // 
             // label2
@@ -227,10 +223,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(142, 87);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(189, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 21);
+            this.label2.Size = new System.Drawing.Size(77, 23);
             this.label2.TabIndex = 16;
             this.label2.Text = "Sector:";
             // 
@@ -241,11 +236,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(-40, 46);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(-53, 57);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label1.Size = new System.Drawing.Size(0, 21);
+            this.label1.Size = new System.Drawing.Size(0, 23);
             this.label1.TabIndex = 15;
             // 
             // lblGuia
@@ -255,16 +249,16 @@
             this.lblGuia.BackColor = System.Drawing.Color.Transparent;
             this.lblGuia.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.lblGuia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblGuia.Location = new System.Drawing.Point(118, 11);
-            this.lblGuia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblGuia.Location = new System.Drawing.Point(157, 14);
             this.lblGuia.Name = "lblGuia";
-            this.lblGuia.Size = new System.Drawing.Size(263, 22);
+            this.lblGuia.Size = new System.Drawing.Size(335, 30);
             this.lblGuia.TabIndex = 12;
             this.lblGuia.Text = "ASENTAMIENTOS HUMANOS";
             // 
             // cbxSectorAse
             // 
             this.cbxSectorAse.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cbxSectorAse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxSectorAse.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxSectorAse.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxSectorAse.FormattingEnabled = true;
@@ -275,20 +269,21 @@
             "Hidroeléctrico",
             "Recreación",
             "Ritualidad"});
-            this.cbxSectorAse.Location = new System.Drawing.Point(235, 84);
+            this.cbxSectorAse.Location = new System.Drawing.Point(313, 103);
+            this.cbxSectorAse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxSectorAse.Name = "cbxSectorAse";
-            this.cbxSectorAse.Size = new System.Drawing.Size(186, 29);
+            this.cbxSectorAse.Size = new System.Drawing.Size(247, 31);
             this.cbxSectorAse.TabIndex = 60;
             // 
             // frmAsentamientos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(492, 335);
+            this.ClientSize = new System.Drawing.Size(656, 412);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmAsentamientos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAsentamientos";

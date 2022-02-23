@@ -31,6 +31,7 @@ namespace CapaPresentacion.Forms_Fase_2
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvRiesgoClimatico = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -43,26 +44,48 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             this.dgvRiesgoClimatico.AllowUserToAddRows = false;
             this.dgvRiesgoClimatico.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dgvRiesgoClimatico.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvRiesgoClimatico.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvRiesgoClimatico.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvRiesgoClimatico.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvRiesgoClimatico.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvRiesgoClimatico.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRiesgoClimatico.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvRiesgoClimatico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRiesgoClimatico.Location = new System.Drawing.Point(15, 80);
-            this.dgvRiesgoClimatico.Margin = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvRiesgoClimatico.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvRiesgoClimatico.GridColor = System.Drawing.SystemColors.ButtonShadow;
+            this.dgvRiesgoClimatico.Location = new System.Drawing.Point(20, 98);
+            this.dgvRiesgoClimatico.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvRiesgoClimatico.MultiSelect = false;
             this.dgvRiesgoClimatico.Name = "dgvRiesgoClimatico";
             this.dgvRiesgoClimatico.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvRiesgoClimatico.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvRiesgoClimatico.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRiesgoClimatico.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvRiesgoClimatico.RowHeadersVisible = false;
             this.dgvRiesgoClimatico.RowHeadersWidth = 51;
             this.dgvRiesgoClimatico.RowTemplate.Height = 24;
             this.dgvRiesgoClimatico.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvRiesgoClimatico.Size = new System.Drawing.Size(816, 324);
+            this.dgvRiesgoClimatico.Size = new System.Drawing.Size(1088, 399);
             this.dgvRiesgoClimatico.TabIndex = 6;
             // 
             // label1
@@ -72,9 +95,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(220, 23);
+            this.label1.Location = new System.Drawing.Point(293, 28);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(443, 22);
+            this.label1.Size = new System.Drawing.Size(560, 30);
             this.label1.TabIndex = 7;
             this.label1.Text = "RIESGO CLIMÁTICO EN LA UNIDAD DE ANÁLISIS";
             // 
@@ -84,10 +108,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.panel2.Controls.Add(this.btnEliminarClima);
             this.panel2.Controls.Add(this.dgvRiesgoClimatico);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(11, 11);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(15, 14);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(845, 463);
+            this.panel2.Size = new System.Drawing.Size(1127, 570);
             this.panel2.TabIndex = 8;
             // 
             // btnEliminarClima
@@ -99,10 +123,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.btnEliminarClima.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarClima.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarClima.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnEliminarClima.Location = new System.Drawing.Point(356, 415);
-            this.btnEliminarClima.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEliminarClima.Location = new System.Drawing.Point(475, 511);
+            this.btnEliminarClima.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEliminarClima.Name = "btnEliminarClima";
-            this.btnEliminarClima.Size = new System.Drawing.Size(132, 37);
+            this.btnEliminarClima.Size = new System.Drawing.Size(176, 46);
             this.btnEliminarClima.TabIndex = 15;
             this.btnEliminarClima.Text = "Eliminar";
             this.btnEliminarClima.UseVisualStyleBackColor = false;
@@ -110,13 +134,13 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // frmVerRiesgoClimatico
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(867, 485);
+            this.ClientSize = new System.Drawing.Size(1156, 597);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmVerRiesgoClimatico";
             this.Text = "frmVerRiesgoClimatico";
             this.Load += new System.EventHandler(this.frmVerRiesgoClimatico_Load);

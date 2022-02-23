@@ -33,8 +33,8 @@ namespace CapaPresentacion.Forms_Fase_2
 
         private void limpiar()
         {
-            cbxSectorBio.Text = "";
-            cbxEspecie.Text = "";
+            cbxSectorBio.SelectedIndex = -1;
+            cbxEspecie.SelectedIndex = -1;
             txtBioDec1.Text = "";
             txtBioDec2.Text = "";
             txtBioDec3.Text = "";

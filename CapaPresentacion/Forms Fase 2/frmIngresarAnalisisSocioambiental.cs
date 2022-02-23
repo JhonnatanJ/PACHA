@@ -43,6 +43,11 @@ namespace CapaPresentacion.Forms_Fase_2
 
                     txtD2TasaAnual.Text = aux2.ToString("N2");
                 }
+                else
+                {
+                    txtD2TasaAnual.Text = "0";
+                    txtD3TasaAnual.Text = "0";
+                }
                 txtD3NoFamilia_TextChanged(sender, e);
             }
             else
@@ -64,6 +69,11 @@ namespace CapaPresentacion.Forms_Fase_2
                     decimal aux2 = (decimal)Math.Log(Convert.ToDouble(x)) * 10;
 
                     txtD3TasaAnual.Text = aux2.ToString("N2");
+                }
+                else
+                {
+                    txtD3TasaAnual.Text = "0";
+                    txtD4TasaAnual.Text = "0";
                 }
                 txtD4NoFamilia_TextChanged(sender, e);
             }
@@ -87,6 +97,11 @@ namespace CapaPresentacion.Forms_Fase_2
 
                     txtD4TasaAnual.Text = aux2.ToString("N2");
                 }
+                else
+                {
+                    txtD4TasaAnual.Text = "0";
+                    txtD5TasaAnual.Text = "0";
+                }
                 txtD5NoFamilia_TextChanged(sender, e);
             }
             else
@@ -108,6 +123,11 @@ namespace CapaPresentacion.Forms_Fase_2
                     decimal aux2 = (decimal)Math.Log(Convert.ToDouble(x)) * 10;
 
                     txtD5TasaAnual.Text = aux2.ToString("N2");
+                }
+                else
+                {
+                    txtD5TasaAnual.Text = "0";
+                    txtD6TasaAnual.Text = "0";
                 }
                 txtD6NoFamilia_TextChanged(sender, e);
             }
@@ -131,6 +151,11 @@ namespace CapaPresentacion.Forms_Fase_2
 
                     txtD6TasaAnual.Text = aux2.ToString("N2");
                 }
+                else
+                {
+                    txtD6TasaAnual.Text = "0";
+                    txtD7TasaAnual.Text = "0";
+                }
                 txtD7NoFamilia_TextChanged(sender, e);
             }
             else
@@ -152,6 +177,11 @@ namespace CapaPresentacion.Forms_Fase_2
                     decimal aux2 = (decimal)Math.Log(Convert.ToDouble(x)) * 10;
 
                     txtD7TasaAnual.Text = aux2.ToString("N2");
+                }
+                else
+                {
+                    txtD7TasaAnual.Text = "0";
+                    txtD8TasaAnual.Text = "0";
                 }
                 txtD8NoFamilia_TextChanged(sender, e);
             }
@@ -265,16 +295,15 @@ namespace CapaPresentacion.Forms_Fase_2
 
         private void limpiar()
         {
-            cbxInformacion.Text = "";
-            cbxOcupDec1.Text = "";
-            cbxOcupDec2.Text = "";
-            cbxOcupDec3.Text = "";
-            cbxOcupDec4.Text = "";
-            cbxOcupDec5.Text = "";
-            cbxOcupDec6.Text = "";
-            cbxOcupDec7.Text = "";
-            cbxOcupDec8.Text = "";
-
+            cbxInformacion.SelectedIndex = -1;
+            cbxOcupDec1.SelectedIndex = -1;
+            cbxOcupDec2.SelectedIndex = -1;
+            cbxOcupDec3.SelectedIndex = -1;
+            cbxOcupDec4.SelectedIndex = -1;
+            cbxOcupDec5.SelectedIndex = -1;
+            cbxOcupDec6.SelectedIndex = -1;
+            cbxOcupDec7.SelectedIndex = -1;
+            cbxOcupDec8.SelectedIndex = -1;
             btnGuardarCurva.Enabled = false;
         }
 

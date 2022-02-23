@@ -20,7 +20,7 @@ namespace CapaPresentacion
         {
             InitializeComponent();
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-                        
+            this.ttLogin.SetToolTip(this.pbAyuda, "COMO INICIAR SESIÓN:\nIngrese su usuario (cedula sin guión) \ny contraseña(en caso de ser la primera vez que ingrese, \nsu contraseña es su número de cédula sin guión).\n\nRECUERDE:\nPreviamente, de manera obligatoria, un administrador de la \naplicación debió haberlo registrado en la aplicación.");                        
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -58,40 +58,49 @@ namespace CapaPresentacion
         {
             ModeloUsuario usuario = new ModeloUsuario();
             EncriptarContrasena seguridad = new EncriptarContrasena();
-            var validarLogin = usuario.LoginUser(tbUsuario.Text, seguridad.Encriptar(tbContrasena.Text));
+            var validarLogin = false;
+            try
+            {
+                validarLogin = usuario.LoginUser(tbUsuario.Text, seguridad.Encriptar(tbContrasena.Text));
+            }
+            catch
+            {
+                MessageBox.Show("No es posible validar los datos. Posible error de conexión con la base de datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
             if (this.ValidateChildren(ValidationConstraints.Enabled))
-            {
-                if (validarLogin == true)
                 {
-                    if (CacheLoginUsuario.rol == "admin")
+                    if (validarLogin == true)
                     {
-                        frmLogComunidad logAdmin = new frmLogComunidad();
-                        logAdmin.Show();
-                        this.Hide();
+                        if (CacheLoginUsuario.rol == "admin")
+                        {
+                            frmLogComunidad logAdmin = new frmLogComunidad();
+                            logAdmin.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            if (CacheLoginUsuario.rol == "user")
+                            {
+                                frmLogComunidadUser logUser = new frmLogComunidadUser();
+                                logUser.Show();
+                                this.Hide();
+                            }
+                        }
                     }
                     else
                     {
-                        if(CacheLoginUsuario.rol == "user")
-                        {
-                            frmLogComunidadUser logUser = new frmLogComunidadUser();
-                            logUser.Show();
-                            this.Hide();
-                        }
+                        MsgError("Usuario o Contraseña Incorrectos");
+                        tbUsuario.Clear();
+                        tbContrasena.Clear();
+                        tbUsuario.Focus();
                     }
                 }
                 else
                 {
-                    MsgError("Usuario o Contraseña Incorrectos");
-                    tbUsuario.Clear();
-                    tbContrasena.Clear();
-                    tbUsuario.Focus();
+                    MsgError("Datos Incorrectos");
                 }
-            }
-            else
-            {
-                MsgError("Datos Incorrectos");
-            }
+           
         }
 
         private void tbUsuario_Validating(object sender, CancelEventArgs e)
@@ -180,5 +189,9 @@ namespace CapaPresentacion
             }
         }
 
+        private void lblOlvideContraseña_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Si no recuerda su contraseña, pongase en contacto con un administrador de la aplicación.\nEl administrador no podrá ver su contraseña actual, pero podrá reestablecerla para que pueda ingresar.", "Ayuda", MessageBoxButtons.OK, MessageBoxIcon.Question);
+        }
     }
 }

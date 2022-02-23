@@ -29,19 +29,22 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lbLogin = new System.Windows.Forms.Label();
             this.btnIngCom = new System.Windows.Forms.Button();
-            this.dgUsuarios = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pbMinimizar = new System.Windows.Forms.PictureBox();
             this.pbCerrar = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgUsuarios)).BeginInit();
+            this.dgUsuarios = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // lbLogin
@@ -73,21 +76,6 @@ namespace CapaPresentacion
             this.btnIngCom.Text = "Agregar Usuario";
             this.btnIngCom.UseVisualStyleBackColor = false;
             this.btnIngCom.Click += new System.EventHandler(this.btnIngCom_Click);
-            // 
-            // dgUsuarios
-            // 
-            this.dgUsuarios.AllowUserToAddRows = false;
-            this.dgUsuarios.AllowUserToDeleteRows = false;
-            this.dgUsuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgUsuarios.Location = new System.Drawing.Point(19, 27);
-            this.dgUsuarios.Name = "dgUsuarios";
-            this.dgUsuarios.ReadOnly = true;
-            this.dgUsuarios.RowHeadersWidth = 51;
-            this.dgUsuarios.RowTemplate.Height = 24;
-            this.dgUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgUsuarios.Size = new System.Drawing.Size(1222, 383);
-            this.dgUsuarios.TabIndex = 17;
             // 
             // panel1
             // 
@@ -148,6 +136,54 @@ namespace CapaPresentacion
             this.pbCerrar.TabStop = false;
             this.pbCerrar.Click += new System.EventHandler(this.pbCerrar_Click);
             // 
+            // dgUsuarios
+            // 
+            this.dgUsuarios.AllowUserToAddRows = false;
+            this.dgUsuarios.AllowUserToDeleteRows = false;
+            this.dgUsuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgUsuarios.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgUsuarios.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dgUsuarios.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgUsuarios.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgUsuarios.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgUsuarios.GridColor = System.Drawing.SystemColors.ButtonShadow;
+            this.dgUsuarios.Location = new System.Drawing.Point(18, 24);
+            this.dgUsuarios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgUsuarios.MultiSelect = false;
+            this.dgUsuarios.Name = "dgUsuarios";
+            this.dgUsuarios.ReadOnly = true;
+            this.dgUsuarios.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgUsuarios.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgUsuarios.RowHeadersVisible = false;
+            this.dgUsuarios.RowHeadersWidth = 51;
+            this.dgUsuarios.RowTemplate.Height = 24;
+            this.dgUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgUsuarios.Size = new System.Drawing.Size(1222, 383);
+            this.dgUsuarios.TabIndex = 7;
+            // 
             // frmDatosUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
@@ -169,11 +205,11 @@ namespace CapaPresentacion
             this.Text = "frmDatosUsuario";
             this.Load += new System.EventHandler(this.frmDatosUsuario_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmDatosUsuario_MouseDown);
-            ((System.ComponentModel.ISupportInitialize)(this.dgUsuarios)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgUsuarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,7 +222,7 @@ namespace CapaPresentacion
         private System.Windows.Forms.PictureBox pbCerrar;
         private System.Windows.Forms.Button btnIngCom;
         private System.Windows.Forms.Panel panel1;
-        public System.Windows.Forms.DataGridView dgUsuarios;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dgUsuarios;
     }
 }

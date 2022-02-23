@@ -55,12 +55,12 @@ namespace CapaPresentacion.Forms_Fase_2
 
         private void limpiar()
         {
-            cbxSectorRiesgo.Text = "";
-            cbxRiesgoAmenaza.Text = "";
-            cbxImpactoRiesgo.Text = "";
-            cbxRespuestaRiesgo.Text = "";
+            cbxSectorRiesgo.SelectedIndex = -1;
+            cbxRiesgoAmenaza.SelectedIndex = -1;
+            cbxImpactoRiesgo.SelectedIndex = -1;
+            cbxRespuestaRiesgo.SelectedIndex = -1;
             txtRiesgo.Text = "";
-            cbxImportanciaRiesgo.Text = "";
+            cbxImportanciaRiesgo.SelectedIndex = -1;
             txtObservaciones.Text = "";
         }
 

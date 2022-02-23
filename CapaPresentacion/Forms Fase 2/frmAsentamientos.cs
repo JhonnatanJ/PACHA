@@ -26,7 +26,7 @@ namespace CapaPresentacion.Forms_Fase_2
         public void limpiar()
         {
             txtNomAsen.Text = "";
-            cbxSectorAse.Text = "";
+            cbxSectorAse.SelectedIndex = -1;
             txtLatAsen.Text = "";
             txtLonAsen.Text = "";
             txtPobla.Text = "";
