@@ -48,10 +48,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.panel2.Controls.Add(this.btnCerrar);
             this.panel2.Controls.Add(this.btnInsert);
             this.panel2.Controls.Add(this.lblSector);
-            this.panel2.Location = new System.Drawing.Point(11, 11);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(15, 14);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(673, 210);
+            this.panel2.Size = new System.Drawing.Size(897, 258);
             this.panel2.TabIndex = 6;
             // 
             // lblNombreSector
@@ -61,10 +61,9 @@ namespace CapaPresentacion.Forms_Fase_2
             this.lblNombreSector.BackColor = System.Drawing.Color.Transparent;
             this.lblNombreSector.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreSector.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblNombreSector.Location = new System.Drawing.Point(71, 80);
-            this.lblNombreSector.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNombreSector.Location = new System.Drawing.Point(122, 95);
             this.lblNombreSector.Name = "lblNombreSector";
-            this.lblNombreSector.Size = new System.Drawing.Size(235, 21);
+            this.lblNombreSector.Size = new System.Drawing.Size(298, 23);
             this.lblNombreSector.TabIndex = 58;
             this.lblNombreSector.Text = "Ingrese el nombre del Sector:";
             // 
@@ -73,9 +72,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtNombreSector.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtNombreSector.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreSector.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtNombreSector.Location = new System.Drawing.Point(337, 77);
+            this.txtNombreSector.Location = new System.Drawing.Point(463, 92);
+            this.txtNombreSector.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombreSector.Name = "txtNombreSector";
-            this.txtNombreSector.Size = new System.Drawing.Size(255, 27);
+            this.txtNombreSector.Size = new System.Drawing.Size(356, 32);
             this.txtNombreSector.TabIndex = 57;
             // 
             // btnCerrar
@@ -89,10 +89,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCerrar.Location = new System.Drawing.Point(226, 142);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCerrar.Location = new System.Drawing.Point(247, 175);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(86, 34);
+            this.btnCerrar.Size = new System.Drawing.Size(115, 42);
             this.btnCerrar.TabIndex = 25;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = false;
@@ -109,10 +109,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInsert.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInsert.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnInsert.Location = new System.Drawing.Point(355, 142);
-            this.btnInsert.Margin = new System.Windows.Forms.Padding(2);
+            this.btnInsert.Location = new System.Drawing.Point(524, 175);
+            this.btnInsert.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(86, 34);
+            this.btnInsert.Size = new System.Drawing.Size(115, 42);
             this.btnInsert.TabIndex = 15;
             this.btnInsert.Text = "Insertar";
             this.btnInsert.UseVisualStyleBackColor = false;
@@ -125,22 +125,21 @@ namespace CapaPresentacion.Forms_Fase_2
             this.lblSector.BackColor = System.Drawing.Color.Transparent;
             this.lblSector.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.lblSector.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSector.Location = new System.Drawing.Point(302, 19);
-            this.lblSector.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSector.Location = new System.Drawing.Point(394, 22);
             this.lblSector.Name = "lblSector";
-            this.lblSector.Size = new System.Drawing.Size(81, 22);
+            this.lblSector.Size = new System.Drawing.Size(105, 30);
             this.lblSector.TabIndex = 12;
             this.lblSector.Text = "SECTOR";
             // 
             // frmSector
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(695, 232);
+            this.ClientSize = new System.Drawing.Size(927, 286);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmSector";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel2.ResumeLayout(false);

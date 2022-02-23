@@ -61,10 +61,10 @@
             this.panel2.Controls.Add(this.txtNombre);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.lblGuia);
-            this.panel2.Location = new System.Drawing.Point(11, 11);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(15, 14);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(521, 310);
+            this.panel2.Size = new System.Drawing.Size(695, 382);
             this.panel2.TabIndex = 6;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -75,10 +75,9 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(145, 180);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(182, 223);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 21);
+            this.label4.Size = new System.Drawing.Size(87, 23);
             this.label4.TabIndex = 32;
             this.label4.Text = "Codigo:";
             // 
@@ -89,10 +88,10 @@
             this.txtCodigo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCodigo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtCodigo.Location = new System.Drawing.Point(230, 198);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCodigo.Location = new System.Drawing.Point(286, 223);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(122, 20);
+            this.txtCodigo.Size = new System.Drawing.Size(185, 25);
             this.txtCodigo.TabIndex = 31;
             // 
             // label2
@@ -102,10 +101,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(162, 95);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(205, 119);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 21);
+            this.label2.Size = new System.Drawing.Size(64, 23);
             this.label2.TabIndex = 30;
             this.label2.Text = "Nivel:";
             // 
@@ -116,10 +114,10 @@
             this.txtNivel.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNivel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNivel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtNivel.Location = new System.Drawing.Point(230, 113);
-            this.txtNivel.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNivel.Location = new System.Drawing.Point(286, 117);
+            this.txtNivel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNivel.Name = "txtNivel";
-            this.txtNivel.Size = new System.Drawing.Size(122, 20);
+            this.txtNivel.Size = new System.Drawing.Size(185, 25);
             this.txtNivel.TabIndex = 29;
             // 
             // cbxTipo
@@ -128,6 +126,7 @@
             "Unidad Hidrográfica",
             "Quebrada o Drenaje"});
             this.cbxTipo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cbxTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxTipo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxTipo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxTipo.FormattingEnabled = true;
@@ -135,9 +134,10 @@
             "Unidad Hidrográfica",
             "Quebrada",
             "Drenaje"});
-            this.cbxTipo.Location = new System.Drawing.Point(212, 54);
+            this.cbxTipo.Location = new System.Drawing.Point(283, 66);
+            this.cbxTipo.Margin = new System.Windows.Forms.Padding(4);
             this.cbxTipo.Name = "cbxTipo";
-            this.cbxTipo.Size = new System.Drawing.Size(142, 29);
+            this.cbxTipo.Size = new System.Drawing.Size(188, 31);
             this.cbxTipo.TabIndex = 28;
             // 
             // label11
@@ -147,10 +147,9 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(170, 56);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(216, 66);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(46, 21);
+            this.label11.Size = new System.Drawing.Size(53, 23);
             this.label11.TabIndex = 27;
             this.label11.Text = "Tipo:";
             // 
@@ -165,10 +164,10 @@
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCerrar.Location = new System.Drawing.Point(118, 252);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCerrar.Location = new System.Drawing.Point(157, 310);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(86, 32);
+            this.btnCerrar.Size = new System.Drawing.Size(115, 39);
             this.btnCerrar.TabIndex = 25;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = false;
@@ -185,10 +184,10 @@
             this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInsert.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInsert.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnInsert.Location = new System.Drawing.Point(349, 252);
-            this.btnInsert.Margin = new System.Windows.Forms.Padding(2);
+            this.btnInsert.Location = new System.Drawing.Point(465, 310);
+            this.btnInsert.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(86, 32);
+            this.btnInsert.Size = new System.Drawing.Size(115, 39);
             this.btnInsert.TabIndex = 15;
             this.btnInsert.Text = "Insertar";
             this.btnInsert.UseVisualStyleBackColor = false;
@@ -201,10 +200,9 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(139, 136);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(174, 168);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 21);
+            this.label3.Size = new System.Drawing.Size(95, 23);
             this.label3.TabIndex = 18;
             this.label3.Text = "Nombre:";
             // 
@@ -215,10 +213,10 @@
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtNombre.Location = new System.Drawing.Point(230, 154);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNombre.Location = new System.Drawing.Point(286, 168);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(122, 20);
+            this.txtNombre.Size = new System.Drawing.Size(185, 25);
             this.txtNombre.TabIndex = 17;
             // 
             // label1
@@ -228,11 +226,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(-15, 46);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(-20, 57);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label1.Size = new System.Drawing.Size(0, 21);
+            this.label1.Size = new System.Drawing.Size(0, 23);
             this.label1.TabIndex = 15;
             // 
             // lblGuia
@@ -242,22 +239,21 @@
             this.lblGuia.BackColor = System.Drawing.Color.Transparent;
             this.lblGuia.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.lblGuia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblGuia.Location = new System.Drawing.Point(146, 8);
-            this.lblGuia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblGuia.Location = new System.Drawing.Point(177, 10);
             this.lblGuia.Name = "lblGuia";
-            this.lblGuia.Size = new System.Drawing.Size(273, 22);
+            this.lblGuia.Size = new System.Drawing.Size(342, 30);
             this.lblGuia.TabIndex = 12;
             this.lblGuia.Text = "UBICACIÓN HIDROGRAFICA";
             // 
             // frmUbicGeo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(543, 332);
+            this.ClientSize = new System.Drawing.Size(724, 409);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmUbicGeo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmUbicGeo";

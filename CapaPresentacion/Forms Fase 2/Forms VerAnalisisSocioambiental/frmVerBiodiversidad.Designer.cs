@@ -31,6 +31,7 @@ namespace CapaPresentacion.Forms_Fase_2.Forms_VerAnalisisSocioambiental
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,13 +43,13 @@ namespace CapaPresentacion.Forms_Fase_2.Forms_VerAnalisisSocioambiental
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel2.Controls.Add(this.dgvBiodiversidad);
             this.panel2.Controls.Add(this.btnCerrar);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.dgvBiodiversidad);
-            this.panel2.Location = new System.Drawing.Point(11, 11);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(15, 14);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(799, 430);
+            this.panel2.Size = new System.Drawing.Size(1065, 529);
             this.panel2.TabIndex = 5;
             // 
             // btnCerrar
@@ -60,10 +61,10 @@ namespace CapaPresentacion.Forms_Fase_2.Forms_VerAnalisisSocioambiental
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCerrar.Location = new System.Drawing.Point(333, 365);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCerrar.Location = new System.Drawing.Point(444, 449);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(132, 37);
+            this.btnCerrar.Size = new System.Drawing.Size(176, 46);
             this.btnCerrar.TabIndex = 14;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = false;
@@ -76,9 +77,10 @@ namespace CapaPresentacion.Forms_Fase_2.Forms_VerAnalisisSocioambiental
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(319, 13);
+            this.label1.Location = new System.Drawing.Point(425, 16);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 22);
+            this.label1.Size = new System.Drawing.Size(194, 30);
             this.label1.TabIndex = 6;
             this.label1.Text = "BIODIVERSIDAD";
             // 
@@ -86,38 +88,59 @@ namespace CapaPresentacion.Forms_Fase_2.Forms_VerAnalisisSocioambiental
             // 
             this.dgvBiodiversidad.AllowUserToAddRows = false;
             this.dgvBiodiversidad.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvBiodiversidad.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvBiodiversidad.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvBiodiversidad.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvBiodiversidad.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvBiodiversidad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvBiodiversidad.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBiodiversidad.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvBiodiversidad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBiodiversidad.Location = new System.Drawing.Point(15, 52);
-            this.dgvBiodiversidad.Margin = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvBiodiversidad.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvBiodiversidad.GridColor = System.Drawing.SystemColors.ButtonShadow;
+            this.dgvBiodiversidad.Location = new System.Drawing.Point(20, 68);
+            this.dgvBiodiversidad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvBiodiversidad.MultiSelect = false;
             this.dgvBiodiversidad.Name = "dgvBiodiversidad";
             this.dgvBiodiversidad.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBiodiversidad.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvBiodiversidad.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBiodiversidad.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvBiodiversidad.RowHeadersVisible = false;
             this.dgvBiodiversidad.RowHeadersWidth = 51;
             this.dgvBiodiversidad.RowTemplate.Height = 24;
             this.dgvBiodiversidad.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvBiodiversidad.Size = new System.Drawing.Size(769, 286);
-            this.dgvBiodiversidad.TabIndex = 5;
+            this.dgvBiodiversidad.Size = new System.Drawing.Size(1025, 352);
+            this.dgvBiodiversidad.TabIndex = 15;
             // 
             // frmVerBiodiversidad
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(821, 452);
+            this.ClientSize = new System.Drawing.Size(1095, 556);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmVerBiodiversidad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmIngresarRiesgoClimatico";
@@ -132,8 +155,8 @@ namespace CapaPresentacion.Forms_Fase_2.Forms_VerAnalisisSocioambiental
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dgvBiodiversidad;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.DataGridView dgvBiodiversidad;
     }
 }

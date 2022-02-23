@@ -36,6 +36,7 @@ namespace CapaPresentacion
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lbLogin = new System.Windows.Forms.Label();
             this.pnLogin = new System.Windows.Forms.Panel();
+            this.lblOlvideContraseña = new System.Windows.Forms.Label();
             this.lblError = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lbUsuario = new System.Windows.Forms.Label();
@@ -43,14 +44,16 @@ namespace CapaPresentacion
             this.tbUsuario = new System.Windows.Forms.TextBox();
             this.btnAcceder = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.ttLogin = new System.Windows.Forms.ToolTip(this.components);
+            this.pbAyuda = new System.Windows.Forms.PictureBox();
             this.pbMinimizar = new System.Windows.Forms.PictureBox();
             this.pbCerrar = new System.Windows.Forms.PictureBox();
-            this.lblOlvideContraseña = new System.Windows.Forms.Label();
-            this.ttContraseña = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAyuda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).BeginInit();
             this.SuspendLayout();
@@ -101,6 +104,20 @@ namespace CapaPresentacion
             this.pnLogin.Name = "pnLogin";
             this.pnLogin.Size = new System.Drawing.Size(553, 266);
             this.pnLogin.TabIndex = 4;
+            // 
+            // lblOlvideContraseña
+            // 
+            this.lblOlvideContraseña.AutoSize = true;
+            this.lblOlvideContraseña.BackColor = System.Drawing.Color.Transparent;
+            this.lblOlvideContraseña.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblOlvideContraseña.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOlvideContraseña.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblOlvideContraseña.Location = new System.Drawing.Point(169, 226);
+            this.lblOlvideContraseña.Name = "lblOlvideContraseña";
+            this.lblOlvideContraseña.Size = new System.Drawing.Size(207, 22);
+            this.lblOlvideContraseña.TabIndex = 9;
+            this.lblOlvideContraseña.Text = "Olvide mi contraseña";
+            this.lblOlvideContraseña.Click += new System.EventHandler(this.lblOlvideContraseña_Click);
             // 
             // lblError
             // 
@@ -192,6 +209,25 @@ namespace CapaPresentacion
             this.errorProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
             this.errorProvider1.ContainerControl = this;
             // 
+            // ttLogin
+            // 
+            this.ttLogin.AutomaticDelay = 1000;
+            this.ttLogin.AutoPopDelay = 30000;
+            this.ttLogin.InitialDelay = 50;
+            this.ttLogin.IsBalloon = true;
+            this.ttLogin.ReshowDelay = 50;
+            this.ttLogin.ToolTipTitle = "AYUDA DE INICIO DE SESIÓN";
+            // 
+            // pbAyuda
+            // 
+            this.pbAyuda.Image = global::CapaPresentacion.Properties.Resources.iconAyuda2_B;
+            this.pbAyuda.Location = new System.Drawing.Point(760, 0);
+            this.pbAyuda.Name = "pbAyuda";
+            this.pbAyuda.Size = new System.Drawing.Size(36, 33);
+            this.pbAyuda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbAyuda.TabIndex = 8;
+            this.pbAyuda.TabStop = false;
+            // 
             // pbMinimizar
             // 
             this.pbMinimizar.Image = global::CapaPresentacion.Properties.Resources.iconMinimizar_B;
@@ -214,29 +250,13 @@ namespace CapaPresentacion
             this.pbCerrar.TabStop = false;
             this.pbCerrar.Click += new System.EventHandler(this.pbCerrar_Click);
             // 
-            // lblOlvideContraseña
-            // 
-            this.lblOlvideContraseña.AutoSize = true;
-            this.lblOlvideContraseña.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblOlvideContraseña.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOlvideContraseña.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblOlvideContraseña.Location = new System.Drawing.Point(169, 226);
-            this.lblOlvideContraseña.Name = "lblOlvideContraseña";
-            this.lblOlvideContraseña.Size = new System.Drawing.Size(207, 22);
-            this.lblOlvideContraseña.TabIndex = 9;
-            this.lblOlvideContraseña.Text = "Olvide mi contraseña";
-            // 
-            // ttContraseña
-            // 
-            this.ttContraseña.AutomaticDelay = 800;
-            this.ttContraseña.IsBalloon = true;
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(858, 427);
+            this.Controls.Add(this.pbAyuda);
             this.Controls.Add(this.pbMinimizar);
             this.Controls.Add(this.pbCerrar);
             this.Controls.Add(this.btnAcceder);
@@ -253,6 +273,7 @@ namespace CapaPresentacion
             this.pnLogin.ResumeLayout(false);
             this.pnLogin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAyuda)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).EndInit();
             this.ResumeLayout(false);
@@ -276,7 +297,9 @@ namespace CapaPresentacion
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Label lblOlvideContraseña;
-        private System.Windows.Forms.ToolTip ttContraseña;
+        private System.Windows.Forms.ToolTip ttLogin;
+        private System.Windows.Forms.PictureBox pbAyuda;
+        private System.Windows.Forms.ToolTip toolTip1;
 
         public EventHandler Login_Load { get; private set; }
     }

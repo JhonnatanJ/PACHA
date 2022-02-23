@@ -32,8 +32,8 @@ namespace CapaPresentacion
 
         public void Limpiar()
         {
-            cbxLugar.Text = "";
-            cbxAmenaza.Text = "";
+            cbxLugar.SelectedIndex = -1;
+            cbxAmenaza.SelectedIndex = -1;
             txtCambiosPotenciales.Text = "";
             txtEstrSug.Text = "";
             txtImpacto.Text = "";

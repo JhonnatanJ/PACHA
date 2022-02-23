@@ -33,15 +33,15 @@ namespace CapaPresentacion.Forms_Fase_2
 
         private void limpiar()
         {
-            cbxSectorEvento.Text = "";
-            cbxAmenazaDec1.Text = "";
-            cbxAmenazaDec2.Text = "";
-            cbxAmenazaDec3.Text = "";
-            cbxAmenazaDec4.Text = "";
-            cbxAmenazaDec5.Text = "";
-            cbxAmenazaDec6.Text = "";
-            cbxAmenazaDec7.Text = "";
-            cbxAmenazaDec8.Text = "";
+            cbxSectorEvento.SelectedIndex = -1;
+            cbxAmenazaDec1.SelectedIndex = -1;
+            cbxAmenazaDec2.SelectedIndex = -1;
+            cbxAmenazaDec3.SelectedIndex = -1;
+            cbxAmenazaDec4.SelectedIndex = -1;
+            cbxAmenazaDec5.SelectedIndex = -1;
+            cbxAmenazaDec6.SelectedIndex = -1;
+            cbxAmenazaDec7.SelectedIndex = -1;
+            cbxAmenazaDec8.SelectedIndex = -1;
 
             txtImpactoD1.Text = "";
             txtImpactoD2.Text = "";

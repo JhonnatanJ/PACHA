@@ -29,9 +29,9 @@ namespace CapaPresentacion
         {
             txtnombreActor.Text = "";
             txtsiglas.Text = "";
-            cboRelacionAnalisis.Text = "";
-            cboTipoActor.Text = "";
-            cboIncidencias.Text = "";
+            cboRelacionAnalisis.SelectedIndex = -1;
+            cboTipoActor.SelectedIndex = -1;
+            cboIncidencias.SelectedIndex = -1;
             txtcompetenciaRel.Text = "";
             txtnombreProyecto.Text = "";
             txtobjetivo.Text = "";

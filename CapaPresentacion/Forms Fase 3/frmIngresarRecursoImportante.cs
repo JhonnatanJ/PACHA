@@ -128,12 +128,12 @@ namespace CapaPresentacion.Forms_Fase_3
 
         private void limpiar()
         {
-            cbxSectorRecurso.Text = "";
-            cbxTipoRecurso.Text = "";
-            cbxRecurso.Text = "";
-            cbxCantidad.Text = "";
-            cbxCalidad.Text = "";
-            cbxAcceso.Text = "";
+            cbxSectorRecurso.SelectedIndex = -1;
+            cbxTipoRecurso.SelectedIndex = -1;
+            cbxRecurso.SelectedIndex = -1;
+            cbxCantidad.SelectedIndex = -1;
+            cbxCalidad.SelectedIndex = -1;
+            cbxAcceso.SelectedIndex = -1;
             txtControl.Text = "";
             txtNotas.Text = "";
         }

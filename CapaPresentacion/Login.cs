@@ -20,8 +20,7 @@ namespace CapaPresentacion
         {
             InitializeComponent();
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.ttContraseña.SetToolTip(this.lblOlvideContraseña, "En caso de olvidar su contraseña comuniquese con un \n administrador de la aplicación para que pueda resetear \n su contraseña.");
-                        
+            this.ttLogin.SetToolTip(this.pbAyuda, "COMO INICIAR SESIÓN:\nIngrese su usuario (cedula sin guión) \ny contraseña(en caso de ser la primera vez que ingrese, \nsu contraseña es su número de cédula sin guión).\n\nRECUERDE:\nPreviamente, de manera obligatoria, un administrador de la \naplicación debió haberlo registrado en la aplicación.");                        
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -190,5 +189,9 @@ namespace CapaPresentacion
             }
         }
 
+        private void lblOlvideContraseña_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Si no recuerda su contraseña, pongase en contacto con un administrador de la aplicación.\nEl administrador no podrá ver su contraseña actual, pero podrá reestablecerla para que pueda ingresar.", "Ayuda", MessageBoxButtons.OK, MessageBoxIcon.Question);
+        }
     }
 }

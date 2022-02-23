@@ -46,10 +46,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.btnVerCurvaDemo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerCurvaDemo.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVerCurvaDemo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnVerCurvaDemo.Location = new System.Drawing.Point(249, 11);
-            this.btnVerCurvaDemo.Margin = new System.Windows.Forms.Padding(2);
+            this.btnVerCurvaDemo.Location = new System.Drawing.Point(327, 61);
+            this.btnVerCurvaDemo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVerCurvaDemo.Name = "btnVerCurvaDemo";
-            this.btnVerCurvaDemo.Size = new System.Drawing.Size(289, 52);
+            this.btnVerCurvaDemo.Size = new System.Drawing.Size(385, 64);
             this.btnVerCurvaDemo.TabIndex = 19;
             this.btnVerCurvaDemo.Text = "Ver Curva Demográfica";
             this.btnVerCurvaDemo.UseVisualStyleBackColor = false;
@@ -65,10 +65,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.btnVerOcupacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerOcupacion.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVerOcupacion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnVerOcupacion.Location = new System.Drawing.Point(249, 73);
-            this.btnVerOcupacion.Margin = new System.Windows.Forms.Padding(2);
+            this.btnVerOcupacion.Location = new System.Drawing.Point(69, 269);
+            this.btnVerOcupacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVerOcupacion.Name = "btnVerOcupacion";
-            this.btnVerOcupacion.Size = new System.Drawing.Size(289, 52);
+            this.btnVerOcupacion.Size = new System.Drawing.Size(385, 64);
             this.btnVerOcupacion.TabIndex = 20;
             this.btnVerOcupacion.Text = "Ver Ocupación del Territorio";
             this.btnVerOcupacion.UseVisualStyleBackColor = false;
@@ -84,10 +84,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.btnVerRecursos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerRecursos.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVerRecursos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnVerRecursos.Location = new System.Drawing.Point(249, 135);
-            this.btnVerRecursos.Margin = new System.Windows.Forms.Padding(2);
+            this.btnVerRecursos.Location = new System.Drawing.Point(595, 269);
+            this.btnVerRecursos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVerRecursos.Name = "btnVerRecursos";
-            this.btnVerRecursos.Size = new System.Drawing.Size(289, 52);
+            this.btnVerRecursos.Size = new System.Drawing.Size(385, 64);
             this.btnVerRecursos.TabIndex = 21;
             this.btnVerRecursos.Text = "Ver Recursos Hídricos";
             this.btnVerRecursos.UseVisualStyleBackColor = false;
@@ -103,10 +103,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.btnVerBio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerBio.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVerBio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnVerBio.Location = new System.Drawing.Point(249, 197);
-            this.btnVerBio.Margin = new System.Windows.Forms.Padding(2);
+            this.btnVerBio.Location = new System.Drawing.Point(59, 531);
+            this.btnVerBio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVerBio.Name = "btnVerBio";
-            this.btnVerBio.Size = new System.Drawing.Size(289, 52);
+            this.btnVerBio.Size = new System.Drawing.Size(385, 64);
             this.btnVerBio.TabIndex = 22;
             this.btnVerBio.Text = "Ver Biodiversidad";
             this.btnVerBio.UseVisualStyleBackColor = false;
@@ -122,10 +122,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(249, 259);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(595, 531);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(289, 52);
+            this.button1.Size = new System.Drawing.Size(385, 64);
             this.button1.TabIndex = 23;
             this.button1.Text = "Ver Eventos Climáticos Extremos";
             this.button1.UseVisualStyleBackColor = false;
@@ -133,17 +133,17 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // frmVerAnalisisSocioambiental
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(775, 553);
+            this.ClientSize = new System.Drawing.Size(1033, 681);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnVerBio);
             this.Controls.Add(this.btnVerRecursos);
             this.Controls.Add(this.btnVerOcupacion);
             this.Controls.Add(this.btnVerCurvaDemo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmVerAnalisisSocioambiental";
             this.Text = "frmVerAnalisisSocioambiental";
             this.ResumeLayout(false);

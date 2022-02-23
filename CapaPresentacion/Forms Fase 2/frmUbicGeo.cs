@@ -30,7 +30,7 @@ namespace CapaPresentacion.Forms_Fase_2
 
         public void limpiar()
         {
-            cbxTipo.Text = "";
+            cbxTipo.SelectedIndex = -1;
             txtNivel.Text = "";
             txtNombre.Text = "";
             txtCodigo.Text = "";

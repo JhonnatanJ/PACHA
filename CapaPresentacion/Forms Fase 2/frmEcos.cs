@@ -25,7 +25,7 @@ namespace CapaPresentacion.Forms_Fase_2
 
         public void limpiar()
         {
-            cbxTipo.Text = "";
+            cbxTipo.SelectedIndex = -1;
             txtNombre.Text = "";
         }
         private void btnInsert_Click(object sender, EventArgs e)
