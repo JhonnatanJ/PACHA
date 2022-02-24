@@ -19,6 +19,7 @@ namespace CapaPresentacion
         public frmEditarUsuario(string ci, string nombres, string apellidos, string rol, string email, string celular)
         {
             InitializeComponent();
+            this.ttEditarUsuario.SetToolTip(this.pbAyuda, "Para editar los datos del Usuario modifique los campos segun requiera y \nseleccione la opción \"Guardar Cambios\"\n\nLa opcion \"Reestablecer Contraseña\" cambia la contraseña del usuario seleccionado\n por el número de cédula sin guión del mismo, esta opción se utiliza en caso de que \nel usuario haya olvidado la contraseña.");
             tbCI.Text = ci;
             tbCI.Enabled = false;
             tbNombres.Text = nombres;

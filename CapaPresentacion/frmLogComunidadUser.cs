@@ -19,7 +19,7 @@ namespace CapaPresentacion
         public frmLogComunidadUser()
         {
             InitializeComponent();
-            
+            this.ttLogComunidadUser.SetToolTip(this.pbAyuda, "COMO INGRESAR A UNA COMUNIDAD:\nElija una comunidad del listado y seleccione la opción \"Ingresar\". \nEn caso de no existir las comunidades de su preferencia\nseleccione la opción \"Crear Comunidad\".");
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]

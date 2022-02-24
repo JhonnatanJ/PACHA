@@ -29,6 +29,7 @@ namespace CapaPresentacion.Forms_Fase_2
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnGuardarCurva = new System.Windows.Forms.Button();
             this.txtD8TasaAnual = new System.Windows.Forms.TextBox();
@@ -100,8 +101,11 @@ namespace CapaPresentacion.Forms_Fase_2
             this.btnRecHidrico = new System.Windows.Forms.Button();
             this.btnBiodiversidad = new System.Windows.Forms.Button();
             this.btnEventos = new System.Windows.Forms.Button();
+            this.ttCurvaDemografica = new System.Windows.Forms.ToolTip(this.components);
+            this.pbAyuda = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAyuda)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -886,7 +890,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.panel1.Controls.Add(this.cbxInformacion);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Location = new System.Drawing.Point(15, 404);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(959, 263);
             this.panel1.TabIndex = 30;
@@ -924,7 +928,7 @@ namespace CapaPresentacion.Forms_Fase_2
             "Baja",
             "Desconocida"});
             this.cbxOcupDec8.Location = new System.Drawing.Point(828, 165);
-            this.cbxOcupDec8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxOcupDec8.Margin = new System.Windows.Forms.Padding(4);
             this.cbxOcupDec8.Name = "cbxOcupDec8";
             this.cbxOcupDec8.Size = new System.Drawing.Size(101, 29);
             this.cbxOcupDec8.TabIndex = 36;
@@ -942,7 +946,7 @@ namespace CapaPresentacion.Forms_Fase_2
             "Baja",
             "Desconocida"});
             this.cbxOcupDec7.Location = new System.Drawing.Point(717, 165);
-            this.cbxOcupDec7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxOcupDec7.Margin = new System.Windows.Forms.Padding(4);
             this.cbxOcupDec7.Name = "cbxOcupDec7";
             this.cbxOcupDec7.Size = new System.Drawing.Size(101, 29);
             this.cbxOcupDec7.TabIndex = 35;
@@ -960,7 +964,7 @@ namespace CapaPresentacion.Forms_Fase_2
             "Baja",
             "Desconocida"});
             this.cbxOcupDec6.Location = new System.Drawing.Point(607, 165);
-            this.cbxOcupDec6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxOcupDec6.Margin = new System.Windows.Forms.Padding(4);
             this.cbxOcupDec6.Name = "cbxOcupDec6";
             this.cbxOcupDec6.Size = new System.Drawing.Size(101, 29);
             this.cbxOcupDec6.TabIndex = 34;
@@ -978,7 +982,7 @@ namespace CapaPresentacion.Forms_Fase_2
             "Baja",
             "Desconocida"});
             this.cbxOcupDec5.Location = new System.Drawing.Point(496, 165);
-            this.cbxOcupDec5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxOcupDec5.Margin = new System.Windows.Forms.Padding(4);
             this.cbxOcupDec5.Name = "cbxOcupDec5";
             this.cbxOcupDec5.Size = new System.Drawing.Size(101, 29);
             this.cbxOcupDec5.TabIndex = 33;
@@ -996,7 +1000,7 @@ namespace CapaPresentacion.Forms_Fase_2
             "Baja",
             "Desconocida"});
             this.cbxOcupDec4.Location = new System.Drawing.Point(385, 165);
-            this.cbxOcupDec4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxOcupDec4.Margin = new System.Windows.Forms.Padding(4);
             this.cbxOcupDec4.Name = "cbxOcupDec4";
             this.cbxOcupDec4.Size = new System.Drawing.Size(101, 29);
             this.cbxOcupDec4.TabIndex = 32;
@@ -1014,7 +1018,7 @@ namespace CapaPresentacion.Forms_Fase_2
             "Baja",
             "Desconocida"});
             this.cbxOcupDec3.Location = new System.Drawing.Point(276, 165);
-            this.cbxOcupDec3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxOcupDec3.Margin = new System.Windows.Forms.Padding(4);
             this.cbxOcupDec3.Name = "cbxOcupDec3";
             this.cbxOcupDec3.Size = new System.Drawing.Size(100, 29);
             this.cbxOcupDec3.TabIndex = 31;
@@ -1032,7 +1036,7 @@ namespace CapaPresentacion.Forms_Fase_2
             "Baja",
             "Desconocida"});
             this.cbxOcupDec2.Location = new System.Drawing.Point(167, 165);
-            this.cbxOcupDec2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxOcupDec2.Margin = new System.Windows.Forms.Padding(4);
             this.cbxOcupDec2.Name = "cbxOcupDec2";
             this.cbxOcupDec2.Size = new System.Drawing.Size(100, 29);
             this.cbxOcupDec2.TabIndex = 30;
@@ -1050,7 +1054,7 @@ namespace CapaPresentacion.Forms_Fase_2
             "Baja",
             "Desconocida"});
             this.cbxOcupDec1.Location = new System.Drawing.Point(57, 165);
-            this.cbxOcupDec1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxOcupDec1.Margin = new System.Windows.Forms.Padding(4);
             this.cbxOcupDec1.Name = "cbxOcupDec1";
             this.cbxOcupDec1.Size = new System.Drawing.Size(103, 29);
             this.cbxOcupDec1.TabIndex = 29;
@@ -1189,7 +1193,7 @@ namespace CapaPresentacion.Forms_Fase_2
             "Turismo",
             "Otros"});
             this.cbxInformacion.Location = new System.Drawing.Point(331, 68);
-            this.cbxInformacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxInformacion.Margin = new System.Windows.Forms.Padding(4);
             this.cbxInformacion.Name = "cbxInformacion";
             this.cbxInformacion.Size = new System.Drawing.Size(353, 31);
             this.cbxInformacion.TabIndex = 14;
@@ -1264,12 +1268,33 @@ namespace CapaPresentacion.Forms_Fase_2
             this.btnEventos.UseVisualStyleBackColor = false;
             this.btnEventos.Click += new System.EventHandler(this.btnEventos_Click);
             // 
+            // ttCurvaDemografica
+            // 
+            this.ttCurvaDemografica.AutomaticDelay = 1000;
+            this.ttCurvaDemografica.AutoPopDelay = 30000;
+            this.ttCurvaDemografica.InitialDelay = 50;
+            this.ttCurvaDemografica.IsBalloon = true;
+            this.ttCurvaDemografica.ReshowDelay = 50;
+            this.ttCurvaDemografica.ToolTipTitle = "CURVA DEMOGRÁFICA";
+            // 
+            // pbAyuda
+            // 
+            this.pbAyuda.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbAyuda.Image = global::CapaPresentacion.Properties.Resources.iconAyuda2_B;
+            this.pbAyuda.Location = new System.Drawing.Point(1217, 12);
+            this.pbAyuda.Name = "pbAyuda";
+            this.pbAyuda.Size = new System.Drawing.Size(36, 33);
+            this.pbAyuda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbAyuda.TabIndex = 30;
+            this.pbAyuda.TabStop = false;
+            // 
             // frmIngresarAnalisisSocioambiental
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1265, 681);
+            this.Controls.Add(this.pbAyuda);
             this.Controls.Add(this.btnEventos);
             this.Controls.Add(this.btnBiodiversidad);
             this.Controls.Add(this.btnRecHidrico);
@@ -1283,6 +1308,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAyuda)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1361,5 +1387,7 @@ namespace CapaPresentacion.Forms_Fase_2
         private System.Windows.Forms.Button btnRecHidrico;
         private System.Windows.Forms.Button btnBiodiversidad;
         private System.Windows.Forms.Button btnEventos;
+        private System.Windows.Forms.ToolTip ttCurvaDemografica;
+        private System.Windows.Forms.PictureBox pbAyuda;
     }
 }

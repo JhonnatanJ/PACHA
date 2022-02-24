@@ -19,6 +19,7 @@ namespace CapaPresentacion
         public frmVisualizarActores()
         {
             InitializeComponent();
+            this.ttLogVerActor.SetToolTip(this.pbAyuda, "Para ver los datos, seleccione un actor y despues el proyecto.\n Tiene la opción de modificar y eliminar tanto actores como proyectos,\n En caso de no existir actores se deben Ingresar en la opción \"Ingresar Actor\".");
         }
 
         private void frmCambioClimatico_Load(object sender, EventArgs e)

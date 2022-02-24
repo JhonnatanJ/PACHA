@@ -16,6 +16,7 @@ namespace CapaPresentacion.Forms_Fase_2
         public frmIngresarRiesgoClimatico()
         {
             InitializeComponent();
+            limpiar();
         }
 
         private void frmIngresarRiesgoClimatico_Load(object sender, EventArgs e)

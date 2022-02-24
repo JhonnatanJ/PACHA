@@ -48,7 +48,6 @@ namespace CapaPresentacion
             this.pbAyuda = new System.Windows.Forms.PictureBox();
             this.pbMinimizar = new System.Windows.Forms.PictureBox();
             this.pbCerrar = new System.Windows.Forms.PictureBox();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnLogin.SuspendLayout();
@@ -216,7 +215,7 @@ namespace CapaPresentacion
             this.ttLogin.InitialDelay = 50;
             this.ttLogin.IsBalloon = true;
             this.ttLogin.ReshowDelay = 50;
-            this.ttLogin.ToolTipTitle = "AYUDA DE INICIO DE SESIÓN";
+            this.ttLogin.ToolTipTitle = "INICIO DE SESIÓN";
             // 
             // pbAyuda
             // 
@@ -299,7 +298,6 @@ namespace CapaPresentacion
         private System.Windows.Forms.Label lblOlvideContraseña;
         private System.Windows.Forms.ToolTip ttLogin;
         private System.Windows.Forms.PictureBox pbAyuda;
-        private System.Windows.Forms.ToolTip toolTip1;
 
         public EventHandler Login_Load { get; private set; }
     }
