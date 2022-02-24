@@ -17,6 +17,8 @@ namespace CapaPresentacion
         public frmDatosUsuario()
         {
             InitializeComponent();
+            this.ttGestionUsuarios.SetToolTip(this.pbAyuda, "AGREGAR USUARIO:\n Para agregar un nuevo usuario seleccione la opción \"Agregar Usuario\", se\nmostrará una pantalla en la cual se deben ingresar los datos del nuevo usuario.\n\nEDITAR USUARIOS:\nPara editar el perfil de un usuario, primero se seleccione el usuario\nen la tabla y despues seleccione la opción \"Editar Usuario\".");
+
         }
 
         private void frmDatosUsuario_Load(object sender, EventArgs e)

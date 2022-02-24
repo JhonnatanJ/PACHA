@@ -97,11 +97,11 @@ namespace CapaPresentacion
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(448, 19);
+            this.label9.Location = new System.Drawing.Point(336, 20);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(156, 30);
+            this.label9.Size = new System.Drawing.Size(384, 30);
             this.label9.TabIndex = 2;
-            this.label9.Text = "PROYECTOS";
+            this.label9.Text = "INGRESE DATOS DEL PROYECTO";
             // 
             // txtemail
             // 

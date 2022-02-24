@@ -16,6 +16,8 @@ namespace CapaPresentacion.Forms_Fase_2
         public frmIngresarAnalisisSocioambiental()
         {
             InitializeComponent();
+            this.ttCurvaDemografica.SetToolTip(this.pbAyuda, "CURVA DEMOGRÁFICA:\nIngrese los datos de las dos primeras filas, las filas restantes\nse calculan automaticámente. No es obligatorio ingresar datos\nen todas las decadas.\n\nOCUPACIÓN DEL TERRITORIO:\nElija un tipo de ocupación y seleccione el nivel de zonificación \nen las decadas de las que se conozca este dato.");
+
         }
 
         private void txtD1NoFamiliaChanged(object sender, EventArgs e)

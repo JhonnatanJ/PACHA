@@ -29,6 +29,7 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lbLogin = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cboRol = new System.Windows.Forms.ComboBox();
@@ -47,7 +48,10 @@ namespace CapaPresentacion
             this.lblGuia = new System.Windows.Forms.Label();
             this.btnIngCom = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.pbAyuda = new System.Windows.Forms.PictureBox();
+            this.ttEditarUsuario = new System.Windows.Forms.ToolTip(this.components);
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAyuda)).BeginInit();
             this.SuspendLayout();
             // 
             // lbLogin
@@ -125,7 +129,7 @@ namespace CapaPresentacion
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(336, 44);
             this.button2.TabIndex = 9;
-            this.button2.Text = "Resstablecer Contraseña";
+            this.button2.Text = "Reestablecer Contraseña";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -290,12 +294,33 @@ namespace CapaPresentacion
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pbAyuda
+            // 
+            this.pbAyuda.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbAyuda.Image = global::CapaPresentacion.Properties.Resources.iconAyuda2_B;
+            this.pbAyuda.Location = new System.Drawing.Point(681, 13);
+            this.pbAyuda.Name = "pbAyuda";
+            this.pbAyuda.Size = new System.Drawing.Size(36, 33);
+            this.pbAyuda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbAyuda.TabIndex = 9;
+            this.pbAyuda.TabStop = false;
+            // 
+            // ttEditarUsuario
+            // 
+            this.ttEditarUsuario.AutomaticDelay = 1000;
+            this.ttEditarUsuario.AutoPopDelay = 30000;
+            this.ttEditarUsuario.InitialDelay = 50;
+            this.ttEditarUsuario.IsBalloon = true;
+            this.ttEditarUsuario.ReshowDelay = 50;
+            this.ttEditarUsuario.ToolTipTitle = "INICIO DE SESIÓN";
+            // 
             // frmEditarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(729, 581);
+            this.Controls.Add(this.pbAyuda);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnIngCom);
@@ -308,6 +333,7 @@ namespace CapaPresentacion
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmPerfilUsuario_MouseDown);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAyuda)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -333,5 +359,7 @@ namespace CapaPresentacion
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox cboRol;
+        private System.Windows.Forms.PictureBox pbAyuda;
+        private System.Windows.Forms.ToolTip ttEditarUsuario;
     }
 }

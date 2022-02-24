@@ -29,6 +29,7 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -101,6 +102,8 @@ namespace CapaPresentacion
             this.label25 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label26 = new System.Windows.Forms.Label();
+            this.pbAyuda = new System.Windows.Forms.PictureBox();
+            this.ttLogVerActor = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvActores)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -110,6 +113,7 @@ namespace CapaPresentacion
             this.panelInsProy.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAyuda)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvActores
@@ -1122,12 +1126,33 @@ namespace CapaPresentacion
             this.label26.TabIndex = 16;
             this.label26.Text = "DATOS DEL PROYECTO";
             // 
+            // pbAyuda
+            // 
+            this.pbAyuda.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbAyuda.Image = global::CapaPresentacion.Properties.Resources.iconAyuda2_B;
+            this.pbAyuda.Location = new System.Drawing.Point(976, 10);
+            this.pbAyuda.Name = "pbAyuda";
+            this.pbAyuda.Size = new System.Drawing.Size(36, 33);
+            this.pbAyuda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbAyuda.TabIndex = 17;
+            this.pbAyuda.TabStop = false;
+            // 
+            // ttLogVerActor
+            // 
+            this.ttLogVerActor.AutomaticDelay = 1000;
+            this.ttLogVerActor.AutoPopDelay = 30000;
+            this.ttLogVerActor.InitialDelay = 50;
+            this.ttLogVerActor.IsBalloon = true;
+            this.ttLogVerActor.ReshowDelay = 50;
+            this.ttLogVerActor.ToolTipTitle = "VER ACTORES";
+            // 
             // frmVisualizarActores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1033, 704);
+            this.Controls.Add(this.pbAyuda);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panelInsProy);
             this.Controls.Add(this.panel3);
@@ -1155,6 +1180,7 @@ namespace CapaPresentacion
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAyuda)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1228,5 +1254,7 @@ namespace CapaPresentacion
         private System.Windows.Forms.ComboBox cboModIncidencia;
         private System.Windows.Forms.ComboBox cboModUnidadAnalisis;
         private System.Windows.Forms.ComboBox cboModTipoActor;
+        private System.Windows.Forms.PictureBox pbAyuda;
+        private System.Windows.Forms.ToolTip ttLogVerActor;
     }
 }

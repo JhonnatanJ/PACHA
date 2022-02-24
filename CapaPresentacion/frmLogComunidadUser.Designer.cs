@@ -29,6 +29,7 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelApellido = new System.Windows.Forms.Label();
@@ -47,6 +48,8 @@ namespace CapaPresentacion
             this.button2 = new System.Windows.Forms.Button();
             this.pbMinimizar = new System.Windows.Forms.PictureBox();
             this.pbCerrar = new System.Windows.Forms.PictureBox();
+            this.ttLogComunidadUser = new System.Windows.Forms.ToolTip(this.components);
+            this.pbAyuda = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -55,6 +58,7 @@ namespace CapaPresentacion
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAyuda)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -290,12 +294,32 @@ namespace CapaPresentacion
             this.pbCerrar.TabStop = false;
             this.pbCerrar.Click += new System.EventHandler(this.pbCerrar_Click);
             // 
+            // ttLogComunidadUser
+            // 
+            this.ttLogComunidadUser.AutomaticDelay = 1000;
+            this.ttLogComunidadUser.AutoPopDelay = 30000;
+            this.ttLogComunidadUser.InitialDelay = 50;
+            this.ttLogComunidadUser.IsBalloon = true;
+            this.ttLogComunidadUser.ReshowDelay = 50;
+            this.ttLogComunidadUser.ToolTipTitle = "MENU COMUNIDADES";
+            // 
+            // pbAyuda
+            // 
+            this.pbAyuda.Image = global::CapaPresentacion.Properties.Resources.iconAyuda2_B;
+            this.pbAyuda.Location = new System.Drawing.Point(858, 3);
+            this.pbAyuda.Name = "pbAyuda";
+            this.pbAyuda.Size = new System.Drawing.Size(36, 33);
+            this.pbAyuda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbAyuda.TabIndex = 17;
+            this.pbAyuda.TabStop = false;
+            // 
             // frmLogComunidadUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(964, 536);
+            this.Controls.Add(this.pbAyuda);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.pbMinimizar);
             this.Controls.Add(this.pbCerrar);
@@ -319,6 +343,7 @@ namespace CapaPresentacion
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAyuda)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -344,5 +369,7 @@ namespace CapaPresentacion
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ToolTip ttLogComunidadUser;
+        private System.Windows.Forms.PictureBox pbAyuda;
     }
 }
