@@ -48,6 +48,7 @@ namespace CapaPresentacion
             this.pbAyuda = new System.Windows.Forms.PictureBox();
             this.pbMinimizar = new System.Windows.Forms.PictureBox();
             this.pbCerrar = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnLogin.SuspendLayout();
@@ -60,6 +61,7 @@ namespace CapaPresentacion
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -86,7 +88,7 @@ namespace CapaPresentacion
             this.lbLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbLogin.Location = new System.Drawing.Point(485, 9);
             this.lbLogin.Name = "lbLogin";
-            this.lbLogin.Size = new System.Drawing.Size(143, 45);
+            this.lbLogin.Size = new System.Drawing.Size(137, 44);
             this.lbLogin.TabIndex = 3;
             this.lbLogin.Text = "LOGIN";
             // 
@@ -113,7 +115,7 @@ namespace CapaPresentacion
             this.lblOlvideContraseña.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblOlvideContraseña.Location = new System.Drawing.Point(169, 226);
             this.lblOlvideContraseña.Name = "lblOlvideContraseña";
-            this.lblOlvideContraseña.Size = new System.Drawing.Size(207, 22);
+            this.lblOlvideContraseña.Size = new System.Drawing.Size(198, 21);
             this.lblOlvideContraseña.TabIndex = 9;
             this.lblOlvideContraseña.Text = "Olvide mi contraseña";
             this.lblOlvideContraseña.Click += new System.EventHandler(this.lblOlvideContraseña_Click);
@@ -249,6 +251,23 @@ namespace CapaPresentacion
             this.pbCerrar.TabStop = false;
             this.pbCerrar.Click += new System.EventHandler(this.pbCerrar_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Gainsboro;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Location = new System.Drawing.Point(52, 347);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(132, 60);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "PDF";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -298,6 +317,7 @@ namespace CapaPresentacion
         private System.Windows.Forms.Label lblOlvideContraseña;
         private System.Windows.Forms.ToolTip ttLogin;
         private System.Windows.Forms.PictureBox pbAyuda;
+        private System.Windows.Forms.Button button1;
 
         public EventHandler Login_Load { get; private set; }
     }

@@ -20,9 +20,7 @@ namespace CapaPresentacion.Forms_Reportes
 
         private void frmReporteFase1_1_Load(object sender, EventArgs e)
         {
-            crReporteFase1_2 rep = new crReporteFase1_2();
-            rep.SetParameterValue("idCom", CacheLoginComunidad.idcomunidad);
-            crystalReportViewer1.ReportSource = rep;
+            
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -32,10 +30,7 @@ namespace CapaPresentacion.Forms_Reportes
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            crReporteFase1_2 obj = new crReporteFase1_2();
-            obj.Refresh();
-            obj.SetParameterValue("idCom", CacheLoginComunidad.idcomunidad);
-            crystalReportViewer1.ReportSource = obj;
+
         }
     }
 }

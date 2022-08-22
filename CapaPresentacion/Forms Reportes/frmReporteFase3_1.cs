@@ -25,17 +25,12 @@ namespace CapaPresentacion.Forms_Reportes
 
         private void frmReporteFase3_1_Load(object sender, EventArgs e)
         {
-            crReporteFase3_1 rep = new crReporteFase3_1();
-            rep.SetParameterValue("idCom", CacheLoginComunidad.idcomunidad);
-            crystalReportViewer1.ReportSource = rep;
+            
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            crReporteFase3_1 rep = new crReporteFase3_1();
-            rep.Refresh();
-            rep.SetParameterValue("idCom", CacheLoginComunidad.idcomunidad);
-            crystalReportViewer1.ReportSource = rep;
+           
         }
     }
 }
