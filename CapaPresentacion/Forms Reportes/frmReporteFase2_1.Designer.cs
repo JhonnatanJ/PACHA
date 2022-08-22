@@ -30,7 +30,7 @@ namespace CapaPresentacion.Forms_Reportes
         private void InitializeComponent()
         {
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            
             this.label2 = new System.Windows.Forms.Label();
             this.btnActualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
@@ -50,21 +50,7 @@ namespace CapaPresentacion.Forms_Reportes
             // 
             // crystalReportViewer1
             // 
-            this.crystalReportViewer1.ActiveViewIndex = -1;
-            this.crystalReportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(12, 47);
-            this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ShowCloseButton = false;
-            this.crystalReportViewer1.ShowCopyButton = false;
-            this.crystalReportViewer1.ShowLogo = false;
-            this.crystalReportViewer1.ShowRefreshButton = false;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1332, 645);
-            this.crystalReportViewer1.TabIndex = 7;
-            this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+           
             // 
             // label2
             // 
@@ -99,7 +85,7 @@ namespace CapaPresentacion.Forms_Reportes
             this.ClientSize = new System.Drawing.Size(1356, 704);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.crystalReportViewer1);
+            
             this.Controls.Add(this.btnCerrar);
             this.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -116,7 +102,7 @@ namespace CapaPresentacion.Forms_Reportes
 
         #endregion
         private System.Windows.Forms.PictureBox btnCerrar;
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
+     
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnActualizar;
     }
