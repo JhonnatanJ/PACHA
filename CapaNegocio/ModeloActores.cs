@@ -8,9 +8,18 @@ using CapaDatos;
 
 namespace CapaNegocio
 {
+
+
     public class ModeloActores
     {
-        
+
+        public String Nombre;
+        public String Siglas;
+        public String Tipo;
+        public String Relaciones;
+        public String Incidencias;
+        public String Competencias;
+
 
         DatosActores datosActores = new DatosActores();
         public void InsertarDatosActores(string nombreActor, string siglas, string tipo, string unidadAnalisis, string incidencias, string competenciasRel)
@@ -41,6 +50,11 @@ namespace CapaNegocio
         public void CargarDatosActores(string nombreActor)
         {
             datosActores.CargarDatosActores(nombreActor);
+        }
+
+        public DataTable CargarReporteActoresProyecto()
+        {
+            return datosActores.CargarReporteActoresProyecto();
         }
     }
 }

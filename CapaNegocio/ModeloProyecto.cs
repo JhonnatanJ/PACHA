@@ -10,8 +10,20 @@ namespace CapaNegocio
 {
     public class ModeloProyecto
     {
+        public String Actor;
+        public String Proyecto;
+        public String Objetivo;
+        public String Responsable;
+        public String Cargo;
+        public String Telefono;
+        public String Email;
+
         DatosProyecto datosProyecto = new DatosProyecto();
-        public void InsertarDatosProyecto(string nombreProyecto, string objetivo, string responsable, string cargo, string telefono, string email)
+        public DataTable CargarReporteActoresProyecto()
+        {
+            return datosProyecto.CargarReporteActoresProyecto();
+        }
+            public void InsertarDatosProyecto(string nombreProyecto, string objetivo, string responsable, string cargo, string telefono, string email)
         {
             datosProyecto.InsertarDatosProyecto(nombreProyecto, objetivo, responsable, cargo, telefono, email);
         }
