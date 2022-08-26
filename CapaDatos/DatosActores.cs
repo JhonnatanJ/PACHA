@@ -12,12 +12,12 @@ namespace CapaDatos
     public class DatosActores
     {
         
+
         public void InsertarDatosActores(string nombreActor, string siglas, string tipo, string unidadAnalisis, string incidencias, string competenciasRel)
         {
             MySqlConnection conexionBD = Conexion.conexion();
             conexionBD.Open();
             MySqlCommand comando = new MySqlCommand();
-           
 
             comando.Connection = conexionBD;
             comando.CommandText = "insert into actor(NOMBRE, IDCOMUNIDAD, SIGLAS, TIPO, RELACIONES, INCIDENCIAS, COMPETENCIASRELACIONADAS) " +
@@ -105,6 +105,24 @@ namespace CapaDatos
             MySqlDataAdapter da = new MySqlDataAdapter(comando);
             da.Fill(dt);
            
+            conexionBD.Close();
+            return dt;
+        }
+
+        public DataTable CargarReporteActoresProyecto()
+        {
+            MySqlConnection conexionBD = Conexion.conexion();
+            conexionBD.Open();
+            MySqlCommand comando = new MySqlCommand();
+            DataTable dt = new DataTable();
+
+            comando.Connection = conexionBD;
+            comando.CommandText = "  SELECT NOMBRE, SIGLAS, TIPO, RELACIONES, INCIDENCIAS, COMPETENCIASRELACIONADAS" +
+                " FROM actor WHERE IDCOMUNIDAD = @idcomunidad ORDER BY NOMBRE; ";
+            comando.Parameters.AddWithValue("@idcomunidad", CacheLoginComunidad.idcomunidad);
+            comando.CommandType = System.Data.CommandType.Text;
+            MySqlDataAdapter da = new MySqlDataAdapter(comando);
+            da.Fill(dt);
             conexionBD.Close();
             return dt;
         }

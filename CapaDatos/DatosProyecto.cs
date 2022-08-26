@@ -11,6 +11,23 @@ namespace CapaDatos
 {
     public class DatosProyecto
     {
+        public DataTable CargarReporteActoresProyecto()
+        {
+            MySqlConnection conexionBD = Conexion.conexion();
+            conexionBD.Open();
+            MySqlCommand comando = new MySqlCommand();
+            DataTable dt = new DataTable();
+
+            comando.Connection = conexionBD;
+            comando.CommandText = "  SELECT a.NOMBRE AS ACTOR, p.NOMBRE, p.OBJETIVO, p.RESPONSABLE, p.CARGO, p.TELEFONO, p.EMAIL " +
+                "FROM actor a LEFT JOIN proyecto p ON a.NUMACTOR = p.NUMACTOR WHERE a.IDCOMUNIDAD = @idcomunidad ORDER BY a.NOMBRE; ";
+            comando.Parameters.AddWithValue("@idcomunidad", CacheLoginComunidad.idcomunidad);
+            comando.CommandType = System.Data.CommandType.Text;
+            MySqlDataAdapter da = new MySqlDataAdapter(comando);
+            da.Fill(dt);
+            conexionBD.Close();
+            return dt;
+        }
         public void InsertarDatosProyecto(string nombreProyecto, string objetivo, string responsable, string cargo, string telefono, string email)
         {
             MySqlConnection conexionBD = Conexion.conexion();
