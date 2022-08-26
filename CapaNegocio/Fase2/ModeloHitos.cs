@@ -11,6 +11,10 @@ namespace CapaNegocio.Fase2
     public class ModeloHitos
     {
         DatosHitos datos = new DatosHitos();
+        public String Tipo;
+        public String Nombre;
+        public String Latitud;
+        public String Longitud;
         public void InsertarDatos(String tipo, String nombre, String latitud, String longitud)
         {
             datos.InsertarDatos(tipo, nombre, latitud, longitud);

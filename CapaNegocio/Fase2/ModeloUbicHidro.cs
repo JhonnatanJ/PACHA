@@ -11,6 +11,9 @@ namespace CapaNegocio.Fase2
     public class ModeloUbicHidro
     {
         DatosUbicHidro datos = new DatosUbicHidro();
+        public String Nombre;
+        public String Codigo;
+        public String Nivel;
         public void InsertarDatos(String tipo, String nombre, String codigo, String nivel)
         {
             datos.InsertarDatos(tipo, nombre, codigo, nivel);

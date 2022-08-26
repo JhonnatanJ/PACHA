@@ -8,8 +8,14 @@ using System.Data;
 
 namespace CapaNegocio.Fase2
 {
+    
     public class ModeloAsentamiento
     {
+        public String Nombre;
+        public String Sector;
+        public String X;
+        public String Y;
+        public String Poblacion;
         DatosAsentamiento datos = new DatosAsentamiento();
         public void InsertarDatos(String nombre, String sector, String latitud, String longitud, int poblacion)
         {

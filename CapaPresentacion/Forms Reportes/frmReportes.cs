@@ -24,38 +24,39 @@ namespace CapaPresentacion.Forms_Reportes
 
         private void btnReporteF1_1_Click(object sender, EventArgs e)
         {
-            frmReporteFase1_1 obj = new frmReporteFase1_1();
-            obj.Show();
+            PDFDownloadController pdf = new PDFDownloadController();
+            pdf.ReporteActoresProyectos();
         }
 
         private void btnReporteF1_2_Click(object sender, EventArgs e)
         {
-            frmReporteFase1_2 obj = new frmReporteFase1_2();
-            obj.Show();
+            PDFDownloadController pdf = new PDFDownloadController();
+            pdf.ReporteCambioClimatico();
+
         }
 
         private void btnFase2_1_Click(object sender, EventArgs e)
         {
-            frmReporteFase2_1 obj = new frmReporteFase2_1();
-            obj.Show();
+            PDFDownloadController pdf = new PDFDownloadController();
+            pdf.ReporteUnidadTerritorial();
         }
 
         private void btnFase2_2_Click(object sender, EventArgs e)
         {
-            frmReporteFase2_2 obj = new frmReporteFase2_2();
-            obj.Show();
+            PDFDownloadController pdf = new PDFDownloadController();
+            pdf.ReporteAnalisisSocioambiental();
         }
 
         private void btnFase2_3_Click(object sender, EventArgs e)
         {
-            frmReporteFase2_3 obj = new frmReporteFase2_3();
-            obj.Show();
+            PDFDownloadController pdf = new PDFDownloadController();
+            pdf.ReporteRiesgoClimatico();
         }
 
         private void btnFase3_1_Click(object sender, EventArgs e)
         {
-            frmReporteFase3_1 obj = new frmReporteFase3_1();
-            obj.Show();
+            PDFDownloadController pdf = new PDFDownloadController();
+            pdf.ReporteMediosEstrategicos();
         }
     }
 }

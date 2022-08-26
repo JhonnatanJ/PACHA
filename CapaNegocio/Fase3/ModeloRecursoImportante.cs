@@ -11,6 +11,14 @@ namespace CapaNegocio.Fase3
     public class ModeloRecursoImportante
     {
         DatosRecursoImportante datosRecursoImportante = new DatosRecursoImportante();
+        public String Sector;
+        public String TipoRecurso;
+        public String Recurso;
+        public String Cantidad;
+        public String Calidad;
+        public String Acceso;
+        public String Control;
+        public String Notas;
 
         public void InsertarDatos(String sector, String tipoderecurso, String recurso, String cantidad, String calidad, String acceso, String control, String notas)
         {

@@ -11,6 +11,13 @@ namespace CapaNegocio.Fase2
     public class ModeloRiesgoClimatico
     {
         DatosRiesgoClimatico datosRiesgo = new DatosRiesgoClimatico();
+        public String Sector;
+        public String Amenaza;
+        public String Impacto;
+        public String Respuesta;
+        public String Riesgo;
+        public String Importancia;
+        public String Observaciones;
         public void InsertarDatos(String sector, String amenaza, String impacto, String respuesta, String riesgo, int importancia, String observacion)
         {
             datosRiesgo.InsertarDatos(sector, amenaza, impacto, respuesta, riesgo, importancia, observacion);

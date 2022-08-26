@@ -11,7 +11,8 @@ namespace CapaNegocio.Fase2
     public class ModeloTiempo
     {
         DatosTiempos datos = new DatosTiempos();
-
+        public String Tipo;
+        public String Nombre;
         public void InsertarDatos(String tipo, String nombre)
         {
             datos.InsertarDatos(tipo, nombre);

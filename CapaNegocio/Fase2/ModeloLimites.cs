@@ -11,6 +11,19 @@ namespace CapaNegocio.Fase2
     public class ModeloLimites
     {
         DatosLimites datoslim = new DatosLimites();
+        public String Norte;
+        public String Sur;
+        public String Este;
+        public String Oeste;
+        public String Latnorte;
+        public String Longnorte;
+        public String Latsur;
+        public String Longsur;
+        public String Lateste;
+        public String Longeste;
+        public String Latoeste;
+        public String Longoeste;
+
         public void InsertarDatos(String norte, String latnorte, String lonnorte, String sur, String latsur, String lonsur,
             String este, String lateste, String loneste, String oeste, String latoeste, String lonoeste)
         {

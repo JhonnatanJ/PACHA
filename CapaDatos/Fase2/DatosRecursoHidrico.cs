@@ -11,6 +11,7 @@ namespace CapaDatos.Fase2
 {
     public class DatosRecursoHidrico
     {
+        
         public void InsertarDatos(String recHidrico, float recDec1, float recDec2, float recDec3, float recDec4, float recDec5, float recDec6, float recDec7, float recDec8)
         {
             MySqlConnection conexionBD = Conexion.conexion();

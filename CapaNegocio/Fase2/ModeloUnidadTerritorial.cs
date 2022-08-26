@@ -12,6 +12,13 @@ namespace CapaNegocio.Fase2
     {
         DatosUnidadTerritorial datosUnidad = new DatosUnidadTerritorial();
 
+        public String Pais;
+        public String Region;
+        public String Provincia;
+        public String Canton;
+        public String Parroquia;
+        public String Comunidad;
+
         public void InsertarDatos(String pais, String region, String provincia, String canton, String parroquia)
         {
             datosUnidad.InsertarDatos(pais, region, provincia, canton, parroquia);

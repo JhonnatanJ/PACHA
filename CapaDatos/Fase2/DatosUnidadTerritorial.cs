@@ -11,6 +11,8 @@ namespace CapaDatos.Fase2
 {
     public class DatosUnidadTerritorial
     {
+        
+        
         public void InsertarDatos(String pais, String region, String provincia, String canton, String parroquia)
         {
             MySqlConnection conexionBD = Conexion.conexion();

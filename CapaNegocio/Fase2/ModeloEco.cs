@@ -11,6 +11,8 @@ namespace CapaNegocio.Fase2
     public class ModeloEco
     {
         DatosEco datos = new DatosEco();
+        public String Tipo;
+        public String Nombre;
         public void InsertarDatos(String tipo, String nombre)
         {
             datos.InsertarDatos(tipo, nombre);
