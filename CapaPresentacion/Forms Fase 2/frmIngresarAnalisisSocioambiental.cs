@@ -285,13 +285,21 @@ namespace CapaPresentacion.Forms_Fase_2
 
             if (result == DialogResult.Yes)
             {
-                curvaDemo.InsertarDatos(informacion1, inf1dec1, inf1dec2, inf1dec3, inf1dec4, inf1dec5, inf1dec6, inf1dec7, inf1dec8);
-                curvaDemo.InsertarDatos(informacion2, inf2dec1, inf2dec2, inf2dec3, inf2dec4, inf2dec5, inf2dec6, inf2dec7, inf2dec8);
-                curvaDemo.InsertarDatos(informacion3, inf3dec1, inf3dec2, inf3dec3, inf3dec4, inf3dec5, inf3dec6, inf3dec7, inf3dec8);
-                curvaDemo.InsertarDatos(informacion4, inf4dec1, inf4dec2, inf4dec3, inf4dec4, inf4dec5, inf4dec6, inf4dec7, inf4dec8);
+                try
+                {
+                    curvaDemo.InsertarDatos(informacion1, inf1dec1, inf1dec2, inf1dec3, inf1dec4, inf1dec5, inf1dec6, inf1dec7, inf1dec8);
+                    curvaDemo.InsertarDatos(informacion2, inf2dec1, inf2dec2, inf2dec3, inf2dec4, inf2dec5, inf2dec6, inf2dec7, inf2dec8);
+                    curvaDemo.InsertarDatos(informacion3, inf3dec1, inf3dec2, inf3dec3, inf3dec4, inf3dec5, inf3dec6, inf3dec7, inf3dec8);
+                    curvaDemo.InsertarDatos(informacion4, inf4dec1, inf4dec2, inf4dec3, inf4dec4, inf4dec5, inf4dec6, inf4dec7, inf4dec8);
 
-                MessageBox.Show("Los datos se agregaron correctamente", "Advertencia", MessageBoxButtons.OK);
-                this.bloquear();
+                    MessageBox.Show("Los datos se agregaron correctamente", "Advertencia", MessageBoxButtons.OK);
+                    this.bloquear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message.Replace(ex.Message, "Los datos de Curva Demográfica ya fueron ingresados"), "Error", MessageBoxButtons.OK);
+                }
+                
             }
         }
 

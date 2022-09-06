@@ -7,7 +7,7 @@
     <ProjectGuid>{B64B7F09-073B-4B96-A851-FC173B79ACA5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>CapaPresentacion</RootNamespace>
-    <AssemblyName>PACHA</AssemblyName>
+    <AssemblyName>AbePacha</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
