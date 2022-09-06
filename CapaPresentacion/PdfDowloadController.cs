@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -61,7 +62,10 @@ namespace CapaPresentacion
 
                 doc.SetMargins(75, 35, 70, 35);
 
-                string pathLogo = ("../../Resources/logoPacha_png.png");
+                //string pathLogo = ("../../Resources/logoPacha_png.png");
+                Properties.Resources.logoPacha_png.Save("logo_Pacha", ImageFormat.Png);
+                string pathLogo = ("logo_Pacha");
+
                 Image img = new Image(ImageDataFactory.Create(pathLogo));
 
                 pdfDocument.AddEventHandler(PdfDocumentEvent.START_PAGE, new HeaderEventHandler(img));
@@ -176,7 +180,10 @@ namespace CapaPresentacion
 
                 doc.SetMargins(75, 35, 70, 35);
 
-                string pathLogo = ("../../Resources/logoPacha_png.png");
+                //string pathLogo = ("../../Resources/logoPacha_png.png");
+                Properties.Resources.logoPacha_png.Save("logo_Pacha", ImageFormat.Png);
+                string pathLogo = ("logo_Pacha");
+
                 Image img = new Image(ImageDataFactory.Create(pathLogo));
 
                 pdfDocument.AddEventHandler(PdfDocumentEvent.START_PAGE, new HeaderEventHandler(img));
@@ -287,7 +294,10 @@ namespace CapaPresentacion
                 
                 doc.SetMargins(75, 35, 70, 35);
 
-                string pathLogo = ("../../Resources/logoPacha_png.png");
+                //string pathLogo = ("../../Resources/logoPacha_png.png");
+                Properties.Resources.logoPacha_png.Save("logo_Pacha", ImageFormat.Png);
+                string pathLogo = ("logo_Pacha");
+
                 Image img = new Image(ImageDataFactory.Create(pathLogo));
 
                 pdfDocument.AddEventHandler(PdfDocumentEvent.START_PAGE, new HeaderEventHandler(img));
@@ -721,7 +731,10 @@ namespace CapaPresentacion
                 Document doc = new Document(pdfDocument, PageSize.LETTER);
                 doc.SetMargins(75, 35, 70, 35);
 
-                string pathLogo = ("../../Resources/logoPacha_png.png");
+                //string pathLogo = ("../../Resources/logoPacha_png.png");
+                Properties.Resources.logoPacha_png.Save("logo_Pacha", ImageFormat.Png);
+                string pathLogo = ("logo_Pacha");
+
                 Image img = new Image(ImageDataFactory.Create(pathLogo));
 
                 pdfDocument.AddEventHandler(PdfDocumentEvent.START_PAGE, new HeaderEventHandler(img));
@@ -1134,7 +1147,10 @@ namespace CapaPresentacion
                 Document doc = new Document(pdfDocument, PageSize.LETTER);
                 doc.SetMargins(75, 35, 70, 35);
 
-                string pathLogo = ("../../Resources/logoPacha_png.png");
+                //string pathLogo = ("../../Resources/logoPacha_png.png");
+                Properties.Resources.logoPacha_png.Save("logo_Pacha", ImageFormat.Png);
+                string pathLogo = ("logo_Pacha");
+
                 Image img = new Image(ImageDataFactory.Create(pathLogo));
 
                 pdfDocument.AddEventHandler(PdfDocumentEvent.START_PAGE, new HeaderEventHandler(img));
@@ -1248,8 +1264,8 @@ namespace CapaPresentacion
                 PdfDocument pdfDocument = new PdfDocument(pw);
                 Document doc = new Document(pdfDocument, PageSize.LETTER);
                 doc.SetMargins(75, 35, 70, 35);
-
-                string pathLogo = ("../../Resources/logoPacha_png.png");
+                Properties.Resources.logoPacha_png.Save("logo_Pacha", ImageFormat.Png);
+                string pathLogo = ("logo_Pacha");
                 Image img = new Image(ImageDataFactory.Create(pathLogo));
 
                 pdfDocument.AddEventHandler(PdfDocumentEvent.START_PAGE, new HeaderEventHandler(img));
