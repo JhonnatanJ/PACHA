@@ -674,6 +674,11 @@
     <None Include="Resources\iconError1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\logo_AbePachaSw_recortado.png" />
+    <None Include="Resources\logo_AbePacha3.png" />
+    <None Include="Resources\logo_AbePacha.png" />
+    <None Include="Resources\logo_AbePacha2.png" />
+    <None Include="Resources\logo_AbePacha_png.png" />
     <None Include="Resources\iconCerrar2.png" />
     <None Include="Resources\iconCerrar1.png" />
     <None Include="Resources\iconError.png" />

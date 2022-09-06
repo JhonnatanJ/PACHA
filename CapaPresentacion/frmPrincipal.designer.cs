@@ -30,10 +30,6 @@ namespace CapaPresentacion
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pbMaximizar = new System.Windows.Forms.PictureBox();
-            this.pbMinimizar = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.lblNombreComunidad = new System.Windows.Forms.Label();
             this.panelFases = new System.Windows.Forms.Panel();
             this.btnCambioComunidad = new System.Windows.Forms.Button();
@@ -56,65 +52,69 @@ namespace CapaPresentacion
             this.btnIngresarActoresLocales = new System.Windows.Forms.Button();
             this.btnVerCambioClimatico = new System.Windows.Forms.Button();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pnlRiesgoClimatico = new System.Windows.Forms.Panel();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.btnVerRiesgoClimatico = new System.Windows.Forms.Button();
             this.btnIngresarRiesgoClimatico = new System.Windows.Forms.Button();
             this.pnlMediosEst = new System.Windows.Forms.Panel();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.btnVisualizarMediosEst = new System.Windows.Forms.Button();
             this.btnIngresarMediosEst = new System.Windows.Forms.Button();
             this.pnlOpcActoresLocales = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnVerActoresLocales = new System.Windows.Forms.Button();
             this.pnlOpcCambioClimatico = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnIngresarCambioClimatico = new System.Windows.Forms.Button();
             this.pnlUnidadTerritorial = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.btnVisualizarUnidadTerritorial = new System.Windows.Forms.Button();
             this.btnIngresarUnidadTerritorial = new System.Windows.Forms.Button();
             this.pnlAnalisisSocioambiental = new System.Windows.Forms.Panel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.btnVerAnalisisSocioambiental = new System.Windows.Forms.Button();
             this.btnIngresarAnalisisSocioambiental = new System.Windows.Forms.Button();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pbMaximizar = new System.Windows.Forms.PictureBox();
+            this.pbMinimizar = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMaximizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.panelFases.SuspendLayout();
             this.pnlUsuarios.SuspendLayout();
             this.pnlFase3Submenu.SuspendLayout();
             this.pnlFase2Submenu.SuspendLayout();
             this.pnlFase1Submenu.SuspendLayout();
             this.panelContenedor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.pnlRiesgoClimatico.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.pnlMediosEst.SuspendLayout();
+            this.pnlOpcActoresLocales.SuspendLayout();
+            this.pnlOpcCambioClimatico.SuspendLayout();
+            this.pnlUnidadTerritorial.SuspendLayout();
+            this.pnlAnalisisSocioambiental.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            this.pnlOpcActoresLocales.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.pnlOpcCambioClimatico.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.pnlUnidadTerritorial.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.pnlAnalisisSocioambiental.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMaximizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -131,54 +131,6 @@ namespace CapaPresentacion
             this.panel1.Size = new System.Drawing.Size(1227, 45);
             this.panel1.TabIndex = 0;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
-            // 
-            // pbMaximizar
-            // 
-            this.pbMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbMaximizar.Image = global::CapaPresentacion.Properties.Resources.iconMaximizar_B;
-            this.pbMaximizar.Location = new System.Drawing.Point(1167, 10);
-            this.pbMaximizar.Name = "pbMaximizar";
-            this.pbMaximizar.Size = new System.Drawing.Size(20, 20);
-            this.pbMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbMaximizar.TabIndex = 16;
-            this.pbMaximizar.TabStop = false;
-            this.pbMaximizar.Click += new System.EventHandler(this.pictureBox5_Click);
-            // 
-            // pbMinimizar
-            // 
-            this.pbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbMinimizar.Image = global::CapaPresentacion.Properties.Resources.iconMinimizar_B;
-            this.pbMinimizar.Location = new System.Drawing.Point(1133, 11);
-            this.pbMinimizar.Name = "pbMinimizar";
-            this.pbMinimizar.Size = new System.Drawing.Size(23, 23);
-            this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbMinimizar.TabIndex = 15;
-            this.pbMinimizar.TabStop = false;
-            this.pbMinimizar.Click += new System.EventHandler(this.pbMinimizar_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::CapaPresentacion.Properties.Resources.logoPacha_png;
-            this.pictureBox2.Location = new System.Drawing.Point(1, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(193, 43);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCerrar.Image = global::CapaPresentacion.Properties.Resources.iconCerrar_B;
-            this.btnCerrar.Location = new System.Drawing.Point(1199, 10);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(20, 20);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrar.TabIndex = 4;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // lblNombreComunidad
             // 
@@ -525,17 +477,6 @@ namespace CapaPresentacion
             this.panelContenedor.Size = new System.Drawing.Size(1033, 704);
             this.panelContenedor.TabIndex = 2;
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox5.Image = global::CapaPresentacion.Properties.Resources.logoPacha_png;
-            this.pictureBox5.Location = new System.Drawing.Point(244, 209);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(546, 222);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
-            // 
             // pnlRiesgoClimatico
             // 
             this.pnlRiesgoClimatico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(91)))), ((int)(((byte)(37)))));
@@ -547,26 +488,6 @@ namespace CapaPresentacion
             this.pnlRiesgoClimatico.Name = "pnlRiesgoClimatico";
             this.pnlRiesgoClimatico.Size = new System.Drawing.Size(190, 71);
             this.pnlRiesgoClimatico.TabIndex = 13;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::CapaPresentacion.Properties.Resources.iconVer_B;
-            this.pictureBox11.Location = new System.Drawing.Point(4, 40);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 4;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::CapaPresentacion.Properties.Resources.iconFormulario_B;
-            this.pictureBox12.Location = new System.Drawing.Point(4, 5);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 3;
-            this.pictureBox12.TabStop = false;
             // 
             // btnVerRiesgoClimatico
             // 
@@ -611,26 +532,6 @@ namespace CapaPresentacion
             this.pnlMediosEst.Size = new System.Drawing.Size(190, 71);
             this.pnlMediosEst.TabIndex = 14;
             // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = global::CapaPresentacion.Properties.Resources.iconVer_B;
-            this.pictureBox13.Location = new System.Drawing.Point(4, 40);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox13.TabIndex = 4;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Image = global::CapaPresentacion.Properties.Resources.iconFormulario_B;
-            this.pictureBox14.Location = new System.Drawing.Point(4, 5);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 3;
-            this.pictureBox14.TabStop = false;
-            // 
             // btnVisualizarMediosEst
             // 
             this.btnVisualizarMediosEst.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
@@ -674,26 +575,6 @@ namespace CapaPresentacion
             this.pnlOpcActoresLocales.Size = new System.Drawing.Size(190, 71);
             this.pnlOpcActoresLocales.TabIndex = 9;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::CapaPresentacion.Properties.Resources.iconVer_B;
-            this.pictureBox6.Location = new System.Drawing.Point(3, 40);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 4;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.iconFormulario_B;
-            this.pictureBox1.Location = new System.Drawing.Point(4, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
             // btnVerActoresLocales
             // 
             this.btnVerActoresLocales.BackColor = System.Drawing.Color.Transparent;
@@ -723,26 +604,6 @@ namespace CapaPresentacion
             this.pnlOpcCambioClimatico.Size = new System.Drawing.Size(190, 71);
             this.pnlOpcCambioClimatico.TabIndex = 9;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::CapaPresentacion.Properties.Resources.iconVer_B;
-            this.pictureBox4.Location = new System.Drawing.Point(4, 40);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::CapaPresentacion.Properties.Resources.iconFormulario_B;
-            this.pictureBox3.Location = new System.Drawing.Point(4, 5);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
             // btnIngresarCambioClimatico
             // 
             this.btnIngresarCambioClimatico.BackColor = System.Drawing.Color.Transparent;
@@ -770,26 +631,6 @@ namespace CapaPresentacion
             this.pnlUnidadTerritorial.Name = "pnlUnidadTerritorial";
             this.pnlUnidadTerritorial.Size = new System.Drawing.Size(190, 71);
             this.pnlUnidadTerritorial.TabIndex = 10;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::CapaPresentacion.Properties.Resources.iconVer_B;
-            this.pictureBox7.Location = new System.Drawing.Point(4, 40);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 4;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::CapaPresentacion.Properties.Resources.iconFormulario_B;
-            this.pictureBox8.Location = new System.Drawing.Point(4, 5);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 3;
-            this.pictureBox8.TabStop = false;
             // 
             // btnVisualizarUnidadTerritorial
             // 
@@ -834,26 +675,6 @@ namespace CapaPresentacion
             this.pnlAnalisisSocioambiental.Size = new System.Drawing.Size(190, 71);
             this.pnlAnalisisSocioambiental.TabIndex = 12;
             // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::CapaPresentacion.Properties.Resources.iconVer_B;
-            this.pictureBox9.Location = new System.Drawing.Point(4, 40);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 4;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::CapaPresentacion.Properties.Resources.iconFormulario_B;
-            this.pictureBox10.Location = new System.Drawing.Point(4, 5);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 3;
-            this.pictureBox10.TabStop = false;
-            // 
             // btnVerAnalisisSocioambiental
             // 
             this.btnVerAnalisisSocioambiental.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
@@ -885,6 +706,185 @@ namespace CapaPresentacion
             this.btnIngresarAnalisisSocioambiental.UseVisualStyleBackColor = false;
             this.btnIngresarAnalisisSocioambiental.Click += new System.EventHandler(this.btnIngresarAnalisisSocioambiental_Click);
             // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::CapaPresentacion.Properties.Resources.iconVer_B;
+            this.pictureBox13.Location = new System.Drawing.Point(4, 40);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 4;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::CapaPresentacion.Properties.Resources.iconFormulario_B;
+            this.pictureBox14.Location = new System.Drawing.Point(4, 5);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.TabIndex = 3;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::CapaPresentacion.Properties.Resources.iconVer_B;
+            this.pictureBox11.Location = new System.Drawing.Point(4, 40);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 4;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::CapaPresentacion.Properties.Resources.iconFormulario_B;
+            this.pictureBox12.Location = new System.Drawing.Point(4, 5);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 3;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::CapaPresentacion.Properties.Resources.iconVer_B;
+            this.pictureBox9.Location = new System.Drawing.Point(4, 40);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 4;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::CapaPresentacion.Properties.Resources.iconFormulario_B;
+            this.pictureBox10.Location = new System.Drawing.Point(4, 5);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 3;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::CapaPresentacion.Properties.Resources.iconVer_B;
+            this.pictureBox7.Location = new System.Drawing.Point(4, 40);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 4;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::CapaPresentacion.Properties.Resources.iconFormulario_B;
+            this.pictureBox8.Location = new System.Drawing.Point(4, 5);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 3;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::CapaPresentacion.Properties.Resources.iconVer_B;
+            this.pictureBox4.Location = new System.Drawing.Point(4, 40);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 4;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::CapaPresentacion.Properties.Resources.iconFormulario_B;
+            this.pictureBox3.Location = new System.Drawing.Point(4, 5);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::CapaPresentacion.Properties.Resources.iconVer_B;
+            this.pictureBox6.Location = new System.Drawing.Point(3, 40);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 4;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.iconFormulario_B;
+            this.pictureBox1.Location = new System.Drawing.Point(4, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox5.Image = global::CapaPresentacion.Properties.Resources.logo_AbePacha3;
+            this.pictureBox5.Location = new System.Drawing.Point(245, 176);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(546, 343);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pbMaximizar
+            // 
+            this.pbMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbMaximizar.Image = global::CapaPresentacion.Properties.Resources.iconMaximizar_B;
+            this.pbMaximizar.Location = new System.Drawing.Point(1167, 10);
+            this.pbMaximizar.Name = "pbMaximizar";
+            this.pbMaximizar.Size = new System.Drawing.Size(20, 20);
+            this.pbMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbMaximizar.TabIndex = 16;
+            this.pbMaximizar.TabStop = false;
+            this.pbMaximizar.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
+            // pbMinimizar
+            // 
+            this.pbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbMinimizar.Image = global::CapaPresentacion.Properties.Resources.iconMinimizar_B;
+            this.pbMinimizar.Location = new System.Drawing.Point(1133, 11);
+            this.pbMinimizar.Name = "pbMinimizar";
+            this.pbMinimizar.Size = new System.Drawing.Size(23, 23);
+            this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbMinimizar.TabIndex = 15;
+            this.pbMinimizar.TabStop = false;
+            this.pbMinimizar.Click += new System.EventHandler(this.pbMinimizar_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::CapaPresentacion.Properties.Resources.logo_florPacha_png;
+            this.pictureBox2.Location = new System.Drawing.Point(1, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(193, 43);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrar.Image = global::CapaPresentacion.Properties.Resources.iconCerrar_B;
+            this.btnCerrar.Location = new System.Drawing.Point(1199, 10);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(20, 20);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 4;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -907,35 +907,35 @@ namespace CapaPresentacion
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMaximizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.panelFases.ResumeLayout(false);
             this.pnlUsuarios.ResumeLayout(false);
             this.pnlFase3Submenu.ResumeLayout(false);
             this.pnlFase2Submenu.ResumeLayout(false);
             this.pnlFase1Submenu.ResumeLayout(false);
             this.panelContenedor.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.pnlRiesgoClimatico.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.pnlMediosEst.ResumeLayout(false);
+            this.pnlOpcActoresLocales.ResumeLayout(false);
+            this.pnlOpcCambioClimatico.ResumeLayout(false);
+            this.pnlUnidadTerritorial.ResumeLayout(false);
+            this.pnlAnalisisSocioambiental.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            this.pnlOpcActoresLocales.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.pnlOpcCambioClimatico.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.pnlUnidadTerritorial.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.pnlAnalisisSocioambiental.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMaximizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }
