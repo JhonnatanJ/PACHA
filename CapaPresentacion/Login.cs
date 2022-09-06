@@ -194,9 +194,5 @@ namespace CapaPresentacion
             MessageBox.Show("Si no recuerda su contraseña, pongase en contacto con un administrador de la aplicación.\nEl administrador no podrá ver su contraseña actual, pero podrá reestablecerla para que pueda ingresar.", "Ayuda", MessageBoxButtons.OK, MessageBoxIcon.Question);
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-           
-        }
     }
 }
