@@ -32,7 +32,6 @@ namespace CapaPresentacion.Forms_Reportes
         {
             PDFDownloadController pdf = new PDFDownloadController();
             pdf.ReporteCambioClimatico();
-
         }
 
         private void btnFase2_1_Click(object sender, EventArgs e)

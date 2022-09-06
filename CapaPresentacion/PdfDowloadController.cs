@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -46,7 +47,7 @@ namespace CapaPresentacion
             string ruta = RetornarRuta();
             if (ruta != "")
             {
-                ruta = ruta + @"\ReporteMediosEstrategicos.pdf";
+                ruta = ruta + @"\ReporteMediosEstrategicos_" + DateTime.Now.ToString("yyyy-MM-dd") + ".pdf";
 
                 FileStream fs = new FileStream(ruta, FileMode.Create);
 
@@ -148,6 +149,7 @@ namespace CapaPresentacion
                 pw.Close();
 
                 MessageBox.Show("Reporte generado", "OK", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Process.Start(ruta);
             }
             else
             {
@@ -160,7 +162,7 @@ namespace CapaPresentacion
             string ruta = RetornarRuta();
             if (ruta != "")
             {
-                ruta = ruta + @"\ReporteRiesgoClimatico.pdf";
+                ruta = ruta + @"\ReporteRiesgoClimatico_" + DateTime.Now.ToString("yyyy-MM-dd") + ".pdf";
 
                 FileStream fs = new FileStream(ruta, FileMode.Create);
 
@@ -257,6 +259,7 @@ namespace CapaPresentacion
                 pw.Close();
 
                 MessageBox.Show("Reporte generado", "OK", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Process.Start(ruta);
             }
             else
             {
@@ -270,7 +273,7 @@ namespace CapaPresentacion
             string ruta = RetornarRuta();
             if (ruta != "")
             {
-                ruta = ruta + @"\ReporteAnalisisSocioambiental.pdf";
+                ruta = ruta + @"\ReporteAnalisisSocioambiental_" + DateTime.Now.ToString("yyyy-MM-dd") + ".pdf";
 
                 FileStream fs = new FileStream(ruta, FileMode.Create);
 
@@ -684,7 +687,7 @@ namespace CapaPresentacion
                 pw.Close();
 
                 MessageBox.Show("Reporte generado", "OK", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                Process.Start(ruta);
 
             }
             else
@@ -699,7 +702,7 @@ namespace CapaPresentacion
             if (ruta != "")
             {
 
-                ruta = ruta + @"\ReporteUnidadTerritorial.pdf";
+                ruta = ruta + @"\ReporteUnidadTerritorial_" + DateTime.Now.ToString("yyyy-MM-dd") + ".pdf";
 
                 FileStream fs = new FileStream(ruta, FileMode.Create);
 
@@ -1105,7 +1108,7 @@ namespace CapaPresentacion
                 pw.Close();
 
                 MessageBox.Show("Reporte generado", "OK", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                Process.Start(ruta);
             }
             else
             {
@@ -1118,7 +1121,7 @@ namespace CapaPresentacion
             if (ruta != "")
             {
 
-                ruta = ruta + @"\ReporteCambioClimatico.pdf";
+                ruta = ruta + @"\ReporteCambioClimatico_" + DateTime.Now.ToString("yyyy-MM-dd") + ".pdf";
 
                 FileStream fs = new FileStream(ruta, FileMode.Create);
 
@@ -1219,7 +1222,7 @@ namespace CapaPresentacion
                 pw.Close();
 
                 MessageBox.Show("Reporte generado", "OK", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                Process.Start(ruta);
             }
             else
             {
@@ -1232,7 +1235,7 @@ namespace CapaPresentacion
             if (ruta != "")
             {
 
-                ruta = ruta + @"\ReporteActoresLocales.pdf";
+                ruta = ruta + @"\ReporteActoresLocales_"+ DateTime.Now.ToString("yyyy-MM-dd") + ".pdf"; 
 
                 FileStream fs = new FileStream(ruta, FileMode.Create);
 
@@ -1394,6 +1397,7 @@ namespace CapaPresentacion
                 pw.Close();
 
                 MessageBox.Show("Documento generado...", "OK", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Process.Start(ruta);
             }
             else
             {
