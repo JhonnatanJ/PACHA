@@ -70,8 +70,8 @@
             this.cbxTipo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxTipo.FormattingEnabled = true;
             this.cbxTipo.Items.AddRange(new object[] {
-            "Isoterma",
-            "Isoyeta"});
+            "Temperatura",
+            "Precipitación"});
             this.cbxTipo.Location = new System.Drawing.Point(283, 78);
             this.cbxTipo.Margin = new System.Windows.Forms.Padding(4);
             this.cbxTipo.Name = "cbxTipo";
@@ -138,11 +138,11 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(156, 151);
+            this.label3.Location = new System.Drawing.Point(184, 151);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 23);
+            this.label3.Size = new System.Drawing.Size(68, 23);
             this.label3.TabIndex = 18;
-            this.label3.Text = "Nombre:";
+            this.label3.Text = "Valor:";
             // 
             // txtNombre
             // 

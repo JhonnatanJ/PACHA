@@ -124,11 +124,14 @@
   <data name="logo_florPacha_png" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_florPacha_png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="iconAyuda2_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconAyuda2_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="iconMaximizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconMaximizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconUser" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconUser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo_AbePacha2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo_AbePacha2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconAtras" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconAtras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,8 +139,8 @@
   <data name="logoPacha_png" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logoPacha_png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconMinimizar_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconMinimizar_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconUser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconUser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconMaximizar_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconMaximizar_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,8 +154,8 @@
   <data name="logoPNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logoPNG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconAtras_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconAtras_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconMinimizar_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconMinimizar_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconActualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconActualizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,17 +163,23 @@
   <data name="iconMinimizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconMinimizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="iconAtras_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconAtras_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_AbePacha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo_AbePacha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="iconFormulario_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconFormulario_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconError" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconError.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconRecargar_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconRecargar_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo_AbePacha_png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo_AbePacha_png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconCerrar_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconCerrar_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconVer_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconVer_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logoGidac_PNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logoGidac_PNG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,10 +187,16 @@
   <data name="iconAyuda_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconAyuda_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconVer_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconVer_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconError" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconError.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconAyuda2_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconAyuda2_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconRecargar_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconRecargar_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_AbePacha3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo_AbePacha3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_AbePachaSw_recortado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo_AbePachaSw_recortado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

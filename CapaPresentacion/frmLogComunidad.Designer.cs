@@ -31,12 +31,10 @@ namespace CapaPresentacion
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelApellido = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.labelNombre = new System.Windows.Forms.Label();
             this.btnLogOut = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lbLogin = new System.Windows.Forms.Label();
             this.cboComunidad = new System.Windows.Forms.ComboBox();
             this.btnIngCom = new System.Windows.Forms.Button();
@@ -44,22 +42,24 @@ namespace CapaPresentacion
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblGuia = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pbMinimizar = new System.Windows.Forms.PictureBox();
-            this.pbCerrar = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.pbAyuda = new System.Windows.Forms.PictureBox();
             this.ttLogComunidadAdmin = new System.Windows.Forms.ToolTip(this.components);
+            this.pbAyuda = new System.Windows.Forms.PictureBox();
+            this.pbMinimizar = new System.Windows.Forms.PictureBox();
+            this.pbCerrar = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAyuda)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -78,17 +78,6 @@ namespace CapaPresentacion
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.iconUser;
-            this.pictureBox1.Location = new System.Drawing.Point(58, 182);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(162, 132);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
             // 
             // labelApellido
             // 
@@ -143,17 +132,6 @@ namespace CapaPresentacion
             this.btnLogOut.Text = "Cerrar Sesion";
             this.btnLogOut.UseVisualStyleBackColor = false;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::CapaPresentacion.Properties.Resources.logoPacha_png;
-            this.pictureBox2.Location = new System.Drawing.Point(41, 14);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(208, 75);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
             // 
             // lbLogin
             // 
@@ -247,28 +225,6 @@ namespace CapaPresentacion
             this.panel3.Size = new System.Drawing.Size(608, 87);
             this.panel3.TabIndex = 12;
             // 
-            // pbMinimizar
-            // 
-            this.pbMinimizar.Image = global::CapaPresentacion.Properties.Resources.iconMinimizar_B;
-            this.pbMinimizar.Location = new System.Drawing.Point(899, 14);
-            this.pbMinimizar.Name = "pbMinimizar";
-            this.pbMinimizar.Size = new System.Drawing.Size(23, 15);
-            this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbMinimizar.TabIndex = 14;
-            this.pbMinimizar.TabStop = false;
-            this.pbMinimizar.Click += new System.EventHandler(this.pbMinimizar_Click);
-            // 
-            // pbCerrar
-            // 
-            this.pbCerrar.Image = global::CapaPresentacion.Properties.Resources.iconCerrar_B;
-            this.pbCerrar.Location = new System.Drawing.Point(935, 12);
-            this.pbCerrar.Name = "pbCerrar";
-            this.pbCerrar.Size = new System.Drawing.Size(17, 17);
-            this.pbCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbCerrar.TabIndex = 13;
-            this.pbCerrar.TabStop = false;
-            this.pbCerrar.Click += new System.EventHandler(this.pbCerrar_Click);
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Gainsboro;
@@ -313,6 +269,15 @@ namespace CapaPresentacion
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // ttLogComunidadAdmin
+            // 
+            this.ttLogComunidadAdmin.AutomaticDelay = 1000;
+            this.ttLogComunidadAdmin.AutoPopDelay = 30000;
+            this.ttLogComunidadAdmin.InitialDelay = 50;
+            this.ttLogComunidadAdmin.IsBalloon = true;
+            this.ttLogComunidadAdmin.ReshowDelay = 50;
+            this.ttLogComunidadAdmin.ToolTipTitle = "MENU COMUNIDADES";
+            // 
             // pbAyuda
             // 
             this.pbAyuda.Image = global::CapaPresentacion.Properties.Resources.iconAyuda2_B;
@@ -323,14 +288,49 @@ namespace CapaPresentacion
             this.pbAyuda.TabIndex = 16;
             this.pbAyuda.TabStop = false;
             // 
-            // ttLogComunidadAdmin
+            // pbMinimizar
             // 
-            this.ttLogComunidadAdmin.AutomaticDelay = 1000;
-            this.ttLogComunidadAdmin.AutoPopDelay = 30000;
-            this.ttLogComunidadAdmin.InitialDelay = 50;
-            this.ttLogComunidadAdmin.IsBalloon = true;
-            this.ttLogComunidadAdmin.ReshowDelay = 50;
-            this.ttLogComunidadAdmin.ToolTipTitle = "MENU COMUNIDADES";
+            this.pbMinimizar.Image = global::CapaPresentacion.Properties.Resources.iconMinimizar_B;
+            this.pbMinimizar.Location = new System.Drawing.Point(899, 14);
+            this.pbMinimizar.Name = "pbMinimizar";
+            this.pbMinimizar.Size = new System.Drawing.Size(23, 15);
+            this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbMinimizar.TabIndex = 14;
+            this.pbMinimizar.TabStop = false;
+            this.pbMinimizar.Click += new System.EventHandler(this.pbMinimizar_Click);
+            // 
+            // pbCerrar
+            // 
+            this.pbCerrar.Image = global::CapaPresentacion.Properties.Resources.iconCerrar_B;
+            this.pbCerrar.Location = new System.Drawing.Point(935, 12);
+            this.pbCerrar.Name = "pbCerrar";
+            this.pbCerrar.Size = new System.Drawing.Size(17, 17);
+            this.pbCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbCerrar.TabIndex = 13;
+            this.pbCerrar.TabStop = false;
+            this.pbCerrar.Click += new System.EventHandler(this.pbCerrar_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.iconUser;
+            this.pictureBox1.Location = new System.Drawing.Point(58, 182);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(162, 132);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::CapaPresentacion.Properties.Resources.logo_AbePacha;
+            this.pictureBox2.Location = new System.Drawing.Point(41, 22);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(208, 59);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // frmLogComunidad
             // 
@@ -354,15 +354,15 @@ namespace CapaPresentacion
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmLogComunidad_MouseDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbAyuda)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
