@@ -20,54 +20,90 @@ namespace CapaPresentacion.Forms_Fase_2
 
         private void btnAsent_Click(object sender, EventArgs e)
         {
-            
-            frmAsentamientos Asen = new frmAsentamientos();
-            Asen.Show();
+            if (VerificarDatosUnidad() == false)
+            {
+                frmAsentamientos Asen = new frmAsentamientos();
+                Asen.Show();
+            }
+            else
+            {
+                MessageBox.Show("Para acceder a esta opción debe ingresar los datos de Ubicación Administrativa y Límites", "Advertencia", MessageBoxButtons.OK);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmHitosGeo hitos = new frmHitosGeo();
-            hitos.Show();
+            if (VerificarDatosUnidad() == false)
+            {
+                frmHitosGeo hitos = new frmHitosGeo();
+                hitos.Show();
+            }
+            else
+            {
+                MessageBox.Show("Para acceder a esta opción debe ingresar los datos de Ubicación Administrativa y Límites", "Advertencia", MessageBoxButtons.OK);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            frmUbicGeo ubgeo = new frmUbicGeo();
-            ubgeo.Show();
+            if (VerificarDatosUnidad() == false)
+            {
+                frmUbicGeo ubgeo = new frmUbicGeo();
+                ubgeo.Show();
+            }
+            else
+            {
+                MessageBox.Show("Para acceder a esta opción debe ingresar los datos de Ubicación Administrativa y Límites", "Advertencia", MessageBoxButtons.OK);
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            frmEcos ecos = new frmEcos();
-            ecos.Show();
+            if (VerificarDatosUnidad() == false)
+            {
+                frmEcos ecos = new frmEcos();
+                ecos.Show();
+            }
+            else
+            {
+                MessageBox.Show("Para acceder a esta opción debe ingresar los datos de Ubicación Administrativa y Límites", "Advertencia", MessageBoxButtons.OK);
+            }
+            
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            frmTiempos tiempos = new frmTiempos();
-            tiempos.Show();
+            if (VerificarDatosUnidad() == false)
+            {
+                frmTiempos tiempos = new frmTiempos();
+                tiempos.Show();
+            }
+            else
+            {
+                MessageBox.Show("Para acceder a esta opción debe ingresar los datos de Ubicación Administrativa y Límites", "Advertencia", MessageBoxButtons.OK);
+            }
         }
 
-        public void bloquear()
+        public bool VerificarDatosUnidad()
         {
-            txtPais.Enabled = false;
-            txtRegion.Enabled = false;
-            txtProvincia.Enabled = false;
-            txtCanton.Enabled = false;
-            txtParroquia.Enabled = false;
-            txtNorte.Enabled = false;
-            txtLatNor.Enabled = false;
-            txtLonNor.Enabled = false;
-            txtSur.Enabled = false;
-            txtLatSur.Enabled = false;
-            txtLonSur.Enabled = false;
-            txtEste.Enabled = false;
-            txtLatEst.Enabled = false;
-            txtLonEst.Enabled = false;
-            txtOeste.Enabled = false;
-            txtLatOes.Enabled = false;
-            txtLonOes.Enabled = false;
+            ModeloUnidadTerritorial unidadT = new ModeloUnidadTerritorial();
+            DataTable datos = unidadT.CargarDGV();
+
+            if (datos.Rows.Count == 0)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        public bool UAVacia()
+        {
+            if(txtPais.Text != "" && txtRegion.Text != "" && txtProvincia.Text != "" && txtCanton.Text != "" && txtParroquia.Text != "")
+            {
+                return true;
+            }
+            return false;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -94,20 +130,137 @@ namespace CapaPresentacion.Forms_Fase_2
             String latoeste = txtLatOes.Text;
             String lonoeste = txtLonOes.Text;
 
-            if (result == DialogResult.Yes)
+            if (result == DialogResult.Yes && UAVacia() != false)
             {
-                unidadT.InsertarDatos(pais, region, provincia, canton, parroquia);
-                limites.InsertarDatos(norte, latnorte, lonnorte, sur, latsur, lonsur, este, lateste, loneste, oeste, latoeste, lonoeste);
+                if (VerificarDatosUnidad()){
+                    unidadT.InsertarDatos(pais, region, provincia, canton, parroquia);
+                    limites.InsertarDatos(norte, latnorte, lonnorte, sur, latsur, lonsur, este, lateste, loneste, oeste, latoeste, lonoeste);
+                }
+                else
+                {
+                    unidadT.ModificarDatos(pais, region, provincia, canton, parroquia);
+                    limites.ModificarDatos(norte, latnorte, lonnorte, sur, latsur, lonsur, este, lateste, loneste, oeste, latoeste, lonoeste);
+                }
 
                 MessageBox.Show("Los datos se agregaron correctamente", "Advertencia", MessageBoxButtons.OK);
-                this.bloquear();
+            }
+            else
+            {
+                MessageBox.Show("- Los datos de Ubicación Administrativa no pueden estar vacíos \n- Los datos de límites si se pueden enviar vacíos", "Advertencia", MessageBoxButtons.OK);
             }
         }
 
         private void btnSector_Click(object sender, EventArgs e)
         {
-            frmSector sector = new frmSector();
-            sector.Show();
+            if (VerificarDatosUnidad() == false)
+            {
+                frmSector sector = new frmSector();
+                sector.Show();
+            }
+            else
+            {
+                MessageBox.Show("Para acceder a esta opción debe ingresar los datos de Ubicación Administrativa y Límites", "Advertencia", MessageBoxButtons.OK);
+            }
+        }
+
+        private void frmIngresarUnidadTerritorial_Load(object sender, EventArgs e)
+        {
+            ModeloUnidadTerritorial unidadT = new ModeloUnidadTerritorial();
+            ModeloLimites limites = new ModeloLimites();
+            DataTable datos = unidadT.CargarDGV();
+            DataTable lim = limites.CargarDGV();
+
+            if (datos.Rows.Count != 0)
+            {
+                txtPais.Text = datos.Rows[0]["Pais"].ToString();
+                txtRegion.Text = datos.Rows[0]["Region"].ToString();
+                txtProvincia.Text = datos.Rows[0]["Provincia"].ToString();
+                txtCanton.Text = datos.Rows[0]["Canton"].ToString();
+                txtParroquia.Text = datos.Rows[0]["Parroquia"].ToString();
+
+                txtNorte.Text = lim.Rows[0]["Norte"].ToString();
+                txtSur.Text = lim.Rows[0]["Sur"].ToString();
+                txtEste.Text = lim.Rows[0]["Este"].ToString();
+                txtOeste.Text = lim.Rows[0]["Oeste"].ToString();
+                txtLatNor.Text = lim.Rows[0]["Xn"].ToString();
+                txtLatSur.Text = lim.Rows[0]["Xs"].ToString();
+                txtLatEst.Text = lim.Rows[0]["Xe"].ToString();
+                txtLatOes.Text = lim.Rows[0]["Xo"].ToString();
+                txtLonNor.Text = lim.Rows[0]["Yn"].ToString();
+                txtLonSur.Text = lim.Rows[0]["Ys"].ToString();
+                txtLonEst.Text = lim.Rows[0]["Ye"].ToString();
+                txtLonOes.Text = lim.Rows[0]["Yo"].ToString();
+
+            }
+        }
+
+        private void txtPais_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtLatNor_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtLatSur_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtLatEst_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtLatOes_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtLonNor_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtLonSur_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtLonEst_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtLonOes_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

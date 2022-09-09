@@ -64,7 +64,7 @@ namespace CapaPresentacion.Forms_Fase_3
             this.btnGuardarCambio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarCambio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnGuardarCambio.Location = new System.Drawing.Point(336, 540);
-            this.btnGuardarCambio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardarCambio.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardarCambio.Name = "btnGuardarCambio";
             this.btnGuardarCambio.Size = new System.Drawing.Size(236, 57);
             this.btnGuardarCambio.TabIndex = 14;
@@ -99,7 +99,7 @@ namespace CapaPresentacion.Forms_Fase_3
             this.panel4.Controls.Add(this.lblRecursoSector);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Location = new System.Drawing.Point(16, 15);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(916, 617);
             this.panel4.TabIndex = 13;
@@ -119,7 +119,7 @@ namespace CapaPresentacion.Forms_Fase_3
             "Adultos (25 a 64 años)",
             "Adultos mayores (más de 65 años)"});
             this.cbxAcceso.Location = new System.Drawing.Point(232, 374);
-            this.cbxAcceso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxAcceso.Margin = new System.Windows.Forms.Padding(4);
             this.cbxAcceso.Name = "cbxAcceso";
             this.cbxAcceso.Size = new System.Drawing.Size(651, 31);
             this.cbxAcceso.TabIndex = 21;
@@ -151,7 +151,7 @@ namespace CapaPresentacion.Forms_Fase_3
             "Inadecuado",
             "Adecuado"});
             this.cbxCalidad.Location = new System.Drawing.Point(232, 311);
-            this.cbxCalidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxCalidad.Margin = new System.Windows.Forms.Padding(4);
             this.cbxCalidad.Name = "cbxCalidad";
             this.cbxCalidad.Size = new System.Drawing.Size(651, 31);
             this.cbxCalidad.TabIndex = 19;
@@ -184,7 +184,7 @@ namespace CapaPresentacion.Forms_Fase_3
             "Medio",
             "Bajo"});
             this.cbxCantidad.Location = new System.Drawing.Point(232, 250);
-            this.cbxCantidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxCantidad.Margin = new System.Windows.Forms.Padding(4);
             this.cbxCantidad.Name = "cbxCantidad";
             this.cbxCantidad.Size = new System.Drawing.Size(651, 31);
             this.cbxCantidad.TabIndex = 17;
@@ -220,7 +220,7 @@ namespace CapaPresentacion.Forms_Fase_3
             "Recursos Económicos",
             "Recursos Políticos"});
             this.cbxTipoRecurso.Location = new System.Drawing.Point(232, 129);
-            this.cbxTipoRecurso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxTipoRecurso.Margin = new System.Windows.Forms.Padding(4);
             this.cbxTipoRecurso.Name = "cbxTipoRecurso";
             this.cbxTipoRecurso.Size = new System.Drawing.Size(651, 31);
             this.cbxTipoRecurso.TabIndex = 15;
@@ -250,7 +250,7 @@ namespace CapaPresentacion.Forms_Fase_3
             this.cbxRecurso.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxRecurso.FormattingEnabled = true;
             this.cbxRecurso.Location = new System.Drawing.Point(232, 187);
-            this.cbxRecurso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxRecurso.Margin = new System.Windows.Forms.Padding(4);
             this.cbxRecurso.Name = "cbxRecurso";
             this.cbxRecurso.Size = new System.Drawing.Size(651, 31);
             this.cbxRecurso.TabIndex = 13;
@@ -265,7 +265,8 @@ namespace CapaPresentacion.Forms_Fase_3
             this.txtNotas.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNotas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtNotas.Location = new System.Drawing.Point(232, 502);
-            this.txtNotas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNotas.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNotas.MaxLength = 1000;
             this.txtNotas.Name = "txtNotas";
             this.txtNotas.Size = new System.Drawing.Size(652, 25);
             this.txtNotas.TabIndex = 12;
@@ -296,7 +297,8 @@ namespace CapaPresentacion.Forms_Fase_3
             this.txtControl.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtControl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtControl.Location = new System.Drawing.Point(232, 439);
-            this.txtControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtControl.Margin = new System.Windows.Forms.Padding(4);
+            this.txtControl.MaxLength = 600;
             this.txtControl.Name = "txtControl";
             this.txtControl.Size = new System.Drawing.Size(652, 25);
             this.txtControl.TabIndex = 12;
@@ -331,7 +333,7 @@ namespace CapaPresentacion.Forms_Fase_3
             "CANTON",
             "PARROQUIA/COMUNIDAD"});
             this.cbxSectorRecurso.Location = new System.Drawing.Point(232, 66);
-            this.cbxSectorRecurso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxSectorRecurso.Margin = new System.Windows.Forms.Padding(4);
             this.cbxSectorRecurso.Name = "cbxSectorRecurso";
             this.cbxSectorRecurso.Size = new System.Drawing.Size(301, 31);
             this.cbxSectorRecurso.TabIndex = 5;
@@ -345,7 +347,7 @@ namespace CapaPresentacion.Forms_Fase_3
             this.label17.Location = new System.Drawing.Point(679, -84);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(97, 30);
+            this.label17.Size = new System.Drawing.Size(93, 27);
             this.label17.TabIndex = 2;
             this.label17.Text = "ACTOR";
             // 
@@ -358,7 +360,7 @@ namespace CapaPresentacion.Forms_Fase_3
             this.label16.Location = new System.Drawing.Point(679, -41);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(97, 30);
+            this.label16.Size = new System.Drawing.Size(93, 27);
             this.label16.TabIndex = 2;
             this.label16.Text = "ACTOR";
             // 
@@ -373,7 +375,7 @@ namespace CapaPresentacion.Forms_Fase_3
             this.label1.Location = new System.Drawing.Point(147, 18);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(629, 30);
+            this.label1.Size = new System.Drawing.Size(600, 27);
             this.label1.TabIndex = 2;
             this.label1.Text = "RECURSOS IMPORTANTES PARA LOS MEDIOS DE VIDA";
             // 

@@ -33,9 +33,11 @@ namespace CapaPresentacion
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lbLogin = new System.Windows.Forms.Label();
             this.pnLogin = new System.Windows.Forms.Panel();
             this.lblOlvideContraseña = new System.Windows.Forms.Label();
+            this.lblError = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lbUsuario = new System.Windows.Forms.Label();
             this.tbContrasena = new System.Windows.Forms.TextBox();
@@ -46,15 +48,13 @@ namespace CapaPresentacion
             this.pbAyuda = new System.Windows.Forms.PictureBox();
             this.pbMinimizar = new System.Windows.Forms.PictureBox();
             this.pbCerrar = new System.Windows.Forms.PictureBox();
-            this.lblError = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAyuda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -68,6 +68,16 @@ namespace CapaPresentacion
             this.panel1.TabIndex = 0;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::CapaPresentacion.Properties.Resources.logo_AbePachaSw_recortado;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 80);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(247, 248);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // lbLogin
             // 
             this.lbLogin.AutoSize = true;
@@ -76,7 +86,7 @@ namespace CapaPresentacion
             this.lbLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbLogin.Location = new System.Drawing.Point(485, 9);
             this.lbLogin.Name = "lbLogin";
-            this.lbLogin.Size = new System.Drawing.Size(143, 45);
+            this.lbLogin.Size = new System.Drawing.Size(137, 44);
             this.lbLogin.TabIndex = 3;
             this.lbLogin.Text = "LOGIN";
             // 
@@ -103,10 +113,25 @@ namespace CapaPresentacion
             this.lblOlvideContraseña.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblOlvideContraseña.Location = new System.Drawing.Point(169, 226);
             this.lblOlvideContraseña.Name = "lblOlvideContraseña";
-            this.lblOlvideContraseña.Size = new System.Drawing.Size(207, 22);
+            this.lblOlvideContraseña.Size = new System.Drawing.Size(198, 21);
             this.lblOlvideContraseña.TabIndex = 9;
             this.lblOlvideContraseña.Text = "Olvide mi contraseña";
             this.lblOlvideContraseña.Click += new System.EventHandler(this.lblOlvideContraseña_Click);
+            // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.BackColor = System.Drawing.Color.Transparent;
+            this.lblError.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblError.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblError.Image = global::CapaPresentacion.Properties.Resources.iconError;
+            this.lblError.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblError.Location = new System.Drawing.Point(27, 194);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(44, 19);
+            this.lblError.TabIndex = 8;
+            this.lblError.Text = "Error";
+            this.lblError.Visible = false;
             // 
             // label1
             // 
@@ -138,6 +163,7 @@ namespace CapaPresentacion
             this.tbContrasena.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbContrasena.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tbContrasena.Location = new System.Drawing.Point(31, 155);
+            this.tbContrasena.MaxLength = 30;
             this.tbContrasena.Name = "tbContrasena";
             this.tbContrasena.PasswordChar = '*';
             this.tbContrasena.Size = new System.Drawing.Size(493, 25);
@@ -153,6 +179,7 @@ namespace CapaPresentacion
             this.tbUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbUsuario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tbUsuario.Location = new System.Drawing.Point(31, 67);
+            this.tbUsuario.MaxLength = 10;
             this.tbUsuario.Name = "tbUsuario";
             this.tbUsuario.Size = new System.Drawing.Size(493, 25);
             this.tbUsuario.TabIndex = 0;
@@ -224,31 +251,6 @@ namespace CapaPresentacion
             this.pbCerrar.TabStop = false;
             this.pbCerrar.Click += new System.EventHandler(this.pbCerrar_Click);
             // 
-            // lblError
-            // 
-            this.lblError.AutoSize = true;
-            this.lblError.BackColor = System.Drawing.Color.Transparent;
-            this.lblError.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblError.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblError.Image = global::CapaPresentacion.Properties.Resources.iconError;
-            this.lblError.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblError.Location = new System.Drawing.Point(27, 194);
-            this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(44, 19);
-            this.lblError.TabIndex = 8;
-            this.lblError.Text = "Error";
-            this.lblError.Visible = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::CapaPresentacion.Properties.Resources.logo_AbePachaSw_recortado;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 80);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(247, 248);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -268,13 +270,13 @@ namespace CapaPresentacion
             this.Text = "frmPrincipal";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Login_MouseDown);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnLogin.ResumeLayout(false);
             this.pnLogin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAyuda)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -12,7 +12,7 @@ namespace CapaDatos
         public static MySqlConnection conexion()
         {
             
-            string cadenaConexion = "Server=localhost;Port=3306;Database=pacha;Uid=root;Pwd=;";
+            string cadenaConexion = "Server=localhost;Port=3306;Database=pacha;Uid=root;Pwd=root;";
 
             try
             {

@@ -23,5 +23,9 @@ namespace CapaNegocio.Fase2
             return datos.CargarDGV();
         }
 
+        public void EliminarUbicHidro(string item)
+        {
+            datos.EliminarUbicHidro(item);
+        }
     }
 }

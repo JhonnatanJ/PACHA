@@ -22,5 +22,9 @@ namespace CapaNegocio.Fase2
         {
             return datos.CargarDGV();
         }
+        public void EliminarTiempo(string item)
+        {
+            datos.EliminarTiempo(item);
+        }
     }
 }

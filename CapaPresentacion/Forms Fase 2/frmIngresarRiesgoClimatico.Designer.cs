@@ -76,7 +76,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.panel4.Controls.Add(this.lblRecursoSector);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Location = new System.Drawing.Point(17, 15);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(924, 543);
             this.panel4.TabIndex = 14;
@@ -92,7 +92,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.btnGuardarCambio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarCambio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnGuardarCambio.Location = new System.Drawing.Point(337, 475);
-            this.btnGuardarCambio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardarCambio.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardarCambio.Name = "btnGuardarCambio";
             this.btnGuardarCambio.Size = new System.Drawing.Size(236, 57);
             this.btnGuardarCambio.TabIndex = 14;
@@ -112,7 +112,7 @@ namespace CapaPresentacion.Forms_Fase_2
             "2",
             "3"});
             this.cbxImportanciaRiesgo.Location = new System.Drawing.Point(232, 374);
-            this.cbxImportanciaRiesgo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxImportanciaRiesgo.Margin = new System.Windows.Forms.Padding(4);
             this.cbxImportanciaRiesgo.Name = "cbxImportanciaRiesgo";
             this.cbxImportanciaRiesgo.Size = new System.Drawing.Size(659, 31);
             this.cbxImportanciaRiesgo.TabIndex = 21;
@@ -159,7 +159,7 @@ namespace CapaPresentacion.Forms_Fase_2
             "Medio",
             "Bajo"});
             this.cbxRespuestaRiesgo.Location = new System.Drawing.Point(232, 250);
-            this.cbxRespuestaRiesgo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxRespuestaRiesgo.Margin = new System.Windows.Forms.Padding(4);
             this.cbxRespuestaRiesgo.Name = "cbxRespuestaRiesgo";
             this.cbxRespuestaRiesgo.Size = new System.Drawing.Size(659, 31);
             this.cbxRespuestaRiesgo.TabIndex = 17;
@@ -194,7 +194,7 @@ namespace CapaPresentacion.Forms_Fase_2
             "Recursos Económicos",
             "Recursos Políticos"});
             this.cbxRiesgoAmenaza.Location = new System.Drawing.Point(232, 129);
-            this.cbxRiesgoAmenaza.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxRiesgoAmenaza.Margin = new System.Windows.Forms.Padding(4);
             this.cbxRiesgoAmenaza.Name = "cbxRiesgoAmenaza";
             this.cbxRiesgoAmenaza.Size = new System.Drawing.Size(659, 31);
             this.cbxRiesgoAmenaza.TabIndex = 15;
@@ -223,7 +223,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.cbxImpactoRiesgo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxImpactoRiesgo.FormattingEnabled = true;
             this.cbxImpactoRiesgo.Location = new System.Drawing.Point(232, 187);
-            this.cbxImpactoRiesgo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxImpactoRiesgo.Margin = new System.Windows.Forms.Padding(4);
             this.cbxImpactoRiesgo.Name = "cbxImpactoRiesgo";
             this.cbxImpactoRiesgo.Size = new System.Drawing.Size(659, 31);
             this.cbxImpactoRiesgo.TabIndex = 13;
@@ -239,7 +239,8 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtRiesgo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRiesgo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtRiesgo.Location = new System.Drawing.Point(232, 315);
-            this.txtRiesgo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRiesgo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRiesgo.MaxLength = 1000;
             this.txtRiesgo.Name = "txtRiesgo";
             this.txtRiesgo.Size = new System.Drawing.Size(660, 25);
             this.txtRiesgo.TabIndex = 12;
@@ -254,7 +255,8 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtObservaciones.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtObservaciones.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtObservaciones.Location = new System.Drawing.Point(232, 439);
-            this.txtObservaciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtObservaciones.Margin = new System.Windows.Forms.Padding(4);
+            this.txtObservaciones.MaxLength = 1000;
             this.txtObservaciones.Name = "txtObservaciones";
             this.txtObservaciones.Size = new System.Drawing.Size(660, 25);
             this.txtObservaciones.TabIndex = 12;
@@ -282,7 +284,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.cbxSectorRiesgo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbxSectorRiesgo.FormattingEnabled = true;
             this.cbxSectorRiesgo.Location = new System.Drawing.Point(232, 66);
-            this.cbxSectorRiesgo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxSectorRiesgo.Margin = new System.Windows.Forms.Padding(4);
             this.cbxSectorRiesgo.Name = "cbxSectorRiesgo";
             this.cbxSectorRiesgo.Size = new System.Drawing.Size(301, 31);
             this.cbxSectorRiesgo.TabIndex = 5;
@@ -297,7 +299,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label17.Location = new System.Drawing.Point(679, -84);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(97, 30);
+            this.label17.Size = new System.Drawing.Size(93, 27);
             this.label17.TabIndex = 2;
             this.label17.Text = "ACTOR";
             // 
@@ -310,7 +312,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label16.Location = new System.Drawing.Point(679, -41);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(97, 30);
+            this.label16.Size = new System.Drawing.Size(93, 27);
             this.label16.TabIndex = 2;
             this.label16.Text = "ACTOR";
             // 
@@ -324,7 +326,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label1.Location = new System.Drawing.Point(155, 18);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(560, 30);
+            this.label1.Size = new System.Drawing.Size(535, 27);
             this.label1.TabIndex = 2;
             this.label1.Text = "RIESGO CLIMÁTICO EN LA UNIDAD DE ANÁLISIS";
             // 

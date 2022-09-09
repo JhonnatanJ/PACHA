@@ -21,5 +21,10 @@ namespace CapaNegocio.Fase2
         {
             return datos.CargarDGV();
         }
+
+        public void EliminarEcosistemas(string item)
+        {
+            datos.EliminarEcosistemas(item);
+        }
     }
 }

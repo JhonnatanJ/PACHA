@@ -29,13 +29,14 @@ namespace CapaPresentacion.Forms_Fase_2.Forms_VerUnidadTerritorial
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dgvAsen = new System.Windows.Forms.DataGridView();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.dgvAsen = new System.Windows.Forms.DataGridView();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsen)).BeginInit();
             this.SuspendLayout();
@@ -43,6 +44,7 @@ namespace CapaPresentacion.Forms_Fase_2.Forms_VerUnidadTerritorial
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel2.Controls.Add(this.btnEliminar);
             this.panel2.Controls.Add(this.dgvAsen);
             this.panel2.Controls.Add(this.btnCerrar);
             this.panel2.Controls.Add(this.label1);
@@ -51,6 +53,54 @@ namespace CapaPresentacion.Forms_Fase_2.Forms_VerUnidadTerritorial
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1065, 529);
             this.panel2.TabIndex = 5;
+            // 
+            // dgvAsen
+            // 
+            this.dgvAsen.AllowUserToAddRows = false;
+            this.dgvAsen.AllowUserToDeleteRows = false;
+            this.dgvAsen.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvAsen.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvAsen.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvAsen.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvAsen.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAsen.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.dgvAsen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAsen.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dgvAsen.GridColor = System.Drawing.SystemColors.ButtonShadow;
+            this.dgvAsen.Location = new System.Drawing.Point(16, 63);
+            this.dgvAsen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvAsen.MultiSelect = false;
+            this.dgvAsen.Name = "dgvAsen";
+            this.dgvAsen.ReadOnly = true;
+            this.dgvAsen.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAsen.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.dgvAsen.RowHeadersVisible = false;
+            this.dgvAsen.RowHeadersWidth = 51;
+            this.dgvAsen.RowTemplate.Height = 24;
+            this.dgvAsen.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvAsen.Size = new System.Drawing.Size(1032, 364);
+            this.dgvAsen.TabIndex = 15;
             // 
             // btnCerrar
             // 
@@ -61,7 +111,7 @@ namespace CapaPresentacion.Forms_Fase_2.Forms_VerUnidadTerritorial
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCerrar.Location = new System.Drawing.Point(444, 449);
+            this.btnCerrar.Location = new System.Drawing.Point(602, 449);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(176, 46);
@@ -80,57 +130,27 @@ namespace CapaPresentacion.Forms_Fase_2.Forms_VerUnidadTerritorial
             this.label1.Location = new System.Drawing.Point(365, 16);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(335, 30);
+            this.label1.Size = new System.Drawing.Size(323, 27);
             this.label1.TabIndex = 6;
             this.label1.Text = "ASENTAMIENTOS HUMANOS";
             // 
-            // dgvAsen
+            // btnEliminar
             // 
-            this.dgvAsen.AllowUserToAddRows = false;
-            this.dgvAsen.AllowUserToDeleteRows = false;
-            this.dgvAsen.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvAsen.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgvAsen.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.dgvAsen.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvAsen.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvAsen.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvAsen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvAsen.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvAsen.GridColor = System.Drawing.SystemColors.ButtonShadow;
-            this.dgvAsen.Location = new System.Drawing.Point(16, 63);
-            this.dgvAsen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dgvAsen.MultiSelect = false;
-            this.dgvAsen.Name = "dgvAsen";
-            this.dgvAsen.ReadOnly = true;
-            this.dgvAsen.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(113)))), ((int)(((byte)(98)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvAsen.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvAsen.RowHeadersVisible = false;
-            this.dgvAsen.RowHeadersWidth = 51;
-            this.dgvAsen.RowTemplate.Height = 24;
-            this.dgvAsen.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAsen.Size = new System.Drawing.Size(1032, 364);
-            this.dgvAsen.TabIndex = 15;
+            this.btnEliminar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnEliminar.Location = new System.Drawing.Point(291, 449);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(176, 46);
+            this.btnEliminar.TabIndex = 16;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // frmVerAsentamientos
             // 
@@ -158,5 +178,6 @@ namespace CapaPresentacion.Forms_Fase_2.Forms_VerUnidadTerritorial
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.DataGridView dgvAsen;
+        private System.Windows.Forms.Button btnEliminar;
     }
 }

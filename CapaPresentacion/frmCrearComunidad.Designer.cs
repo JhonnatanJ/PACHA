@@ -101,6 +101,7 @@ namespace CapaPresentacion
             this.txtIDCom.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIDCom.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtIDCom.Location = new System.Drawing.Point(451, 46);
+            this.txtIDCom.MaxLength = 7;
             this.txtIDCom.Name = "txtIDCom";
             this.txtIDCom.Size = new System.Drawing.Size(306, 25);
             this.txtIDCom.TabIndex = 7;
@@ -113,7 +114,7 @@ namespace CapaPresentacion
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(124, 42);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(261, 30);
+            this.label2.Size = new System.Drawing.Size(249, 27);
             this.label2.TabIndex = 6;
             this.label2.Text = "Id de la Comunidad:";
             // 
@@ -124,6 +125,7 @@ namespace CapaPresentacion
             this.txtnombreComunidad.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnombreComunidad.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtnombreComunidad.Location = new System.Drawing.Point(451, 92);
+            this.txtnombreComunidad.MaxLength = 200;
             this.txtnombreComunidad.Name = "txtnombreComunidad";
             this.txtnombreComunidad.Size = new System.Drawing.Size(306, 25);
             this.txtnombreComunidad.TabIndex = 5;
@@ -136,7 +138,7 @@ namespace CapaPresentacion
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(49, 88);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(336, 30);
+            this.label1.Size = new System.Drawing.Size(319, 27);
             this.label1.TabIndex = 3;
             this.label1.Text = "Nombre de la Comunidad:";
             // 
@@ -148,7 +150,7 @@ namespace CapaPresentacion
             this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label17.Location = new System.Drawing.Point(508, -68);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(97, 30);
+            this.label17.Size = new System.Drawing.Size(93, 27);
             this.label17.TabIndex = 2;
             this.label17.Text = "ACTOR";
             // 
@@ -160,7 +162,7 @@ namespace CapaPresentacion
             this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label16.Location = new System.Drawing.Point(508, -33);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(97, 30);
+            this.label16.Size = new System.Drawing.Size(93, 27);
             this.label16.TabIndex = 2;
             this.label16.Text = "ACTOR";
             // 

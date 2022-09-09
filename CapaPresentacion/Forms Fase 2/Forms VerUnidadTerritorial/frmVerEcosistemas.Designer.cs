@@ -37,6 +37,7 @@ namespace CapaPresentacion.Forms_Fase_2.Forms_VerUnidadTerritorial
             this.btnCerrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvEcosistemas = new System.Windows.Forms.DataGridView();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEcosistemas)).BeginInit();
             this.SuspendLayout();
@@ -44,6 +45,7 @@ namespace CapaPresentacion.Forms_Fase_2.Forms_VerUnidadTerritorial
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel2.Controls.Add(this.btnEliminar);
             this.panel2.Controls.Add(this.btnCerrar);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.dgvEcosistemas);
@@ -63,7 +65,7 @@ namespace CapaPresentacion.Forms_Fase_2.Forms_VerUnidadTerritorial
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCerrar.Location = new System.Drawing.Point(444, 449);
+            this.btnCerrar.Location = new System.Drawing.Point(567, 449);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(176, 46);
@@ -82,7 +84,7 @@ namespace CapaPresentacion.Forms_Fase_2.Forms_VerUnidadTerritorial
             this.label1.Location = new System.Drawing.Point(253, 16);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(516, 30);
+            this.label1.Size = new System.Drawing.Size(490, 27);
             this.label1.TabIndex = 6;
             this.label1.Text = "ECOSISTEMAS Y FORMACIONES VEGETALES";
             // 
@@ -109,7 +111,7 @@ namespace CapaPresentacion.Forms_Fase_2.Forms_VerUnidadTerritorial
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Transparent;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -135,6 +137,24 @@ namespace CapaPresentacion.Forms_Fase_2.Forms_VerUnidadTerritorial
             this.dgvEcosistemas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvEcosistemas.Size = new System.Drawing.Size(1025, 352);
             this.dgvEcosistemas.TabIndex = 5;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnEliminar.Location = new System.Drawing.Point(258, 449);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(176, 46);
+            this.btnEliminar.TabIndex = 17;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // frmVerEcosistemas
             // 
@@ -162,5 +182,6 @@ namespace CapaPresentacion.Forms_Fase_2.Forms_VerUnidadTerritorial
         private System.Windows.Forms.DataGridView dgvEcosistemas;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button btnEliminar;
     }
 }

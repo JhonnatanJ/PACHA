@@ -153,6 +153,7 @@
             this.txtNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtNombre.Location = new System.Drawing.Point(284, 176);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNombre.MaxLength = 100;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(188, 25);
             this.txtNombre.TabIndex = 17;

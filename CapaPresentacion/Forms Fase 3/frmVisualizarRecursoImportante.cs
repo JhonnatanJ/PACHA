@@ -27,7 +27,7 @@ namespace CapaPresentacion.Forms_Fase_3
 
         private void btnEliminarClima_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("¿Desea eliminar ese recurso, se eliminaran sus proyectos?", "Advertencia", MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show("¿Desea eliminar ese recurso?", "Advertencia", MessageBoxButtons.YesNo);
             ModeloRecursoImportante recursoImportante = new ModeloRecursoImportante();
             if (result == DialogResult.Yes)
             {

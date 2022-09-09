@@ -185,7 +185,7 @@ namespace CapaPresentacion
             if (e.KeyChar == (char)(Keys.Enter))
             {
                 e.Handled = true;
-                btnAcceder_Click(sender, e);
+                tbContrasena.Focus();
             }
         }
 
