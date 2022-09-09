@@ -96,9 +96,11 @@
             this.txtLonHito.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtLonHito.Location = new System.Drawing.Point(275, 266);
             this.txtLonHito.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtLonHito.MaxLength = 15;
             this.txtLonHito.Name = "txtLonHito";
             this.txtLonHito.Size = new System.Drawing.Size(188, 25);
             this.txtLonHito.TabIndex = 22;
+            this.txtLonHito.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLonHito_KeyPress);
             // 
             // txtLatHit
             // 
@@ -109,9 +111,11 @@
             this.txtLatHit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtLatHit.Location = new System.Drawing.Point(275, 203);
             this.txtLatHit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtLatHit.MaxLength = 15;
             this.txtLatHit.Name = "txtLatHit";
             this.txtLatHit.Size = new System.Drawing.Size(188, 25);
             this.txtLatHit.TabIndex = 21;
+            this.txtLatHit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLatHit_KeyPress);
             // 
             // label3
             // 
@@ -199,6 +203,7 @@
             this.txtNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtNombre.Location = new System.Drawing.Point(275, 134);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNombre.MaxLength = 100;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(188, 25);
             this.txtNombre.TabIndex = 15;

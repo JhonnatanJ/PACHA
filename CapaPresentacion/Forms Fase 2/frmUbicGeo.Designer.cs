@@ -87,9 +87,10 @@
             this.txtCodigo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtCodigo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCodigo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtCodigo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtCodigo.Location = new System.Drawing.Point(286, 223);
             this.txtCodigo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCodigo.MaxLength = 10;
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(185, 25);
             this.txtCodigo.TabIndex = 31;
@@ -113,9 +114,10 @@
             this.txtNivel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtNivel.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNivel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNivel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtNivel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtNivel.Location = new System.Drawing.Point(286, 117);
             this.txtNivel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNivel.MaxLength = 200;
             this.txtNivel.Name = "txtNivel";
             this.txtNivel.Size = new System.Drawing.Size(185, 25);
             this.txtNivel.TabIndex = 29;
@@ -164,7 +166,7 @@
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCerrar.Location = new System.Drawing.Point(157, 310);
+            this.btnCerrar.Location = new System.Drawing.Point(182, 310);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(115, 39);
@@ -184,7 +186,7 @@
             this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInsert.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInsert.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnInsert.Location = new System.Drawing.Point(465, 310);
+            this.btnInsert.Location = new System.Drawing.Point(414, 310);
             this.btnInsert.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(115, 39);
@@ -212,9 +214,10 @@
             this.txtNombre.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtNombre.Location = new System.Drawing.Point(286, 168);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNombre.MaxLength = 100;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(185, 25);
             this.txtNombre.TabIndex = 17;

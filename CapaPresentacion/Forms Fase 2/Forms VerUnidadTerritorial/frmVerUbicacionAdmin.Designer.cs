@@ -62,7 +62,7 @@ namespace CapaPresentacion.Forms_Fase_2.Forms_VerUnidadTerritorial
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCerrar.Location = new System.Drawing.Point(444, 449);
+            this.btnCerrar.Location = new System.Drawing.Point(420, 446);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(176, 46);
@@ -81,7 +81,7 @@ namespace CapaPresentacion.Forms_Fase_2.Forms_VerUnidadTerritorial
             this.label1.Location = new System.Drawing.Point(337, 16);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(352, 30);
+            this.label1.Size = new System.Drawing.Size(341, 27);
             this.label1.TabIndex = 6;
             this.label1.Text = "UBICACIÓN ADMINISTRATIVA";
             // 

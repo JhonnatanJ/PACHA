@@ -12,7 +12,7 @@ namespace CapaPresentacion.PanelControl
     {
         public bool CampoVacio(String dato)
         {
-            if (dato.Equals(""))
+            if (String.IsNullOrWhiteSpace(dato))
             {
                 return true;
             }
@@ -70,9 +70,6 @@ namespace CapaPresentacion.PanelControl
             }
             return false;
         }
-
-
-
 
 
     }

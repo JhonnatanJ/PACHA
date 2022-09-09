@@ -29,5 +29,26 @@ namespace CapaPresentacion.Forms_Fase_2.Forms_VerUnidadTerritorial
         {
             this.Close();
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Está seguro de eliminar la selección?", "Control", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            ModeloAsentamiento asen = new ModeloAsentamiento();
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    DataTable datos = asen.CargarDGV();
+                    String item = datos.Rows[dgvAsen.CurrentRow.Index]["Nombre"].ToString();
+                    asen.EliminarAsentamiento(item);
+                    dgvAsen.DataSource = asen.CargarDGV();
+                    DialogResult advice = MessageBox.Show("La información fue eliminada", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch
+                {
+                    DialogResult advice = MessageBox.Show("La información no pudo ser eliminada", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }

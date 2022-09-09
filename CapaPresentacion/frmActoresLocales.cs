@@ -94,11 +94,6 @@ namespace CapaPresentacion
             btnGuardarActor.Enabled = true;
         }
 
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void label7_Click(object sender, EventArgs e)
         {
 
@@ -198,6 +193,14 @@ namespace CapaPresentacion
             }
             //return bandera;
             return true;
+        }
+
+        private void txttelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

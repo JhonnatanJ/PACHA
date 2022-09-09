@@ -35,6 +35,30 @@ namespace CapaDatos.Fase2
             comando.CommandType = System.Data.CommandType.Text;
             comando.ExecuteNonQuery();
         }
+
+        public void ModificarDatos(String pais, String region, String provincia, String canton, String parroquia)
+        {
+            MySqlConnection conexionBD = Conexion.conexion();
+            conexionBD.Open();
+            MySqlCommand comando = new MySqlCommand();
+
+
+            comando.Connection = conexionBD;
+            comando.CommandText = "update datoscomunidad set PAIS=@pais, REGION=@region, PROVINCIA=@provincia, CANTON=@canton, PARROQUIA=@parroquia," +
+                "COMUNIDAD=@comunidad WHERE IDCOMUNIDAD=@id";
+
+            comando.Parameters.AddWithValue("@id", CacheLoginComunidad.idcomunidad);
+            comando.Parameters.AddWithValue("@pais", pais);
+            comando.Parameters.AddWithValue("@region", region);
+            comando.Parameters.AddWithValue("@provincia", provincia);
+            comando.Parameters.AddWithValue("@canton", canton);
+            comando.Parameters.AddWithValue("@parroquia", parroquia);
+            comando.Parameters.AddWithValue("@comunidad", CacheLoginComunidad.nombre);
+
+            comando.CommandType = System.Data.CommandType.Text;
+            comando.ExecuteNonQuery();
+        }
+
         public DataTable CargarDGV()
         {
             MySqlConnection conexionBD = Conexion.conexion();
@@ -46,7 +70,7 @@ namespace CapaDatos.Fase2
 
             comando.CommandText = "select PAIS as Pais, REGION as Region, PROVINCIA as Provincia," +
                 "CANTON as Canton, PARROQUIA as Parroquia, COMUNIDAD as Comunidad" +
-                " from datoscomunidad where IDCOMUNIDAD=@idcomunidad";
+                " from datoscomunidad where IDCOMUNIDAD=@idcomunidad ";
 
             comando.Parameters.AddWithValue("@idcomunidad", CacheLoginComunidad.idcomunidad);
             comando.CommandType = System.Data.CommandType.Text;
@@ -55,7 +79,6 @@ namespace CapaDatos.Fase2
             conexionBD.Close();
             return dt;
         }
-
 
     }
 }

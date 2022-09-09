@@ -34,20 +34,28 @@ namespace CapaPresentacion.Forms_Fase_2
 
         private void btnInsert_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("¿El ingreso esta correcto?", "Advertencia", MessageBoxButtons.YesNo);
-            ModeloAsentamiento asen = new ModeloAsentamiento();
-            String nombre = txtNomAsen.Text;
-            String sector = cbxSectorAse.Text;
-            String lat = txtLatAsen.Text;
-            String lon = txtLonAsen.Text;
-            int pobl = Int32.Parse(txtPobla.Text);
-
-            if(result == DialogResult.Yes)
+            if(!String.IsNullOrWhiteSpace(txtNomAsen.Text))
             {
-                asen.InsertarDatos(nombre, sector, lat, lon, pobl);
-                MessageBox.Show("Los datos se agregaron correctamente", "Advertencia", MessageBoxButtons.OK);
-                this.limpiar();
+                DialogResult result = MessageBox.Show("¿El ingreso esta correcto?", "Advertencia", MessageBoxButtons.YesNo);
+                ModeloAsentamiento asen = new ModeloAsentamiento();
+                String nombre = txtNomAsen.Text;
+                String sector = cbxSectorAse.Text;
+                String lat = txtLatAsen.Text;
+                String lon = txtLonAsen.Text;
+                int pobl = Int32.Parse(txtPobla.Text);
+
+                if (result == DialogResult.Yes)
+                {
+                    asen.InsertarDatos(nombre, sector, lat, lon, pobl);
+                    MessageBox.Show("Los datos se agregaron correctamente", "Advertencia", MessageBoxButtons.OK);
+                    this.limpiar();
+                }
             }
+            else
+            {
+                MessageBox.Show("Para guardar debe ingresar datos en el campo Nombre", "Advertencia", MessageBoxButtons.OK);
+            }
+            
         }
 
         private void frmAsentamientos_Load(object sender, EventArgs e)
@@ -56,6 +64,38 @@ namespace CapaPresentacion.Forms_Fase_2
             cbxSectorAse.DataSource = sector.CargarCombo();
             cbxSectorAse.DisplayMember = "SECTOR";
             cbxSectorAse.Text = "";
+        }
+
+        private void txtPobla_Leave(object sender, EventArgs e)
+        {
+            if (String.IsNullOrWhiteSpace(txtPobla.Text))
+            {
+                txtPobla.Text = "0";
+            }
+        }
+
+        private void txtLatAsen_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtLonAsen_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtPobla_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

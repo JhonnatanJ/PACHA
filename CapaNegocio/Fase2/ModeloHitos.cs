@@ -24,5 +24,10 @@ namespace CapaNegocio.Fase2
         {
             return datos.CargarDGV();
         }
+
+        public void EliminarHito(string item)
+        {
+            datos.EliminarHitos(item);
+        }
     }
 }

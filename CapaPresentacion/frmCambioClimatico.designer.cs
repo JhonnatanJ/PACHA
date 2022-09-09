@@ -106,7 +106,8 @@ namespace CapaPresentacion
             this.txtCambiosPotenciales.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCambiosPotenciales.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtCambiosPotenciales.Location = new System.Drawing.Point(273, 215);
-            this.txtCambiosPotenciales.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCambiosPotenciales.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCambiosPotenciales.MaxLength = 250;
             this.txtCambiosPotenciales.Name = "txtCambiosPotenciales";
             this.txtCambiosPotenciales.Size = new System.Drawing.Size(692, 25);
             this.txtCambiosPotenciales.TabIndex = 4;
@@ -122,7 +123,7 @@ namespace CapaPresentacion
             this.label1.Location = new System.Drawing.Point(297, 31);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(431, 30);
+            this.label1.Size = new System.Drawing.Size(413, 27);
             this.label1.TabIndex = 2;
             this.label1.Text = "CONTEXTO DE CAMBIO CLIMÁTICO";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -136,7 +137,7 @@ namespace CapaPresentacion
             this.label16.Location = new System.Drawing.Point(679, -41);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(97, 30);
+            this.label16.Size = new System.Drawing.Size(93, 27);
             this.label16.TabIndex = 2;
             this.label16.Text = "ACTOR";
             // 
@@ -149,7 +150,7 @@ namespace CapaPresentacion
             this.label17.Location = new System.Drawing.Point(679, -84);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(97, 30);
+            this.label17.Size = new System.Drawing.Size(93, 27);
             this.label17.TabIndex = 2;
             this.label17.Text = "ACTOR";
             // 
@@ -167,7 +168,7 @@ namespace CapaPresentacion
             "CANTON",
             "PARROQUIA/COMUNIDAD"});
             this.cbxLugar.Location = new System.Drawing.Point(111, 134);
-            this.cbxLugar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxLugar.Margin = new System.Windows.Forms.Padding(4);
             this.cbxLugar.Name = "cbxLugar";
             this.cbxLugar.Size = new System.Drawing.Size(353, 31);
             this.cbxLugar.TabIndex = 5;
@@ -195,7 +196,7 @@ namespace CapaPresentacion
             this.panel4.Controls.Add(this.label8);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Location = new System.Drawing.Point(16, 15);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(993, 545);
             this.panel4.TabIndex = 10;
@@ -210,7 +211,8 @@ namespace CapaPresentacion
             this.txtPoliticas.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPoliticas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtPoliticas.Location = new System.Drawing.Point(273, 463);
-            this.txtPoliticas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPoliticas.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPoliticas.MaxLength = 200;
             this.txtPoliticas.Name = "txtPoliticas";
             this.txtPoliticas.Size = new System.Drawing.Size(692, 25);
             this.txtPoliticas.TabIndex = 12;
@@ -241,7 +243,8 @@ namespace CapaPresentacion
             this.txtEstrSug.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEstrSug.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtEstrSug.Location = new System.Drawing.Point(273, 400);
-            this.txtEstrSug.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEstrSug.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEstrSug.MaxLength = 200;
             this.txtEstrSug.Name = "txtEstrSug";
             this.txtEstrSug.Size = new System.Drawing.Size(692, 25);
             this.txtEstrSug.TabIndex = 12;
@@ -273,7 +276,8 @@ namespace CapaPresentacion
             this.txtRiesgo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRiesgo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtRiesgo.Location = new System.Drawing.Point(273, 341);
-            this.txtRiesgo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRiesgo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRiesgo.MaxLength = 200;
             this.txtRiesgo.Name = "txtRiesgo";
             this.txtRiesgo.Size = new System.Drawing.Size(692, 25);
             this.txtRiesgo.TabIndex = 10;
@@ -305,7 +309,8 @@ namespace CapaPresentacion
             this.txtImpacto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtImpacto.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtImpacto.Location = new System.Drawing.Point(273, 282);
-            this.txtImpacto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtImpacto.Margin = new System.Windows.Forms.Padding(4);
+            this.txtImpacto.MaxLength = 300;
             this.txtImpacto.Name = "txtImpacto";
             this.txtImpacto.Size = new System.Drawing.Size(692, 25);
             this.txtImpacto.TabIndex = 8;
@@ -360,7 +365,7 @@ namespace CapaPresentacion
             "SUELOS EXPANSIVOS",
             "TEMBLORES"});
             this.cbxAmenaza.Location = new System.Drawing.Point(612, 134);
-            this.cbxAmenaza.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxAmenaza.Margin = new System.Windows.Forms.Padding(4);
             this.cbxAmenaza.Name = "cbxAmenaza";
             this.cbxAmenaza.Size = new System.Drawing.Size(353, 31);
             this.cbxAmenaza.TabIndex = 6;
@@ -376,7 +381,7 @@ namespace CapaPresentacion
             this.btnGuardarCambio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarCambio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnGuardarCambio.Location = new System.Drawing.Point(300, 590);
-            this.btnGuardarCambio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardarCambio.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardarCambio.Name = "btnGuardarCambio";
             this.btnGuardarCambio.Size = new System.Drawing.Size(393, 58);
             this.btnGuardarCambio.TabIndex = 12;

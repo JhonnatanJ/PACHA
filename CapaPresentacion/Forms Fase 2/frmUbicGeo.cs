@@ -37,18 +37,25 @@ namespace CapaPresentacion.Forms_Fase_2
         }
         private void btnInsert_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("¿El ingreso esta correcto?", "Advertencia", MessageBoxButtons.YesNo);
-            ModeloUbicHidro ubichidro  = new ModeloUbicHidro();
-            String tipo = cbxTipo.Text;
-            String nivel = txtNivel.Text;
-            String nombre = txtNombre.Text;
-            String codigo = txtCodigo.Text;
-            
-            if(result == DialogResult.Yes)
+            if (!String.IsNullOrWhiteSpace(cbxTipo.Text) && !String.IsNullOrWhiteSpace(txtNombre.Text))
             {
-                ubichidro.InsertarDatos(tipo, nombre, codigo, nivel);
-                MessageBox.Show("Los datos se agregaron correctamente", "Advertencia", MessageBoxButtons.OK);
-                this.limpiar();
+                DialogResult result = MessageBox.Show("¿El ingreso esta correcto?", "Advertencia", MessageBoxButtons.YesNo);
+                ModeloUbicHidro ubichidro = new ModeloUbicHidro();
+                String tipo = cbxTipo.Text;
+                String nivel = txtNivel.Text;
+                String nombre = txtNombre.Text;
+                String codigo = txtCodigo.Text;
+
+                if (result == DialogResult.Yes)
+                {
+                    ubichidro.InsertarDatos(tipo, nombre, codigo, nivel);
+                    MessageBox.Show("Los datos se agregaron correctamente", "Advertencia", MessageBoxButtons.OK);
+                    this.limpiar();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Para guardar debe ingresar datos en el campo Nombre y seleccionar un Tipo", "Advertencia", MessageBoxButtons.OK);
             }
         }
     }

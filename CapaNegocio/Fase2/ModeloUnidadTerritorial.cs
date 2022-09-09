@@ -24,6 +24,11 @@ namespace CapaNegocio.Fase2
             datosUnidad.InsertarDatos(pais, region, provincia, canton, parroquia);
         }
 
+        public void ModificarDatos(String pais, String region, String provincia, String canton, String parroquia)
+        {
+            datosUnidad.ModificarDatos(pais, region, provincia, canton, parroquia);
+        }
+
         public DataTable CargarDGV()
         {
             return datosUnidad.CargarDGV();

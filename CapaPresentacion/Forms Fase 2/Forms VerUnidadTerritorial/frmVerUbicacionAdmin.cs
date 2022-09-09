@@ -30,5 +30,6 @@ namespace CapaPresentacion.Forms_Fase_2.Forms_VerUnidadTerritorial
         {
             this.Close();
         }
+
     }
 }
