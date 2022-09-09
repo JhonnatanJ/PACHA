@@ -25,6 +25,11 @@ namespace CapaNegocio.Fase2
         {
             datosRecurso.InsertarDatos(recHidrico, recDec1, recDec2, recDec3, recDec4, recDec5, recDec6, recDec7, recDec8);
         }
+
+        public bool ValidarRecursosH(String informacion)
+        {
+            return datosRecurso.ValidarRecursosH(informacion);
+        }
         public DataTable CargarDGVrecurso()
         {
             return datosRecurso.CargarDGVrecurso();

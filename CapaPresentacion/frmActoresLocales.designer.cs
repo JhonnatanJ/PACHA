@@ -69,7 +69,7 @@ namespace CapaPresentacion
             // 
             // panel5
             // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackColor = System.Drawing.Color.Gainsboro;
             this.panel5.Controls.Add(this.label9);
@@ -85,7 +85,7 @@ namespace CapaPresentacion
             this.panel5.Controls.Add(this.label10);
             this.panel5.Controls.Add(this.label15);
             this.panel5.Controls.Add(this.label14);
-            this.panel5.Location = new System.Drawing.Point(24, 368);
+            this.panel5.Location = new System.Drawing.Point(24, 347);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(984, 245);
             this.panel5.TabIndex = 10;
@@ -113,7 +113,7 @@ namespace CapaPresentacion
             this.txtemail.Location = new System.Drawing.Point(730, 203);
             this.txtemail.MaxLength = 30;
             this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(224, 25);
+            this.txtemail.Size = new System.Drawing.Size(224, 30);
             this.txtemail.TabIndex = 4;
             // 
             // txttelefono
@@ -126,7 +126,7 @@ namespace CapaPresentacion
             this.txttelefono.Location = new System.Drawing.Point(730, 141);
             this.txttelefono.MaxLength = 10;
             this.txttelefono.Name = "txttelefono";
-            this.txttelefono.Size = new System.Drawing.Size(224, 25);
+            this.txttelefono.Size = new System.Drawing.Size(224, 30);
             this.txttelefono.TabIndex = 4;
             this.txttelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttelefono_KeyPress);
             // 
@@ -140,7 +140,7 @@ namespace CapaPresentacion
             this.txtresponsable.Location = new System.Drawing.Point(153, 203);
             this.txtresponsable.MaxLength = 200;
             this.txtresponsable.Name = "txtresponsable";
-            this.txtresponsable.Size = new System.Drawing.Size(224, 25);
+            this.txtresponsable.Size = new System.Drawing.Size(224, 30);
             this.txtresponsable.TabIndex = 4;
             // 
             // txtcargo
@@ -153,7 +153,7 @@ namespace CapaPresentacion
             this.txtcargo.Location = new System.Drawing.Point(730, 83);
             this.txtcargo.MaxLength = 150;
             this.txtcargo.Name = "txtcargo";
-            this.txtcargo.Size = new System.Drawing.Size(224, 25);
+            this.txtcargo.Size = new System.Drawing.Size(224, 30);
             this.txtcargo.TabIndex = 4;
             // 
             // txtobjetivo
@@ -166,7 +166,7 @@ namespace CapaPresentacion
             this.txtobjetivo.Location = new System.Drawing.Point(153, 141);
             this.txtobjetivo.MaxLength = 600;
             this.txtobjetivo.Name = "txtobjetivo";
-            this.txtobjetivo.Size = new System.Drawing.Size(224, 25);
+            this.txtobjetivo.Size = new System.Drawing.Size(224, 30);
             this.txtobjetivo.TabIndex = 4;
             // 
             // label13
@@ -177,7 +177,7 @@ namespace CapaPresentacion
             this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label13.Location = new System.Drawing.Point(647, 85);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(77, 23);
+            this.label13.Size = new System.Drawing.Size(95, 30);
             this.label13.TabIndex = 3;
             this.label13.Text = "Cargo:";
             // 
@@ -191,7 +191,7 @@ namespace CapaPresentacion
             this.txtnombreProyecto.Location = new System.Drawing.Point(153, 83);
             this.txtnombreProyecto.MaxLength = 500;
             this.txtnombreProyecto.Name = "txtnombreProyecto";
-            this.txtnombreProyecto.Size = new System.Drawing.Size(224, 25);
+            this.txtnombreProyecto.Size = new System.Drawing.Size(224, 30);
             this.txtnombreProyecto.TabIndex = 4;
             // 
             // label12
@@ -202,7 +202,7 @@ namespace CapaPresentacion
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label12.Location = new System.Drawing.Point(648, 205);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(76, 23);
+            this.label12.Size = new System.Drawing.Size(96, 30);
             this.label12.TabIndex = 3;
             this.label12.Text = "e-mail:";
             // 
@@ -214,7 +214,7 @@ namespace CapaPresentacion
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label11.Location = new System.Drawing.Point(52, 83);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(95, 23);
+            this.label11.Size = new System.Drawing.Size(117, 30);
             this.label11.TabIndex = 3;
             this.label11.Text = "Nombre:";
             // 
@@ -226,7 +226,7 @@ namespace CapaPresentacion
             this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label10.Location = new System.Drawing.Point(626, 141);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(98, 23);
+            this.label10.Size = new System.Drawing.Size(124, 30);
             this.label10.TabIndex = 3;
             this.label10.Text = "Teléfono:";
             // 
@@ -238,7 +238,7 @@ namespace CapaPresentacion
             this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label15.Location = new System.Drawing.Point(6, 205);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(141, 23);
+            this.label15.Size = new System.Drawing.Size(172, 30);
             this.label15.TabIndex = 3;
             this.label15.Text = "Responsable:";
             // 
@@ -250,7 +250,7 @@ namespace CapaPresentacion
             this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label14.Location = new System.Drawing.Point(49, 141);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(98, 23);
+            this.label14.Size = new System.Drawing.Size(123, 30);
             this.label14.TabIndex = 3;
             this.label14.Text = "Objetivo:";
             // 
@@ -293,7 +293,7 @@ namespace CapaPresentacion
             "Negativa"});
             this.cboIncidencias.Location = new System.Drawing.Point(139, 164);
             this.cboIncidencias.Name = "cboIncidencias";
-            this.cboIncidencias.Size = new System.Drawing.Size(278, 31);
+            this.cboIncidencias.Size = new System.Drawing.Size(278, 38);
             this.cboIncidencias.TabIndex = 14;
             // 
             // lblIncidencia
@@ -304,7 +304,7 @@ namespace CapaPresentacion
             this.lblIncidencia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblIncidencia.Location = new System.Drawing.Point(6, 167);
             this.lblIncidencia.Name = "lblIncidencia";
-            this.lblIncidencia.Size = new System.Drawing.Size(125, 23);
+            this.lblIncidencia.Size = new System.Drawing.Size(158, 30);
             this.lblIncidencia.TabIndex = 13;
             this.lblIncidencia.Text = "Incidencias:";
             // 
@@ -323,7 +323,7 @@ namespace CapaPresentacion
             "Ambiental"});
             this.cboTipoActor.Location = new System.Drawing.Point(137, 110);
             this.cboTipoActor.Name = "cboTipoActor";
-            this.cboTipoActor.Size = new System.Drawing.Size(280, 31);
+            this.cboTipoActor.Size = new System.Drawing.Size(280, 38);
             this.cboTipoActor.TabIndex = 5;
             // 
             // cboRelacionAnalisis
@@ -340,7 +340,7 @@ namespace CapaPresentacion
             "Bajo"});
             this.cboRelacionAnalisis.Location = new System.Drawing.Point(744, 114);
             this.cboRelacionAnalisis.Name = "cboRelacionAnalisis";
-            this.cboRelacionAnalisis.Size = new System.Drawing.Size(224, 31);
+            this.cboRelacionAnalisis.Size = new System.Drawing.Size(224, 38);
             this.cboRelacionAnalisis.TabIndex = 12;
             // 
             // label17
@@ -390,7 +390,7 @@ namespace CapaPresentacion
             this.txtcompetenciaRel.Location = new System.Drawing.Point(744, 168);
             this.txtcompetenciaRel.MaxLength = 500;
             this.txtcompetenciaRel.Name = "txtcompetenciaRel";
-            this.txtcompetenciaRel.Size = new System.Drawing.Size(224, 25);
+            this.txtcompetenciaRel.Size = new System.Drawing.Size(224, 30);
             this.txtcompetenciaRel.TabIndex = 4;
             // 
             // txtsiglas
@@ -403,7 +403,7 @@ namespace CapaPresentacion
             this.txtsiglas.Location = new System.Drawing.Point(744, 66);
             this.txtsiglas.MaxLength = 20;
             this.txtsiglas.Name = "txtsiglas";
-            this.txtsiglas.Size = new System.Drawing.Size(224, 25);
+            this.txtsiglas.Size = new System.Drawing.Size(224, 30);
             this.txtsiglas.TabIndex = 4;
             // 
             // txtnombreActor
@@ -416,7 +416,7 @@ namespace CapaPresentacion
             this.txtnombreActor.Location = new System.Drawing.Point(137, 66);
             this.txtnombreActor.MaxLength = 300;
             this.txtnombreActor.Name = "txtnombreActor";
-            this.txtnombreActor.Size = new System.Drawing.Size(280, 25);
+            this.txtnombreActor.Size = new System.Drawing.Size(280, 30);
             this.txtnombreActor.TabIndex = 4;
             // 
             // label6
@@ -427,7 +427,7 @@ namespace CapaPresentacion
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label6.Location = new System.Drawing.Point(76, 113);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 23);
+            this.label6.Size = new System.Drawing.Size(69, 30);
             this.label6.TabIndex = 3;
             this.label6.Text = "Tipo:";
             // 
@@ -439,7 +439,7 @@ namespace CapaPresentacion
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.Location = new System.Drawing.Point(33, 65);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 23);
+            this.label4.Size = new System.Drawing.Size(117, 30);
             this.label4.TabIndex = 3;
             this.label4.Text = "Nombre:";
             // 
@@ -451,7 +451,7 @@ namespace CapaPresentacion
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label8.Location = new System.Drawing.Point(436, 167);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(301, 23);
+            this.label8.Size = new System.Drawing.Size(370, 30);
             this.label8.TabIndex = 3;
             this.label8.Text = "Competencias Relacionadas:";
             // 
@@ -463,7 +463,7 @@ namespace CapaPresentacion
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label7.Location = new System.Drawing.Point(433, 118);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(304, 23);
+            this.label7.Size = new System.Drawing.Size(374, 30);
             this.label7.TabIndex = 3;
             this.label7.Text = "Relac. con Unidad de Análisis:";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -476,13 +476,13 @@ namespace CapaPresentacion
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.Location = new System.Drawing.Point(671, 66);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 23);
+            this.label5.Size = new System.Drawing.Size(86, 30);
             this.label5.TabIndex = 3;
             this.label5.Text = "Siglas:";
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancelar.BackColor = System.Drawing.Color.Gainsboro;
             this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
@@ -490,7 +490,7 @@ namespace CapaPresentacion
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCancelar.Location = new System.Drawing.Point(611, 280);
+            this.btnCancelar.Location = new System.Drawing.Point(611, 269);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(295, 47);
             this.btnCancelar.TabIndex = 7;
@@ -500,7 +500,6 @@ namespace CapaPresentacion
             // 
             // btnGuardarProyecto
             // 
-            this.btnGuardarProyecto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnGuardarProyecto.BackColor = System.Drawing.Color.Gainsboro;
             this.btnGuardarProyecto.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnGuardarProyecto.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
@@ -508,7 +507,8 @@ namespace CapaPresentacion
             this.btnGuardarProyecto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarProyecto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarProyecto.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGuardarProyecto.Location = new System.Drawing.Point(115, 634);
+            this.btnGuardarProyecto.Location = new System.Drawing.Point(115, 618);
+            this.btnGuardarProyecto.Margin = new System.Windows.Forms.Padding(5);
             this.btnGuardarProyecto.Name = "btnGuardarProyecto";
             this.btnGuardarProyecto.Size = new System.Drawing.Size(295, 47);
             this.btnGuardarProyecto.TabIndex = 8;
@@ -518,7 +518,6 @@ namespace CapaPresentacion
             // 
             // btnGuardarActor
             // 
-            this.btnGuardarActor.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnGuardarActor.BackColor = System.Drawing.Color.Gainsboro;
             this.btnGuardarActor.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnGuardarActor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
@@ -536,7 +535,7 @@ namespace CapaPresentacion
             // 
             // btnNuevoProyecto
             // 
-            this.btnNuevoProyecto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNuevoProyecto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNuevoProyecto.BackColor = System.Drawing.Color.Gainsboro;
             this.btnNuevoProyecto.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnNuevoProyecto.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
@@ -544,7 +543,8 @@ namespace CapaPresentacion
             this.btnNuevoProyecto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevoProyecto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevoProyecto.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnNuevoProyecto.Location = new System.Drawing.Point(611, 634);
+            this.btnNuevoProyecto.Location = new System.Drawing.Point(611, 618);
+            this.btnNuevoProyecto.Margin = new System.Windows.Forms.Padding(5);
             this.btnNuevoProyecto.Name = "btnNuevoProyecto";
             this.btnNuevoProyecto.Size = new System.Drawing.Size(295, 47);
             this.btnNuevoProyecto.TabIndex = 12;
@@ -554,8 +554,9 @@ namespace CapaPresentacion
             // 
             // frmActoresLocales
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1033, 704);

@@ -25,6 +25,11 @@ namespace CapaNegocio.Fase2
             datosCurva.InsertarDatos(informacion, infDec1, infDec2, infDec3, infDec4, infDec5, infDec6, infDec7, infDec8);
         }
 
+        public void ModificarDatos(String informacion, float infDec1, float infDec2, float infDec3, float infDec4, float infDec5, float infDec6, float infDec7, float infDec8)
+        {
+            datosCurva.ModificarDatos(informacion, infDec1, infDec2, infDec3, infDec4, infDec5, infDec6, infDec7, infDec8);
+        }
+
         public DataTable CargarDGVcurva()
         {
             return datosCurva.CargarDGVcurva();

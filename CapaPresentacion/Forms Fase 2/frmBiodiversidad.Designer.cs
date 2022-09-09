@@ -97,7 +97,8 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtBioDec8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBioDec8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtBioDec8.Location = new System.Drawing.Point(115, 478);
-            this.txtBioDec8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBioDec8.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBioDec8.MaxLength = 1000;
             this.txtBioDec8.Name = "txtBioDec8";
             this.txtBioDec8.Size = new System.Drawing.Size(779, 32);
             this.txtBioDec8.TabIndex = 79;
@@ -108,7 +109,8 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtBioDec7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBioDec7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtBioDec7.Location = new System.Drawing.Point(115, 437);
-            this.txtBioDec7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBioDec7.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBioDec7.MaxLength = 1000;
             this.txtBioDec7.Name = "txtBioDec7";
             this.txtBioDec7.Size = new System.Drawing.Size(779, 32);
             this.txtBioDec7.TabIndex = 78;
@@ -119,7 +121,8 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtBioDec6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBioDec6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtBioDec6.Location = new System.Drawing.Point(115, 396);
-            this.txtBioDec6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBioDec6.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBioDec6.MaxLength = 1000;
             this.txtBioDec6.Name = "txtBioDec6";
             this.txtBioDec6.Size = new System.Drawing.Size(779, 32);
             this.txtBioDec6.TabIndex = 77;
@@ -130,7 +133,8 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtBioDec5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBioDec5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtBioDec5.Location = new System.Drawing.Point(115, 356);
-            this.txtBioDec5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBioDec5.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBioDec5.MaxLength = 1000;
             this.txtBioDec5.Name = "txtBioDec5";
             this.txtBioDec5.Size = new System.Drawing.Size(779, 32);
             this.txtBioDec5.TabIndex = 76;
@@ -141,7 +145,8 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtBioDec4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBioDec4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtBioDec4.Location = new System.Drawing.Point(115, 315);
-            this.txtBioDec4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBioDec4.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBioDec4.MaxLength = 1000;
             this.txtBioDec4.Name = "txtBioDec4";
             this.txtBioDec4.Size = new System.Drawing.Size(779, 32);
             this.txtBioDec4.TabIndex = 75;
@@ -152,7 +157,8 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtBioDec3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBioDec3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtBioDec3.Location = new System.Drawing.Point(115, 274);
-            this.txtBioDec3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBioDec3.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBioDec3.MaxLength = 1000;
             this.txtBioDec3.Name = "txtBioDec3";
             this.txtBioDec3.Size = new System.Drawing.Size(779, 32);
             this.txtBioDec3.TabIndex = 74;
@@ -163,7 +169,8 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtBioDec2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBioDec2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtBioDec2.Location = new System.Drawing.Point(115, 234);
-            this.txtBioDec2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBioDec2.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBioDec2.MaxLength = 1000;
             this.txtBioDec2.Name = "txtBioDec2";
             this.txtBioDec2.Size = new System.Drawing.Size(779, 32);
             this.txtBioDec2.TabIndex = 73;
@@ -174,7 +181,8 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtBioDec1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBioDec1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtBioDec1.Location = new System.Drawing.Point(115, 193);
-            this.txtBioDec1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBioDec1.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBioDec1.MaxLength = 1000;
             this.txtBioDec1.Name = "txtBioDec1";
             this.txtBioDec1.Size = new System.Drawing.Size(779, 32);
             this.txtBioDec1.TabIndex = 72;
@@ -296,7 +304,7 @@ namespace CapaPresentacion.Forms_Fase_2
             "Especies de flora que migraron",
             "Especies de fauna que migraron"});
             this.cbxEspecie.Location = new System.Drawing.Point(260, 126);
-            this.cbxEspecie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxEspecie.Margin = new System.Windows.Forms.Padding(4);
             this.cbxEspecie.Name = "cbxEspecie";
             this.cbxEspecie.Size = new System.Drawing.Size(483, 31);
             this.cbxEspecie.TabIndex = 61;
@@ -329,7 +337,7 @@ namespace CapaPresentacion.Forms_Fase_2
             "Recreación",
             "Ritualidad"});
             this.cbxSectorBio.Location = new System.Drawing.Point(260, 68);
-            this.cbxSectorBio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxSectorBio.Margin = new System.Windows.Forms.Padding(4);
             this.cbxSectorBio.Name = "cbxSectorBio";
             this.cbxSectorBio.Size = new System.Drawing.Size(483, 31);
             this.cbxSectorBio.TabIndex = 59;

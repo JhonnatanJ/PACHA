@@ -93,12 +93,14 @@
             this.txtRecDec8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRecDec8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtRecDec8.Location = new System.Drawing.Point(797, 166);
-            this.txtRecDec8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRecDec8.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRecDec8.MaxLength = 10;
             this.txtRecDec8.Name = "txtRecDec8";
             this.txtRecDec8.Size = new System.Drawing.Size(103, 32);
             this.txtRecDec8.TabIndex = 63;
             this.txtRecDec8.Text = "0.00";
             this.txtRecDec8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtRecDec8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRecDec8_KeyPress);
             // 
             // txtRecDec7
             // 
@@ -106,12 +108,14 @@
             this.txtRecDec7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRecDec7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtRecDec7.Location = new System.Drawing.Point(685, 166);
-            this.txtRecDec7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRecDec7.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRecDec7.MaxLength = 10;
             this.txtRecDec7.Name = "txtRecDec7";
             this.txtRecDec7.Size = new System.Drawing.Size(103, 32);
             this.txtRecDec7.TabIndex = 62;
             this.txtRecDec7.Text = "0.00";
             this.txtRecDec7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtRecDec7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRecDec7_KeyPress);
             // 
             // txtRecDec6
             // 
@@ -119,12 +123,14 @@
             this.txtRecDec6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRecDec6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtRecDec6.Location = new System.Drawing.Point(573, 166);
-            this.txtRecDec6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRecDec6.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRecDec6.MaxLength = 10;
             this.txtRecDec6.Name = "txtRecDec6";
             this.txtRecDec6.Size = new System.Drawing.Size(103, 32);
             this.txtRecDec6.TabIndex = 61;
             this.txtRecDec6.Text = "0.00";
             this.txtRecDec6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtRecDec6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRecDec6_KeyPress);
             // 
             // txtRecDec5
             // 
@@ -132,12 +138,14 @@
             this.txtRecDec5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRecDec5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtRecDec5.Location = new System.Drawing.Point(461, 166);
-            this.txtRecDec5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRecDec5.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRecDec5.MaxLength = 10;
             this.txtRecDec5.Name = "txtRecDec5";
             this.txtRecDec5.Size = new System.Drawing.Size(103, 32);
             this.txtRecDec5.TabIndex = 60;
             this.txtRecDec5.Text = "0.00";
             this.txtRecDec5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtRecDec5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRecDec5_KeyPress);
             // 
             // txtRecDec4
             // 
@@ -145,12 +153,14 @@
             this.txtRecDec4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRecDec4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtRecDec4.Location = new System.Drawing.Point(349, 166);
-            this.txtRecDec4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRecDec4.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRecDec4.MaxLength = 10;
             this.txtRecDec4.Name = "txtRecDec4";
             this.txtRecDec4.Size = new System.Drawing.Size(103, 32);
             this.txtRecDec4.TabIndex = 59;
             this.txtRecDec4.Text = "0.00";
             this.txtRecDec4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtRecDec4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRecDec4_KeyPress);
             // 
             // txtRecDec3
             // 
@@ -158,12 +168,14 @@
             this.txtRecDec3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRecDec3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtRecDec3.Location = new System.Drawing.Point(237, 166);
-            this.txtRecDec3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRecDec3.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRecDec3.MaxLength = 10;
             this.txtRecDec3.Name = "txtRecDec3";
             this.txtRecDec3.Size = new System.Drawing.Size(103, 32);
             this.txtRecDec3.TabIndex = 58;
             this.txtRecDec3.Text = "0.00";
             this.txtRecDec3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtRecDec3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRecDec3_KeyPress);
             // 
             // txtRecDec2
             // 
@@ -171,12 +183,14 @@
             this.txtRecDec2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRecDec2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtRecDec2.Location = new System.Drawing.Point(128, 166);
-            this.txtRecDec2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRecDec2.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRecDec2.MaxLength = 10;
             this.txtRecDec2.Name = "txtRecDec2";
             this.txtRecDec2.Size = new System.Drawing.Size(103, 32);
             this.txtRecDec2.TabIndex = 57;
             this.txtRecDec2.Text = "0.00";
             this.txtRecDec2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtRecDec2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRecDec2_KeyPress);
             // 
             // txtRecDec1
             // 
@@ -184,12 +198,14 @@
             this.txtRecDec1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRecDec1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtRecDec1.Location = new System.Drawing.Point(19, 166);
-            this.txtRecDec1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRecDec1.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRecDec1.MaxLength = 10;
             this.txtRecDec1.Name = "txtRecDec1";
             this.txtRecDec1.Size = new System.Drawing.Size(103, 32);
             this.txtRecDec1.TabIndex = 56;
             this.txtRecDec1.Text = "0.00";
             this.txtRecDec1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtRecDec1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRecDec1_KeyPress);
             // 
             // label11
             // 
@@ -323,7 +339,7 @@
             "Recreación",
             "Ritualidad"});
             this.cbxRecurso.Location = new System.Drawing.Point(267, 53);
-            this.cbxRecurso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxRecurso.Margin = new System.Windows.Forms.Padding(4);
             this.cbxRecurso.Name = "cbxRecurso";
             this.cbxRecurso.Size = new System.Drawing.Size(353, 31);
             this.cbxRecurso.TabIndex = 37;
