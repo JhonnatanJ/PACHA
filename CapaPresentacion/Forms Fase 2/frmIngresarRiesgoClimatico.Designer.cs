@@ -89,7 +89,9 @@ namespace CapaPresentacion.Forms_Fase_2
             this.btnGuardarCambio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarCambio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarCambio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGuardarCambio.Location = new System.Drawing.Point(410, 624);
+
+            this.btnGuardarCambio.Location = new System.Drawing.Point(337, 475);
+
             this.btnGuardarCambio.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardarCambio.Name = "btnGuardarCambio";
             this.btnGuardarCambio.Size = new System.Drawing.Size(236, 57);
@@ -237,9 +239,26 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtRiesgo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtRiesgo.Location = new System.Drawing.Point(232, 315);
             this.txtRiesgo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRiesgo.MaxLength = 1000;
             this.txtRiesgo.Name = "txtRiesgo";
             this.txtRiesgo.Size = new System.Drawing.Size(736, 30);
             this.txtRiesgo.TabIndex = 12;
+            // 
+            // txtObservaciones
+            // 
+            this.txtObservaciones.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtObservaciones.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtObservaciones.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtObservaciones.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtObservaciones.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtObservaciones.Location = new System.Drawing.Point(232, 439);
+            this.txtObservaciones.Margin = new System.Windows.Forms.Padding(4);
+            this.txtObservaciones.MaxLength = 1000;
+            this.txtObservaciones.Name = "txtObservaciones";
+            this.txtObservaciones.Size = new System.Drawing.Size(660, 25);
+            this.txtObservaciones.TabIndex = 12;
             // 
             // label6
             // 
@@ -279,7 +298,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label17.Location = new System.Drawing.Point(679, -84);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(111, 34);
+            this.label17.Size = new System.Drawing.Size(93, 27);
             this.label17.TabIndex = 2;
             this.label17.Text = "ACTOR";
             // 
@@ -292,7 +311,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label16.Location = new System.Drawing.Point(679, -41);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(111, 34);
+            this.label16.Size = new System.Drawing.Size(93, 27);
             this.label16.TabIndex = 2;
             this.label16.Text = "ACTOR";
             // 
@@ -306,7 +325,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.label1.Location = new System.Drawing.Point(193, 18);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(644, 34);
+            this.label1.Size = new System.Drawing.Size(535, 27);
             this.label1.TabIndex = 2;
             this.label1.Text = "RIESGO CLIMÁTICO EN LA UNIDAD DE ANÁLISIS";
             // 

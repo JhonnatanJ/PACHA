@@ -116,6 +116,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtParroquia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtParroquia.Location = new System.Drawing.Point(619, 86);
             this.txtParroquia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtParroquia.MaxLength = 100;
             this.txtParroquia.Name = "txtParroquia";
             this.txtParroquia.Size = new System.Drawing.Size(163, 25);
             this.txtParroquia.TabIndex = 17;
@@ -129,6 +130,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtCanton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtCanton.Location = new System.Drawing.Point(228, 86);
             this.txtCanton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCanton.MaxLength = 60;
             this.txtCanton.Name = "txtCanton";
             this.txtCanton.Size = new System.Drawing.Size(163, 25);
             this.txtCanton.TabIndex = 17;
@@ -155,6 +157,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtProvincia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtProvincia.Location = new System.Drawing.Point(768, 42);
             this.txtProvincia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtProvincia.MaxLength = 50;
             this.txtProvincia.Name = "txtProvincia";
             this.txtProvincia.Size = new System.Drawing.Size(163, 25);
             this.txtProvincia.TabIndex = 17;
@@ -181,6 +184,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtRegion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtRegion.Location = new System.Drawing.Point(403, 42);
             this.txtRegion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtRegion.MaxLength = 30;
             this.txtRegion.Name = "txtRegion";
             this.txtRegion.Size = new System.Drawing.Size(163, 25);
             this.txtRegion.TabIndex = 17;
@@ -220,9 +224,11 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtPais.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtPais.Location = new System.Drawing.Point(99, 42);
             this.txtPais.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPais.MaxLength = 50;
             this.txtPais.Name = "txtPais";
             this.txtPais.Size = new System.Drawing.Size(163, 25);
             this.txtPais.TabIndex = 15;
+            this.txtPais.TextChanged += new System.EventHandler(this.txtPais_TextChanged);
             // 
             // label2
             // 
@@ -273,12 +279,12 @@ namespace CapaPresentacion.Forms_Fase_2
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGuardar.Location = new System.Drawing.Point(403, 335);
+            this.btnGuardar.Location = new System.Drawing.Point(353, 328);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(115, 42);
+            this.btnGuardar.Size = new System.Drawing.Size(197, 42);
             this.btnGuardar.TabIndex = 14;
-            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.Text = "Guardar/Modificar";
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
@@ -333,9 +339,11 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtLonOes.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtLonOes.Location = new System.Drawing.Point(771, 283);
             this.txtLonOes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtLonOes.MaxLength = 15;
             this.txtLonOes.Name = "txtLonOes";
             this.txtLonOes.Size = new System.Drawing.Size(139, 25);
             this.txtLonOes.TabIndex = 30;
+            this.txtLonOes.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLonOes_KeyPress);
             // 
             // txtLonEst
             // 
@@ -346,9 +354,11 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtLonEst.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtLonEst.Location = new System.Drawing.Point(771, 215);
             this.txtLonEst.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtLonEst.MaxLength = 15;
             this.txtLonEst.Name = "txtLonEst";
             this.txtLonEst.Size = new System.Drawing.Size(139, 25);
             this.txtLonEst.TabIndex = 30;
+            this.txtLonEst.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLonEst_KeyPress);
             // 
             // txtLatOes
             // 
@@ -359,9 +369,11 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtLatOes.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtLatOes.Location = new System.Drawing.Point(461, 283);
             this.txtLatOes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtLatOes.MaxLength = 15;
             this.txtLatOes.Name = "txtLatOes";
             this.txtLatOes.Size = new System.Drawing.Size(139, 25);
             this.txtLatOes.TabIndex = 31;
+            this.txtLatOes.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLatOes_KeyPress);
             // 
             // txtLatEst
             // 
@@ -372,9 +384,11 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtLatEst.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtLatEst.Location = new System.Drawing.Point(461, 215);
             this.txtLatEst.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtLatEst.MaxLength = 15;
             this.txtLatEst.Name = "txtLatEst";
             this.txtLatEst.Size = new System.Drawing.Size(139, 25);
             this.txtLatEst.TabIndex = 31;
+            this.txtLatEst.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLatEst_KeyPress);
             // 
             // label19
             // 
@@ -437,6 +451,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtOeste.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtOeste.Location = new System.Drawing.Point(136, 286);
             this.txtOeste.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtOeste.MaxLength = 100;
             this.txtOeste.Name = "txtOeste";
             this.txtOeste.Size = new System.Drawing.Size(163, 25);
             this.txtOeste.TabIndex = 27;
@@ -450,6 +465,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtEste.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtEste.Location = new System.Drawing.Point(136, 213);
             this.txtEste.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtEste.MaxLength = 100;
             this.txtEste.Name = "txtEste";
             this.txtEste.Size = new System.Drawing.Size(163, 25);
             this.txtEste.TabIndex = 27;
@@ -502,9 +518,11 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtLonSur.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtLonSur.Location = new System.Drawing.Point(771, 142);
             this.txtLonSur.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtLonSur.MaxLength = 15;
             this.txtLonSur.Name = "txtLonSur";
             this.txtLonSur.Size = new System.Drawing.Size(139, 25);
             this.txtLonSur.TabIndex = 23;
+            this.txtLonSur.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLonSur_KeyPress);
             // 
             // txtLatSur
             // 
@@ -515,9 +533,11 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtLatSur.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtLatSur.Location = new System.Drawing.Point(461, 142);
             this.txtLatSur.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtLatSur.MaxLength = 15;
             this.txtLatSur.Name = "txtLatSur";
             this.txtLatSur.Size = new System.Drawing.Size(139, 25);
             this.txtLatSur.TabIndex = 24;
+            this.txtLatSur.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLatSur_KeyPress);
             // 
             // label7
             // 
@@ -554,6 +574,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtSur.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtSur.Location = new System.Drawing.Point(136, 142);
             this.txtSur.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSur.MaxLength = 100;
             this.txtSur.Name = "txtSur";
             this.txtSur.Size = new System.Drawing.Size(163, 25);
             this.txtSur.TabIndex = 20;
@@ -593,9 +614,11 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtLonNor.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtLonNor.Location = new System.Drawing.Point(771, 68);
             this.txtLonNor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtLonNor.MaxLength = 15;
             this.txtLonNor.Name = "txtLonNor";
             this.txtLonNor.Size = new System.Drawing.Size(139, 25);
             this.txtLonNor.TabIndex = 17;
+            this.txtLonNor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLonNor_KeyPress);
             // 
             // txtLatNor
             // 
@@ -606,9 +629,11 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtLatNor.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtLatNor.Location = new System.Drawing.Point(461, 68);
             this.txtLatNor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtLatNor.MaxLength = 15;
             this.txtLatNor.Name = "txtLatNor";
             this.txtLatNor.Size = new System.Drawing.Size(139, 25);
             this.txtLatNor.TabIndex = 17;
+            this.txtLatNor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLatNor_KeyPress);
             // 
             // label9
             // 
@@ -645,6 +670,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtNorte.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtNorte.Location = new System.Drawing.Point(136, 68);
             this.txtNorte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNorte.MaxLength = 100;
             this.txtNorte.Name = "txtNorte";
             this.txtNorte.Size = new System.Drawing.Size(163, 25);
             this.txtNorte.TabIndex = 15;
@@ -821,6 +847,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmIngresarUnidadTerritorial";
             this.Text = "frmIngresarUnidadTerritorial";
+            this.Load += new System.EventHandler(this.frmIngresarUnidadTerritorial_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);

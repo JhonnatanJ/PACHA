@@ -43,6 +43,36 @@ namespace CapaDatos.Fase2
             comando.ExecuteNonQuery();
         }
 
+        public void ModificarDatos(String norte, String latnorte, String lonnorte, String sur, String latsur, String lonsur,
+            String este, String lateste, String loneste, String oeste, String latoeste, String lonoeste)
+        {
+            MySqlConnection conexionBD = Conexion.conexion();
+            conexionBD.Open();
+            MySqlCommand comando = new MySqlCommand();
+
+
+            comando.Connection = conexionBD;
+            comando.CommandText = "update limites set NORTE=@norte, SUR=@sur, ESTE=@este, OESTE=@oeste, LATNORTE=@latnorte," +
+                "LONGNORTE=@lonnorte, LATSUR=@latsur, LONGSUR=@lonsur, LATESTE=@lateste, LONGESTE=@loneste, LATOESTE=@latoeste, LONGOESTE=@lonoeste WHERE IDCOMUNIDAD=@id";
+
+            comando.Parameters.AddWithValue("@id", CacheLoginComunidad.idcomunidad);
+            comando.Parameters.AddWithValue("@norte", norte);
+            comando.Parameters.AddWithValue("@sur", sur);
+            comando.Parameters.AddWithValue("@este", este);
+            comando.Parameters.AddWithValue("@oeste", oeste);
+            comando.Parameters.AddWithValue("@latnorte", latnorte);
+            comando.Parameters.AddWithValue("@lonnorte", lonnorte);
+            comando.Parameters.AddWithValue("@latsur", latsur);
+            comando.Parameters.AddWithValue("@lonsur", lonsur);
+            comando.Parameters.AddWithValue("@lateste", lateste);
+            comando.Parameters.AddWithValue("@loneste", loneste);
+            comando.Parameters.AddWithValue("@latoeste", latoeste);
+            comando.Parameters.AddWithValue("@lonoeste", lonoeste);
+
+            comando.CommandType = System.Data.CommandType.Text;
+            comando.ExecuteNonQuery();
+        }
+
         public DataTable CargarDGV()
         {
             MySqlConnection conexionBD = Conexion.conexion();

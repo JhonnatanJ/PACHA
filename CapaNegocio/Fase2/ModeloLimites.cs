@@ -30,6 +30,13 @@ namespace CapaNegocio.Fase2
             datoslim.InsertarDatos(norte, latnorte, lonnorte, sur, latsur, lonsur, este, lateste, loneste, oeste, latoeste, 
                 lonoeste);
         }
+
+        public void ModificarDatos(String norte, String latnorte, String lonnorte, String sur, String latsur, String lonsur,
+            String este, String lateste, String loneste, String oeste, String latoeste, String lonoeste)
+        {
+            datoslim.ModificarDatos(norte, latnorte, lonnorte, sur, latsur, lonsur, este, lateste, loneste, oeste, latoeste,
+                lonoeste);
+        }
         public DataTable CargarDGV()
         {
             return datoslim.CargarDGV();

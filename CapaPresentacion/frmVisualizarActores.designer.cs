@@ -30,11 +30,11 @@ namespace CapaPresentacion
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvActores = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnInsProy = new System.Windows.Forms.Button();
@@ -127,22 +127,22 @@ namespace CapaPresentacion
             this.dgvActores.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dgvActores.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvActores.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dgvActores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dgvActores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
             this.dgvActores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvActores.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvActores.DefaultCellStyle = dataGridViewCellStyle22;
             this.dgvActores.EnableHeadersVisualStyles = false;
             this.dgvActores.GridColor = System.Drawing.SystemColors.ButtonShadow;
             this.dgvActores.Location = new System.Drawing.Point(6, 45);
@@ -150,13 +150,13 @@ namespace CapaPresentacion
             this.dgvActores.Name = "dgvActores";
             this.dgvActores.ReadOnly = true;
             this.dgvActores.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dgvActores.RowHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvActores.RowHeadersDefaultCellStyle = dataGridViewCellStyle23;
             this.dgvActores.RowHeadersVisible = false;
             this.dgvActores.RowHeadersWidth = 51;
             this.dgvActores.RowTemplate.Height = 24;
@@ -348,22 +348,22 @@ namespace CapaPresentacion
             this.dgvProyectos.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dgvProyectos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvProyectos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dgvProyectos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dgvProyectos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle24;
             this.dgvProyectos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvProyectos.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvProyectos.DefaultCellStyle = dataGridViewCellStyle25;
             this.dgvProyectos.EnableHeadersVisualStyles = false;
             this.dgvProyectos.GridColor = System.Drawing.SystemColors.ButtonShadow;
             this.dgvProyectos.Location = new System.Drawing.Point(6, 45);
@@ -513,7 +513,7 @@ namespace CapaPresentacion
             this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label17.Location = new System.Drawing.Point(509, -68);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(97, 30);
+            this.label17.Size = new System.Drawing.Size(93, 27);
             this.label17.TabIndex = 2;
             this.label17.Text = "ACTOR";
             // 
@@ -525,7 +525,7 @@ namespace CapaPresentacion
             this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label16.Location = new System.Drawing.Point(509, -33);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(97, 30);
+            this.label16.Size = new System.Drawing.Size(93, 27);
             this.label16.TabIndex = 2;
             this.label16.Text = "ACTOR";
             // 
@@ -538,7 +538,7 @@ namespace CapaPresentacion
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(391, 2);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(242, 30);
+            this.label3.Size = new System.Drawing.Size(232, 27);
             this.label3.TabIndex = 2;
             this.label3.Text = "MODIFICAR ACTOR";
             // 
@@ -550,6 +550,7 @@ namespace CapaPresentacion
             this.txtcompetenciaRel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcompetenciaRel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtcompetenciaRel.Location = new System.Drawing.Point(731, 125);
+            this.txtcompetenciaRel.MaxLength = 500;
             this.txtcompetenciaRel.Name = "txtcompetenciaRel";
             this.txtcompetenciaRel.Size = new System.Drawing.Size(224, 25);
             this.txtcompetenciaRel.TabIndex = 4;
@@ -562,6 +563,7 @@ namespace CapaPresentacion
             this.txtsiglas.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtsiglas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtsiglas.Location = new System.Drawing.Point(731, 39);
+            this.txtsiglas.MaxLength = 20;
             this.txtsiglas.Name = "txtsiglas";
             this.txtsiglas.Size = new System.Drawing.Size(224, 25);
             this.txtsiglas.TabIndex = 4;
@@ -574,6 +576,7 @@ namespace CapaPresentacion
             this.txtnombreActor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnombreActor.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtnombreActor.Location = new System.Drawing.Point(132, 39);
+            this.txtnombreActor.MaxLength = 300;
             this.txtnombreActor.Name = "txtnombreActor";
             this.txtnombreActor.Size = new System.Drawing.Size(224, 25);
             this.txtnombreActor.TabIndex = 4;
@@ -709,7 +712,7 @@ namespace CapaPresentacion
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label9.Location = new System.Drawing.Point(369, 3);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(289, 30);
+            this.label9.Size = new System.Drawing.Size(275, 27);
             this.label9.TabIndex = 2;
             this.label9.Text = "MODIFICAR PROYECTO";
             // 
@@ -720,9 +723,10 @@ namespace CapaPresentacion
             this.txtemail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtemail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtemail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtemail.Location = new System.Drawing.Point(731, 133);
+            this.txtemail.Location = new System.Drawing.Point(636, 133);
+            this.txtemail.MaxLength = 30;
             this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(223, 25);
+            this.txtemail.Size = new System.Drawing.Size(318, 25);
             this.txtemail.TabIndex = 4;
             // 
             // txttelefono
@@ -732,10 +736,12 @@ namespace CapaPresentacion
             this.txttelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txttelefono.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttelefono.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txttelefono.Location = new System.Drawing.Point(730, 90);
+            this.txttelefono.Location = new System.Drawing.Point(635, 90);
+            this.txttelefono.MaxLength = 10;
             this.txttelefono.Name = "txttelefono";
-            this.txttelefono.Size = new System.Drawing.Size(224, 25);
+            this.txttelefono.Size = new System.Drawing.Size(319, 25);
             this.txttelefono.TabIndex = 4;
+            this.txttelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttelefono_KeyPress);
             // 
             // txtresponsable
             // 
@@ -745,8 +751,9 @@ namespace CapaPresentacion
             this.txtresponsable.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtresponsable.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtresponsable.Location = new System.Drawing.Point(153, 131);
+            this.txtresponsable.MaxLength = 200;
             this.txtresponsable.Name = "txtresponsable";
-            this.txtresponsable.Size = new System.Drawing.Size(224, 25);
+            this.txtresponsable.Size = new System.Drawing.Size(342, 25);
             this.txtresponsable.TabIndex = 4;
             // 
             // txtcargo
@@ -756,9 +763,10 @@ namespace CapaPresentacion
             this.txtcargo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtcargo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcargo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtcargo.Location = new System.Drawing.Point(730, 46);
+            this.txtcargo.Location = new System.Drawing.Point(635, 46);
+            this.txtcargo.MaxLength = 150;
             this.txtcargo.Name = "txtcargo";
-            this.txtcargo.Size = new System.Drawing.Size(224, 25);
+            this.txtcargo.Size = new System.Drawing.Size(319, 25);
             this.txtcargo.TabIndex = 4;
             // 
             // txtobjetivo
@@ -768,9 +776,10 @@ namespace CapaPresentacion
             this.txtobjetivo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtobjetivo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtobjetivo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtobjetivo.Location = new System.Drawing.Point(144, 88);
+            this.txtobjetivo.Location = new System.Drawing.Point(153, 88);
+            this.txtobjetivo.MaxLength = 600;
             this.txtobjetivo.Name = "txtobjetivo";
-            this.txtobjetivo.Size = new System.Drawing.Size(302, 25);
+            this.txtobjetivo.Size = new System.Drawing.Size(342, 25);
             this.txtobjetivo.TabIndex = 4;
             // 
             // label13
@@ -779,7 +788,7 @@ namespace CapaPresentacion
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label13.Location = new System.Drawing.Point(638, 46);
+            this.label13.Location = new System.Drawing.Point(552, 46);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(77, 23);
             this.label13.TabIndex = 3;
@@ -793,8 +802,9 @@ namespace CapaPresentacion
             this.txtnombreProyecto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnombreProyecto.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtnombreProyecto.Location = new System.Drawing.Point(153, 46);
+            this.txtnombreProyecto.MaxLength = 500;
             this.txtnombreProyecto.Name = "txtnombreProyecto";
-            this.txtnombreProyecto.Size = new System.Drawing.Size(224, 25);
+            this.txtnombreProyecto.Size = new System.Drawing.Size(342, 25);
             this.txtnombreProyecto.TabIndex = 4;
             // 
             // label12
@@ -803,7 +813,7 @@ namespace CapaPresentacion
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(639, 131);
+            this.label12.Location = new System.Drawing.Point(553, 131);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(76, 23);
             this.label12.TabIndex = 3;
@@ -827,7 +837,7 @@ namespace CapaPresentacion
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(617, 90);
+            this.label10.Location = new System.Drawing.Point(531, 90);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(98, 23);
             this.label10.TabIndex = 3;
@@ -878,7 +888,7 @@ namespace CapaPresentacion
             this.panelInsProy.Controls.Add(this.label22);
             this.panelInsProy.Controls.Add(this.label23);
             this.panelInsProy.ForeColor = System.Drawing.Color.Gainsboro;
-            this.panelInsProy.Location = new System.Drawing.Point(25, 440);
+            this.panelInsProy.Location = new System.Drawing.Point(25, 441);
             this.panelInsProy.Name = "panelInsProy";
             this.panelInsProy.Size = new System.Drawing.Size(984, 208);
             this.panelInsProy.TabIndex = 12;
@@ -910,7 +920,7 @@ namespace CapaPresentacion
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(381, 2);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(258, 30);
+            this.label2.Size = new System.Drawing.Size(244, 27);
             this.label2.TabIndex = 2;
             this.label2.Text = "INSERTAR PROYECTO";
             // 
@@ -940,6 +950,7 @@ namespace CapaPresentacion
             this.txtInsEm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInsEm.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtInsEm.Location = new System.Drawing.Point(708, 133);
+            this.txtInsEm.MaxLength = 30;
             this.txtInsEm.Name = "txtInsEm";
             this.txtInsEm.Size = new System.Drawing.Size(246, 25);
             this.txtInsEm.TabIndex = 4;
@@ -952,9 +963,11 @@ namespace CapaPresentacion
             this.txtInsTel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInsTel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtInsTel.Location = new System.Drawing.Point(730, 90);
+            this.txtInsTel.MaxLength = 10;
             this.txtInsTel.Name = "txtInsTel";
             this.txtInsTel.Size = new System.Drawing.Size(224, 25);
             this.txtInsTel.TabIndex = 4;
+            this.txtInsTel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInsTel_KeyPress);
             // 
             // txtInsResp
             // 
@@ -964,6 +977,7 @@ namespace CapaPresentacion
             this.txtInsResp.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInsResp.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtInsResp.Location = new System.Drawing.Point(153, 131);
+            this.txtInsResp.MaxLength = 200;
             this.txtInsResp.Name = "txtInsResp";
             this.txtInsResp.Size = new System.Drawing.Size(224, 25);
             this.txtInsResp.TabIndex = 4;
@@ -976,6 +990,7 @@ namespace CapaPresentacion
             this.txtInsCarg.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInsCarg.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtInsCarg.Location = new System.Drawing.Point(730, 46);
+            this.txtInsCarg.MaxLength = 150;
             this.txtInsCarg.Name = "txtInsCarg";
             this.txtInsCarg.Size = new System.Drawing.Size(224, 25);
             this.txtInsCarg.TabIndex = 4;
@@ -988,6 +1003,7 @@ namespace CapaPresentacion
             this.txtInsObj.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInsObj.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtInsObj.Location = new System.Drawing.Point(153, 90);
+            this.txtInsObj.MaxLength = 600;
             this.txtInsObj.Name = "txtInsObj";
             this.txtInsObj.Size = new System.Drawing.Size(302, 25);
             this.txtInsObj.TabIndex = 4;
@@ -1012,6 +1028,7 @@ namespace CapaPresentacion
             this.txtInsNom.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInsNom.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtInsNom.Location = new System.Drawing.Point(153, 46);
+            this.txtInsNom.MaxLength = 500;
             this.txtInsNom.Name = "txtInsNom";
             this.txtInsNom.Size = new System.Drawing.Size(224, 25);
             this.txtInsNom.TabIndex = 4;
@@ -1152,14 +1169,14 @@ namespace CapaPresentacion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1033, 704);
+            this.Controls.Add(this.panelProyecto);
             this.Controls.Add(this.pbAyuda);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panelInsProy);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panelProyecto);
-            this.Controls.Add(this.panelActor);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panelActor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmVisualizarActores";
             this.Text = "frmCambioClimatico";

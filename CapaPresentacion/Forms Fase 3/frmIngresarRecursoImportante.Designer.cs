@@ -63,7 +63,7 @@ namespace CapaPresentacion.Forms_Fase_3
             this.btnGuardarCambio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarCambio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarCambio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGuardarCambio.Location = new System.Drawing.Point(404, 632);
+            this.btnGuardarCambio.Location = new System.Drawing.Point(336, 540);
             this.btnGuardarCambio.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardarCambio.Name = "btnGuardarCambio";
             this.btnGuardarCambio.Size = new System.Drawing.Size(236, 57);
@@ -253,6 +253,22 @@ namespace CapaPresentacion.Forms_Fase_3
             this.cbxRecurso.Size = new System.Drawing.Size(651, 38);
             this.cbxRecurso.TabIndex = 13;
             // 
+            // txtNotas
+            // 
+            this.txtNotas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNotas.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtNotas.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNotas.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNotas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtNotas.Location = new System.Drawing.Point(232, 502);
+            this.txtNotas.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNotas.MaxLength = 1000;
+            this.txtNotas.Name = "txtNotas";
+            this.txtNotas.Size = new System.Drawing.Size(652, 25);
+            this.txtNotas.TabIndex = 12;
+            // 
             // label7
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -279,6 +295,7 @@ namespace CapaPresentacion.Forms_Fase_3
             this.txtControl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtControl.Location = new System.Drawing.Point(232, 439);
             this.txtControl.Margin = new System.Windows.Forms.Padding(4);
+            this.txtControl.MaxLength = 600;
             this.txtControl.Name = "txtControl";
             this.txtControl.Size = new System.Drawing.Size(737, 30);
             this.txtControl.TabIndex = 12;
@@ -327,7 +344,7 @@ namespace CapaPresentacion.Forms_Fase_3
             this.label17.Location = new System.Drawing.Point(679, -84);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(111, 34);
+            this.label17.Size = new System.Drawing.Size(93, 27);
             this.label17.TabIndex = 2;
             this.label17.Text = "ACTOR";
             // 
@@ -340,7 +357,7 @@ namespace CapaPresentacion.Forms_Fase_3
             this.label16.Location = new System.Drawing.Point(679, -41);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(111, 34);
+            this.label16.Size = new System.Drawing.Size(93, 27);
             this.label16.TabIndex = 2;
             this.label16.Text = "ACTOR";
             // 
@@ -355,7 +372,7 @@ namespace CapaPresentacion.Forms_Fase_3
             this.label1.Location = new System.Drawing.Point(187, 14);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(723, 34);
+            this.label1.Size = new System.Drawing.Size(600, 27);
             this.label1.TabIndex = 2;
             this.label1.Text = "RECURSOS IMPORTANTES PARA LOS MEDIOS DE VIDA";
             // 

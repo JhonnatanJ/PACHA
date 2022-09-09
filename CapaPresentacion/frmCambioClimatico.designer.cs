@@ -107,6 +107,7 @@ namespace CapaPresentacion
             this.txtCambiosPotenciales.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtCambiosPotenciales.Location = new System.Drawing.Point(273, 215);
             this.txtCambiosPotenciales.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCambiosPotenciales.MaxLength = 250;
             this.txtCambiosPotenciales.Name = "txtCambiosPotenciales";
             this.txtCambiosPotenciales.Size = new System.Drawing.Size(692, 30);
             this.txtCambiosPotenciales.TabIndex = 4;
@@ -122,7 +123,7 @@ namespace CapaPresentacion
             this.label1.Location = new System.Drawing.Point(297, 31);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(488, 34);
+            this.label1.Size = new System.Drawing.Size(413, 27);
             this.label1.TabIndex = 2;
             this.label1.Text = "CONTEXTO DE CAMBIO CLIMÁTICO";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -136,7 +137,7 @@ namespace CapaPresentacion
             this.label16.Location = new System.Drawing.Point(679, -41);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(111, 34);
+            this.label16.Size = new System.Drawing.Size(93, 27);
             this.label16.TabIndex = 2;
             this.label16.Text = "ACTOR";
             // 
@@ -149,7 +150,7 @@ namespace CapaPresentacion
             this.label17.Location = new System.Drawing.Point(679, -84);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(111, 34);
+            this.label17.Size = new System.Drawing.Size(93, 27);
             this.label17.TabIndex = 2;
             this.label17.Text = "ACTOR";
             // 
@@ -211,6 +212,7 @@ namespace CapaPresentacion
             this.txtPoliticas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtPoliticas.Location = new System.Drawing.Point(273, 463);
             this.txtPoliticas.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPoliticas.MaxLength = 200;
             this.txtPoliticas.Name = "txtPoliticas";
             this.txtPoliticas.Size = new System.Drawing.Size(692, 30);
             this.txtPoliticas.TabIndex = 12;
@@ -242,6 +244,7 @@ namespace CapaPresentacion
             this.txtEstrSug.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtEstrSug.Location = new System.Drawing.Point(273, 400);
             this.txtEstrSug.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEstrSug.MaxLength = 200;
             this.txtEstrSug.Name = "txtEstrSug";
             this.txtEstrSug.Size = new System.Drawing.Size(692, 30);
             this.txtEstrSug.TabIndex = 12;
@@ -274,6 +277,7 @@ namespace CapaPresentacion
             this.txtRiesgo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtRiesgo.Location = new System.Drawing.Point(273, 341);
             this.txtRiesgo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRiesgo.MaxLength = 200;
             this.txtRiesgo.Name = "txtRiesgo";
             this.txtRiesgo.Size = new System.Drawing.Size(692, 30);
             this.txtRiesgo.TabIndex = 10;
@@ -306,6 +310,7 @@ namespace CapaPresentacion
             this.txtImpacto.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtImpacto.Location = new System.Drawing.Point(273, 282);
             this.txtImpacto.Margin = new System.Windows.Forms.Padding(4);
+            this.txtImpacto.MaxLength = 300;
             this.txtImpacto.Name = "txtImpacto";
             this.txtImpacto.Size = new System.Drawing.Size(692, 30);
             this.txtImpacto.TabIndex = 8;

@@ -73,7 +73,8 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtNombreSector.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreSector.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtNombreSector.Location = new System.Drawing.Point(463, 92);
-            this.txtNombreSector.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombreSector.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreSector.MaxLength = 100;
             this.txtNombreSector.Name = "txtNombreSector";
             this.txtNombreSector.Size = new System.Drawing.Size(356, 32);
             this.txtNombreSector.TabIndex = 57;

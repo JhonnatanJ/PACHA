@@ -99,7 +99,7 @@ namespace CapaPresentacion
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label9.Location = new System.Drawing.Point(336, 20);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(440, 34);
+            this.label9.Size = new System.Drawing.Size(362, 27);
             this.label9.TabIndex = 2;
             this.label9.Text = "INGRESE DATOS DEL PROYECTO";
             // 
@@ -111,6 +111,7 @@ namespace CapaPresentacion
             this.txtemail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtemail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtemail.Location = new System.Drawing.Point(730, 203);
+            this.txtemail.MaxLength = 30;
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(224, 30);
             this.txtemail.TabIndex = 4;
@@ -123,9 +124,11 @@ namespace CapaPresentacion
             this.txttelefono.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttelefono.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txttelefono.Location = new System.Drawing.Point(730, 141);
+            this.txttelefono.MaxLength = 10;
             this.txttelefono.Name = "txttelefono";
             this.txttelefono.Size = new System.Drawing.Size(224, 30);
             this.txttelefono.TabIndex = 4;
+            this.txttelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttelefono_KeyPress);
             // 
             // txtresponsable
             // 
@@ -135,6 +138,7 @@ namespace CapaPresentacion
             this.txtresponsable.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtresponsable.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtresponsable.Location = new System.Drawing.Point(153, 203);
+            this.txtresponsable.MaxLength = 200;
             this.txtresponsable.Name = "txtresponsable";
             this.txtresponsable.Size = new System.Drawing.Size(224, 30);
             this.txtresponsable.TabIndex = 4;
@@ -147,6 +151,7 @@ namespace CapaPresentacion
             this.txtcargo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcargo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtcargo.Location = new System.Drawing.Point(730, 83);
+            this.txtcargo.MaxLength = 150;
             this.txtcargo.Name = "txtcargo";
             this.txtcargo.Size = new System.Drawing.Size(224, 30);
             this.txtcargo.TabIndex = 4;
@@ -159,6 +164,7 @@ namespace CapaPresentacion
             this.txtobjetivo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtobjetivo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtobjetivo.Location = new System.Drawing.Point(153, 141);
+            this.txtobjetivo.MaxLength = 600;
             this.txtobjetivo.Name = "txtobjetivo";
             this.txtobjetivo.Size = new System.Drawing.Size(224, 30);
             this.txtobjetivo.TabIndex = 4;
@@ -183,6 +189,7 @@ namespace CapaPresentacion
             this.txtnombreProyecto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnombreProyecto.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtnombreProyecto.Location = new System.Drawing.Point(153, 83);
+            this.txtnombreProyecto.MaxLength = 500;
             this.txtnombreProyecto.Name = "txtnombreProyecto";
             this.txtnombreProyecto.Size = new System.Drawing.Size(224, 30);
             this.txtnombreProyecto.TabIndex = 4;
@@ -271,7 +278,6 @@ namespace CapaPresentacion
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(984, 223);
             this.panel4.TabIndex = 9;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // cboIncidencias
             // 
@@ -345,7 +351,7 @@ namespace CapaPresentacion
             this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label17.Location = new System.Drawing.Point(509, -68);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(111, 34);
+            this.label17.Size = new System.Drawing.Size(93, 27);
             this.label17.TabIndex = 2;
             this.label17.Text = "ACTOR";
             // 
@@ -357,7 +363,7 @@ namespace CapaPresentacion
             this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label16.Location = new System.Drawing.Point(509, -33);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(111, 34);
+            this.label16.Size = new System.Drawing.Size(93, 27);
             this.label16.TabIndex = 2;
             this.label16.Text = "ACTOR";
             // 
@@ -370,7 +376,7 @@ namespace CapaPresentacion
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(356, 10);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(374, 34);
+            this.label3.Size = new System.Drawing.Size(308, 27);
             this.label3.TabIndex = 2;
             this.label3.Text = "INGRESE DATOS DE ACTOR";
             // 
@@ -382,6 +388,7 @@ namespace CapaPresentacion
             this.txtcompetenciaRel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcompetenciaRel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtcompetenciaRel.Location = new System.Drawing.Point(744, 168);
+            this.txtcompetenciaRel.MaxLength = 500;
             this.txtcompetenciaRel.Name = "txtcompetenciaRel";
             this.txtcompetenciaRel.Size = new System.Drawing.Size(224, 30);
             this.txtcompetenciaRel.TabIndex = 4;
@@ -394,6 +401,7 @@ namespace CapaPresentacion
             this.txtsiglas.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtsiglas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtsiglas.Location = new System.Drawing.Point(744, 66);
+            this.txtsiglas.MaxLength = 20;
             this.txtsiglas.Name = "txtsiglas";
             this.txtsiglas.Size = new System.Drawing.Size(224, 30);
             this.txtsiglas.TabIndex = 4;
@@ -406,6 +414,7 @@ namespace CapaPresentacion
             this.txtnombreActor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnombreActor.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtnombreActor.Location = new System.Drawing.Point(137, 66);
+            this.txtnombreActor.MaxLength = 300;
             this.txtnombreActor.Name = "txtnombreActor";
             this.txtnombreActor.Size = new System.Drawing.Size(280, 30);
             this.txtnombreActor.TabIndex = 4;

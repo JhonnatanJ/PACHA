@@ -50,6 +50,20 @@ namespace CapaDatos.Fase2
             conexionBD.Close();
             return dt;
         }
+
+        public void EliminarAsentamiento(string item)
+        {
+            MySqlConnection conexionBD = Conexion.conexion();
+            conexionBD.Open();
+            MySqlCommand comando = new MySqlCommand();
+
+            comando.Connection = conexionBD;
+            comando.CommandText = "delete from asentamiento where NOMBRE=@nombre";
+            comando.Parameters.AddWithValue("@nombre", item);
+            comando.CommandType = System.Data.CommandType.Text;
+            comando.ExecuteNonQuery();
+            conexionBD.Close();
+        }
     }
 
 }
