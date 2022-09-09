@@ -110,9 +110,6 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.AutoSize = true;
             this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
@@ -165,12 +162,12 @@ namespace CapaPresentacion.Forms_Fase_2
             this.panel2.Location = new System.Drawing.Point(15, 14);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(959, 384);
+            this.panel2.Size = new System.Drawing.Size(959, 373);
             this.panel2.TabIndex = 5;
             // 
             // btnGuardarCurva
             // 
-            this.btnGuardarCurva.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnGuardarCurva.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btnGuardarCurva.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnGuardarCurva.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnGuardarCurva.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
@@ -178,12 +175,12 @@ namespace CapaPresentacion.Forms_Fase_2
             this.btnGuardarCurva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarCurva.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarCurva.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGuardarCurva.Location = new System.Drawing.Point(419, 337);
+            this.btnGuardarCurva.Location = new System.Drawing.Point(365, 326);
             this.btnGuardarCurva.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGuardarCurva.Name = "btnGuardarCurva";
-            this.btnGuardarCurva.Size = new System.Drawing.Size(115, 36);
+            this.btnGuardarCurva.Size = new System.Drawing.Size(198, 36);
             this.btnGuardarCurva.TabIndex = 29;
-            this.btnGuardarCurva.Text = "Guardar";
+            this.btnGuardarCurva.Text = "Guardar/Modificar";
             this.btnGuardarCurva.UseVisualStyleBackColor = false;
             this.btnGuardarCurva.Click += new System.EventHandler(this.btnGuardarCurva_Click);
             // 
@@ -244,6 +241,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtD8NoPersonas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtD8NoPersonas.Location = new System.Drawing.Point(887, 159);
             this.txtD8NoPersonas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtD8NoPersonas.MaxLength = 2;
             this.txtD8NoPersonas.Name = "txtD8NoPersonas";
             this.txtD8NoPersonas.Size = new System.Drawing.Size(56, 25);
             this.txtD8NoPersonas.TabIndex = 23;
@@ -324,6 +322,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtD8NoFamilia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtD8NoFamilia.Location = new System.Drawing.Point(887, 98);
             this.txtD8NoFamilia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtD8NoFamilia.MaxLength = 3;
             this.txtD8NoFamilia.Name = "txtD8NoFamilia";
             this.txtD8NoFamilia.Size = new System.Drawing.Size(56, 25);
             this.txtD8NoFamilia.TabIndex = 20;
@@ -388,6 +387,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtD7NoPersonas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtD7NoPersonas.Location = new System.Drawing.Point(799, 159);
             this.txtD7NoPersonas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtD7NoPersonas.MaxLength = 2;
             this.txtD7NoPersonas.Name = "txtD7NoPersonas";
             this.txtD7NoPersonas.Size = new System.Drawing.Size(56, 25);
             this.txtD7NoPersonas.TabIndex = 24;
@@ -436,6 +436,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtD7NoFamilia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtD7NoFamilia.Location = new System.Drawing.Point(799, 98);
             this.txtD7NoFamilia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtD7NoFamilia.MaxLength = 3;
             this.txtD7NoFamilia.Name = "txtD7NoFamilia";
             this.txtD7NoFamilia.Size = new System.Drawing.Size(56, 25);
             this.txtD7NoFamilia.TabIndex = 20;
@@ -468,6 +469,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtD6NoPersonas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtD6NoPersonas.Location = new System.Drawing.Point(711, 160);
             this.txtD6NoPersonas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtD6NoPersonas.MaxLength = 2;
             this.txtD6NoPersonas.Name = "txtD6NoPersonas";
             this.txtD6NoPersonas.Size = new System.Drawing.Size(56, 25);
             this.txtD6NoPersonas.TabIndex = 25;
@@ -500,6 +502,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtD6NoFamilia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtD6NoFamilia.Location = new System.Drawing.Point(711, 100);
             this.txtD6NoFamilia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtD6NoFamilia.MaxLength = 3;
             this.txtD6NoFamilia.Name = "txtD6NoFamilia";
             this.txtD6NoFamilia.Size = new System.Drawing.Size(56, 25);
             this.txtD6NoFamilia.TabIndex = 20;
@@ -532,6 +535,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtD5NoPersonas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtD5NoPersonas.Location = new System.Drawing.Point(619, 160);
             this.txtD5NoPersonas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtD5NoPersonas.MaxLength = 2;
             this.txtD5NoPersonas.Name = "txtD5NoPersonas";
             this.txtD5NoPersonas.Size = new System.Drawing.Size(56, 25);
             this.txtD5NoPersonas.TabIndex = 26;
@@ -548,6 +552,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtD4NoPersonas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtD4NoPersonas.Location = new System.Drawing.Point(527, 160);
             this.txtD4NoPersonas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtD4NoPersonas.MaxLength = 2;
             this.txtD4NoPersonas.Name = "txtD4NoPersonas";
             this.txtD4NoPersonas.Size = new System.Drawing.Size(56, 25);
             this.txtD4NoPersonas.TabIndex = 27;
@@ -564,6 +569,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtD5NoFamilia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtD5NoFamilia.Location = new System.Drawing.Point(619, 100);
             this.txtD5NoFamilia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtD5NoFamilia.MaxLength = 3;
             this.txtD5NoFamilia.Name = "txtD5NoFamilia";
             this.txtD5NoFamilia.Size = new System.Drawing.Size(56, 25);
             this.txtD5NoFamilia.TabIndex = 20;
@@ -580,6 +586,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtD3NoPersonas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtD3NoPersonas.Location = new System.Drawing.Point(429, 159);
             this.txtD3NoPersonas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtD3NoPersonas.MaxLength = 2;
             this.txtD3NoPersonas.Name = "txtD3NoPersonas";
             this.txtD3NoPersonas.Size = new System.Drawing.Size(56, 25);
             this.txtD3NoPersonas.TabIndex = 28;
@@ -596,6 +603,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtD4NoFamilia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtD4NoFamilia.Location = new System.Drawing.Point(527, 100);
             this.txtD4NoFamilia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtD4NoFamilia.MaxLength = 3;
             this.txtD4NoFamilia.Name = "txtD4NoFamilia";
             this.txtD4NoFamilia.Size = new System.Drawing.Size(56, 25);
             this.txtD4NoFamilia.TabIndex = 20;
@@ -612,6 +620,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtD2NoPersonas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtD2NoPersonas.Location = new System.Drawing.Point(337, 160);
             this.txtD2NoPersonas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtD2NoPersonas.MaxLength = 2;
             this.txtD2NoPersonas.Name = "txtD2NoPersonas";
             this.txtD2NoPersonas.Size = new System.Drawing.Size(56, 25);
             this.txtD2NoPersonas.TabIndex = 22;
@@ -628,6 +637,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtD3NoFamilia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtD3NoFamilia.Location = new System.Drawing.Point(429, 98);
             this.txtD3NoFamilia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtD3NoFamilia.MaxLength = 3;
             this.txtD3NoFamilia.Name = "txtD3NoFamilia";
             this.txtD3NoFamilia.Size = new System.Drawing.Size(56, 25);
             this.txtD3NoFamilia.TabIndex = 20;
@@ -644,12 +654,14 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtD1NoPersonas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtD1NoPersonas.Location = new System.Drawing.Point(237, 160);
             this.txtD1NoPersonas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtD1NoPersonas.MaxLength = 2;
             this.txtD1NoPersonas.Name = "txtD1NoPersonas";
             this.txtD1NoPersonas.Size = new System.Drawing.Size(56, 25);
             this.txtD1NoPersonas.TabIndex = 21;
             this.txtD1NoPersonas.Text = "0";
             this.txtD1NoPersonas.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtD1NoPersonas.TextChanged += new System.EventHandler(this.txtD1NoFamiliaChanged);
+            this.txtD1NoPersonas.Validated += new System.EventHandler(this.txtD1NoPersonas_Validated);
             // 
             // label8
             // 
@@ -777,6 +789,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtD2NoFamilia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtD2NoFamilia.Location = new System.Drawing.Point(337, 100);
             this.txtD2NoFamilia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtD2NoFamilia.MaxLength = 3;
             this.txtD2NoFamilia.Name = "txtD2NoFamilia";
             this.txtD2NoFamilia.Size = new System.Drawing.Size(56, 25);
             this.txtD2NoFamilia.TabIndex = 19;
@@ -819,6 +832,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtD1NoFamilia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtD1NoFamilia.Location = new System.Drawing.Point(237, 100);
             this.txtD1NoFamilia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtD1NoFamilia.MaxLength = 3;
             this.txtD1NoFamilia.Name = "txtD1NoFamilia";
             this.txtD1NoFamilia.Size = new System.Drawing.Size(56, 25);
             this.txtD1NoFamilia.TabIndex = 15;
@@ -889,7 +903,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.cbxInformacion);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Location = new System.Drawing.Point(15, 404);
+            this.panel1.Location = new System.Drawing.Point(15, 416);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(959, 263);
@@ -1178,6 +1192,7 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // cbxInformacion
             // 
+            this.cbxInformacion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbxInformacion.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cbxInformacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxInformacion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1221,7 +1236,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.btnRecHidrico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRecHidrico.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecHidrico.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnRecHidrico.Location = new System.Drawing.Point(992, 105);
+            this.btnRecHidrico.Location = new System.Drawing.Point(990, 193);
             this.btnRecHidrico.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRecHidrico.Name = "btnRecHidrico";
             this.btnRecHidrico.Size = new System.Drawing.Size(167, 65);
@@ -1240,7 +1255,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.btnBiodiversidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBiodiversidad.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBiodiversidad.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnBiodiversidad.Location = new System.Drawing.Point(992, 217);
+            this.btnBiodiversidad.Location = new System.Drawing.Point(990, 305);
             this.btnBiodiversidad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBiodiversidad.Name = "btnBiodiversidad";
             this.btnBiodiversidad.Size = new System.Drawing.Size(167, 65);
@@ -1259,7 +1274,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.btnEventos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEventos.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEventos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnEventos.Location = new System.Drawing.Point(992, 330);
+            this.btnEventos.Location = new System.Drawing.Point(990, 418);
             this.btnEventos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEventos.Name = "btnEventos";
             this.btnEventos.Size = new System.Drawing.Size(167, 100);
@@ -1281,7 +1296,7 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             this.pbAyuda.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbAyuda.Image = global::CapaPresentacion.Properties.Resources.iconAyuda2_B;
-            this.pbAyuda.Location = new System.Drawing.Point(1217, 12);
+            this.pbAyuda.Location = new System.Drawing.Point(1121, 12);
             this.pbAyuda.Name = "pbAyuda";
             this.pbAyuda.Size = new System.Drawing.Size(36, 33);
             this.pbAyuda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1292,8 +1307,9 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1265, 681);
+            this.ClientSize = new System.Drawing.Size(1169, 704);
             this.Controls.Add(this.pbAyuda);
             this.Controls.Add(this.btnEventos);
             this.Controls.Add(this.btnBiodiversidad);
@@ -1304,6 +1320,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmIngresarAnalisisSocioambiental";
             this.Text = "frmIngresarAnalisisSocioambiental";
+            this.Load += new System.EventHandler(this.frmIngresarAnalisisSocioambiental_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);

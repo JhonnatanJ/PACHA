@@ -69,7 +69,7 @@ namespace CapaPresentacion.Forms_Reportes
             // 
             // btnReporteF1_2
             // 
-            this.btnReporteF1_2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnReporteF1_2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnReporteF1_2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnReporteF1_2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnReporteF1_2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
@@ -158,7 +158,7 @@ namespace CapaPresentacion.Forms_Reportes
             // 
             // btnFase2_2
             // 
-            this.btnFase2_2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnFase2_2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnFase2_2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnFase2_2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnFase2_2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
@@ -176,7 +176,7 @@ namespace CapaPresentacion.Forms_Reportes
             // 
             // btnFase2_3
             // 
-            this.btnFase2_3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnFase2_3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnFase2_3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnFase2_3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnFase2_3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
@@ -263,7 +263,7 @@ namespace CapaPresentacion.Forms_Reportes
             // 
             // btnFase3_1
             // 
-            this.btnFase3_1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnFase3_1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnFase3_1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnFase3_1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
             this.btnFase3_1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
@@ -320,6 +320,7 @@ namespace CapaPresentacion.Forms_Reportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1033, 704);
             this.Controls.Add(this.panel1);
