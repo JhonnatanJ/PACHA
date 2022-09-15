@@ -31,6 +31,7 @@ namespace CapaPresentacion.Forms_Fase_3
         {
             this.btnGuardarCambio = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.txtNotas = new System.Windows.Forms.RichTextBox();
             this.cbxAcceso = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.cbxCalidad = new System.Windows.Forms.ComboBox();
@@ -40,7 +41,6 @@ namespace CapaPresentacion.Forms_Fase_3
             this.cbxTipoRecurso = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cbxRecurso = new System.Windows.Forms.ComboBox();
-            this.txtNotas = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtControl = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -63,7 +63,7 @@ namespace CapaPresentacion.Forms_Fase_3
             this.btnGuardarCambio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarCambio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarCambio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGuardarCambio.Location = new System.Drawing.Point(336, 540);
+            this.btnGuardarCambio.Location = new System.Drawing.Point(412, 634);
             this.btnGuardarCambio.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardarCambio.Name = "btnGuardarCambio";
             this.btnGuardarCambio.Size = new System.Drawing.Size(236, 57);
@@ -74,11 +74,10 @@ namespace CapaPresentacion.Forms_Fase_3
             // 
             // panel4
             // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel4.Controls.Add(this.btnGuardarCambio);
+            this.panel4.Controls.Add(this.txtNotas);
             this.panel4.Controls.Add(this.cbxAcceso);
             this.panel4.Controls.Add(this.label8);
             this.panel4.Controls.Add(this.cbxCalidad);
@@ -88,7 +87,6 @@ namespace CapaPresentacion.Forms_Fase_3
             this.panel4.Controls.Add(this.cbxTipoRecurso);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.cbxRecurso);
-            this.panel4.Controls.Add(this.txtNotas);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.txtControl);
             this.panel4.Controls.Add(this.label6);
@@ -101,8 +99,26 @@ namespace CapaPresentacion.Forms_Fase_3
             this.panel4.Location = new System.Drawing.Point(16, 15);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(916, 617);
+            this.panel4.Size = new System.Drawing.Size(1001, 605);
             this.panel4.TabIndex = 13;
+            // 
+            // txtNotas
+            // 
+            this.txtNotas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNotas.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtNotas.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNotas.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNotas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtNotas.Location = new System.Drawing.Point(232, 490);
+            this.txtNotas.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNotas.MaxLength = 1000;
+            this.txtNotas.Name = "txtNotas";
+            this.txtNotas.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
+            this.txtNotas.Size = new System.Drawing.Size(736, 92);
+            this.txtNotas.TabIndex = 23;
+            this.txtNotas.Text = "";
             // 
             // cbxAcceso
             // 
@@ -255,22 +271,6 @@ namespace CapaPresentacion.Forms_Fase_3
             this.cbxRecurso.Size = new System.Drawing.Size(651, 31);
             this.cbxRecurso.TabIndex = 13;
             // 
-            // txtNotas
-            // 
-            this.txtNotas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNotas.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtNotas.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNotas.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNotas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtNotas.Location = new System.Drawing.Point(232, 502);
-            this.txtNotas.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNotas.MaxLength = 1000;
-            this.txtNotas.Name = "txtNotas";
-            this.txtNotas.Size = new System.Drawing.Size(652, 25);
-            this.txtNotas.TabIndex = 12;
-            // 
             // label7
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -289,8 +289,7 @@ namespace CapaPresentacion.Forms_Fase_3
             // 
             // txtControl
             // 
-            this.txtControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtControl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtControl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtControl.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -300,7 +299,7 @@ namespace CapaPresentacion.Forms_Fase_3
             this.txtControl.Margin = new System.Windows.Forms.Padding(4);
             this.txtControl.MaxLength = 600;
             this.txtControl.Name = "txtControl";
-            this.txtControl.Size = new System.Drawing.Size(652, 25);
+            this.txtControl.Size = new System.Drawing.Size(737, 25);
             this.txtControl.TabIndex = 12;
             // 
             // label6
@@ -347,7 +346,7 @@ namespace CapaPresentacion.Forms_Fase_3
             this.label17.Location = new System.Drawing.Point(679, -84);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(93, 27);
+            this.label17.Size = new System.Drawing.Size(97, 30);
             this.label17.TabIndex = 2;
             this.label17.Text = "ACTOR";
             // 
@@ -360,7 +359,7 @@ namespace CapaPresentacion.Forms_Fase_3
             this.label16.Location = new System.Drawing.Point(679, -41);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(93, 27);
+            this.label16.Size = new System.Drawing.Size(97, 30);
             this.label16.TabIndex = 2;
             this.label16.Text = "ACTOR";
             // 
@@ -372,10 +371,10 @@ namespace CapaPresentacion.Forms_Fase_3
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(147, 18);
+            this.label1.Location = new System.Drawing.Point(187, 14);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(600, 27);
+            this.label1.Size = new System.Drawing.Size(629, 30);
             this.label1.TabIndex = 2;
             this.label1.Text = "RECURSOS IMPORTANTES PARA LOS MEDIOS DE VIDA";
             // 
@@ -412,8 +411,10 @@ namespace CapaPresentacion.Forms_Fase_3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(948, 646);
+            this.ClientSize = new System.Drawing.Size(1033, 704);
+            this.Controls.Add(this.btnGuardarCambio);
             this.Controls.Add(this.panel4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -439,7 +440,6 @@ namespace CapaPresentacion.Forms_Fase_3
         private System.Windows.Forms.ComboBox cbxTipoRecurso;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cbxRecurso;
-        private System.Windows.Forms.TextBox txtNotas;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtControl;
         private System.Windows.Forms.Label label6;
@@ -449,5 +449,6 @@ namespace CapaPresentacion.Forms_Fase_3
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblRecursoSector;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.RichTextBox txtNotas;
     }
 }

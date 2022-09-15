@@ -37,6 +37,7 @@ namespace CapaDatos.Fase2
             comando.ExecuteNonQuery();
         }
 
+
         public DataTable CargarDGVocupacion()
         {
             MySqlConnection conexionBD = Conexion.conexion();
@@ -57,19 +58,45 @@ namespace CapaDatos.Fase2
             conexionBD.Close();
             return dt;
         }
-
+        
         public void EliminarOcupacion(string item)
         {
             MySqlConnection conexionBD = Conexion.conexion();
             conexionBD.Open();
             MySqlCommand comando = new MySqlCommand();
-
+            
             comando.Connection = conexionBD;
             comando.CommandText = "delete from ocupacionterritorio where INFORMACION=@informacion";
             comando.Parameters.AddWithValue("@informacion", item);
             comando.CommandType = System.Data.CommandType.Text;
             comando.ExecuteNonQuery();
             conexionBD.Close();
+        }
+
+        public bool VerificarOcupacion(String informacion)
+        {
+            MySqlConnection conexionBD = Conexion.conexion();
+            conexionBD.Open();
+            MySqlCommand comando = new MySqlCommand();
+            
+            DataTable dt = new DataTable();
+
+            comando.Connection = conexionBD;
+            comando.CommandText = "select INFORMACION as Información from ocupacionterritorio " +
+                "where IDCOMUNIDAD=@idcomunidad and INFORMACION=@informacion";
+
+            comando.Parameters.AddWithValue("@idcomunidad", CacheLoginComunidad.idcomunidad);
+            comando.Parameters.AddWithValue("@informacion", informacion);
+
+            comando.CommandType = System.Data.CommandType.Text;
+            MySqlDataAdapter da = new MySqlDataAdapter(comando);
+            da.Fill(dt);
+            conexionBD.Close();
+            if(dt.Rows.Count != 0)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

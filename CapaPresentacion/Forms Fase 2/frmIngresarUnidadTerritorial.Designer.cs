@@ -84,8 +84,7 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.AutoSize = true;
             this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -102,7 +101,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.lblGuia);
-            this.panel2.Location = new System.Drawing.Point(15, 31);
+            this.panel2.Location = new System.Drawing.Point(23, 31);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(955, 113);
@@ -291,8 +290,7 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.AutoSize = true;
             this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -326,7 +324,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label13);
-            this.panel1.Location = new System.Drawing.Point(15, 180);
+            this.panel1.Location = new System.Drawing.Point(23, 180);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(955, 384);
@@ -726,7 +724,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.btnAsent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAsent.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAsent.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAsent.Location = new System.Drawing.Point(987, 124);
+            this.btnAsent.Location = new System.Drawing.Point(995, 124);
             this.btnAsent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAsent.Name = "btnAsent";
             this.btnAsent.Size = new System.Drawing.Size(167, 71);
@@ -745,7 +743,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(987, 217);
+            this.button1.Location = new System.Drawing.Point(995, 217);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(167, 71);
@@ -764,7 +762,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(987, 310);
+            this.button2.Location = new System.Drawing.Point(995, 310);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(167, 71);
@@ -783,10 +781,10 @@ namespace CapaPresentacion.Forms_Fase_2
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(987, 406);
+            this.button3.Location = new System.Drawing.Point(995, 399);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(167, 83);
+            this.button3.Size = new System.Drawing.Size(167, 87);
             this.button3.TabIndex = 18;
             this.button3.Text = "Ecosistema y Formaciones Vegetales";
             this.button3.UseVisualStyleBackColor = false;
@@ -802,7 +800,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.Location = new System.Drawing.Point(987, 502);
+            this.button4.Location = new System.Drawing.Point(995, 502);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(167, 54);
@@ -821,7 +819,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.btnSector.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSector.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSector.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSector.Location = new System.Drawing.Point(987, 44);
+            this.btnSector.Location = new System.Drawing.Point(995, 44);
             this.btnSector.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSector.Name = "btnSector";
             this.btnSector.Size = new System.Drawing.Size(167, 60);
@@ -834,8 +832,9 @@ namespace CapaPresentacion.Forms_Fase_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1272, 596);
+            this.ClientSize = new System.Drawing.Size(1289, 704);
             this.Controls.Add(this.btnSector);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);

@@ -37,6 +37,32 @@ namespace CapaDatos.Fase2
             comando.ExecuteNonQuery();
         }
 
+        public void ModificarDatos(String informacion, float infDec1, float infDec2, float infDec3, float infDec4, float infDec5, float infDec6, float infDec7, float infDec8)
+        {
+            MySqlConnection conexionBD = Conexion.conexion();
+            conexionBD.Open();
+            MySqlCommand comando = new MySqlCommand();
+
+
+            comando.Connection = conexionBD;
+            comando.CommandText = "update curvademografica set IDCOMUNIDAD=@id, DECADA1=@infDec1, DECADA2=@infDec2, DECADA3=@infDec3, DECADA4=@infDec4, " +
+                "DECADA5=@infDec5, DECADA6=@infDec6, DECADA7=@infDec7, DECADA8=@infDec8 WHERE INFORMACION=@informacion AND IDCOMUNIDAD=@id";
+
+            comando.Parameters.AddWithValue("@id", CacheLoginComunidad.idcomunidad);
+            comando.Parameters.AddWithValue("@informacion", informacion);
+            comando.Parameters.AddWithValue("@infDec1", infDec1);
+            comando.Parameters.AddWithValue("@infDec2", infDec2);
+            comando.Parameters.AddWithValue("@infDec3", infDec3);
+            comando.Parameters.AddWithValue("@infDec4", infDec4);
+            comando.Parameters.AddWithValue("@infDec5", infDec5);
+            comando.Parameters.AddWithValue("@infDec6", infDec6);
+            comando.Parameters.AddWithValue("@infDec7", infDec7);
+            comando.Parameters.AddWithValue("@infDec8", infDec8);
+
+            comando.CommandType = System.Data.CommandType.Text;
+            comando.ExecuteNonQuery();
+        }
+
 
         public DataTable CargarDGVcurva()
         {

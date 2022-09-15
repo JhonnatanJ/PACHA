@@ -134,6 +134,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtRespuestaD8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtRespuestaD8.Location = new System.Drawing.Point(956, 320);
             this.txtRespuestaD8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtRespuestaD8.MaxLength = 500;
             this.txtRespuestaD8.Name = "txtRespuestaD8";
             this.txtRespuestaD8.Size = new System.Drawing.Size(103, 25);
             this.txtRespuestaD8.TabIndex = 89;
@@ -147,6 +148,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtRespuestaD7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtRespuestaD7.Location = new System.Drawing.Point(845, 320);
             this.txtRespuestaD7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtRespuestaD7.MaxLength = 500;
             this.txtRespuestaD7.Name = "txtRespuestaD7";
             this.txtRespuestaD7.Size = new System.Drawing.Size(103, 25);
             this.txtRespuestaD7.TabIndex = 90;
@@ -160,6 +162,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtRespuestaD6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtRespuestaD6.Location = new System.Drawing.Point(735, 320);
             this.txtRespuestaD6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtRespuestaD6.MaxLength = 500;
             this.txtRespuestaD6.Name = "txtRespuestaD6";
             this.txtRespuestaD6.Size = new System.Drawing.Size(103, 25);
             this.txtRespuestaD6.TabIndex = 91;
@@ -173,6 +176,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtRespuestaD5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtRespuestaD5.Location = new System.Drawing.Point(624, 320);
             this.txtRespuestaD5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtRespuestaD5.MaxLength = 500;
             this.txtRespuestaD5.Name = "txtRespuestaD5";
             this.txtRespuestaD5.Size = new System.Drawing.Size(103, 25);
             this.txtRespuestaD5.TabIndex = 92;
@@ -186,6 +190,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtRespuestaD4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtRespuestaD4.Location = new System.Drawing.Point(513, 320);
             this.txtRespuestaD4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtRespuestaD4.MaxLength = 500;
             this.txtRespuestaD4.Name = "txtRespuestaD4";
             this.txtRespuestaD4.Size = new System.Drawing.Size(103, 25);
             this.txtRespuestaD4.TabIndex = 93;
@@ -199,6 +204,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtRespuestaD3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtRespuestaD3.Location = new System.Drawing.Point(404, 320);
             this.txtRespuestaD3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtRespuestaD3.MaxLength = 500;
             this.txtRespuestaD3.Name = "txtRespuestaD3";
             this.txtRespuestaD3.Size = new System.Drawing.Size(101, 25);
             this.txtRespuestaD3.TabIndex = 94;
@@ -212,6 +218,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtRespuestaD2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtRespuestaD2.Location = new System.Drawing.Point(295, 320);
             this.txtRespuestaD2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtRespuestaD2.MaxLength = 500;
             this.txtRespuestaD2.Name = "txtRespuestaD2";
             this.txtRespuestaD2.Size = new System.Drawing.Size(101, 25);
             this.txtRespuestaD2.TabIndex = 88;
@@ -225,6 +232,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtRespuestaD1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtRespuestaD1.Location = new System.Drawing.Point(185, 320);
             this.txtRespuestaD1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtRespuestaD1.MaxLength = 500;
             this.txtRespuestaD1.Name = "txtRespuestaD1";
             this.txtRespuestaD1.Size = new System.Drawing.Size(104, 25);
             this.txtRespuestaD1.TabIndex = 87;
@@ -238,6 +246,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtImpactoD8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtImpactoD8.Location = new System.Drawing.Point(956, 256);
             this.txtImpactoD8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtImpactoD8.MaxLength = 500;
             this.txtImpactoD8.Name = "txtImpactoD8";
             this.txtImpactoD8.Size = new System.Drawing.Size(103, 25);
             this.txtImpactoD8.TabIndex = 81;
@@ -251,6 +260,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtImpactoD7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtImpactoD7.Location = new System.Drawing.Point(845, 256);
             this.txtImpactoD7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtImpactoD7.MaxLength = 500;
             this.txtImpactoD7.Name = "txtImpactoD7";
             this.txtImpactoD7.Size = new System.Drawing.Size(103, 25);
             this.txtImpactoD7.TabIndex = 82;
@@ -264,6 +274,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtImpactoD6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtImpactoD6.Location = new System.Drawing.Point(735, 256);
             this.txtImpactoD6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtImpactoD6.MaxLength = 500;
             this.txtImpactoD6.Name = "txtImpactoD6";
             this.txtImpactoD6.Size = new System.Drawing.Size(103, 25);
             this.txtImpactoD6.TabIndex = 83;
@@ -277,6 +288,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtImpactoD5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtImpactoD5.Location = new System.Drawing.Point(624, 256);
             this.txtImpactoD5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtImpactoD5.MaxLength = 500;
             this.txtImpactoD5.Name = "txtImpactoD5";
             this.txtImpactoD5.Size = new System.Drawing.Size(103, 25);
             this.txtImpactoD5.TabIndex = 84;
@@ -290,6 +302,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtImpactoD4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtImpactoD4.Location = new System.Drawing.Point(513, 256);
             this.txtImpactoD4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtImpactoD4.MaxLength = 500;
             this.txtImpactoD4.Name = "txtImpactoD4";
             this.txtImpactoD4.Size = new System.Drawing.Size(103, 25);
             this.txtImpactoD4.TabIndex = 85;
@@ -303,6 +316,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtImpactoD3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtImpactoD3.Location = new System.Drawing.Point(404, 256);
             this.txtImpactoD3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtImpactoD3.MaxLength = 500;
             this.txtImpactoD3.Name = "txtImpactoD3";
             this.txtImpactoD3.Size = new System.Drawing.Size(101, 25);
             this.txtImpactoD3.TabIndex = 86;
@@ -316,6 +330,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtImpactoD2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtImpactoD2.Location = new System.Drawing.Point(295, 256);
             this.txtImpactoD2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtImpactoD2.MaxLength = 500;
             this.txtImpactoD2.Name = "txtImpactoD2";
             this.txtImpactoD2.Size = new System.Drawing.Size(101, 25);
             this.txtImpactoD2.TabIndex = 80;
@@ -329,6 +344,7 @@ namespace CapaPresentacion.Forms_Fase_2
             this.txtImpactoD1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtImpactoD1.Location = new System.Drawing.Point(185, 256);
             this.txtImpactoD1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtImpactoD1.MaxLength = 500;
             this.txtImpactoD1.Name = "txtImpactoD1";
             this.txtImpactoD1.Size = new System.Drawing.Size(104, 25);
             this.txtImpactoD1.TabIndex = 79;
@@ -369,7 +385,7 @@ namespace CapaPresentacion.Forms_Fase_2
             "Tornados",
             "Tsunamis"});
             this.cbxAmenazaDec8.Location = new System.Drawing.Point(956, 196);
-            this.cbxAmenazaDec8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxAmenazaDec8.Margin = new System.Windows.Forms.Padding(4);
             this.cbxAmenazaDec8.Name = "cbxAmenazaDec8";
             this.cbxAmenazaDec8.Size = new System.Drawing.Size(101, 29);
             this.cbxAmenazaDec8.TabIndex = 78;
@@ -410,7 +426,7 @@ namespace CapaPresentacion.Forms_Fase_2
             "Tornados",
             "Tsunamis"});
             this.cbxAmenazaDec7.Location = new System.Drawing.Point(845, 196);
-            this.cbxAmenazaDec7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxAmenazaDec7.Margin = new System.Windows.Forms.Padding(4);
             this.cbxAmenazaDec7.Name = "cbxAmenazaDec7";
             this.cbxAmenazaDec7.Size = new System.Drawing.Size(101, 29);
             this.cbxAmenazaDec7.TabIndex = 77;
@@ -451,7 +467,7 @@ namespace CapaPresentacion.Forms_Fase_2
             "Tornados",
             "Tsunamis"});
             this.cbxAmenazaDec6.Location = new System.Drawing.Point(735, 196);
-            this.cbxAmenazaDec6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxAmenazaDec6.Margin = new System.Windows.Forms.Padding(4);
             this.cbxAmenazaDec6.Name = "cbxAmenazaDec6";
             this.cbxAmenazaDec6.Size = new System.Drawing.Size(101, 29);
             this.cbxAmenazaDec6.TabIndex = 76;
@@ -492,7 +508,7 @@ namespace CapaPresentacion.Forms_Fase_2
             "Tornados",
             "Tsunamis"});
             this.cbxAmenazaDec5.Location = new System.Drawing.Point(624, 196);
-            this.cbxAmenazaDec5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxAmenazaDec5.Margin = new System.Windows.Forms.Padding(4);
             this.cbxAmenazaDec5.Name = "cbxAmenazaDec5";
             this.cbxAmenazaDec5.Size = new System.Drawing.Size(101, 29);
             this.cbxAmenazaDec5.TabIndex = 75;
@@ -533,7 +549,7 @@ namespace CapaPresentacion.Forms_Fase_2
             "Tornados",
             "Tsunamis"});
             this.cbxAmenazaDec4.Location = new System.Drawing.Point(513, 196);
-            this.cbxAmenazaDec4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxAmenazaDec4.Margin = new System.Windows.Forms.Padding(4);
             this.cbxAmenazaDec4.Name = "cbxAmenazaDec4";
             this.cbxAmenazaDec4.Size = new System.Drawing.Size(101, 29);
             this.cbxAmenazaDec4.TabIndex = 74;
@@ -574,7 +590,7 @@ namespace CapaPresentacion.Forms_Fase_2
             "Tornados",
             "Tsunamis"});
             this.cbxAmenazaDec3.Location = new System.Drawing.Point(404, 196);
-            this.cbxAmenazaDec3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxAmenazaDec3.Margin = new System.Windows.Forms.Padding(4);
             this.cbxAmenazaDec3.Name = "cbxAmenazaDec3";
             this.cbxAmenazaDec3.Size = new System.Drawing.Size(100, 29);
             this.cbxAmenazaDec3.TabIndex = 73;
@@ -615,7 +631,7 @@ namespace CapaPresentacion.Forms_Fase_2
             "Tornados",
             "Tsunamis"});
             this.cbxAmenazaDec2.Location = new System.Drawing.Point(295, 196);
-            this.cbxAmenazaDec2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxAmenazaDec2.Margin = new System.Windows.Forms.Padding(4);
             this.cbxAmenazaDec2.Name = "cbxAmenazaDec2";
             this.cbxAmenazaDec2.Size = new System.Drawing.Size(100, 29);
             this.cbxAmenazaDec2.TabIndex = 72;
@@ -656,7 +672,7 @@ namespace CapaPresentacion.Forms_Fase_2
             "Tornados",
             "Tsunamis"});
             this.cbxAmenazaDec1.Location = new System.Drawing.Point(185, 196);
-            this.cbxAmenazaDec1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxAmenazaDec1.Margin = new System.Windows.Forms.Padding(4);
             this.cbxAmenazaDec1.Name = "cbxAmenazaDec1";
             this.cbxAmenazaDec1.Size = new System.Drawing.Size(103, 29);
             this.cbxAmenazaDec1.TabIndex = 71;
@@ -819,7 +835,7 @@ namespace CapaPresentacion.Forms_Fase_2
             "Recreación",
             "Ritualidad"});
             this.cbxSectorEvento.Location = new System.Drawing.Point(295, 68);
-            this.cbxSectorEvento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxSectorEvento.Margin = new System.Windows.Forms.Padding(4);
             this.cbxSectorEvento.Name = "cbxSectorEvento";
             this.cbxSectorEvento.Size = new System.Drawing.Size(483, 31);
             this.cbxSectorEvento.TabIndex = 59;

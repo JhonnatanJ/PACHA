@@ -62,7 +62,7 @@ namespace CapaPresentacion
             this.label5.Location = new System.Drawing.Point(29, 215);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(221, 23);
+            this.label5.Size = new System.Drawing.Size(274, 30);
             this.label5.TabIndex = 3;
             this.label5.Text = "Cambios Potenciales:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -77,7 +77,7 @@ namespace CapaPresentacion
             this.label8.Location = new System.Drawing.Point(484, 137);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(119, 23);
+            this.label8.Size = new System.Drawing.Size(144, 30);
             this.label8.TabIndex = 3;
             this.label8.Text = "Amenazas:";
             this.label8.Click += new System.EventHandler(this.label8_Click);
@@ -91,7 +91,7 @@ namespace CapaPresentacion
             this.label4.Location = new System.Drawing.Point(35, 137);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 23);
+            this.label4.Size = new System.Drawing.Size(85, 30);
             this.label4.TabIndex = 3;
             this.label4.Text = "Lugar:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -109,7 +109,7 @@ namespace CapaPresentacion
             this.txtCambiosPotenciales.Margin = new System.Windows.Forms.Padding(4);
             this.txtCambiosPotenciales.MaxLength = 250;
             this.txtCambiosPotenciales.Name = "txtCambiosPotenciales";
-            this.txtCambiosPotenciales.Size = new System.Drawing.Size(692, 25);
+            this.txtCambiosPotenciales.Size = new System.Drawing.Size(692, 30);
             this.txtCambiosPotenciales.TabIndex = 4;
             // 
             // label1
@@ -170,7 +170,7 @@ namespace CapaPresentacion
             this.cbxLugar.Location = new System.Drawing.Point(111, 134);
             this.cbxLugar.Margin = new System.Windows.Forms.Padding(4);
             this.cbxLugar.Name = "cbxLugar";
-            this.cbxLugar.Size = new System.Drawing.Size(353, 31);
+            this.cbxLugar.Size = new System.Drawing.Size(353, 38);
             this.cbxLugar.TabIndex = 5;
             // 
             // panel4
@@ -214,7 +214,7 @@ namespace CapaPresentacion
             this.txtPoliticas.Margin = new System.Windows.Forms.Padding(4);
             this.txtPoliticas.MaxLength = 200;
             this.txtPoliticas.Name = "txtPoliticas";
-            this.txtPoliticas.Size = new System.Drawing.Size(692, 25);
+            this.txtPoliticas.Size = new System.Drawing.Size(692, 30);
             this.txtPoliticas.TabIndex = 12;
             // 
             // label7
@@ -228,7 +228,7 @@ namespace CapaPresentacion
             this.label7.Location = new System.Drawing.Point(29, 463);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(208, 23);
+            this.label7.Size = new System.Drawing.Size(257, 30);
             this.label7.TabIndex = 11;
             this.label7.Text = "Politicas en marcha:";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -246,7 +246,7 @@ namespace CapaPresentacion
             this.txtEstrSug.Margin = new System.Windows.Forms.Padding(4);
             this.txtEstrSug.MaxLength = 200;
             this.txtEstrSug.Name = "txtEstrSug";
-            this.txtEstrSug.Size = new System.Drawing.Size(692, 25);
+            this.txtEstrSug.Size = new System.Drawing.Size(692, 30);
             this.txtEstrSug.TabIndex = 12;
             this.txtEstrSug.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
@@ -261,7 +261,7 @@ namespace CapaPresentacion
             this.label6.Location = new System.Drawing.Point(29, 400);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(218, 23);
+            this.label6.Size = new System.Drawing.Size(267, 30);
             this.label6.TabIndex = 11;
             this.label6.Text = "Estrategias Sugeridas:";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -279,7 +279,7 @@ namespace CapaPresentacion
             this.txtRiesgo.Margin = new System.Windows.Forms.Padding(4);
             this.txtRiesgo.MaxLength = 200;
             this.txtRiesgo.Name = "txtRiesgo";
-            this.txtRiesgo.Size = new System.Drawing.Size(692, 25);
+            this.txtRiesgo.Size = new System.Drawing.Size(692, 30);
             this.txtRiesgo.TabIndex = 10;
             this.txtRiesgo.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -294,7 +294,7 @@ namespace CapaPresentacion
             this.label3.Location = new System.Drawing.Point(29, 341);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(182, 23);
+            this.label3.Size = new System.Drawing.Size(231, 30);
             this.label3.TabIndex = 9;
             this.label3.Text = "Riesgo Climático: ";
             this.label3.Click += new System.EventHandler(this.label3_Click_1);
@@ -312,7 +312,7 @@ namespace CapaPresentacion
             this.txtImpacto.Margin = new System.Windows.Forms.Padding(4);
             this.txtImpacto.MaxLength = 300;
             this.txtImpacto.Name = "txtImpacto";
-            this.txtImpacto.Size = new System.Drawing.Size(692, 25);
+            this.txtImpacto.Size = new System.Drawing.Size(692, 30);
             this.txtImpacto.TabIndex = 8;
             // 
             // label2
@@ -326,7 +326,7 @@ namespace CapaPresentacion
             this.label2.Location = new System.Drawing.Point(29, 282);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(197, 23);
+            this.label2.Size = new System.Drawing.Size(241, 30);
             this.label2.TabIndex = 7;
             this.label2.Text = "Impactos Previstos:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -367,7 +367,7 @@ namespace CapaPresentacion
             this.cbxAmenaza.Location = new System.Drawing.Point(612, 134);
             this.cbxAmenaza.Margin = new System.Windows.Forms.Padding(4);
             this.cbxAmenaza.Name = "cbxAmenaza";
-            this.cbxAmenaza.Size = new System.Drawing.Size(353, 31);
+            this.cbxAmenaza.Size = new System.Drawing.Size(353, 38);
             this.cbxAmenaza.TabIndex = 6;
             // 
             // btnGuardarCambio
@@ -393,6 +393,7 @@ namespace CapaPresentacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1033, 704);
             this.Controls.Add(this.btnGuardarCambio);

@@ -33,17 +33,16 @@ namespace CapaPresentacion
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dgvClima = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.btnEliminarClima = new System.Windows.Forms.Button();
-            this.dgvClima = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClima)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
             this.panel2.Controls.Add(this.dgvClima);
@@ -51,46 +50,16 @@ namespace CapaPresentacion
             this.panel2.Location = new System.Drawing.Point(35, 11);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(969, 589);
+            this.panel2.Size = new System.Drawing.Size(969, 557);
             this.panel2.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(274, 13);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(431, 30);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "CONTEXTO DE CAMBIO CLIMÁTICO";
-            // 
-            // btnEliminarClima
-            // 
-            this.btnEliminarClima.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnEliminarClima.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnEliminarClima.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
-            this.btnEliminarClima.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
-            this.btnEliminarClima.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
-            this.btnEliminarClima.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarClima.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarClima.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnEliminarClima.Location = new System.Drawing.Point(314, 613);
-            this.btnEliminarClima.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnEliminarClima.Name = "btnEliminarClima";
-            this.btnEliminarClima.Size = new System.Drawing.Size(426, 46);
-            this.btnEliminarClima.TabIndex = 13;
-            this.btnEliminarClima.Text = "Eliminar";
-            this.btnEliminarClima.UseVisualStyleBackColor = false;
-            this.btnEliminarClima.Click += new System.EventHandler(this.btnEliminarClima_Click);
             // 
             // dgvClima
             // 
             this.dgvClima.AllowUserToAddRows = false;
             this.dgvClima.AllowUserToDeleteRows = false;
+            this.dgvClima.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvClima.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvClima.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvClima.BackgroundColor = System.Drawing.Color.WhiteSmoke;
@@ -132,13 +101,47 @@ namespace CapaPresentacion
             this.dgvClima.RowHeadersWidth = 51;
             this.dgvClima.RowTemplate.Height = 24;
             this.dgvClima.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvClima.Size = new System.Drawing.Size(925, 496);
+            this.dgvClima.Size = new System.Drawing.Size(925, 464);
             this.dgvClima.TabIndex = 16;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(274, 13);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(431, 30);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "CONTEXTO DE CAMBIO CLIMÁTICO";
+            // 
+            // btnEliminarClima
+            // 
+            this.btnEliminarClima.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnEliminarClima.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnEliminarClima.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnEliminarClima.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnEliminarClima.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(124)))), ((int)(((byte)(29)))));
+            this.btnEliminarClima.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarClima.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarClima.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnEliminarClima.Location = new System.Drawing.Point(317, 610);
+            this.btnEliminarClima.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEliminarClima.Name = "btnEliminarClima";
+            this.btnEliminarClima.Size = new System.Drawing.Size(426, 46);
+            this.btnEliminarClima.TabIndex = 13;
+            this.btnEliminarClima.Text = "Eliminar";
+            this.btnEliminarClima.UseVisualStyleBackColor = false;
+            this.btnEliminarClima.Click += new System.EventHandler(this.btnEliminarClima_Click);
             // 
             // frmContexto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1033, 704);
             this.Controls.Add(this.panel2);

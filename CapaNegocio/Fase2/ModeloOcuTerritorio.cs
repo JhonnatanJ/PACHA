@@ -25,6 +25,11 @@ namespace CapaNegocio.Fase2
             datosOcupacion.InsertarDatos(informacion, infDec1, infDec2, infDec3, infDec4, infDec5, infDec6, infDec7, infDec8);
         }
 
+        public bool VerificarCampos(String informacion)
+        {
+            return datosOcupacion.VerificarOcupacion(informacion);
+        }
+
         public DataTable CargarDGVocupacion()
         {
             return datosOcupacion.CargarDGVocupacion();
