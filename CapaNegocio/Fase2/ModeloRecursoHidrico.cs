@@ -34,5 +34,10 @@ namespace CapaNegocio.Fase2
         {
             return datosRecurso.CargarDGVrecurso();
         }
+
+        public void EliminarRecurso (string item)
+        {
+            datosRecurso.EliminarRecurso(item);
+        }
     }
 }

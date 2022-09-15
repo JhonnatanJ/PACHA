@@ -29,5 +29,26 @@ namespace CapaPresentacion.Forms_Fase_2.Forms_VerAnalisisSocioambiental
         {
             this.Close();
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Está seguro de eliminar la selección?", "Control", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            ModeloRecursoHidrico recurso = new ModeloRecursoHidrico();
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    DataTable datos = recurso.CargarDGVrecurso();
+                    String item = datos.Rows[dgvRecursoHidrico.CurrentRow.Index]["Información"].ToString();
+                    recurso.EliminarRecurso(item);
+                    dgvRecursoHidrico.DataSource = recurso.CargarDGVrecurso();
+                    DialogResult advice = MessageBox.Show("La información fue eliminada", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch
+                {
+                    DialogResult advice = MessageBox.Show("La información no pudo ser eliminada", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }

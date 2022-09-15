@@ -58,13 +58,28 @@ namespace CapaDatos.Fase2
             conexionBD.Close();
             return dt;
         }
-
+        
+        public void EliminarRecurso(string item)
+        {
+            MySqlConnection conexionBD = Conexion.conexion();
+            conexionBD.Open();
+            MySqlCommand comando = new MySqlCommand();
+            
+            comando.Connection = conexionBD;
+            comando.CommandText = "delete from recursohidrico where INFORMACION=@informacion";
+            comando.Parameters.AddWithValue("@informacion", item);
+            comando.CommandType = System.Data.CommandType.Text;
+            comando.ExecuteNonQuery();
+            conexionBD.Close();
+            
+        }
 
         public bool ValidarRecursosH(String informacion)
         {
             MySqlConnection conexionBD = Conexion.conexion();
             conexionBD.Open();
             MySqlCommand comando = new MySqlCommand();
+
             DataTable dt = new DataTable();
 
             comando.Connection = conexionBD;
