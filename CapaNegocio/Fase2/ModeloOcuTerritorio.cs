@@ -29,5 +29,10 @@ namespace CapaNegocio.Fase2
         {
             return datosOcupacion.CargarDGVocupacion();
         }
+
+        public void EliminarOcupacion(string item)
+        {
+            datosOcupacion.EliminarOcupacion(item);
+        }
     }
 }

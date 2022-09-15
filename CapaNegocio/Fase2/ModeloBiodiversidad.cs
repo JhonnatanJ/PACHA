@@ -30,5 +30,10 @@ namespace CapaNegocio.Fase2
         {
             return datosBio.CargarDGVbiodiversidad();
         }
+
+        public void EliminarBiodiversidad(string item)
+        {
+            datosBio.EliminarBiodiversidad(item);
+        }
     }
 }
