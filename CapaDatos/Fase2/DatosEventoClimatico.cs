@@ -131,5 +131,45 @@ namespace CapaDatos.Fase2
             conexionBD.Close();
             return dt;
         }
+
+        public bool VerificarEventoClimatico(String informacion)
+        {
+            MySqlConnection conexionBD = Conexion.conexion();
+            conexionBD.Open();
+            MySqlCommand comando = new MySqlCommand();
+
+            DataTable dt = new DataTable();
+
+            comando.Connection = conexionBD;
+            comando.CommandText = "select SECTOR from climaextremo " +
+                "where IDCOMUNIDAD=@idcomunidad and SECTOR=@sector";
+
+            comando.Parameters.AddWithValue("@idcomunidad", CacheLoginComunidad.idcomunidad);
+            comando.Parameters.AddWithValue("@sector", informacion);
+
+            comando.CommandType = System.Data.CommandType.Text;
+            MySqlDataAdapter da = new MySqlDataAdapter(comando);
+            da.Fill(dt);
+            conexionBD.Close();
+            if (dt.Rows.Count != 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public void EliminarEventoClimatico(string item)
+        {
+            MySqlConnection conexionBD = Conexion.conexion();
+            conexionBD.Open();
+            MySqlCommand comando = new MySqlCommand();
+
+            comando.Connection = conexionBD;
+            comando.CommandText = "delete from climaextremo where SECTOR=@sector";
+            comando.Parameters.AddWithValue("@sector", item);
+            comando.CommandType = System.Data.CommandType.Text;
+            comando.ExecuteNonQuery();
+            conexionBD.Close();
+        }
     }
 }

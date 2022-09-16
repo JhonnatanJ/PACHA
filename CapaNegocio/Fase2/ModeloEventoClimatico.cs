@@ -45,5 +45,15 @@ namespace CapaNegocio.Fase2
         {
             return datosEvento.CargarComboRespuesta(sector, amenaza);
         }
+
+        public bool VerificarCampos(String informacion)
+        {
+            return datosEvento.VerificarEventoClimatico(informacion);
+        }
+
+        public void EliminarEventoClimatico(string item)
+        {
+            datosEvento.EliminarEventoClimatico(item);
+        }
     }
 }
